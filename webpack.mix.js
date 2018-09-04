@@ -12,15 +12,17 @@ let mix = require('laravel-mix');
  */
 
 
-// WP-THEMES
+// WP-Theme Directory
 //publicDir = '../../devsrv/site.dev/public/wp-content/themes/rembaza';
+const publicDir = 'public_html/wp-content/themes/mossebo';
 
-// Test
-publicDir = 'dist/theme';
+// WP Src Directory
+const src = 'mossebo-studio-src';
 
-//MAC CONFIG
-mix.js('src/assets/js/app.js', publicDir + '/assets/js')
-    .sass('src/assets/scss/app.scss', publicDir + '/assets/css')
+
+//MIX CONFIG
+mix.js(src + '/assets/js/app.js', publicDir + '/assets/js')
+    .sass(src + '/assets/scss/app.scss', publicDir + '/assets/css')
     .options({
         processCssUrls: false,
     })
@@ -43,13 +45,13 @@ mix.autoload({
     jquery: ['$', 'window.jQuery', 'jQuery']
 });
 
-mix.copyDirectory('src/assets/fonts', publicDir + '/assets/fonts');
-mix.copyDirectory('src/assets/images', publicDir + '/assets/images');
-mix.copyDirectory('src/template', publicDir);
+mix.copyDirectory(src + '/assets/fonts', publicDir + '/assets/fonts');
+mix.copyDirectory(src + '/assets/images', publicDir + '/assets/images');
+mix.copyDirectory(src + '/template', publicDir);
 
 mix.browserSync({
     proxy: {
-        target: "https://example.test"
+        target: "https://mossebo-studio.test"
     },
     https: true,
     open: false
