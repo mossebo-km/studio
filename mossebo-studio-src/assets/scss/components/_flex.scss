@@ -1,0 +1,24 @@
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.flex-align-mid {
+    align-items: center;
+    align-content: center;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex-vertical-strech {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flex-vertical-bottom {
+    align-items: flex-end;
+}
