@@ -14,10 +14,10 @@ let mix = require('laravel-mix');
 
 // WP-Theme Directory
 //publicDir = '../../devsrv/site.dev/public/wp-content/themes/rembaza';
-const publicDir = 'public_html/wp-content/themes/mossebo';
+let publicDir = 'public_html/wp-content/themes/mossebo';
 
 // WP Src Directory
-const src = 'mossebo-studio-src';
+let src = 'mossebo-studio-src';
 
 
 //MIX CONFIG
