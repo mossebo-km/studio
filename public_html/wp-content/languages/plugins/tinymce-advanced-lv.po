@@ -1,0 +1,256 @@
+# Translation of Plugins - TinyMCE Advanced - Stable (latest release) in Latvian
+# This file is distributed under the same license as the Plugins - TinyMCE Advanced - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-11-06 14:43:33+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: lv\n"
+"Project-Id-Version: Plugins - TinyMCE Advanced - Stable (latest release)\n"
+
+#: tadv_admin.php:381
+msgid "To use this option, add editor-style.css to your theme or a child theme. Enabling this option will also load that stylesheet in the editor."
+msgstr "Lai lietotu šo opciju, pievienojiet aktīvajai tēmai  editor-style.css. Šīs opcijas iespējošana, ielādēs šo failu redaktorā."
+
+#: tadv_admin.php:376
+msgid "A stylesheet file named editor-style.css was not added by your theme."
+msgstr "Jūsu tēmā nav iekļauts stila lapas fails editor-style.css."
+
+#: tadv_admin.php:370
+msgid "Your theme does not support editor-style.css."
+msgstr "Jūsu tēma neatbalsta editor-style.css."
+
+#: tadv_admin.php:369 tadv_admin.php:375
+msgid "ERROR:"
+msgstr "KĻŪDA:"
+
+#: tinymce-advanced.php:872
+msgid "Settings"
+msgstr "Iestatījumi"
+
+#: tadv_admin.php:429
+msgid "Editors on the front end of the site"
+msgstr "Redaktori vietnes priekšpusē"
+
+#: tadv_admin.php:425
+msgid "Other editors in wp-admin"
+msgstr "Citi wp-admin redaktori"
+
+#: tadv_admin.php:421
+msgid "The main editor (Add New and Edit posts and pages)"
+msgstr "Galvenais redaktors (Pievienot jaunu un Rediģēt ziņas un lapas)"
+
+#: tadv_admin.php:418
+msgid "Enable the editor enhancements for:"
+msgstr "Iespējot redaktora uzlabojumus:"
+
+#: tadv_admin.php:411
+msgid "Settings import and export"
+msgstr "Iestatījumu importēšana un eksportēšana"
+
+#: tadv_admin.php:389
+msgid "Keep paragraph tags"
+msgstr "Paturēt paragrāfa tagus"
+
+#: tadv_admin.php:360
+msgid "Create CSS classes menu"
+msgstr "Izveidot CSS klases izvēlni"
+
+#: tadv_admin.php:333
+msgid "Font sizes"
+msgstr "Fonta izmēri"
+
+#: tadv_admin.php:328
+msgid "Open the TinyMCE link dialog when using the link button on the toolbar or the link menu item."
+msgstr "Atveriet TinyMCE saitae dialogodziņu kad lietojot saites pogu rīkjoslā vai saites izvēlnes vienumu."
+
+#: tadv_admin.php:326
+msgid "Alternative link dialog"
+msgstr "Alternatīvs saites dialogs"
+
+#: tadv_admin.php:321
+msgid "Replace the browser context (right-click) menu."
+msgstr "Nomainīt pārlūkprogrammas (labās pogas) konteksta izvēlni."
+
+#: tadv_admin.php:314
+msgid "Enable more list options: upper or lower case letters for ordered lists, disk or square for unordered lists, etc."
+msgstr "Iespējot papildu saraksta opcijas: augšējā vai apakšējā reģistra burtus sakārtotam sarakstam, aplīšus vai kvadrātiņus nesakārtotam sarakstam utt."
+
+#: tadv_admin.php:309
+msgid "Options"
+msgstr "Iestatījumi"
+
+#. Author URI of the plugin/theme
+msgid "http://www.laptoptips.ca/"
+msgstr "http://www.laptoptips.ca/"
+
+#. Author of the plugin/theme
+msgid "Andrew Ozz"
+msgstr "Andrew Ozz"
+
+#. Description of the plugin/theme
+msgid "Enables advanced features and plugins in TinyMCE, the visual editor in WordPress."
+msgstr "Iespējo papildu līdzekļus un spraudņus TinyMCE, WordPress vizuālā redaktorā."
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.laptoptips.ca/projects/tinymce-advanced/"
+msgstr "http://www.laptoptips.ca/projects/tinymce-advanced/"
+
+#. Plugin Name of the plugin/theme
+msgid "TinyMCE Advanced"
+msgstr "Uzlabots TinyMCE"
+
+#: tinymce-advanced.php:301
+msgid "Please upgrade your WordPress installation or download an <a href=\"%s\">older version of the plugin</a>."
+msgstr "Lūdzu, jauniniet WordPress instalāciju vai lejupielādējiet <a href=\"%s\"> vecāku spraudņa versiju</a>."
+
+#: tinymce-advanced.php:294
+msgid "TinyMCE Advanced requires WordPress version %1$s or newer. It appears that you are running %2$s. This can make the editor unstable."
+msgstr "TinyMCE Advanced nepieciešama WordPress versija %1$s vai jaunāka. Šķiet, ka jūs izmantojat %2$s. Tas var padarīt redaktora darbību nestabilu."
+
+#: tadv_admin.php:446
+msgid "The [Toolbar toggle] button shows or hides the second, third, and forth button rows. It will only work when it is in the first row and there are buttons in the second row."
+msgstr "Poga [Rīkjoslu pārslēgs] parāda vai paslēpj otro, trešo, un tālāk pogu rindas. Tas darbosies tikai tad, kad tas ir atradīsies pirmajā rindā un otrajā rindā būs pogas."
+
+#: tadv_admin.php:440
+msgid "Restore Default Settings"
+msgstr "Noklusējuma iestatījumu atjaunošana"
+
+#: tadv_admin.php:414
+msgid "Import Settings"
+msgstr "Iestatījumu imports"
+
+#: tadv_admin.php:413
+msgid "Export Settings"
+msgstr "Iestatījumu eksports"
+
+#: tadv_admin.php:409
+msgid "Administration"
+msgstr "Administrācija"
+
+#: tadv_admin.php:403
+msgid "These images will not be available in the Media Library."
+msgstr "Šie attēli nebūs pieejams multivides bibliotēkā."
+
+#: tadv_admin.php:402
+msgid "This is not acceptable for larger images like photos or graphics, but may be useful in some cases for very small images like icons, not larger than 2-3KB."
+msgstr "Tas nebūs iespējams ar lielākiem attēliem kā fotogrāfijām vai grafikām, bet var noderēt dažos gadījumos ar ļoti nelieliem (ne lielākiem par 2-3 Kb) attēliem, piemēram, ikonām."
+
+#: tadv_admin.php:401
+msgid "Works only in Firefox and Safari. These browsers support pasting of images directly in the editor and convert them to base64 encoded text."
+msgstr "Darbojas tikai Firefox un Safari. Šīs pārlūkprogrammas atbalstīt attēlu ievietošanu redaktorā, konvertējot tos par base64 kodējuma tekstu."
+
+#: tadv_admin.php:399
+msgid "Enable pasting of image source"
+msgstr "Iespējot attēla avota ievietošanu"
+
+#: tadv_admin.php:394
+msgid "Line breaks in the Text editor would still affect the output, in particular do not use empty lines, line breaks inside HTML tags or multiple &lt;br /&gt; tags."
+msgstr "Rindiņu pārtraukumi Teksta redaktorā joprojām var ietekmē rezultātu, jo īpaši izvairieties no tukšām rindām, rindiņu pārtraukumiem HTML tagu iekšpusē vai vairākiem &lt;br /&gt; tagiem."
+
+#: tadv_admin.php:393
+msgid "However it may behave unexpectedly in rare cases, so test it thoroughly before enabling it permanently."
+msgstr "Tomēr tas atsevišķos gadījumos tas var uzvesties negaidīti, tāpēc pirms iespējot neatgriezeniski, rūpīgi testējiet."
+
+#: tadv_admin.php:392
+msgid "This will make it possible to use more advanced coding in the Text editor without the back-end filtering affecting it much."
+msgstr "Tas dos iespēju izmantot papildu kodēšanu Teksta redaktorā, daudz neietekmējot pēcprocesa filtrēšanu."
+
+#: tadv_admin.php:391
+msgid "Stop removing the &lt;p&gt; and &lt;br /&gt; tags when saving and show them in the Text editor."
+msgstr "Pārtraukt &lt;p&gt; un &lt;br /&gt; tagu izņemšanu, saglabājot un parādīt tos teksta redaktorā."
+
+#: tadv_admin.php:364
+msgid "Load the CSS classes used in editor-style.css and replace the Formats menu."
+msgstr "Ievieto CSS klases, ko izmanto editor-style.css un nomaina Formātu izvēlni."
+
+#: tadv_admin.php:342
+msgid "Advanced Options"
+msgstr "Papildu opcijas"
+
+#: tadv_admin.php:319
+msgid "Context Menu"
+msgstr "Konteksta izvēlne"
+
+#: tadv_admin.php:312
+msgid "List Style Options"
+msgstr "Saraksta stila opcijas"
+
+#: tadv_admin.php:267
+msgid "Unused Buttons"
+msgstr "Neizmantotās Pogas"
+
+#: tadv_admin.php:264
+msgid "Drag buttons from the unused buttons below and drop them in the toolbars above, or drag the buttons in the toolbars to rearrange them."
+msgstr "Velciet pogas no neizmantotajām pogām zemāk un nometiet tās rīkjoslā augšpusē vai pāvelciet pogas rīkjoslas, lai tās pārkārtotu."
+
+#: tadv_admin.php:152
+msgid "Enable the editor menu."
+msgstr "Iespējot redaktora izvēlni."
+
+#: tadv_admin.php:145 tadv_admin.php:441
+msgid "Save Changes"
+msgstr "Saglabāt izmaiņas"
+
+#: tadv_admin.php:136
+msgid "Settings saved."
+msgstr "Iestatījumi saglabāti."
+
+#: tadv_admin.php:129
+msgid "Editor Settings"
+msgstr "Redaktora uzstādījumi"
+
+#: tadv_admin.php:118
+msgid "ERROR: All toolbars are empty. Default settings loaded."
+msgstr "KĻŪDA: Visas rīkjoslas ir tukšas. Atvērti noklusējuma iestatījumi."
+
+#: tadv_admin.php:105
+msgid "Importing of settings failed."
+msgstr "Iestatījumu importēšana neizdevās."
+
+#: tadv_admin.php:87
+msgid "Import"
+msgstr "Importēt"
+
+#: tadv_admin.php:86
+msgid "Verify"
+msgstr "Pārbaudīt"
+
+#: tadv_admin.php:81
+msgid "The settings are imported from a JSON encoded string. Please paste the exported string in the text area below."
+msgstr "Iestatījumi tiek importēti no JSON atkodēāsi virknes. Lūdzu, ielīmējiet eksportēto teksta virkni zemāk esošajā laukumā."
+
+#: tadv_admin.php:78
+msgid "TinyMCE Advanced Settings Import"
+msgstr "TinyMCE papildu iestatījumu importēšana"
+
+#: tadv_admin.php:66 tadv_admin.php:92
+msgid "Back to Editor Settings"
+msgstr "Atpakaļ uz redaktora uzstādījumiem"
+
+#: tadv_admin.php:64
+msgid "Select All"
+msgstr "Iezīmēt visu"
+
+#: tadv_admin.php:59
+msgid "It is important that the export is not changed in any way, no spaces, line breaks, etc."
+msgstr "Ir svarīgi lai eksportētais saturs nekādā veidā netiktu mainīts -  bez atstarpēm, rindiņu pārtraukumiem, utt."
+
+#: tadv_admin.php:58
+msgid "Please copy the content and save it in a <b>text</b> (.txt) file, using a plain text editor like Notepad."
+msgstr "Lūdzu pārkopējiet saturu un saglabājiet to <b>teksta</b> (. txt) failā, izmantojot teksta redaktoru, piemēram, Notepad."
+
+#: tadv_admin.php:57
+msgid "The settings are exported as a JSON encoded string."
+msgstr "Iestatījumi tiek eksportēti kā atkodēta JSON virkne."
+
+#: tadv_admin.php:53
+msgid "TinyMCE Advanced Settings Export"
+msgstr "TinyMCE papildu uzstādījumu eksports"
+
+#: tadv_admin.php:41
+msgid "Default settings restored."
+msgstr "Atjaunot noklusētos iestatījumus."
