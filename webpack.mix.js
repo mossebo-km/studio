@@ -25,6 +25,11 @@ mix.js(src + '/assets/js/app.js', publicDir + '/assets/js')
     .sass(src + '/assets/scss/app.scss', publicDir + '/assets/css')
     .options({
         processCssUrls: false,
+        postCss: [
+            require('postcss-custom-media'),
+            require('postcss-short-position'),
+            require('postcss-short-font-size'),
+        ]
     })
     .extract([
         'babel-polyfill',

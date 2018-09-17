@@ -45,7 +45,7 @@ if (! function_exists('mix')) {
      *
      * @throws \Exception
      */
-    function mix($path, $manifestDirectory = 'wp-content/themes/theme_name')
+    function mix($path, $manifestDirectory = 'wp-content/themes/mossebo')
     {
         static $manifest;
         $publicFolder = '';

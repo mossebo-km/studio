@@ -1,0 +1,43 @@
+.link,
+.icon-link {
+    color: $color-link;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    margin-bottom: -1px;
+    transition: border-color .3s ease-out;
+    vertical-align: bottom;
+
+    &:hover {
+        border-bottom-color: currentColor;
+    }
+
+    &--dashed {
+        border-bottom-style: dashed;
+    }
+
+    &--inverse {
+        border-bottom-color: currentColor;
+
+        &:hover {
+            border-bottom-color: transparent;
+        }
+    }
+}
+
+.icon-link,
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+
+    &__icon {
+        margin-right: 6px;
+        width: 2em;
+        height: 2em;
+        max-width: 24px;
+        max-height: 24px;
+        fill: currentColor;
+    }
+}

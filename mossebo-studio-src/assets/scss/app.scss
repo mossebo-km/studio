@@ -1,11 +1,20 @@
-
 // Variables
-@import "~normalize.css/normalize.css";
 
-@import "_variables/colors";
-@import "_variables/variables";
-@import "_variables/grid";
-@import "_variables/fonts";
+@import "variables/colors";
+@import "variables/variables";
 
-@import "components/flex";
-// Components
+@import "bootstrap/bootstrap";
+@import "global";
+
+@import "ui/links";
+@import "ui/tabs";
+
+@import "u-blocks/brands";
+@import "u-blocks/info-card";
+@import "u-blocks/interior";
+@import "u-blocks/studios-map";
+
+@import "plugins/swiper";
+@import "plugins/fancybox";
+
+@import "animations";

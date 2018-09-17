@@ -1,35 +1,60 @@
 /**
- * Created by Vlad Starkovsky on 28.06.2017.
+ * GLOBAL
  */
 
-"use strict";
+/**
+ * Imports
+ */
 
-//
-// Import Libs
-//
-import './bootstrap'
 import Vue from 'vue'
 
-//
-// Import Scripts
-//
+import Swiper from 'swiper'
+import '@fancyapps/fancybox'
 
-let app = new Vue({
+
+window.Swiper = Swiper
+
+/**
+ * App
+ */
+import InteriorPano from './components/InteriorPano'
+
+const breakpoints = {
+    xs: 1,
+    sm: 576,
+    md: 768,
+    lg: 992,
+    xl: 1200
+}
+
+const app = new Vue({
     el: '#app',
-    components: {
 
+    components: {
+        InteriorPano
     },
+
     data: {
 
     },
 
+    methods: {
+        windowLessThan(size) {
+            return this.windowWidth < this.getBreakpoint(size)
+        },
+
+        windowMoreThan(size) {
+            return this.windowWidth >= this.getBreakpoint(size)
+        },
+
+        getBreakpoint(size) {
+            return breakpoints[size]
+        },
+
+        windowBetween(from, to) {
+            return this.windowWidth >= breakpoints[from] && this.windowWidth < breakpoints[to]
+        },
+    }
 });
 
-//
-// Costume Scripts
-//
-
-if (location.protocol != 'https:')
-{
-    location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-}
+window.app = app

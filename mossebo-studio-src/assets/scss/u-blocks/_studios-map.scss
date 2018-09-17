@@ -1,0 +1,44 @@
+.studios-map {
+  &__locations {
+    margin-top: -70px;
+  }
+}
+
+.studios-map-plug {
+  height: 405px;
+  background-color: pink;
+}
+
+.studio-cities {
+  padding: 33px 45px;
+  font-size: 14px / 22px;
+
+  &__country {
+    color: $color-primary;
+    font-weight: 600;
+
+    &::after {
+      content: ':';
+    }
+  }
+
+  &__container {
+    margin: -22px 0 0 -50px;
+    display: flex;
+  }
+
+  &__left,
+  &__center,
+  &__right {
+    padding: 22px 0 0 50px;
+  }
+
+  &__block + &__block {
+    margin-top: 22px;
+  }
+
+  &__link {
+    user-select: none;
+    color: $color-text-secondary;
+  }
+}
