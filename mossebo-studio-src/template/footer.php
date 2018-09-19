@@ -1,10 +1,12 @@
-<div class="container">
     <footer>
-        <div class="row">
+        <div class="container">
+            <footer>
+                <div class="row">
 
+                </div>
+            </footer>
         </div>
     </footer>
-</div>
 
 </div>
 <!-- /APP -->

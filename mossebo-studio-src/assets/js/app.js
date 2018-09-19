@@ -2,6 +2,8 @@
  * GLOBAL
  */
 
+import './bootstrap'
+
 /**
  * Imports
  */
@@ -10,7 +12,6 @@ import Vue from 'vue'
 
 import Swiper from 'swiper'
 import '@fancyapps/fancybox'
-
 
 window.Swiper = Swiper
 

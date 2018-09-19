@@ -5,16 +5,20 @@ webpackJsonp([1],{
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__("./node_modules/vue/dist/vue.common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_swiper__ = __webpack_require__("./node_modules/swiper/dist/js/swiper.esm.bundle.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fancyapps_fancybox__ = __webpack_require__("./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fancyapps_fancybox___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__fancyapps_fancybox__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_InteriorPano__ = __webpack_require__("./mossebo-studio-src/assets/js/components/InteriorPano.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_InteriorPano___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_InteriorPano__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap__ = __webpack_require__("./mossebo-studio-src/assets/js/bootstrap.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__bootstrap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__("./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_swiper__ = __webpack_require__("./node_modules/swiper/dist/js/swiper.esm.bundle.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox__ = __webpack_require__("./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_InteriorPano__ = __webpack_require__("./mossebo-studio-src/assets/js/components/InteriorPano.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_InteriorPano___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_InteriorPano__);
 /**
  * GLOBAL
  */
+
+
 
 /**
  * Imports
@@ -25,7 +29,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-window.Swiper = __WEBPACK_IMPORTED_MODULE_1_swiper__["a" /* default */];
+window.Swiper = __WEBPACK_IMPORTED_MODULE_2_swiper__["a" /* default */];
 
 /**
  * App
@@ -40,11 +44,11 @@ var breakpoints = {
     xl: 1200
 };
 
-var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
+var app = new __WEBPACK_IMPORTED_MODULE_1_vue___default.a({
     el: '#app',
 
     components: {
-        InteriorPano: __WEBPACK_IMPORTED_MODULE_3__components_InteriorPano___default.a
+        InteriorPano: __WEBPACK_IMPORTED_MODULE_4__components_InteriorPano___default.a
     },
 
     data: {},
@@ -66,6 +70,26 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 });
 
 window.app = app;
+
+/***/ }),
+
+/***/ "./mossebo-studio-src/assets/js/bootstrap.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {
+window._ = __webpack_require__("./node_modules/lodash/lodash.js");
+__webpack_require__("./node_modules/babel-polyfill/lib/index.js");
+
+/**
+ * We'll load jQuery and the Bootstrap jQuery plugin which provides support
+ * for JavaScript based Bootstrap features such as modals and tabs. This
+ * code may be modified to fit the specific needs of your application.
+ */
+
+try {
+  window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__("./node_modules/jquery/dist/jquery.js");
+} catch (e) {}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 

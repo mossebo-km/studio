@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-09-11 12:13:39+0000\n"
+"PO-Revision-Date: 2018-09-17 12:44:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -84,7 +84,7 @@ msgstr "Ocurrió un error al cargar el selector %s de la taxonomía principal."
 #. translators: %1$s expands to Yoast.
 #: inc/class-structured-data-blocks.php:61
 msgid "%1$s Structured Data Blocks"
-msgstr "%1$s Bloques de datos estructurados"
+msgstr "Bloques de %1$s de datos estructurados"
 
 #: languages/wordpress-seojs.php:178
 msgid "Time needed:"
@@ -257,7 +257,7 @@ msgstr "Restaurar sitio"
 #: admin/metabox/class-metabox-multiple-keywords-config.php:22
 #: languages/wordpress-seojs.php:52
 msgid "Add additional keyword"
-msgstr "Añade una palabra clave adicional"
+msgstr "Añadir palabra clave extra"
 
 #: admin/menu/class-network-admin-menu.php:34
 msgid "Network Settings"
@@ -1783,7 +1783,7 @@ msgid ""
 msgstr ""
 "%1$s puede indicarle a los motores de búsqueda tus perfiles en medios sociales.\n"
 "Se usarán en Google Knowledge Graph. Hay opciones de compartir adicionales\n"
-"en los %1$sajustes sociales. %2$sLee más%3$s sobre estas opciones."
+"en los ajustes sociales de %1$s. %2$sLee más%3$s sobre estas opciones."
 
 #: admin/config-ui/fields/class-field-site-type.php:28
 msgid "Something else"
