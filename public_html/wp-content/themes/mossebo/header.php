@@ -19,23 +19,23 @@
 <!-- APP -->
 <div id="app">
 
-    <div class="container">
-        <header>
-            <div class="row">
-                <div class="flex flex-align-mid">
-                    <a href="/" class="logo"></a>
-                    <div class="phone">
-                        +7 (495) 000-00-00
-                        <small>пн-пт с 10:00-19:00</small>
+    <header>
+        <div class="container">
+                <div class="row">
+                    <div class="flex flex-align-mid">
+                        <a href="/" class="logo"></a>
+                        <div class="phone">
+                            +7 (495) 000-00-00
+                            <small>пн-пт с 10:00-19:00</small>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
-    </div>
-
-
-    <div class="container">
-        <div class="row">
-            <?php wp_nav_menu(array('theme_location' => 'header_menu', 'container_class' => 'header-nav')); ?>
         </div>
-    </div>
+
+
+        <div class="container">
+            <div class="row">
+                <?php wp_nav_menu(array('theme_location' => 'header_menu', 'container_class' => 'header-nav')); ?>
+            </div>
+        </div>
+    </header>

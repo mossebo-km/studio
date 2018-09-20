@@ -5,24 +5,28 @@ webpackJsonp([1],{
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__("./node_modules/vue/dist/vue.common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_swiper__ = __webpack_require__("./node_modules/swiper/dist/js/swiper.esm.bundle.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fancyapps_fancybox__ = __webpack_require__("./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fancyapps_fancybox___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__fancyapps_fancybox__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_chart_js__ = __webpack_require__("./node_modules/chart.js/src/chart.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_chart_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_hchs_vue_charts__ = __webpack_require__("./node_modules/hchs-vue-charts/dist/vue-charts.min.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_hchs_vue_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_hchs_vue_charts__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_InteriorPano__ = __webpack_require__("./mossebo-studio-src/assets/js/components/InteriorPano.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_InteriorPano___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_InteriorPano__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_MobileSlider__ = __webpack_require__("./mossebo-studio-src/assets/js/components/MobileSlider.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_MobileSlider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_MobileSlider__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_imageLoaders_BackgroundImageLoader__ = __webpack_require__("./mossebo-studio-src/assets/js/components/imageLoaders/BackgroundImageLoader.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_imageLoaders_BackgroundImageLoader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_imageLoaders_BackgroundImageLoader__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap__ = __webpack_require__("./mossebo-studio-src/assets/js/bootstrap.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__bootstrap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__("./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_swiper__ = __webpack_require__("./node_modules/swiper/dist/js/swiper.esm.bundle.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox__ = __webpack_require__("./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_chart_js__ = __webpack_require__("./node_modules/chart.js/src/chart.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_chart_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_hchs_vue_charts__ = __webpack_require__("./node_modules/hchs-vue-charts/dist/vue-charts.min.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_hchs_vue_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_hchs_vue_charts__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_InteriorPano__ = __webpack_require__("./mossebo-studio-src/assets/js/components/InteriorPano.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_InteriorPano___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_InteriorPano__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_MobileSlider__ = __webpack_require__("./mossebo-studio-src/assets/js/components/MobileSlider.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_MobileSlider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_MobileSlider__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_imageLoaders_BackgroundImageLoader__ = __webpack_require__("./mossebo-studio-src/assets/js/components/imageLoaders/BackgroundImageLoader.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_imageLoaders_BackgroundImageLoader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_imageLoaders_BackgroundImageLoader__);
 /**
  * GLOBAL
  */
+
+
 
 /**
  * Imports
@@ -39,24 +43,24 @@ function getLocale() {
     return window.navigator.userLanguage || window.navigator.language;
 }
 
-__WEBPACK_IMPORTED_MODULE_3_chart_js___default.a.defaults.global.defaultFontFamily = 'Montserrat';
-__WEBPACK_IMPORTED_MODULE_3_chart_js___default.a.defaults.global.defaultFontColor = '#979797';
+__WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontFamily = 'Montserrat';
+__WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontColor = '#979797';
 
 function setChartFontSize() {
     if (window.innerWidth < 375) {
-        __WEBPACK_IMPORTED_MODULE_3_chart_js___default.a.defaults.global.defaultFontSize = 8;
+        __WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontSize = 8;
     } else if (window.innerWidth < 576) {
-        __WEBPACK_IMPORTED_MODULE_3_chart_js___default.a.defaults.global.defaultFontSize = 10;
+        __WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontSize = 10;
     } else if (window.innerWidth < 768) {
-        __WEBPACK_IMPORTED_MODULE_3_chart_js___default.a.defaults.global.defaultFontSize = 12;
+        __WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontSize = 12;
     } else {
-        __WEBPACK_IMPORTED_MODULE_3_chart_js___default.a.defaults.global.defaultFontSize = 14;
+        __WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontSize = 14;
     }
 }
 
 setChartFontSize();
 
-__WEBPACK_IMPORTED_MODULE_3_chart_js___default.a.pluginService.register({
+__WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.pluginService.register({
     beforeRender: function beforeRender(chart, easing) {
         var _loop = function _loop(i) {
             var scale = chart.scales[i];
@@ -87,16 +91,16 @@ __WEBPACK_IMPORTED_MODULE_3_chart_js___default.a.pluginService.register({
     }
 });
 
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(VueCharts);
+__WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(VueCharts);
 
-window.Swiper = __WEBPACK_IMPORTED_MODULE_1_swiper__["a" /* default */];
+window.Swiper = __WEBPACK_IMPORTED_MODULE_2_swiper__["a" /* default */];
 
 window.initSliderWithFancybox = function (query, config) {
     var sliderEl = document.querySelector(query);
 
     if (!sliderEl) return;
 
-    var slider = new __WEBPACK_IMPORTED_MODULE_1_swiper__["a" /* default */](sliderEl, config);
+    var slider = new __WEBPACK_IMPORTED_MODULE_2_swiper__["a" /* default */](sliderEl, config);
 
     var selector = query + ' .swiper-slide:not(.swiper-slide-duplicate) .js-fancybox-true';
 
@@ -144,13 +148,13 @@ var breakpoints = {
     xl: 1200
 };
 
-var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
+var app = new __WEBPACK_IMPORTED_MODULE_1_vue___default.a({
     el: '#app',
 
     components: {
-        InteriorPano: __WEBPACK_IMPORTED_MODULE_5__components_InteriorPano___default.a,
-        BackgroundImageLoader: __WEBPACK_IMPORTED_MODULE_7__components_imageLoaders_BackgroundImageLoader___default.a,
-        MobileSlider: __WEBPACK_IMPORTED_MODULE_6__components_MobileSlider___default.a
+        InteriorPano: __WEBPACK_IMPORTED_MODULE_6__components_InteriorPano___default.a,
+        BackgroundImageLoader: __WEBPACK_IMPORTED_MODULE_8__components_imageLoaders_BackgroundImageLoader___default.a,
+        MobileSlider: __WEBPACK_IMPORTED_MODULE_7__components_MobileSlider___default.a
     },
 
     data: {
@@ -202,7 +206,7 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    new __WEBPACK_IMPORTED_MODULE_1_swiper__["a" /* default */]('.js-socials-slider', {
+    new __WEBPACK_IMPORTED_MODULE_2_swiper__["a" /* default */]('.js-socials-slider', {
         direction: 'horizontal',
         slidesPerView: 'auto',
         centeredSlides: true,
@@ -221,6 +225,26 @@ window.isHighDensity = function () {
     };
 }();
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./mossebo-studio-src/assets/js/bootstrap.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {
+window._ = __webpack_require__("./node_modules/lodash/lodash.js");
+__webpack_require__("./node_modules/babel-polyfill/lib/index.js");
+
+/**
+ * We'll load jQuery and the Bootstrap jQuery plugin which provides support
+ * for JavaScript based Bootstrap features such as modals and tabs. This
+ * code may be modified to fit the specific needs of your application.
+ */
+
+try {
+  window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__("./node_modules/jquery/dist/jquery.js");
+} catch (e) {}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 

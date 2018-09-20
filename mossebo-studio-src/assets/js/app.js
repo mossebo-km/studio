@@ -2,6 +2,8 @@
  * GLOBAL
  */
 
+import './bootstrap'
+
 /**
  * Imports
  */
@@ -67,6 +69,7 @@ ChartJS.pluginService.register({
 
 
 Vue.use(VueCharts)
+
 
 window.Swiper = Swiper
 
