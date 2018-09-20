@@ -1,0 +1,16 @@
+.company-important-info {
+    padding: 24px 16px;
+
+    @include media-breakpoint-up(md) {
+        padding: 24px 32px;
+    }
+
+    &__content {
+        color: $color-text-primary;
+
+        @include media-breakpoint-up(lg) {
+            columns: 2;
+        }
+    }
+}
+

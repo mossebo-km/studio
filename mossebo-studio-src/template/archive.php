@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 
-
     <div class="blocks blocks-arhive">
         <div class="wrap">
             <h2><?php wp_title(); ?></h2>

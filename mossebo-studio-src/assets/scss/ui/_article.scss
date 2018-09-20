@@ -1,0 +1,29 @@
+.article {
+    p, ul {
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    li {
+        display: list-item;
+        position: relative;
+        padding-left: 32px;
+
+        &::before {
+            content: '';
+            border-radius: 50%;
+            width: 9px;
+            height: 9px;
+            background-color: $color-primary;
+
+            position: absolute;
+            left: 0;
+            top: 6.5px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+}

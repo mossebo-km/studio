@@ -1,0 +1,26 @@
+.videoblog-slider {
+    .swiper-slide {
+        width: auto;
+        max-width: calc(100% - 96px);
+    }
+}
+
+.videoblog-card {
+    display: block;
+    width: 598px;
+    max-width: 100%;
+
+    &__title {
+        max-width: 450px;
+        margin: 24px auto auto;
+        text-align: center;
+        opacity: 0;
+        transition: opacity .3s;
+    }
+}
+
+.swiper-slide-active .videoblog-card__title {
+    opacity: 1;
+}
+
+

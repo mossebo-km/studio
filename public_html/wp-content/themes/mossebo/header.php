@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&amp;subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo mix('assets/css/app.css') ?>">
 
     <?php wp_head(); ?>

@@ -50,7 +50,7 @@ mix.autoload({
     jquery: ['$', 'window.jQuery', 'jQuery']
 });
 
-mix.copyDirectory(src + '/assets/fonts', publicDir + '/assets/fonts');
+// mix.copyDirectory(src + '/assets/fonts', publicDir + '/assets/fonts');
 mix.copyDirectory(src + '/assets/images', publicDir + '/assets/images');
 mix.copyDirectory(src + '/template', publicDir);
 

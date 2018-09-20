@@ -1,0 +1,73 @@
+.franchise-training {
+    display: flex;
+
+    &__days {
+        margin-top: 24px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 44px;
+        }
+    }
+
+    &__content {
+        padding: 24px 32px;
+    }
+
+    &__image {
+        display: none;
+        flex-grow: 1;
+        width: 31.6787%;
+        background-image: url(../images/training/image.jpg);
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }
+    }
+}
+
+.franchise-training-day {
+    max-width: 330px;
+    color: $color-text-primary;
+
+    &__title {
+        font-weight: 500;
+        font-size: 22px / 28px;
+        color: $color-primary;
+        margin-bottom: 18px;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        @include media-breakpoint-up(md) {
+            font-size: 32px / 40px;
+            margin-bottom: 23px;
+        }
+    }
+
+    &__arrow {
+        display: none;
+        margin-left: 32px;
+        height: 2px;
+        flex-grow: 1;
+        background-color: $color-primary;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            margin-top: -5px;
+            border-style: solid;
+            border-width: 5px 0 5px 5px;
+            border-color: transparent;
+            border-left-color: $color-primary;
+        }
+
+        @include media-breakpoint-up(md) {
+            display: block;
+        }
+    }
+}

@@ -9,8 +9,8 @@ php_value memory_limit 256M
 RewriteEngine On
 RewriteBase /
 
-RewriteCond %{ENV:HTTPS} !=on
-RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+# RewriteCond %{ENV:HTTPS} !=on
+# RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 
 # BEGIN WordPress
 RewriteRule ^index\.php$ - [L]

@@ -76,3 +76,12 @@ if (! function_exists('mix')) {
             : $manifestDirectory.$manifest[$path];
     }
 }
+
+if (! function_exists('toEscapedJson')) {
+    function toEscapedJson($data)
+    {
+        return htmlspecialchars(
+            json_encode($data, JSON_UNESCAPED_UNICODE)
+        );
+    }
+}

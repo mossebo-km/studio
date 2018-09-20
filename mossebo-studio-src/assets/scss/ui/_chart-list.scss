@@ -1,0 +1,36 @@
+.chart-list {
+    list-style: none;
+
+    li {
+        font-size: 16px / 24px;
+        position: relative;
+        margin: 16px 0;
+        padding-left: 75px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        left: 0;
+        width: 50px;
+        height: 4px;
+        border-radius: 10px;
+        top: 10px;
+
+        &--primary {
+            background: $color-primary;
+        }
+
+        &--gray {
+            background: #979797;
+            background: $color-text-secondary;
+        }
+    }
+}

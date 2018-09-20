@@ -1,0 +1,65 @@
+.franchise-spark {
+    &__text {
+        margin-top: 16px;
+    }
+
+    @include media-breakpoint-up(md) {
+        display: flex;
+        align-items: center;
+
+        &__text {
+            margin: 0 0 0 50px;
+        }
+    }
+}
+
+.franchise-infographics {
+
+}
+
+.franchise-grade {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+
+    &__icon {
+        width: 50px;
+        height: 50px;
+        fill: currentColor;
+    }
+
+    &__right {
+        margin-left: 24px;
+    }
+
+    &__title {
+        font-size: 18px / 26px;
+        margin-bottom: 8px;
+        color: $color-text-primary;
+    }
+
+    &__status {
+        font-size: 14px / 18px;
+    }
+
+    &--index-riska,
+    &--ido {
+        color: #418E19;
+    }
+
+    &--ifr {
+        color: #F3B558;
+    }
+
+    @include media-breakpoint-up(lg) {
+        &__icon {
+            width: 100px;
+            height: 100px;
+        }
+
+        &__title {
+            font-size: 24px / 32px;
+            margin-bottom: 16px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.franchise-presentation {
+    display: flex;
+    justify-content: space-between;
+
+    &__image {
+        display: none;
+    }
+
+    @include media-breakpoint-up(md) {
+        &__content {
+            width: 275px;
+        }
+
+        &__image {
+            display: block;
+            max-width: calc(100% - 275px);
+            margin-left: auto;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.franchise-requirements {
+    &__block {
+        height: 100%;
+        padding: 31px 34px;
+        color: $color-text-primary;
+    }
+
+    &__content {
+        max-width: 440px;
+    }
+
+    &__label {
+        margin-bottom: 25px;
+        color: $color-primary;
+    }
+
+    &__block--gray &__label {
+        color: $color-text-secondary;
+    }
+
+    &__block--gray li::before {
+        background-color: $color-text-secondary;
+    }
+}

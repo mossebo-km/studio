@@ -1,19 +1,31 @@
 .interior-pano {
-  &__tabs {
-    border-bottom: 1px solid $color-border;
-  }
+    &__pano {
+        padding-top: 35px;
+        border-top: 1px solid $color-border;
+        margin-top: -1px;
+    }
 
-  &__pano {
-    margin-top: 35px;
-  }
+    &__container {
+        width: 4432px;
+    }
 
-  &__container {
-    width: 1108px;
-  }
+    &__item {
+        width: 6.25%;
+    }
 
-  .swiper-slide {
-    width: auto;
-  }
+    .swiper-slide {
+        width: auto;
+    }
+
+    @include media-breakpoint-up(lg) {
+        &__container {
+            width: 1108px;
+        }
+
+        &__item {
+            width: 25%;
+        }
+    }
 }
 
 .interior-preview {

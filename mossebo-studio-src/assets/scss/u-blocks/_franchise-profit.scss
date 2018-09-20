@@ -1,0 +1,64 @@
+.franchise-profit {
+    background-image: url(../images/profit.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    height: 350px;
+    padding: 24px 16px;
+
+    &__money {
+        font-size: 22px / 40px;
+
+        span {
+            font-size: 32px;
+            font-weight: 500;
+            color: $color-primary;
+        }
+    }
+
+    &__label {
+        font-size: 22px / 28px;
+        margin-top: 21px;
+    }
+
+    &__currency {
+        font-size: 14px / 18px;
+        margin-top: 21px;
+    }
+
+    @include media-breakpoint-up(md) {
+        &__money {
+            font-size: 32px / 108px;
+
+            span {
+                font-size: 80px;
+            }
+        }
+
+        &__label {
+            font-size: 32px / 40px;
+            margin-top: -7px;
+        }
+
+        &__currency {
+            font-size: 14px / 18px;
+            margin-top: 21px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        &__money span {
+            font-size: 120px;
+        }
+
+        &__label {
+            margin-top: 0;
+        }
+    }
+}

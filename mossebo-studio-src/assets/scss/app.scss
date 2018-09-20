@@ -6,15 +6,37 @@
 @import "bootstrap/bootstrap";
 @import "global";
 
+@import "ui/article";
+@import "ui/buttons";
+@import "ui/chart-list";
+@import "ui/icon-label";
 @import "ui/links";
 @import "ui/tabs";
+@import "ui/images";
 
+@import "u-blocks/audience-socials-slider";
+@import "u-blocks/audience-coverage-chart";
 @import "u-blocks/brands";
+@import "u-blocks/company-important-info";
+@import "u-blocks/franchise-presentation";
+@import "u-blocks/franchise-pricing";
+@import "u-blocks/franchise-profit";
+@import "u-blocks/franchise-requirements";
+@import "u-blocks/franchise-risks";
+@import "u-blocks/franchise-top";
+@import "u-blocks/franchise-training";
+@import "u-blocks/friends";
 @import "u-blocks/info-card";
 @import "u-blocks/interior";
+@import "u-blocks/market-about";
+@import "u-blocks/media-about-us";
+@import "u-blocks/single-style";
 @import "u-blocks/studios-map";
+@import "u-blocks/videoblog";
 
 @import "plugins/swiper";
 @import "plugins/fancybox";
 
 @import "animations";
+
+

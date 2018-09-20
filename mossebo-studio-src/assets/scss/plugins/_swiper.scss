@@ -206,7 +206,7 @@
   display: none;
 }
 .swiper-pagination {
-  position: absolute;
+  //position: absolute;
   text-align: center;
   -webkit-transition: 300ms opacity;
   -o-transition: 300ms opacity;
@@ -214,6 +214,7 @@
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   z-index: 10;
+    margin-top: 10px;
 }
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;
@@ -290,7 +291,7 @@ button.swiper-pagination-bullet {
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #007aff;
+  background: #969CA3;
 }
 .swiper-container-vertical > .swiper-pagination-bullets {
   right: 10px;
@@ -615,4 +616,85 @@ button.swiper-pagination-bullet {
 .swiper-container-coverflow .swiper-wrapper {
   /* Windows 8 IE 10 fix */
   -ms-perspective: 1200px;
+}
+
+
+
+
+
+
+.swiper-prev,
+.swiper-next {
+    position: absolute;
+    right: -16px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -16px;
+
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 1px solid #ecedf3;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.swiper-prev {
+    left: -16px;
+}
+
+.swiper-prev .swiper-arrow-icon,
+.swiper-next .swiper-arrow-icon {
+    display: block;
+    margin: auto;
+    width: 28px;
+    height: 28px;
+}
+
+.swiper-prev:before,
+.swiper-next:before {
+    display: none;
+}
+
+.swiper-prev:hover, .swiper-prev:focus,
+.swiper-next:hover,
+.swiper-next:focus {
+    border: 1px solid #323f4c;
+}
+
+.swiper-prev:focus,
+.swiper-next:focus {
+    outline: none;
+}
+
+.swiper-arrow--small {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+}
+
+.swiper-arrow-icon {
+    width: 24px;
+    height: 24px;
+    fill: $color-icons;
+}
+
+.swiper-prev:hover .swiper-arrow-icon,
+.swiper-prev:focus .swiper-arrow-icon,
+.swiper-next:hover .swiper-arrow-icon,
+.swiper-next:focus .swiper-arrow-icon {
+    fill: #323f4c;
+}
+
+.swiper-mobile {
+    overflow: visible;
+}
+
+.swiper-mobile .swiper-slide {
+    height: auto;
 }
