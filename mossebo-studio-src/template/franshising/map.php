@@ -1,3 +1,30 @@
+<?php
+
+$args = array(
+    'post_type' => 'studios',
+    'posts_per_page' => 9999,
+);
+
+$query = new WP_Query( $args );
+
+// Цикл
+if ( $query->have_posts() ) {
+    while ( $query->have_posts() ) {
+        $query->the_post();
+
+        echo '<li>' . get_the_title() . '</li>';
+
+
+    }
+} else {
+    // Постов не найдено
+    echo 'Постов не найдено';
+}
+/* Возвращаем оригинальные данные поста. Сбрасываем $post. */
+wp_reset_postdata();
+
+?>
+
 <div class="container">
     <h2 class="title-h2">
         <?php _e('Студии Mossebo работают по всему миру', 'mossebo') ?>
@@ -6,7 +33,9 @@
 
 <div class="studios-map">
     <div class="studios-map__map">
-        <div class="studios-map-plug"></div>
+        <div class="studios-map-plug">
+
+        </div>
     </div>
 
     <div class="studios-map__locations">
