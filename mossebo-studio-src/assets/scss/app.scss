@@ -1,11 +1,17 @@
+@import "~normalize.css/normalize.css";
+
 // Variables
-
-@import "variables/colors";
 @import "variables/variables";
+@import "variables/colors";
 
-@import "bootstrap/bootstrap";
+@import "~bootstrap/scss/bootstrap-grid";
+
 @import "global";
+@import "variables/icons";
 
+
+@import "ui/header";
+@import "ui/footer";
 @import "ui/article";
 @import "ui/buttons";
 @import "ui/chart-list";

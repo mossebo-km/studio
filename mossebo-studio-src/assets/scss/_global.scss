@@ -3,6 +3,8 @@ html, body {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
+    background-color: $color-background;
+    font: $font-size-body / $line-height-base $font-family-sans-serif;
 }
 
 .title-h1 {

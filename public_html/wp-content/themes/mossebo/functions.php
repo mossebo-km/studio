@@ -30,7 +30,8 @@ add_theme_support('post-thumbnails');
 add_action('after_setup_theme', function () {
     register_nav_menus(array(
         'header_menu' => 'Header Menu',
-        'footer_menu' => 'Footer Menu'
+        'footer_menu' => 'Footer Menu',
+        'footer_menu_market' => 'Footer Menu Market'
     ));
 });
 

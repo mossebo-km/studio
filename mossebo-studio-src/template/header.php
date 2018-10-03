@@ -19,16 +19,29 @@
 <!-- APP -->
 <div id="app">
 
-    <header>
+    <header class="header">
         <div class="container">
-                <div class="row">
-                    <div class="flex flex-align-mid">
-                        <a href="/" class="logo"></a>
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <a href="/" class="logo">
+                            <svg class="symbol-logo symbol-logo--header">
+                                <use xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#logo-header"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <div class="location">
+                            Санкт-Петербург
+                        </div>
+                    </div>
+                    <div class="col-3">
                         <div class="phone">
                             +7 (495) 000-00-00
                             <small>пн-пт с 10:00-19:00</small>
                         </div>
                     </div>
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
                 </div>
         </div>
 
