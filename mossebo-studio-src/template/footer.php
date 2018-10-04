@@ -9,7 +9,7 @@
                         </svg>
                     </a>
 
-                    <div class="social-links mt-32">
+                    <div class="social-links">
                         <div class="social-links__container">
                             <div class="social-links__item">
                                 <a
@@ -104,11 +104,11 @@
                         </div>
                     </div>
 
-                    <div class="footer-company-info mt-24">
+                    <div class="footer-company-info">
                         <?php _e('Услуги, условия оказания которых описываются на страницах данного сайта, предоставляются компанией ООО "Моссэбо КМ". Компания зарегистрирована в качестве бренда, под регистрационным номером 138,716 в г. Санкт-Петербург', 'mossebo') ?>
                     </div>
 
-                    <div class="mt-32 mb-32">
+                    <div class="footer-buttons">
                         <div class="row justify-content-center align-items-center">
                             <div class="col-9 col-md-6">
                                 <a href="#popup-call" class="button button-light button-long js-form-popup">
@@ -175,13 +175,13 @@
                 <div class="col-md-5 footer-bottom__links">
                     <div class="row">
                         <div class="col-lg-6">
-                            <a href="#" class="footer-link">
+                            <a href="#">
                                 <?php _e('Правила пользования', 'mossebo') ?>
                             </a>
                         </div>
 
                         <div class="col-lg-6">
-                            <a href="#" class="footer-link">
+                            <a href="#">
                                 <?php _e('Политика конфиденциальности', 'mossebo') ?>
                             </a>
                         </div>

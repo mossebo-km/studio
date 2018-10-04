@@ -23,7 +23,7 @@
         <div class="container">
                 <div class="row align-items-center">
                     <div class="col-3">
-                        <a href="/" class="logo">
+                        <a href="/" class="logo logo--header">
                             <svg class="symbol-logo symbol-logo--header">
                                 <use xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#logo-header"></use>
                             </svg>

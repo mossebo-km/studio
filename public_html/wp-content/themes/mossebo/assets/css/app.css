@@ -2521,7 +2521,9 @@ html, body {
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   background-color: #fafbfc;
-  font: 8.75px "Montserrat", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .title-h1 {
@@ -2680,7 +2682,12 @@ html, body {
 }
 
 .logo {
-  display: block;
+  display: inline-block;
+}
+
+.logo--header {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .footer {
@@ -2693,10 +2700,19 @@ html, body {
   margin: auto;
 }
 
+.footer .logo {
+  margin-bottom: 32px;
+}
+
 .footer-company-info {
   font-size: 12px;
   line-height: 16px;
   color: #969ca3;
+}
+
+.footer-buttons {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .footer-nav {
@@ -2747,6 +2763,7 @@ html, body {
   font-size: 14px;
   line-height: 17px;
   color: #323f4c;
+  text-decoration: none;
 }
 
 .footer-bottom {
@@ -2775,6 +2792,7 @@ html, body {
 
 .footer-bottom__links a {
   color: #323f4c;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -2788,7 +2806,8 @@ html, body {
 
 .social-links {
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: middle;
+  margin-bottom: 24px;
 }
 
 .social-links__container {

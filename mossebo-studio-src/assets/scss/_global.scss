@@ -4,8 +4,11 @@ html, body {
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     background-color: $color-background;
-    font: $font-size-body / $line-height-base $font-family-sans-serif;
+    font-family: $font-family-sans-serif;
+    font-size: $font-size-body;
+    line-height: $line-height-base;
 }
+
 
 .title-h1 {
     font-size: 40px;

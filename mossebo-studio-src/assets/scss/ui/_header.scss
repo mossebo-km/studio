@@ -5,5 +5,9 @@
 
 
 .logo {
-    display: block;
+    display: inline-block;
+    &--header {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
