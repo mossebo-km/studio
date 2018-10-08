@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-09-29 13:25:52+0000\n"
+"PO-Revision-Date: 2018-10-04 13:36:57+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,13 +11,32 @@ msgstr ""
 "Language: ru\n"
 "Project-Id-Version: Plugins - Yoast SEO - Stable (latest release)\n"
 
+#: languages/wordpress-seojs.php:206
+msgid "Optional. Customize how you want to describe the duration of the instruction"
+msgstr "Не обязательно. Настройте то, как вы хотите описать длительность инструкции"
+
+#: languages/wordpress-seojs.php:203
+msgid "Describe the duration of the instruction:"
+msgstr "Опишите длительность инструкции:"
+
 #: languages/wordpress-seojs.php:45
 msgid "Learn more about Readability Analysis."
 msgstr "Подробнее об анализе читаемости"
 
+#: languages/wordpress-seojs.php:42
+msgid "This analysis checks your writing for grammar and writing style so your content is as clear as it can be."
+msgstr "Этот анализ делает проверку напианного на грамматику и стиль письма, так что ваше содержимое будет максимально ясно насколько это возможно."
+
 #: languages/wordpress-seojs.php:35
 msgid "Readability Analysis"
 msgstr "Анализ читаемости"
+
+#: inc/class-wpseo-admin-bar-menu.php:619
+msgid "There is a new notification."
+msgid_plural "There are new notifications."
+msgstr[0] "Есть новое уведомление."
+msgstr[1] "Есть новые уведомления."
+msgstr[2] "Есть новые уведомления."
 
 #: admin/config-ui/fields/class-field-separator.php:25
 msgid "Colon"
@@ -28,6 +47,10 @@ msgstr "Двоеточие"
 #: admin/class-plugin-conflict.php:165
 msgid "Both %1$s and %2$s manage the SEO of your site. Running two SEO plugins at the same time is detrimental."
 msgstr "%1$s и %2$s управляют настройками SEO вашего сайта. Запуск двух плагинов SEO одновременно может навредить вашему сайту."
+
+#: languages/yoast-components.php:29
+msgid "This is a list of related content to which you could link in your post. {{a}}Read our article about site structure{{/a}} to learn more about how internal linking can help improve your SEO."
+msgstr "Это список связанного содержимого, на которое вы можете сослаться в записи. {{a}}Прочитайте нашу статью о структуре сайта{{/a}}, чтобы узнать как внутренняя перелинковка может улучшить SEO."
 
 #: languages/wordpress-seojs.php:254
 msgid "%s, %s and %s"
@@ -58,6 +81,18 @@ msgstr[0] "%d день"
 msgstr[1] "%d дня"
 msgstr[2] "%d дней"
 
+#: languages/wordpress-seojs.php:219
+msgid "Enter a step title"
+msgstr "Введите название шага"
+
+#: languages/wordpress-seojs.php:200
+msgid "Optional. This can give you better control over the styling of the steps."
+msgstr "Необязательно, но это даст вам больший контроль над стилем шагов."
+
+#: languages/wordpress-seojs.php:197
+msgid "CSS class(es) to apply to the steps"
+msgstr "CSS класс(ы) применяемые к шагам"
+
 #: languages/wordpress-seojs.php:188
 msgid "minutes"
 msgstr "минуты"
@@ -70,9 +105,26 @@ msgstr "часы"
 msgid "days"
 msgstr "дни"
 
+#: languages/wordpress-seojs.php:161
+msgid "Create a How-to guide in an SEO-friendly way. You can only use one How-to block per post."
+msgstr "Создавайте ваши Howto-руководства в SEO-оптимизированном виде. Вы можете использовать только 1 блок Howto на запись. "
+
+#: languages/wordpress-seojs.php:127
+msgid "List your Frequently Asked Questions in an SEO-friendly way. You can only use one FAQ block per post."
+msgstr "Создавайте списки ваших Часто Задаваемых Вопросов в SEO-оптимизированном виде. Вы можете использовать только 1 блок FAQ на запись."
+
 #: languages/wordpress-seojs.php:20
 msgid "Copy error"
 msgstr "Ошибка копирования"
+
+#: languages/wordpress-seojs.php:17
+msgid "An error occurred loading the %s primary taxonomy picker."
+msgstr "Возникла ошибка загрузки %s выбора основной таксономии."
+
+#. translators: %1$s expands to Yoast.
+#: inc/class-structured-data-blocks.php:61
+msgid "%1$s Structured Data Blocks"
+msgstr "%1$s структурированные блоки данных"
 
 #: languages/wordpress-seojs.php:216
 msgid "Time needed:"
@@ -147,6 +199,10 @@ msgstr "Вы пытаетесь указать несколько ключевы
 msgid "Focus keyword:"
 msgstr "Ключевое слово:"
 
+#: languages/yoast-components.php:170
+msgid "Mark as cornerstone content"
+msgstr "Отметить как основное содержимое"
+
 #: languages/wordpress-seojs.php:234
 msgid "Move step down"
 msgstr "Переместить шаг вниз"
@@ -179,9 +235,57 @@ msgstr "Указать описание"
 msgid "Unordered list"
 msgstr "Несортированый список"
 
+#: languages/wordpress-seojs.php:176
+msgid "Showing step items as an ordered list."
+msgstr "Элементы шагов указаны в упорядоченном списке."
+
+#: languages/wordpress-seojs.php:173
+msgid "Showing step items as an unordered list"
+msgstr "Элементы шагов указаны в неупорядоченном списке."
+
+#: languages/wordpress-seojs.php:170
+msgid "Add step"
+msgstr "Добавить шаг"
+
+#: languages/wordpress-seojs.php:191
+msgid "Delete total time"
+msgstr "Удалить общее время"
+
+#: languages/wordpress-seojs.php:179
+msgid "Add total time"
+msgstr "Добавить общее время"
+
+#: languages/wordpress-seojs.php:167
+msgid "How to"
+msgstr "How to"
+
+#: languages/wordpress-seojs.php:164
+msgid "How-to"
+msgstr "How-to"
+
+#: languages/wordpress-seojs.php:14
+msgid "Snippet Preview"
+msgstr "Предварительный просмотр сниппета"
+
 #: languages/wordpress-seojs.php:39
 msgid "Analysis results"
 msgstr "Результаты анализа"
+
+#: languages/wordpress-seojs.php:75
+msgid "Learn more about the Keyword Analysis."
+msgstr "Узнайте больше об анализе ключевых слов."
+
+#: languages/wordpress-seojs.php:65
+msgid "Enter a focus keyword to calculate the SEO score"
+msgstr "Введите фокусное ключевое слово для расчета оценки SEO"
+
+#: languages/wordpress-seojs.php:11
+msgid "Learn more about Cornerstone Content."
+msgstr "Узнайте больше про Основное содержимое."
+
+#: languages/wordpress-seojs.php:8
+msgid "Cornerstone content should be the most important and extensive articles on your site."
+msgstr "Основным содержимым должны быть наиболее важные и обширные статьи на вашем сайте."
 
 #: admin/pages/network.php:19
 msgid "Restore Site"
@@ -219,6 +323,10 @@ msgstr "Сайт с ID %d не найден."
 msgid "No site has been selected to restore."
 msgstr "Не выбран сайт для восстановления."
 
+#: admin/class-yoast-network-admin.php:104
+msgid "You are not allowed to modify unregistered network settings."
+msgstr "Вам не разрешено изменять незарегистрированные настойки сети."
+
 #: admin/class-yoast-network-admin.php:75
 msgid "deleted"
 msgstr "удалено"
@@ -243,6 +351,14 @@ msgstr "Скопировано!"
 msgid "Not supported!"
 msgstr "Не поддерживается!"
 
+#: languages/yoast-components.php:35
+msgid "Read {{a}}our article about site structure{{/a}} to learn more about how internal linking can help improve your SEO."
+msgstr "Прочитайте {{a}}нашу статью о структуре сайта{{/a}} для того, чтобы узнать больше как внутренняя перелинковка улучшает SEO."
+
+#: languages/yoast-components.php:26
+msgid "Consider linking to these {{a}}cornerstone articles:{{/a}}"
+msgstr "Рассмотрите создание ссылок на эти {{a}}статьи основного содержимого:{{/a}}"
+
 #: languages/yoast-components.php:23
 msgid "Consider linking to these articles:"
 msgstr "Подумайте о размещении ссылок на эти статьи:"
@@ -254,6 +370,10 @@ msgstr "Скопировать ссылку"
 #: languages/yoast-components.php:17
 msgid "Copy link to suggested article: %s"
 msgstr "Скопировать ссылку в предложенную статью: %s"
+
+#: languages/yoast-components.php:14
+msgid "Read our %1$sultimate guide to keyword research%2$s to learn more about keyword research and keyword strategy."
+msgstr "Прочтите наше%1$sзамечательное руководство по исследованию ключевых слов%2$s, чтобы узнать больше о исследовании и стратегии ключевых слов."
 
 #: languages/yoast-components.php:8
 msgid "The following words and word combinations occur the most in the content. These give an indication of what your content focuses on. If the words differ a lot from your topic, you might want to rewrite your content accordingly. "
@@ -268,6 +388,10 @@ msgstr "Важные слова"
 #: admin/notifiers/class-post-type-archive-notification-handler.php:112
 msgid "%1$sRemove this message%2$s"
 msgstr "%1$sУдалить это сообщение%2$s"
+
+#: admin/notifiers/class-post-type-archive-notification-handler.php:92
+msgid "We've recently improved the functionality of the Search Appearance settings. Unfortunately, we've discovered that for some edge-cases, saving the settings for specific post type archives might have gone wrong."
+msgstr "Мы недавно улучшили функциональность настроек вида результатов поиска. К сожалению, мы обнаружили, что в отдельных крайних случаях сохранение настроек для отдельных типов архивов записей работало некорректно."
 
 #. translators: %1$s expands to the missing field name.
 #: admin/menu/class-replacevar-editor.php:109
@@ -371,6 +495,10 @@ msgstr "Не тратьте время на то, чтобы самостоят�
 #: admin/views/sidebar.php:64
 msgid "Yoast SEO for WordPress course"
 msgstr "Курс Yoast SEO для WordPress"
+
+#: admin/views/sidebar.php:57
+msgid "Get quick wins to make your site rank higher in search engines."
+msgstr "Достигните быстрых побед в ранжировке вашего сайта в поисковых системах."
 
 #. translators: %1$s and %2$s convert to anchors.
 #: admin/views/sidebar.php:51
@@ -651,6 +779,10 @@ msgstr "Настройки для архивов %s"
 #: admin/views/tabs/metas/paper-content/post-type-content.php:18
 msgid "Settings for single %s URLs"
 msgstr "Настройки URL для отдельных %s"
+
+#: admin/views/tabs/metas/post-types.php:31
+msgid "The settings on this page allow you to specify what the default search appearance should be for any type of content you have. You can choose which content types appear in search results and what their default description should be."
+msgstr "Настройки на этой странице позволяют указать как будет выглядеть результат поиска по умолчанию для любого типа содержимого. Вы можете выбрать какой тип содержимого появится в результатах поиска и вариант описания по умолчанию."
 
 #: languages/yoast-components.php:250
 msgid "Dismiss this notice"
@@ -5111,7 +5243,7 @@ msgstr "Мета описание"
 
 #: admin/class-meta-columns.php:205
 msgid "All SEO Scores"
-msgstr "Все очки SEO"
+msgstr "Все оценки SEO"
 
 #: inc/class-wpseo-rank.php:124
 msgid "SEO: Post Noindexed"

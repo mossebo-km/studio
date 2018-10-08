@@ -1,8 +1,32 @@
 
 .header {
     background: $color-ui;
+    small {
+        color: $color-text-secondary;
+        display: block;
+    }
 }
 
+.nav {
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+    .menu {
+        display: block;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        &-item {
+            display: inline-block;
+        }
+        a {
+            text-decoration: none;
+            display: block;
+            padding: 20px 15px;
+            color: $color-text-primary;
+        }
+    }
+}
 
 .logo {
     display: inline-block;

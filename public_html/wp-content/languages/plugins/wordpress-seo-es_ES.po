@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-09-25 16:29:35+0000\n"
+"PO-Revision-Date: 2018-10-04 11:07:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -870,7 +870,7 @@ msgstr "El objeto %1$s con id %2$s no se ha encontrado"
 #. translators: %1$s expands to the requested indexable type
 #: admin/services/class-indexable.php:28
 msgid "Unknown type %1$s"
-msgstr "Tipo desconocido %1$s"
+msgstr "Tipo de %1$s desconocido"
 
 #: admin/config-ui/fields/class-field-mailchimp-signup.php:41
 msgid "Includes a free MyYoast account which gives you access to our free SEO for Beginners course!"
@@ -4664,7 +4664,7 @@ msgstr "¡Intégralo fácilmente WooCommerce con %1$s y consigue característica
 #: admin/class-plugin-availability.php:68 admin/views/licenses.php:81
 #: admin/views/licenses.php:100
 msgid "Rank better locally and in Google Maps, without breaking a sweat!"
-msgstr "Mejora tu ranking local y el de Google Maps ¡sin esfuerzo!"
+msgstr "Mejora tu posicionamiento local y el de Google Maps ¡sin esfuerzo!"
 
 #: admin/class-plugin-availability.php:58 admin/views/licenses.php:62
 msgid "Are you in Google News? Increase your traffic from Google News by optimizing for it!"
