@@ -1,5 +1,5 @@
 .single-project {
-
+    color: $color-text-primary;
     .wp-post-image {
         border-top-left-radius: $radius;
         border-top-right-radius: $radius;
@@ -9,5 +9,35 @@
     }
     &__status-bar {
         border-radius: $radius;
+        display: flex;
+        align-items: center;
+        padding: 40px;
+        color: $color-text-secondary;
+        border-bottom: 1px solid $color-border;
+
+        .symbol-icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    &__date, &__views, &__comments {
+        padding: 0 24px 0 16px;
+    }
+    &__params {
+        border-bottom: 1px solid $color-border;
+        .symbol-icon {
+            width: 32px;
+            height: 32px;
+            display: block;
+            margin-top: 40px;
+        }
+        &-title {
+            color: $color-text-secondary;
+            padding: 8px 0 0;
+        }
+        &-value {
+            font-size: 20px;
+            color: $color-text-primary;
+        }
     }
 }

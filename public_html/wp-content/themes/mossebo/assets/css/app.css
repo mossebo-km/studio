@@ -2608,9 +2608,6 @@ html, body {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.14);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.14);
   background: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  color: #969ca3;
 }
 
 @media (min-width: 992px) {
@@ -6416,6 +6413,10 @@ body.compensate-for-scrollbar {
   opacity: 1 !important;
 }
 
+.single-project {
+  color: #323f4c;
+}
+
 .single-project .wp-post-image {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -6427,6 +6428,45 @@ body.compensate-for-scrollbar {
 
 .single-project__status-bar {
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+  color: #969ca3;
+  border-bottom: 1px solid #ecedf3;
+}
+
+.single-project__status-bar .symbol-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.single-project__date, .single-project__views, .single-project__comments {
+  padding: 0 24px 0 16px;
+}
+
+.single-project__params {
+  border-bottom: 1px solid #ecedf3;
+}
+
+.single-project__params .symbol-icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin-top: 40px;
+}
+
+.single-project__params-title {
+  color: #969ca3;
+  padding: 8px 0 0;
+}
+
+.single-project__params-value {
+  font-size: 20px;
+  color: #323f4c;
 }
 
 /*# sourceMappingURL=app.css.map*/

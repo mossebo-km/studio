@@ -73,9 +73,9 @@ html, body {
     border-radius: $radius;
     box-shadow: $shadows-primary;
     background: $color-ui;
-    font-size: 14px;
-    font-weight: 400;
-    color: $color-text-secondary;
+    //font-size: 14px;
+    //font-weight: 400;
+    //color: $color-text-secondary;
 
     @include media-breakpoint-up(lg) {
         &--with-hover {
