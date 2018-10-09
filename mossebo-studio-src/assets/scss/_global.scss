@@ -71,15 +71,16 @@ html, body {
     color: $color-text-primary;
     line-height: 1.2em;
     font-weight: 500;
+    margin-top: 0;
 }
 
 .block-ui {
     border-radius: $radius;
     box-shadow: $shadows-primary;
     background: $color-ui;
-    font-size: 14px;
-    font-weight: 400;
-    color: $color-text-secondary;
+    //font-size: 14px;
+    //font-weight: 400;
+    //color: $color-text-secondary;
 
     @include media-breakpoint-up(lg) {
         &--with-hover {

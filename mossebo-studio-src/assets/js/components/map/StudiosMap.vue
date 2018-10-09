@@ -42,11 +42,13 @@
 </template>
 
 <script>
+
     // <style lang="scss">
-        // .studios-map .ymaps-2-1-69-ground-pane {
-        //     filter: saturate(0);
-        // }
+    // .studios-map .ymaps-2-1-69-ground-pane {
+    //     filter: saturate(.5);
+    // }
     // </style>
+
 
     import LoadingIcon from '../LoadingIcon'
     import StudioCities from './StudioCities'
@@ -297,15 +299,19 @@
 
             getCollectionBounds(collection) {
                 return collection.slice(1).reduce((acc, item) => {
-                    let bounds = item.getBounds()
-
-                    acc[0][0] = Math.max(acc[0][0], bounds[0][0])
-                    acc[0][1] = Math.min(acc[0][1], bounds[0][1])
-                    acc[1][0] = Math.min(acc[1][0], bounds[1][0])
-                    acc[1][1] = Math.max(acc[1][1], bounds[1][1])
-
-                    return acc
+                    return this.compareBounds(acc, item.getBounds())
                 }, collection[0].getBounds())
+            },
+
+            compareBounds() {
+                let result = [[],[]]
+
+                result[0][0] = Math.max.apply(null, [].map.call(arguments, item => item[0][0]))
+                result[0][1] = Math.min.apply(null, [].map.call(arguments, item => item[0][1]))
+                result[1][0] = Math.min.apply(null, [].map.call(arguments, item => item[1][0]))
+                result[1][1] = Math.max.apply(null, [].map.call(arguments, item => item[1][1]))
+
+                return result
             },
 
             /**
@@ -429,7 +435,7 @@
                     this.ymap.setBounds(city.cluster.getBounds(), {
                         precizeZoom: true,
                         checkZoomRange: true,
-                        zoomMargin: 30,
+                        zoomMargin: 50,
                     }).then(() => {
                         this.$nextTick(() => {
                             this.ymap.container.fitToViewport()

@@ -6611,7 +6611,7 @@ function getRandomInt(min, max) {
                     _this2.activatePanno();
 
                     _this2.setImagesClass('fade-in').then(function () {
-                        // Заеверщение анимации
+                        // Завершение анимации
                         _this2.animationInProcess = false;
                     });
                 });
@@ -6624,6 +6624,7 @@ function getRandomInt(min, max) {
                 var imageEls = _this3.$el.querySelectorAll('.js-fancybox-clicker');
                 var counter = 0;[].forEach.call(imageEls, function (el) {
                     counter++;
+
                     el.addEventListener('transitionend', function () {
                         if (--counter === 0) {
                             resolve();
@@ -7047,11 +7048,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 //
 //
 
+
 // <style lang="scss">
 // .studios-map .ymaps-2-1-69-ground-pane {
-//     filter: saturate(0);
+//     filter: saturate(.5);
 // }
 // </style>
+
 
 
 
@@ -7310,16 +7313,29 @@ var transitionEndHandler = function () {
             return this.ymap.setCenter(this.getCoordsWithOffset(this.ymap.getCenter()));
         },
         getCollectionBounds: function getCollectionBounds(collection) {
+            var _this8 = this;
+
             return collection.slice(1).reduce(function (acc, item) {
-                var bounds = item.getBounds();
-
-                acc[0][0] = Math.max(acc[0][0], bounds[0][0]);
-                acc[0][1] = Math.min(acc[0][1], bounds[0][1]);
-                acc[1][0] = Math.min(acc[1][0], bounds[1][0]);
-                acc[1][1] = Math.max(acc[1][1], bounds[1][1]);
-
-                return acc;
+                return _this8.compareBounds(acc, item.getBounds());
             }, collection[0].getBounds());
+        },
+        compareBounds: function compareBounds() {
+            var result = [[], []];
+
+            result[0][0] = Math.max.apply(null, [].map.call(arguments, function (item) {
+                return item[0][0];
+            }));
+            result[0][1] = Math.min.apply(null, [].map.call(arguments, function (item) {
+                return item[0][1];
+            }));
+            result[1][0] = Math.min.apply(null, [].map.call(arguments, function (item) {
+                return item[1][0];
+            }));
+            result[1][1] = Math.max.apply(null, [].map.call(arguments, function (item) {
+                return item[1][1];
+            }));
+
+            return result;
         },
 
 
@@ -7359,11 +7375,11 @@ var transitionEndHandler = function () {
          * Но на карту пока не ставим.
          */
         makePointGeoObject: function makePointGeoObject(point) {
-            var _this8 = this;
+            var _this9 = this;
 
             return new Promise(function (resolve) {
-                _this8.getPointCoordinates(point).then(function (coords) {
-                    var balloonLayout = _this8.makeBalloonLayout(point);
+                _this9.getPointCoordinates(point).then(function (coords) {
+                    var balloonLayout = _this9.makeBalloonLayout(point);
 
                     var geoObject = new ymaps.GeoObject({
                         geometry: {
@@ -7392,7 +7408,7 @@ var transitionEndHandler = function () {
 
                         console.log('point click: ' + point.id);
 
-                        _this8.showStudio(e.get('target').properties.get('pointId'));
+                        _this9.showStudio(e.get('target').properties.get('pointId'));
                     });
 
                     point.geoObject = geoObject;
@@ -7402,28 +7418,28 @@ var transitionEndHandler = function () {
             });
         },
         setLoading: function setLoading(cb) {
-            var _this9 = this,
+            var _this10 = this,
                 _arguments = arguments;
 
             return new Promise(function (resolve) {
 
-                var parent = _this9.mapEl.parentNode;
+                var parent = _this10.mapEl.parentNode;
 
-                new transitionEndHandler(_this9.mapEl, function () {
+                new transitionEndHandler(_this10.mapEl, function () {
                     cb(function () {
                         parent.removeAttribute('style');
-                        _this9.loading = false;
+                        _this10.loading = false;
 
                         resolve.apply(_, _arguments);
                     });
                 });
 
-                parent.style.height = _this9.mapEl.scrollHeight + 'px';
-                _this9.loading = true;
+                parent.style.height = _this10.mapEl.scrollHeight + 'px';
+                _this10.loading = true;
             });
         },
         showCity: function showCity(cityId) {
-            var _this10 = this;
+            var _this11 = this;
 
             if (this.loading) return;
 
@@ -7435,36 +7451,36 @@ var transitionEndHandler = function () {
             }
 
             this.setLoading(function (cb) {
-                _this10.ymap.setBounds(city.cluster.getBounds(), {
+                _this11.ymap.setBounds(city.cluster.getBounds(), {
                     precizeZoom: true,
                     checkZoomRange: true,
-                    zoomMargin: 30
+                    zoomMargin: 50
                 }).then(function () {
-                    _this10.$nextTick(function () {
-                        _this10.ymap.container.fitToViewport();
+                    _this11.$nextTick(function () {
+                        _this11.ymap.container.fitToViewport();
 
-                        _this10.ymap.setCenter(_this10.getCoordsWithOffset(_this10.ymap.getCenter())).then(cb);
+                        _this11.ymap.setCenter(_this11.getCoordsWithOffset(_this11.ymap.getCenter())).then(cb);
                     });
                 });
             });
         },
         showStudio: function showStudio(placeId) {
-            var _this11 = this;
+            var _this12 = this;
 
             if (this.loading) return;
 
             var place = this.getPoint(placeId);
 
             this.setLoading(function (cb) {
-                var zoom = Math.max(17, _this11.ymap.getZoom());
+                var zoom = Math.max(17, _this12.ymap.getZoom());
 
-                var coords = _this11.getCoordsWithOffset(place.geoObject.geometry.getCoordinates(), zoom);
+                var coords = _this12.getCoordsWithOffset(place.geoObject.geometry.getCoordinates(), zoom);
 
-                _this11.ymap.setCenter(coords, zoom, {
+                _this12.ymap.setCenter(coords, zoom, {
                     duration: 300,
                     timingFunction: 'ease-in-out'
                 }).then(function () {
-                    _this11.openBalloon(place.geoObject.balloon);
+                    _this12.openBalloon(place.geoObject.balloon);
 
                     cb();
                 });
@@ -7495,19 +7511,19 @@ var transitionEndHandler = function () {
          * Собирает гео-коллекцию гео-объектов точек.
          */
         getCityPointsCluster: function getCityPointsCluster(city) {
-            var _this12 = this;
+            var _this13 = this;
 
             var cluster = this.getNewCluster();
 
             cluster.events.add('click', function () {
                 console.log('cluster click: ' + city.id);
 
-                _this12.showCity(city.id);
+                _this13.showCity(city.id);
             });
 
             if (city && city.points && city.points.length) {
                 city.points.forEach(function (pointId) {
-                    cluster.add(_this12.getPoint(pointId).geoObject);
+                    cluster.add(_this13.getPoint(pointId).geoObject);
                 });
             }
 
@@ -7562,7 +7578,7 @@ var transitionEndHandler = function () {
 
     computed: {
         citiesMenu: function citiesMenu() {
-            var _this13 = this;
+            var _this14 = this;
 
             var countries = this.countries$.sort(function (a, b) {
                 return b.cities.length - a.cities.length;
@@ -7573,7 +7589,7 @@ var transitionEndHandler = function () {
                     id: country.id,
                     title: country.title,
                     cities: country.cities.map(function (cityId) {
-                        return _this13.cities$.find(function (city) {
+                        return _this14.cities$.find(function (city) {
                             return city.id === cityId;
                         });
                     })

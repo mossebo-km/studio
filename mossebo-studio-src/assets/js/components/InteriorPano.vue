@@ -206,7 +206,7 @@
 
                             this.setImagesClass('fade-in')
                                 .then(() => {
-                                    // Заеверщение анимации
+                                    // Завершение анимации
                                     this.animationInProcess = false
                                 })
                         })
@@ -220,6 +220,7 @@
 
                     ;[].forEach.call(imageEls, el => {
                         counter++
+
                         el.addEventListener('transitionend', () => {
                             if (--counter === 0) {
                                 resolve()
