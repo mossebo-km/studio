@@ -72,24 +72,26 @@
 
             <div class="col-md-6 col-lg-7">
 
-                <mobile-slider
-                    js-class="js-slider-top-1"
-                    breakpoint="md"
-                    class="row"
-                >
-                    <?php foreach (getFranchiseTopImages() as $image): ?>
+                <div class="franchise-top__images">
+                    <mobile-slider
+                        js-class="js-slider-top-1"
+                        breakpoint="md"
+                        class="row"
+                    >
+                        <?php foreach (getFranchiseTopImages() as $image): ?>
 
-                    <div class="<?= $image['itemClass'] ?>">
-                        <a
-                            href="<?= $image['src'] ?>"
-                            class="image-preview image-preview--3-2 block-ui block-ui--with-hover"
-                            style="background-image: url(<?= $image['preview'] ?>);"
-                            data-fancybox="gallery"
-                        ></a>
-                    </div>
+                            <div class="franchise-top__image-item <?= $image['itemClass'] ?>">
+                                <a
+                                    href="<?= $image['src'] ?>"
+                                    class="image-preview image-preview--3-2 block-ui block-ui--with-hover"
+                                    style="background-image: url(<?= $image['preview'] ?>);"
+                                    data-fancybox="gallery"
+                                ></a>
+                            </div>
 
-                    <?php endforeach ?>
-                </mobile-slider>
+                        <?php endforeach ?>
+                    </mobile-slider>
+                </div>
 
             </div>
         </div>

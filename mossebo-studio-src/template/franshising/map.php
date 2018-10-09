@@ -1,28 +1,56 @@
 <?php
 
-$args = array(
-    'post_type' => 'studios',
-    'posts_per_page' => 9999,
-);
+/**
+ * Получает данные о студиях по api
+ * Затем кэширует и отдает
+ *
+ * @return array|bool|mixed
+ */
+function getMapData()
+{
+    $cacheKey = implode('::', [
+        'franchisee-map-points',
+        apply_filters('wpml_current_language', NULL)
+    ]);
 
-$query = new WP_Query( $args );
+    $mapData = wp_cache_get($cacheKey, 'franchisee');
 
-// Цикл
-if ( $query->have_posts() ) {
-    while ( $query->have_posts() ) {
-        $query->the_post();
+    if (! $mapData) {
+        $request = new WP_REST_Request('GET', '/wp/v2/studios');
+        $request->set_query_params(['per_page' => 100]);
 
-        echo '<li>' . get_the_title() . '</li>';
+        $requestResult = rest_do_request($request);
 
+        if ($requestResult->is_error()) {
+            $mapData = [];
+        }
+        else {
+            $data = $requestResult->get_data();
 
+            $mapData = array_reduce($data, function($acc, $item) {
+                if ($item['acf']['show_on']) {
+                    $map = json_decode($item['acf']['map'], true);
+
+                    $acc[] = [
+                        'id'      => $item['id'],
+                        'country' => $item['acf']['country'],
+                        'city'    => $item['acf']['сity'],
+                        'adress'  => $item['acf']['adress'],
+                        'phone'   => $item['acf']['phone'],
+                        'lat'     => $map['center_lat'],
+                        'lng'     => $map['center_lng']
+                    ];
+                }
+
+                return $acc;
+            }, []);
+
+            wp_cache_set($cacheKey, $mapData, 'franchisee', 30 * 60);
+        }
     }
-} else {
-    // Постов не найдено
-    echo 'Постов не найдено';
-}
-/* Возвращаем оригинальные данные поста. Сбрасываем $post. */
-wp_reset_postdata();
 
+    return $mapData;
+}
 ?>
 
 <div class="container">
@@ -31,68 +59,9 @@ wp_reset_postdata();
     </h2>
 </div>
 
-<div class="studios-map">
-    <div class="studios-map__map">
-        <div class="studios-map-plug">
-
-        </div>
-    </div>
-
-    <div class="studios-map__locations">
-        <div class="container">
-            <div class="studio-cities block-ui">
-                <div class="studio-cities__container row">
-
-                    <div class="studio-cities__left col-lg-6">
-                        <div class="studio-cities__block">
-                            <span class="studio-cities__country"><?php _e('Россия', 'mossebo') ?></span>
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Москва', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Санкт-Петербург', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Ростов-на-Дону', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Краснодар', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Казань', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Сочи', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Волгоград', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Тюмень', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Самара', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Уссурийск', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Оренбург', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Тула', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Уфа', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Пенза', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Иркутск', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Магнитогорск', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Рязань', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Якутск', 'mossebo') ?></span>
-                        </div>
-                    </div>
-
-                    <div class="studio-cities__center col-lg-3">
-                        <div class="studio-cities__block">
-                            <span class="studio-cities__country"><?php _e('Белорусь', 'mossebo') ?></span>
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Минск', 'mossebo') ?></span>
-                        </div>
-
-                        <div class="studio-cities__block">
-                            <span class="studio-cities__country"><?php _e('Узбекистан', 'mossebo') ?></span>
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Ташкент', 'mossebo') ?></span>
-                        </div>
-                    </div>
-
-                    <div class="studio-cities__right col-lg-3">
-                        <div class="studio-cities__block">
-                            <span class="studio-cities__country"><?php _e('Казахстан', 'mossebo') ?></span>
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Астана', 'mossebo') ?></span>,
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Алма-Ата', 'mossebo') ?></span>
-                        </div>
-
-                        <div class="studio-cities__block">
-                            <span class="studio-cities__country"><?php _e('Латвия', 'mossebo') ?></span>
-                            <span class="link link--dashed studio-cities__link js-studio-cities-link"><?php _e('Рига', 'mossebo') ?></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<studios-map
+    :points="<?php echo htmlspecialchars(json_encode(getMapData(), JSON_UNESCAPED_UNICODE)) ?>"
+    text="Таким образом консультация с широким активом представляет собой интересный эксперимент проверки направлений прогрессивного развития."
+>
+    <div class="studio-map-plug"></div>
+</studios-map>

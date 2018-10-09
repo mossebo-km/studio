@@ -119,6 +119,7 @@ window.initSliderWithFancybox = function(query, config) {
  */
 import InteriorPano from './components/InteriorPano'
 import MobileSlider from './components/MobileSlider'
+import StudiosMap from './components/map/StudiosMap'
 import BackgroundImageLoader from './components/imageLoaders/BackgroundImageLoader'
 
 const breakpoints = {
@@ -134,6 +135,7 @@ const app = new Vue({
 
     components: {
         InteriorPano,
+        StudiosMap,
         BackgroundImageLoader,
         MobileSlider
     },

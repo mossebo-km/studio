@@ -1,3 +1,13 @@
+.friends-list {
+    &__container {
+        margin-top: -32px;
+    }
+
+    &__item {
+        margin-top: 32px;
+    }
+}
+
 .friend-card {
     height: 100%;
     color: $color-text-primary;

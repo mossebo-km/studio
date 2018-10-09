@@ -1,3 +1,13 @@
+.media-about-us {
+    &__container {
+        margin-top: -32px;
+    }
+
+    &__item {
+        margin-top: 32px;
+    }
+}
+
 .media-about-us-card {
     display: flex;
     align-items: center;

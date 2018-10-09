@@ -7,10 +7,12 @@
 
     &__container {
         width: 4432px;
+        margin-top: -32px;
     }
 
     &__item {
         width: 6.25%;
+        margin-top: 32px;
     }
 
     .swiper-slide {

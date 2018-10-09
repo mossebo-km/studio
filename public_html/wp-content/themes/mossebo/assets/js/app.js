@@ -20,8 +20,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_InteriorPano___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_InteriorPano__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_MobileSlider__ = __webpack_require__("./mossebo-studio-src/assets/js/components/MobileSlider.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_MobileSlider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_MobileSlider__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_imageLoaders_BackgroundImageLoader__ = __webpack_require__("./mossebo-studio-src/assets/js/components/imageLoaders/BackgroundImageLoader.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_imageLoaders_BackgroundImageLoader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_imageLoaders_BackgroundImageLoader__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap__ = __webpack_require__("./mossebo-studio-src/assets/js/components/map/StudiosMap.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_imageLoaders_BackgroundImageLoader__ = __webpack_require__("./mossebo-studio-src/assets/js/components/imageLoaders/BackgroundImageLoader.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_imageLoaders_BackgroundImageLoader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_imageLoaders_BackgroundImageLoader__);
 /**
  * GLOBAL
  */
@@ -140,6 +142,7 @@ window.initSliderWithFancybox = function (query, config) {
 
 
 
+
 var breakpoints = {
     xs: 1,
     sm: 576,
@@ -153,7 +156,8 @@ var app = new __WEBPACK_IMPORTED_MODULE_1_vue___default.a({
 
     components: {
         InteriorPano: __WEBPACK_IMPORTED_MODULE_6__components_InteriorPano___default.a,
-        BackgroundImageLoader: __WEBPACK_IMPORTED_MODULE_8__components_imageLoaders_BackgroundImageLoader___default.a,
+        StudiosMap: __WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap___default.a,
+        BackgroundImageLoader: __WEBPACK_IMPORTED_MODULE_9__components_imageLoaders_BackgroundImageLoader___default.a,
         MobileSlider: __WEBPACK_IMPORTED_MODULE_7__components_MobileSlider___default.a
     },
 
@@ -285,6 +289,54 @@ if (false) {(function () {
     hotAPI.createRecord("data-v-53a7376a", Component.options)
   } else {
     hotAPI.reload("data-v-53a7376a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ "./mossebo-studio-src/assets/js/components/LoadingIcon.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./mossebo-studio-src/assets/js/components/LoadingIcon.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-7c517d46\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/LoadingIcon.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "mossebo-studio-src/assets/js/components/LoadingIcon.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7c517d46", Component.options)
+  } else {
+    hotAPI.reload("data-v-7c517d46", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -591,6 +643,102 @@ module.exports = Component.exports
         }
     }
 });
+
+/***/ }),
+
+/***/ "./mossebo-studio-src/assets/js/components/map/StudioCities.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./mossebo-studio-src/assets/js/components/map/StudioCities.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-0c2e5cba\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/map/StudioCities.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "mossebo-studio-src/assets/js/components/map/StudioCities.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-0c2e5cba", Component.options)
+  } else {
+    hotAPI.reload("data-v-0c2e5cba", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ "./mossebo-studio-src/assets/js/components/map/StudiosMap.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./mossebo-studio-src/assets/js/components/map/StudiosMap.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-55c7637a\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/map/StudiosMap.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "mossebo-studio-src/assets/js/components/map/StudiosMap.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-55c7637a", Component.options)
+  } else {
+    hotAPI.reload("data-v-55c7637a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
 
 /***/ }),
 
@@ -6505,6 +6653,39 @@ function getRandomInt(min, max) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./mossebo-studio-src/assets/js/components/LoadingIcon.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'loading-icon'
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./mossebo-studio-src/assets/js/components/MobileSlider.vue":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6751,6 +6932,657 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }
     }
 });
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./mossebo-studio-src/assets/js/components/map/StudioCities.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "StudioCities",
+
+    props: {
+        menu: null,
+        text: null
+    },
+
+    data: function data() {
+        return {};
+    },
+
+
+    methods: {
+        cityClick: function cityClick(cityId) {
+            this.$emit('setCity', cityId);
+        }
+    }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./mossebo-studio-src/assets/js/components/map/StudiosMap.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__LoadingIcon__ = __webpack_require__("./mossebo-studio-src/assets/js/components/LoadingIcon.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__LoadingIcon___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__LoadingIcon__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__StudioCities__ = __webpack_require__("./mossebo-studio-src/assets/js/components/map/StudioCities.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__StudioCities___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__StudioCities__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+// <style lang="scss">
+// .studios-map .ymaps-2-1-69-ground-pane {
+//     filter: saturate(0);
+// }
+// </style>
+
+
+
+
+var transitionEndHandler = function () {
+    function transitionEndHandler(el, cb) {
+        var _this = this;
+
+        _classCallCheck(this, transitionEndHandler);
+
+        this.ended = false;
+        this.cb = cb;
+
+        var start = performance.now();
+
+        el.addEventListener('transitionend', function () {
+            var fin = performance.now();
+
+            if (fin - start < 300) {
+                setTimeout(function () {
+                    _this.end();
+                }, 300 - fin + start);
+            } else {
+                _this.end();
+            }
+        }, { passive: true, once: true });
+
+        setTimeout(function () {
+            _this.end();
+        }, 600);
+    }
+
+    _createClass(transitionEndHandler, [{
+        key: 'end',
+        value: function end() {
+            if (this.ended) return;
+
+            this.ended = true;
+            this.cb();
+        }
+    }]);
+
+    return transitionEndHandler;
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'studios-map',
+
+    props: {
+        points: null,
+        text: null
+    },
+
+    components: {
+        LoadingIcon: __WEBPACK_IMPORTED_MODULE_0__LoadingIcon___default.a,
+        StudioCities: __WEBPACK_IMPORTED_MODULE_1__StudioCities___default.a
+    },
+
+    data: function data() {
+        return {
+            loading: false,
+            ready: false,
+            locations: [],
+            ymap: null,
+            zoom: 11,
+            infoOffsetX: -440,
+            infoOffsetY: -210,
+            infoHidden: false,
+
+            countries$: [],
+            cities$: [],
+            points$: [],
+
+            lastBalloon: null
+        };
+    },
+    created: function created() {
+        var _this2 = this;
+
+        // this.setLocations()
+
+        $.getScript('//api-maps.yandex.ru/2.1/?lang=ru_RU', function () {
+            _this2.ready = true;
+            _this2.$emit('ready');
+        });
+    },
+    mounted: function mounted() {
+        this.mapEl = this.$el.querySelector('.js-map');
+
+        if (this.ready) {
+            this.buildMap();
+        } else {
+            this.$once('ready', this.buildMap);
+        }
+    },
+
+
+    methods: {
+        linkIsActive: function linkIsActive() {
+            return false;
+        },
+        buildMap: function buildMap() {
+            var _this3 = this;
+
+            this.setLoading(function (cb) {
+                ymaps.ready(function () {
+                    _this3.makeGeneralPlan().then(_this3.preparePoints).then(_this3.prepareCityClusters).then(_this3.putPointsOnMap).then(_this3.setMapCenterWithOffset).then(cb);
+                });
+            });
+        },
+
+
+        /**
+         *  Создается пустая карта.
+         *  Иначе ничего работать не будет.
+         */
+        makeGeneralPlan: function makeGeneralPlan() {
+            var _this4 = this;
+
+            return new Promise(function (resolve) {
+                var geocoder = ymaps.geocode('Россия');
+
+                geocoder.then(function (res) {
+                    var coords = res.geoObjects.get(0).geometry.getCoordinates();
+
+                    _this4.ymap = new ymaps.Map(_this4.mapEl, {
+                        center: coords,
+                        zoom: _this4.zoom,
+                        type: 'yandex#map',
+                        controls: ['zoomControl']
+                    });
+
+                    _this4.ymap.behaviors.disable('scrollZoom');
+
+                    _this4.ymap.events.add('boundschange', function (e) {
+                        var newZoom = e.get('newZoom');
+
+                        if (newZoom < _this4.zoom) {
+                            if (_this4.lastBalloon) {
+                                _this4.lastBalloon.close();
+                                _this4.lastBalloon = null;
+                            }
+                        }
+
+                        _this4.zoom = newZoom;
+                    });
+
+                    resolve();
+                });
+            });
+        },
+
+
+        /**
+         * Подготовка данных.
+         * Формируются списки стран, городов, точек.
+         * Странам и городам присваиваются id.
+         * Точкам создаются геообъекты.
+         */
+        preparePoints: function preparePoints() {
+            var _this5 = this;
+
+            return new Promise(function (resolve) {
+                var pointsCount = 0;
+
+                var countries = [];
+                var cities = [];
+                var points = _this5.points.map(function (point) {
+                    pointsCount++;
+
+                    var city = cities.find(function (item) {
+                        return item.title === _.trim(point.city);
+                    });
+
+                    if (!city) {
+                        city = {
+                            id: cities.length + 1,
+                            title: _.trim(point.city),
+                            points: []
+                        };
+
+                        cities.push(city);
+                    }
+
+                    city.points.push(point.id);
+
+                    var country = countries.find(function (item) {
+                        return item.title === _.trim(point.country);
+                    });
+
+                    if (!country) {
+                        country = {
+                            id: countries.length + 1,
+                            title: _.trim(point.country),
+                            cities: []
+                        };
+
+                        countries.push(country);
+                    }
+
+                    if (country.cities.indexOf(city.id) === -1) {
+                        country.cities.push(city.id);
+                    }
+
+                    point.cityId = city.id;
+                    point.countryId = country.id;
+
+                    _this5.makePointGeoObject(point).then(function () {
+                        if (--pointsCount === 0) {
+                            _this5.countries$ = countries;
+                            _this5.cities$ = cities;
+                            _this5.points$ = points;
+
+                            resolve();
+                        }
+                    });
+
+                    return point;
+                });
+            });
+        },
+        prepareCityClusters: function prepareCityClusters() {
+            var _this6 = this;
+
+            return new Promise(function (resolve) {
+                _this6.cities$.forEach(function (city) {
+                    city.cluster = _this6.getCityPointsCluster(city);
+                });
+
+                resolve();
+            });
+        },
+
+
+        /**
+         * Кладём-ложим на карту точки.
+         */
+        putPointsOnMap: function putPointsOnMap() {
+            var _this7 = this;
+
+            return new Promise(function (resolve) {
+                var clusters = [];
+
+                _this7.cities$.forEach(function (city) {
+                    _this7.ymap.geoObjects.add(city.cluster);
+                    clusters.push(city.cluster);
+                });
+
+                _this7.ymap.setBounds(_this7.getCollectionBounds(clusters), {
+                    checkZoomRange: true,
+                    zoomMargin: 30
+                }).then(resolve);
+            });
+        },
+        setMapCenterWithOffset: function setMapCenterWithOffset() {
+            return this.ymap.setCenter(this.getCoordsWithOffset(this.ymap.getCenter()));
+        },
+        getCollectionBounds: function getCollectionBounds(collection) {
+            return collection.slice(1).reduce(function (acc, item) {
+                var bounds = item.getBounds();
+
+                acc[0][0] = Math.max(acc[0][0], bounds[0][0]);
+                acc[0][1] = Math.min(acc[0][1], bounds[0][1]);
+                acc[1][0] = Math.min(acc[1][0], bounds[1][0]);
+                acc[1][1] = Math.max(acc[1][1], bounds[1][1]);
+
+                return acc;
+            }, collection[0].getBounds());
+        },
+
+
+        /**
+         * Формирование балуна точки.
+         */
+        makeBalloonLayout: function makeBalloonLayout(point) {
+            var html = [point.adress, point.phone].join('</p><p>');
+
+            html = '<div class="js-map-shops-balloon" data-id="' + point.id + '">\n                <p>' + html + '</p>\n            </div>';
+
+            return ymaps.templateLayoutFactory.createClass(html);
+        },
+
+
+        /**
+         * Получение координат точки.
+         * Если они указаны - просто возвращаем, иначе - используем геодекодер яндекса.
+         */
+        getPointCoordinates: function getPointCoordinates(point) {
+            return new Promise(function (resolve) {
+                if (point.lat && point.lng) {
+                    resolve([point.lat, point.lng]);
+                } else {
+                    var geocoder = ymaps.geocode([point.country, point.city, point.address].join(', '));
+
+                    geocoder.then(function (res) {
+                        return resolve(res.geoObjects.get(0).geometry.getCoordinates());
+                    });
+                }
+            });
+        },
+
+
+        /**
+         * Создаем точку для карты. Указываем позицию, layout и событие на клик.
+         * Но на карту пока не ставим.
+         */
+        makePointGeoObject: function makePointGeoObject(point) {
+            var _this8 = this;
+
+            return new Promise(function (resolve) {
+                _this8.getPointCoordinates(point).then(function (coords) {
+                    var balloonLayout = _this8.makeBalloonLayout(point);
+
+                    var geoObject = new ymaps.GeoObject({
+                        geometry: {
+                            type: 'Point',
+                            coordinates: coords
+                        },
+                        properties: {
+                            pointId: point.id
+                        }
+                    }, {
+                        openBalloonOnClick: false,
+                        balloonAutoPan: false,
+                        balloonContentLayout: balloonLayout,
+                        hideIconOnBalloonOpen: false,
+                        balloonPanelMaxMapArea: 0,
+                        iconColor: '#fcc600'
+                        // iconLayout: 'default#image',
+                        // iconImageHref: mapIcon,
+                        // iconImageSize: [30, 32],
+                        // iconImageOffset: [-15, -16],
+                    });
+
+                    geoObject.events.add('click', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        console.log('point click: ' + point.id);
+
+                        _this8.showStudio(e.get('target').properties.get('pointId'));
+                    });
+
+                    point.geoObject = geoObject;
+
+                    resolve();
+                });
+            });
+        },
+        setLoading: function setLoading(cb) {
+            var _this9 = this,
+                _arguments = arguments;
+
+            return new Promise(function (resolve) {
+
+                var parent = _this9.mapEl.parentNode;
+
+                new transitionEndHandler(_this9.mapEl, function () {
+                    cb(function () {
+                        parent.removeAttribute('style');
+                        _this9.loading = false;
+
+                        resolve.apply(_, _arguments);
+                    });
+                });
+
+                parent.style.height = _this9.mapEl.scrollHeight + 'px';
+                _this9.loading = true;
+            });
+        },
+        showCity: function showCity(cityId) {
+            var _this10 = this;
+
+            if (this.loading) return;
+
+            var city = this.getCity(cityId);
+
+            if (city.points.length === 1) {
+                this.showStudio(city.points[0]);
+                return;
+            }
+
+            this.setLoading(function (cb) {
+                _this10.ymap.setBounds(city.cluster.getBounds(), {
+                    precizeZoom: true,
+                    checkZoomRange: true,
+                    zoomMargin: 30
+                }).then(function () {
+                    _this10.$nextTick(function () {
+                        _this10.ymap.container.fitToViewport();
+
+                        _this10.ymap.setCenter(_this10.getCoordsWithOffset(_this10.ymap.getCenter())).then(cb);
+                    });
+                });
+            });
+        },
+        showStudio: function showStudio(placeId) {
+            var _this11 = this;
+
+            if (this.loading) return;
+
+            var place = this.getPoint(placeId);
+
+            this.setLoading(function (cb) {
+                var zoom = Math.max(17, _this11.ymap.getZoom());
+
+                var coords = _this11.getCoordsWithOffset(place.geoObject.geometry.getCoordinates(), zoom);
+
+                _this11.ymap.setCenter(coords, zoom, {
+                    duration: 300,
+                    timingFunction: 'ease-in-out'
+                }).then(function () {
+                    _this11.openBalloon(place.geoObject.balloon);
+
+                    cb();
+                });
+            });
+        },
+        openBalloon: function openBalloon(balloon) {
+            this.lastBalloon = balloon;
+            this.lastBalloon.open();
+        },
+        getNewCluster: function getNewCluster() {
+            var cluster = new ymaps.Clusterer({
+                groupByCoordinates: false,
+                clusterDisableClickZoom: true,
+                clusterOpenBalloonOnClick: false
+            }, {
+                iconColor: '#fcc600'
+            });
+
+            cluster.events.add('dblclick', function (e) {
+                return e.preventDefault();
+            });
+
+            return cluster;
+        },
+
+
+        /**
+         * Собирает гео-коллекцию гео-объектов точек.
+         */
+        getCityPointsCluster: function getCityPointsCluster(city) {
+            var _this12 = this;
+
+            var cluster = this.getNewCluster();
+
+            cluster.events.add('click', function () {
+                console.log('cluster click: ' + city.id);
+
+                _this12.showCity(city.id);
+            });
+
+            if (city && city.points && city.points.length) {
+                city.points.forEach(function (pointId) {
+                    cluster.add(_this12.getPoint(pointId).geoObject);
+                });
+            }
+
+            return cluster;
+        },
+        getCountry: function getCountry(countryId) {
+            return this.countries$.find(function (country) {
+                return country.id === countryId;
+            });
+        },
+        getCity: function getCity(cityId) {
+            return this.cities$.find(function (city) {
+                return city.id === cityId;
+            });
+        },
+        getPoint: function getPoint(pointId) {
+            return this.points$.find(function (point) {
+                return point.id === pointId;
+            });
+        },
+        getCoordsWithOffset: function getCoordsWithOffset(coords, zoom) {
+            if (this.infoHidden) {
+                return coords;
+            }
+
+            zoom = zoom || this.ymap.getZoom();
+
+            var projection = this.ymap.options.get('projection');
+
+            var pixels = this.ymap.converter.globalToPage(projection.toGlobalPixels(coords, zoom));
+
+            if (window.innerWidth >= 768) {
+                pixels[0] += this.infoOffsetX;
+            } else {
+                pixels[1] += this.infoOffsetY;
+            }
+
+            return projection.fromGlobalPixels(this.ymap.converter.pageToGlobal(pixels), zoom);
+        },
+        showCityPopup: function showCityPopup() {
+            $.fancybox.open({
+                src: '.popup-map-wrap',
+                type: 'inline',
+                touch: {
+                    vertical: false,
+                    horizontal: false,
+                    momentum: false
+                }
+            });
+        }
+    },
+
+    computed: {
+        citiesMenu: function citiesMenu() {
+            var _this13 = this;
+
+            var countries = this.countries$.sort(function (a, b) {
+                return b.cities.length - a.cities.length;
+            });
+
+            return countries.map(function (country) {
+                return {
+                    id: country.id,
+                    title: country.title,
+                    cities: country.cities.map(function (cityId) {
+                        return _this13.cities$.find(function (city) {
+                            return city.id === cityId;
+                        });
+                    })
+                };
+            });
+        }
+    }
+});
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -46828,6 +47660,81 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-0c2e5cba\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/map/StudioCities.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "studio-cities block-ui" }, [
+    _c("div", { staticClass: "studio-cities__top" }, [
+      _c(
+        "div",
+        { staticClass: "studio-cities__container" },
+        [
+          _vm._l(_vm.menu, function(country) {
+            return [
+              _c(
+                "div",
+                { staticClass: "studio-cities__block" },
+                [
+                  _c("span", { staticClass: "studio-cities__country" }, [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(country.title) +
+                        "\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _vm._l(country.cities, function(city, index) {
+                    return [
+                      _c(
+                        "span",
+                        {
+                          staticClass: "link link--dashed studio-cities__link",
+                          on: {
+                            click: function($event) {
+                              _vm.cityClick(city.id)
+                            }
+                          }
+                        },
+                        [_vm._v(_vm._s(city.title))]
+                      ),
+                      index !== country.cities.length - 1
+                        ? [_vm._v(", ")]
+                        : _vm._e()
+                    ]
+                  })
+                ],
+                2
+              )
+            ]
+          })
+        ],
+        2
+      )
+    ]),
+    _vm._v(" "),
+    _vm.text
+      ? _c("div", { staticClass: "studio-cities__bottom" }, [
+          _vm._v("\n        " + _vm._s(_vm.text) + "\n    ")
+        ])
+      : _vm._e()
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-0c2e5cba", module.exports)
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-16b66504\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/imageLoaders/BackgroundImageLoader.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -47028,6 +47935,175 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-53a7376a", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-55c7637a\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/map/StudiosMap.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm.$root.windowLessThan("md")
+    ? _c(
+        "div",
+        { staticClass: "container" },
+        [
+          _c("studio-cities", {
+            attrs: { menu: _vm.citiesMenu, text: _vm.text },
+            on: { setCity: _vm.showCityPopup }
+          }),
+          _vm._v(" "),
+          _c("div", { staticStyle: { display: "none" } }, [
+            _c("div", { staticClass: "popup-map-wrap" }, [
+              _c("div", {
+                key: "map",
+                class: {
+                  "studios-map-plane js-map": true,
+                  "is-loading": _vm.loading
+                }
+              })
+            ])
+          ])
+        ],
+        1
+      )
+    : _c(
+        "div",
+        {
+          class: {
+            "studios-map": true,
+            "studios-map--no-menu": !_vm.citiesMenu.length
+          }
+        },
+        [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "studios-map__controls" }, [
+              _c("div", { staticClass: "studios-map-control" }, [
+                _c(
+                  "div",
+                  { staticClass: "studios-map-control__center block-ui" },
+                  [
+                    _c("studio-cities", {
+                      attrs: { menu: _vm.citiesMenu, text: _vm.text },
+                      on: { setCity: _vm.showCity }
+                    })
+                  ],
+                  1
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "studios-map__map" }, [
+            _c("div", {
+              key: "map",
+              class: {
+                "studios-map-plane js-map": true,
+                "is-loading": _vm.loading
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "studios-map__loading" },
+            [_c("loading-icon", { staticClass: "studios-map__loading-icon" })],
+            1
+          )
+        ]
+      )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-55c7637a", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-7c517d46\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/LoadingIcon.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "svg",
+    {
+      attrs: {
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 100 100",
+        "enable-background": "new 0 0 0 0",
+        "xml:space": "preserve"
+      }
+    },
+    [
+      _c(
+        "circle",
+        { attrs: { stroke: "none", cx: "12%", cy: "50%", r: "12%" } },
+        [
+          _c("animate", {
+            attrs: {
+              attributeName: "opacity",
+              dur: "1s",
+              values: "0;1;0",
+              repeatCount: "indefinite",
+              begin: "0.1"
+            }
+          })
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "circle",
+        { attrs: { stroke: "none", cx: "50%", cy: "50%", r: "12%" } },
+        [
+          _c("animate", {
+            attrs: {
+              attributeName: "opacity",
+              dur: "1s",
+              values: "0;1;0",
+              repeatCount: "indefinite",
+              begin: "0.2"
+            }
+          })
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "circle",
+        { attrs: { stroke: "none", cx: "88%", cy: "50%", r: "12%" } },
+        [
+          _c("animate", {
+            attrs: {
+              attributeName: "opacity",
+              dur: "1s",
+              values: "0;1;0",
+              repeatCount: "indefinite",
+              begin: "0.3"
+            }
+          })
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-7c517d46", module.exports)
   }
 }
 

@@ -14,4 +14,18 @@
         font-weight: 500;
         margin-bottom: 6px;
     }
+
+    &__images {
+        margin-top: 16px;
+    }
+
+    @include media-breakpoint-up(md) {
+        &__images {
+            margin-top: -32px;
+        }
+
+        &__image-item {
+            margin-top: 32px;
+        }
+    }
 }

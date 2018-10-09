@@ -1,3 +1,11 @@
+.franchise-risks__grades {
+    margin-top: 24px;
+
+    @include media-breakpoint-up(md) {
+        margin-top: 48px;
+    }
+}
+
 .franchise-spark {
     &__text {
         margin-top: 16px;
@@ -11,10 +19,6 @@
             margin: 0 0 0 50px;
         }
     }
-}
-
-.franchise-infographics {
-
 }
 
 .franchise-grade {

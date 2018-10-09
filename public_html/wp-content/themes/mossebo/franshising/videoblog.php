@@ -52,7 +52,9 @@
                 <div class="image-preview block-ui" style="background-image: url(//img.youtube.com/vi/<?= $video['code'] ?>/sddefault.jpg)"></div>
 
                 <div class="videoblog-card__title">
-                    <?= $video['title'] ?>
+                    <span>
+                        <?= $video['title'] ?>
+                    </span>
                 </div>
             </a>
         </div>

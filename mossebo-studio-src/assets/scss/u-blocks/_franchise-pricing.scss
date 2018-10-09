@@ -1,4 +1,12 @@
 .franchise-pricing {
+    &__container {
+        margin-top: -32px;
+    }
+
+    &__item {
+        margin-top: 32px;
+    }
+
     &__info {
         margin-top: 28px;
         font-size: 14px / 18px;

@@ -20,12 +20,6 @@
         padding: 24px 32px;
 
         &__text {
-            margin: 0 0 0 32px;
-        }
-    }
-
-    @include media-breakpoint-up(lg) {
-        &__text {
             margin: 0;
         }
     }

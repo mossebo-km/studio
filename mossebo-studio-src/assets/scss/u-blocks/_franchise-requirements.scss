@@ -5,6 +5,14 @@
         color: $color-text-primary;
     }
 
+    &__container {
+        margin-top: -32px;
+    }
+
+    &__item {
+        margin-top: 32px;
+    }
+
     &__content {
         max-width: 440px;
     }
