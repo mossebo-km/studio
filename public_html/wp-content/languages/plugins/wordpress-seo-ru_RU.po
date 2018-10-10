@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-10-04 13:36:57+0000\n"
+"PO-Revision-Date: 2018-10-09 10:40:30+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -275,6 +275,10 @@ msgstr "Результаты анализа"
 msgid "Learn more about the Keyword Analysis."
 msgstr "Узнайте больше об анализе ключевых слов."
 
+#: languages/wordpress-seojs.php:72
+msgid "A focus keyword is the term (or phrase) you'd like to be found with, in search engines. Enter it below to see how you can improve your text for this term."
+msgstr "Фокусное ключевое слово это фраза, по которой вы хотите, чтобы содержимое было найдено в поисковых системах. Введите его ниже, чтобы узнать как вы можете улучшить ваш текст."
+
 #: languages/wordpress-seojs.php:65
 msgid "Enter a focus keyword to calculate the SEO score"
 msgstr "Введите фокусное ключевое слово для расчета оценки SEO"
@@ -355,6 +359,10 @@ msgstr "Не поддерживается!"
 msgid "Read {{a}}our article about site structure{{/a}} to learn more about how internal linking can help improve your SEO."
 msgstr "Прочитайте {{a}}нашу статью о структуре сайта{{/a}} для того, чтобы узнать больше как внутренняя перелинковка улучшает SEO."
 
+#: languages/yoast-components.php:32
+msgid "Once you add a bit more copy, we'll give you a list of related content here to which you could link in your post."
+msgstr "Как только вы напишете чуть больше, мы предложим вам список связанного содержимого, на которое вы можете сослаться в записи."
+
 #: languages/yoast-components.php:26
 msgid "Consider linking to these {{a}}cornerstone articles:{{/a}}"
 msgstr "Рассмотрите создание ссылок на эти {{a}}статьи основного содержимого:{{/a}}"
@@ -375,6 +383,10 @@ msgstr "Скопировать ссылку в предложенную стат
 msgid "Read our %1$sultimate guide to keyword research%2$s to learn more about keyword research and keyword strategy."
 msgstr "Прочтите наше%1$sзамечательное руководство по исследованию ключевых слов%2$s, чтобы узнать больше о исследовании и стратегии ключевых слов."
 
+#: languages/yoast-components.php:11
+msgid "Once you add a bit more copy, we'll give you a list of words and word combination that occur the most in the content. These give an indication of what your content focuses on."
+msgstr "Как только вы напишете чуть больше, мы предложим вам список слов и комбинаций, которые чаще всего встречаются в содержимом. Они покажут на чем фокусируется ваше содержимое."
+
 #: languages/yoast-components.php:8
 msgid "The following words and word combinations occur the most in the content. These give an indication of what your content focuses on. If the words differ a lot from your topic, you might want to rewrite your content accordingly. "
 msgstr "Следующие слова и комбинации слов встречаются в содержимом чаще всего. Это дает информацию о том, какая основная тема Вашего текста. Если данные слова сильно отличаются от задуманной темы, возможно Вы захотите соответствующим образом переписать текст."
@@ -382,6 +394,10 @@ msgstr "Следующие слова и комбинации слов встр�
 #: languages/yoast-components.php:5
 msgid "Prominent words"
 msgstr "Важные слова"
+
+#: inc/class-wpseo-replace-vars.php:1304
+msgid "The site's tagline"
+msgstr "Краткое описание сайта"
 
 #. translators: %1$s is the notification dismissal link start tag, %2$s is the
 #. link closing tag.
@@ -1536,7 +1552,7 @@ msgstr "https://yoa.st/1uk"
 msgid "https://yoa.st/1uj"
 msgstr "https://yoa.st/1uj"
 
-#: admin/metabox/class-metabox.php:298
+#: admin/metabox/class-metabox.php:306
 #: admin/taxonomy/class-taxonomy-metabox.php:69
 msgid "Meta box"
 msgstr "Метабокс"
@@ -2890,7 +2906,7 @@ msgstr "Выберите ваш файл settings.zip"
 #. </a>
 #: admin/class-product-upsell-notice.php:120
 msgid "By the way, did you know we also have a %1$sPremium plugin%2$s? It offers advanced features, like a redirect manager and support for multiple keywords. It also comes with 24/7 personal support."
-msgstr "Кстати, знаете ли вы, у нас также есть %1$sПремиум плагин%2$s? Он предлагает расширенные функции такие как переадресация и поддержка нескольких ключевых слов. Он поставляется с 24/7 личной поддержкой."
+msgstr "Кстати, знаете ли вы, у нас также есть %1$sПремиум плагин%2$s? Он предлагает расширенные функции, такие как переадресация и поддержка нескольких ключевых слов. Он поставляется с 24/7 персональной поддержкой."
 
 #: admin/class-bulk-editor-list-table.php:796
 msgid "(no title)"
@@ -3167,7 +3183,7 @@ msgstr "Социальные предварительные просмотры"
 
 #: admin/views/licenses.php:174
 msgid "optimize a single post for up to 5 keywords."
-msgstr "оптимизировать одну запись на 5 ключевых слов."
+msgstr "оптимизировать одну запись по 5 ключевым словам."
 
 #: admin/taxonomy/class-taxonomy-metabox.php:282 admin/views/licenses.php:173
 msgid "Multiple focus keywords"
@@ -3253,7 +3269,7 @@ msgstr "Редактировать &#8220;%s&#8221;"
 msgid "Premium"
 msgstr "Премиум"
 
-#: admin/metabox/class-metabox.php:429
+#: admin/metabox/class-metabox.php:437
 #: admin/taxonomy/class-taxonomy-metabox.php:245
 msgid "Go Premium"
 msgstr "Перейти к Премиум"
@@ -3269,7 +3285,7 @@ msgstr "Уведомления"
 
 #: admin/views/user-profile.php:44
 msgid "Removes the keyword tab from the metabox and disables all SEO-related suggestions."
-msgstr "Удаляет вкладку ключевых слов из METABOX и отключает все  связанные с ней SEO предложения."
+msgstr "Удаляет вкладку \"Ключевые слова\" из METABOX и отключает все предложения связанные с ней."
 
 #: admin/views/user-profile.php:41
 msgid "Disable SEO analysis"
@@ -3311,7 +3327,7 @@ msgstr "Настройки \"Хлебных крошек\""
 msgid "Make primary"
 msgstr "Сделать первичным"
 
-#: admin/metabox/class-metabox.php:383 admin/metabox/class-metabox.php:386
+#: admin/metabox/class-metabox.php:391 admin/metabox/class-metabox.php:394
 #: admin/taxonomy/class-taxonomy-metabox.php:135
 #: admin/taxonomy/class-taxonomy-metabox.php:138
 msgid "Content optimization"
@@ -3667,7 +3683,7 @@ msgstr "%1$s Ваша главная страница не может быть �
 msgid "Once Weekly"
 msgstr "Раз в неделю"
 
-#: admin/metabox/class-metabox.php:442 admin/metabox/class-metabox.php:445
+#: admin/metabox/class-metabox.php:450 admin/metabox/class-metabox.php:453
 msgid "Add-ons"
 msgstr "Расширения"
 
@@ -3687,7 +3703,7 @@ msgstr "Метаданные Facebook / Open Graph"
 
 #: admin/class-recalculate-scores.php:47
 msgid "Recalculating SEO scores for all pieces of content with a focus keyword."
-msgstr "Перерасчет оценки SEO для всех частей содержания с фокусным ключевым словом."
+msgstr "Перерасчет оценки SEO для всех частей содержимого с фокусным ключевым словом."
 
 #. translators: 1: expands to a <span> containing the number of posts
 #. recalculated. 2: expands to a <strong> containing the total number of posts.
@@ -3709,7 +3725,7 @@ msgstr "Команда Yoast"
 msgid "The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more."
 msgstr "Первое настоящее и полноценное решение для SEO в WordPress, в которое включен анализ содержимого страницы, создание карты сайта в формате XML и многое другое."
 
-#. #-#-#-#-#  wordpress-seo-code.pot (Yoast SEO 8.3)  #-#-#-#-#
+#. #-#-#-#-#  wordpress-seo-code.pot (Yoast SEO 8.4)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: admin/capabilities/class-capability-manager-integration.php:68
 msgid "Yoast SEO"
@@ -4042,7 +4058,7 @@ msgstr "Ярлык, вызвавший ошибку 404"
 
 #: inc/class-wpseo-replace-vars.php:1343
 msgid "Replaced with the posts focus keyword"
-msgstr "Фокусное ключевое слово записи"
+msgstr "Заменяется фокусным ключевым словом записи"
 
 #: inc/class-wpseo-replace-vars.php:1342
 msgid "Attachment caption"
@@ -4937,7 +4953,7 @@ msgstr "Деактивировать %s"
 msgid "The %1$s plugin might cause issues when used in conjunction with %2$s."
 msgstr "Плагин %1$s может вызвать проблемы в сочетании с %2$s."
 
-#: admin/class-yoast-form.php:505 admin/metabox/class-metabox.php:604
+#: admin/class-yoast-form.php:505 admin/metabox/class-metabox.php:612
 #: admin/taxonomy/class-taxonomy-fields-presenter.php:106
 msgid "Upload Image"
 msgstr "Загрузить изображение"
@@ -5261,11 +5277,11 @@ msgstr "SEO: OK"
 msgid "SEO: No Focus Keyword"
 msgstr "SEO: Нет фокусного ключевого слова"
 
-#: admin/metabox/class-metabox.php:814
+#: admin/metabox/class-metabox.php:822
 msgid "SEO issue: The featured image should be at least 200 by 200 pixels to be picked up by Facebook and other social media sites."
 msgstr "Это изображение должно быть как минимум 200х200 пикселей, чтобы Facebook и другие социальные сети могли его использовать."
 
-#: admin/metabox/class-metabox.php:242 admin/taxonomy/class-taxonomy.php:231
+#: admin/metabox/class-metabox.php:250 admin/taxonomy/class-taxonomy.php:231
 msgid "(no parent)"
 msgstr "(без родителя)"
 
@@ -5446,7 +5462,7 @@ msgstr "Удалить страницу блога из «хлебных кро�
 msgid "%s Breadcrumbs"
 msgstr "«Хлебные крошки» %s"
 
-#: admin/class-config.php:124 admin/metabox/class-metabox.php:826
+#: admin/class-config.php:124 admin/metabox/class-metabox.php:834
 #: admin/taxonomy/class-taxonomy.php:131
 msgid "Use Image"
 msgstr "Использовать изображение"
@@ -5628,8 +5644,8 @@ msgstr "Консоль поиска"
 msgid "Tools"
 msgstr "Инструменты"
 
-#: admin/metabox/class-metabox.php:403 admin/metabox/class-metabox.php:411
-#: admin/metabox/class-metabox.php:414
+#: admin/metabox/class-metabox.php:411 admin/metabox/class-metabox.php:419
+#: admin/metabox/class-metabox.php:422
 msgid "Advanced"
 msgstr "Дополнительно"
 

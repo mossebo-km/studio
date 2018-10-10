@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+файл шаблона архивов
 
     <div class="blocks blocks-arhive">
         <div class="wrap">

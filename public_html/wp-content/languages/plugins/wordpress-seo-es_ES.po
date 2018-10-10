@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-10-04 11:07:07+0000\n"
+"PO-Revision-Date: 2018-10-09 20:13:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1545,7 +1545,7 @@ msgstr "https://yoa.st/1uk"
 msgid "https://yoa.st/1uj"
 msgstr "https://yoa.st/1uj"
 
-#: admin/metabox/class-metabox.php:298
+#: admin/metabox/class-metabox.php:306
 #: admin/taxonomy/class-taxonomy-metabox.php:69
 msgid "Meta box"
 msgstr "Caja meta"
@@ -3265,7 +3265,7 @@ msgstr "Modificar &#8220;%s&#8221;"
 msgid "Premium"
 msgstr "Premium"
 
-#: admin/metabox/class-metabox.php:429
+#: admin/metabox/class-metabox.php:437
 #: admin/taxonomy/class-taxonomy-metabox.php:245
 msgid "Go Premium"
 msgstr "Ir al premium"
@@ -3281,7 +3281,7 @@ msgstr "Avisos"
 
 #: admin/views/user-profile.php:44
 msgid "Removes the keyword tab from the metabox and disables all SEO-related suggestions."
-msgstr "Quita la pestaña de palabra clave de la caja meta y desactiva todas las sugerencias relacionadas con el SEO."
+msgstr "Quita la pestaña de palabra clave de la caja meta y desactiva todas las sugerencias relativas a la palabra clave."
 
 #: admin/views/user-profile.php:41
 msgid "Disable SEO analysis"
@@ -3323,7 +3323,7 @@ msgstr "Ajustes de migas de pan"
 msgid "Make primary"
 msgstr "Hacer principal"
 
-#: admin/metabox/class-metabox.php:383 admin/metabox/class-metabox.php:386
+#: admin/metabox/class-metabox.php:391 admin/metabox/class-metabox.php:394
 #: admin/taxonomy/class-taxonomy-metabox.php:135
 #: admin/taxonomy/class-taxonomy-metabox.php:138
 msgid "Content optimization"
@@ -3678,7 +3678,7 @@ msgstr "%1$sTu página principal no puede ser indexada por los motores de búsqu
 msgid "Once Weekly"
 msgstr "Una vez por semana"
 
-#: admin/metabox/class-metabox.php:442 admin/metabox/class-metabox.php:445
+#: admin/metabox/class-metabox.php:450 admin/metabox/class-metabox.php:453
 msgid "Add-ons"
 msgstr "Extras"
 
@@ -3698,7 +3698,7 @@ msgstr "Metadatos de Facebook/Open Graph"
 
 #: admin/class-recalculate-scores.php:47
 msgid "Recalculating SEO scores for all pieces of content with a focus keyword."
-msgstr "Recalculando la puntuación SEO para todo el contenido con palabra clave objetivo."
+msgstr "Recalcular las puntuaciones SEO para todo el contenido con una palabra clave focalizada."
 
 #. translators: 1: expands to a <span> containing the number of posts
 #. recalculated. 2: expands to a <strong> containing the total number of posts.
@@ -3720,7 +3720,7 @@ msgstr "Equipo Yoast"
 msgid "The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more."
 msgstr "La primera verdadera solución SEO todo en uno para WordPress, incluyendo análisis de contenido de páginas, mapas del sitio en XML y mucho más."
 
-#. #-#-#-#-#  wordpress-seo-code.pot (Yoast SEO 8.3)  #-#-#-#-#
+#. #-#-#-#-#  wordpress-seo-code.pot (Yoast SEO 8.4)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: admin/capabilities/class-capability-manager-integration.php:68
 msgid "Yoast SEO"
@@ -4946,7 +4946,7 @@ msgstr "Desactivar %s"
 msgid "The %1$s plugin might cause issues when used in conjunction with %2$s."
 msgstr "El plugin %1$s podría provocar problemas usado conjuntamente con %2$s."
 
-#: admin/class-yoast-form.php:505 admin/metabox/class-metabox.php:604
+#: admin/class-yoast-form.php:505 admin/metabox/class-metabox.php:612
 #: admin/taxonomy/class-taxonomy-fields-presenter.php:106
 msgid "Upload Image"
 msgstr "Subir imagen"
@@ -5268,11 +5268,11 @@ msgstr "SEO: Aceptable"
 msgid "SEO: No Focus Keyword"
 msgstr "SEO: Sin palabra clave objetivo"
 
-#: admin/metabox/class-metabox.php:814
+#: admin/metabox/class-metabox.php:822
 msgid "SEO issue: The featured image should be at least 200 by 200 pixels to be picked up by Facebook and other social media sites."
 msgstr "Problema de SEO: La imagen destacada debe ser de al menos 200 por 200 píxeles para que la use Facebook y otros sitios de redes sociales."
 
-#: admin/metabox/class-metabox.php:242 admin/taxonomy/class-taxonomy.php:231
+#: admin/metabox/class-metabox.php:250 admin/taxonomy/class-taxonomy.php:231
 msgid "(no parent)"
 msgstr "(sin superior)"
 
@@ -5453,7 +5453,7 @@ msgstr "Elimina la página del blog de las migas de pan"
 msgid "%s Breadcrumbs"
 msgstr "%s Migas de pan"
 
-#: admin/class-config.php:124 admin/metabox/class-metabox.php:826
+#: admin/class-config.php:124 admin/metabox/class-metabox.php:834
 #: admin/taxonomy/class-taxonomy.php:131
 msgid "Use Image"
 msgstr "Usar imagen"
@@ -5633,8 +5633,8 @@ msgstr "Search Console"
 msgid "Tools"
 msgstr "Herramientas"
 
-#: admin/metabox/class-metabox.php:403 admin/metabox/class-metabox.php:411
-#: admin/metabox/class-metabox.php:414
+#: admin/metabox/class-metabox.php:411 admin/metabox/class-metabox.php:419
+#: admin/metabox/class-metabox.php:422
 msgid "Advanced"
 msgstr "Avanzado"
 

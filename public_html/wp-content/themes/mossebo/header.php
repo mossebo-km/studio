@@ -47,8 +47,8 @@
                         </div>
                     </div>
                     <div class="col-3">
-                                <a href="#popup-call" class="button button-light button-long js-form-popup">
-                                    <?php _e('Расчитать сейчас', 'mossebo') ?>
+                                <a href="#popup-call" class="button button-primary button-long js-form-popup">
+                                    <?php _e('Заказать дизайн', 'mossebo') ?>
                                 </a>
                     </div>
                 </div>

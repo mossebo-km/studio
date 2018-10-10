@@ -45,7 +45,7 @@
                                             xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-location"></use>
                                     </svg>
                                     <div class="single-project__params-title">
-                                        <?php _e('Место', 'mossebo') ?>
+                                        <?php _e('Город', 'mossebo') ?>
                                     </div>
                                     <div class="single-project__params-value">
                                         <?php the_field('flat_place'); ?>
@@ -58,7 +58,7 @@
                                             xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-flat_rooms"></use>
                                     </svg>
                                     <div class="single-project__params-title">
-                                        <?php _e('Комнаты', 'mossebo') ?>
+                                        <?php _e('Количество комнат', 'mossebo') ?>
                                     </div>
                                     <div class="single-project__params-value">
                                         <?php the_field('flat_rooms'); ?>
@@ -70,7 +70,7 @@
                                             xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-flat_area"></use>
                                     </svg>
                                     <div class="single-project__params-title">
-                                        <?php _e('Метраж', 'mossebo') ?>
+                                        <?php _e('Общая площадь', 'mossebo') ?>
                                     </div>
                                     <div class="single-project__params-value">
                                         <?php the_field('flat_area'); ?>
@@ -84,7 +84,7 @@
                                             xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-flat_type"></use>
                                     </svg>
                                     <div class="single-project__params-title">
-                                        <?php _e('Серия дома', 'mossebo') ?>
+                                        <?php _e('Тип помещения', 'mossebo') ?>
                                     </div>
                                     <div class="single-project__params-value">
                                         <?php the_field('flat_type'); ?>
@@ -109,7 +109,7 @@
                                             xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-flat_style"></use>
                                     </svg>
                                     <div class="single-project__params-title">
-                                        <?php _e('Стиль дизайна', 'mossebo') ?>
+                                        <?php _e('Стиль интерьера', 'mossebo') ?>
                                     </div>
                                     <div class="single-project__params-value">
                                         <?php the_field('flat_style'); ?>

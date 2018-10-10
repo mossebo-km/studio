@@ -1,4 +1,5 @@
 <?php get_header(); ?>
 
-1111
+Файл шаблона index.php
+
 <?php get_footer(); ?>

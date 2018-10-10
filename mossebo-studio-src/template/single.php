@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+Файл шаблона single.php
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
     <div class="blocks blocks-content">
