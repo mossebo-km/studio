@@ -2531,6 +2531,7 @@ html, body {
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.6;
+  color: #323f4c;
   overflow-x: hidden;
 }
 
@@ -2603,9 +2604,33 @@ html, body {
   }
 }
 
+.title-h4 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1199.98px) {
+  .title-h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .title-h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .title-h4 {
+    font-size: 16px;
+  }
+}
+
 .title-h1,
 .title-h2,
-.title-h3 {
+.title-h3,
+.title-h4 {
   color: #323f4c;
   line-height: 1.2em;
   font-weight: 500;
@@ -2630,6 +2655,14 @@ html, body {
   }
 }
 
+a.title-h1,
+a.title-h2,
+a.title-h3,
+.title-h4 {
+  text-decoration: none;
+  display: block;
+}
+
 .clearfix:after {
   content: "";
   display: table;
@@ -2646,6 +2679,91 @@ html, body {
 .accent {
   color: #fcc600;
   font-weight: 700;
+}
+
+.content-text .alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.content-text .aligncenter, .content-text div.aligncenter {
+  margin: auto;
+}
+
+.content-text .alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.content-text .alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+.content-text .aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.content-text a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.content-text a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.content-text a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+.content-text a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-text .wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+.content-text .wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.content-text .wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+.content-text .wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+.content-text .wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.content-text .wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+.content-text p {
+  position: relative;
+  margin: 0;
+  padding-bottom: 16px;
 }
 
 .pd-0 {
@@ -6587,6 +6705,7 @@ body.compensate-for-scrollbar {
 }
 
 .single-project {
+  position: relative;
   color: #323f4c;
 }
 
@@ -6607,7 +6726,6 @@ body.compensate-for-scrollbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px;
   color: #969ca3;
   border-bottom: 1px solid #ecedf3;
 }
@@ -6640,6 +6758,50 @@ body.compensate-for-scrollbar {
 .single-project__params-value {
   font-size: 20px;
   color: #323f4c;
+}
+
+.archives-project__hover {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  height: 140px;
+  background: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.archives-project__image {
+  width: 100%;
+  background-color: #969ca3;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 5px;
+}
+
+.archives-project__image:before {
+  content: '';
+  display: block;
+  padding-top: 70%;
+}
+
+.archives-project .title-h4 {
+  max-height: 64px;
+  overflow: hidden;
+}
+
+.archives-project .excerpt-text {
+  max-height: 44px;
+  overflow: hidden;
+}
+
+.archives-project .single-project:hover {
+  cursor: pointer;
+}
+
+.archives-project .single-project:hover .archives-project__hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=app.css.map*/

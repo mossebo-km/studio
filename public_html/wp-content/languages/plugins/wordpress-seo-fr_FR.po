@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-10-03 20:24:32+0000\n"
+"PO-Revision-Date: 2018-10-10 09:07:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -188,7 +188,7 @@ msgstr[1] "Veuillez vérifier les %1$smodèles d’archive%2$s pour les types de
 
 #: languages/yoast-components.php:176
 msgid "Are you trying to use multiple keywords? You should add them separately below."
-msgstr "Essayez-vous d’utiliser plusieurs mots-clés ? Vous devriez les ajouter ci-dessous séparément."
+msgstr "Essayez-vous d’utiliser plusieurs requêtes ? Vous devriez les ajouter ci-dessous séparément."
 
 #: languages/yoast-components.php:179
 msgid "Focus keyword:"
@@ -1546,7 +1546,7 @@ msgstr "https://yoa.st/1uk"
 msgid "https://yoa.st/1uj"
 msgstr "https://yoa.st/1uj"
 
-#: admin/metabox/class-metabox.php:298
+#: admin/metabox/class-metabox.php:306
 #: admin/taxonomy/class-taxonomy-metabox.php:69
 msgid "Meta box"
 msgstr "Gestionnaire de métadonnées"
@@ -3264,7 +3264,7 @@ msgstr "Modifier &#8220;%s&#8221;"
 msgid "Premium"
 msgstr "Premium"
 
-#: admin/metabox/class-metabox.php:429
+#: admin/metabox/class-metabox.php:437
 #: admin/taxonomy/class-taxonomy-metabox.php:245
 msgid "Go Premium"
 msgstr "Passer à la version Premium"
@@ -3322,7 +3322,7 @@ msgstr "Réglages du fil d’Ariane"
 msgid "Make primary"
 msgstr "Rendre principal"
 
-#: admin/metabox/class-metabox.php:383 admin/metabox/class-metabox.php:386
+#: admin/metabox/class-metabox.php:391 admin/metabox/class-metabox.php:394
 #: admin/taxonomy/class-taxonomy-metabox.php:135
 #: admin/taxonomy/class-taxonomy-metabox.php:138
 msgid "Content optimization"
@@ -3677,7 +3677,7 @@ msgstr "%1$sVotre page d’accueil ne peut pas être indexée par les moteurs de
 msgid "Once Weekly"
 msgstr "Une fois par semaine"
 
-#: admin/metabox/class-metabox.php:442 admin/metabox/class-metabox.php:445
+#: admin/metabox/class-metabox.php:450 admin/metabox/class-metabox.php:453
 msgid "Add-ons"
 msgstr "Add-ons"
 
@@ -3719,7 +3719,7 @@ msgstr "L’équipe Yoast"
 msgid "The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more."
 msgstr "La première solution SEO tout-en-un pour WordPress, y compris l’analyse des pages de contenu, les plans de site XML et bien plus encore."
 
-#. #-#-#-#-#  wordpress-seo-code.pot (Yoast SEO 8.3)  #-#-#-#-#
+#. #-#-#-#-#  wordpress-seo-code.pot (Yoast SEO 8.4)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: admin/capabilities/class-capability-manager-integration.php:68
 msgid "Yoast SEO"
@@ -4945,7 +4945,7 @@ msgstr "Désactiver %s"
 msgid "The %1$s plugin might cause issues when used in conjunction with %2$s."
 msgstr "L’extension %1$s pourrait provoquer des problèmes si utiliser en conjonction avec %2$s."
 
-#: admin/class-yoast-form.php:505 admin/metabox/class-metabox.php:604
+#: admin/class-yoast-form.php:505 admin/metabox/class-metabox.php:612
 #: admin/taxonomy/class-taxonomy-fields-presenter.php:106
 msgid "Upload Image"
 msgstr "Téléverser une image"
@@ -5080,7 +5080,7 @@ msgstr "très difficile"
 
 #: languages/yoast-seo-js.php:34
 msgid "Try to make shorter sentences, using less difficult words to improve readability."
-msgstr "Essayez de faire des phrases plus courtes, en utilisant des mots moins compliqués afin d’améliorer la lisibilité."
+msgstr "Essayez de faire des phrases plus courtes, en utilisant des mots moins compliqués afin d’améliorer la lisibilité"
 
 #: languages/yoast-seo-js.php:30
 msgid "difficult"
@@ -5088,7 +5088,7 @@ msgstr "difficile"
 
 #: languages/yoast-seo-js.php:27
 msgid "Try to make shorter sentences to improve readability."
-msgstr "Essayez de faire des phrases plus courtes pour améliorer la lisibilité."
+msgstr "Essayez de faire des phrases plus courtes pour améliorer la lisibilité"
 
 #: languages/yoast-seo-js.php:24
 msgid "fairly difficult"
@@ -5267,11 +5267,11 @@ msgstr "SEO : OK"
 msgid "SEO: No Focus Keyword"
 msgstr "SEO : Pas de mot-clef principal"
 
-#: admin/metabox/class-metabox.php:814
+#: admin/metabox/class-metabox.php:822
 msgid "SEO issue: The featured image should be at least 200 by 200 pixels to be picked up by Facebook and other social media sites."
 msgstr "Problème SEO : L’image à la Une doit être au moins de 200 x 200 pixels pour être exploitable par Facebook et les autres réseaux sociaux."
 
-#: admin/metabox/class-metabox.php:242 admin/taxonomy/class-taxonomy.php:231
+#: admin/metabox/class-metabox.php:250 admin/taxonomy/class-taxonomy.php:231
 msgid "(no parent)"
 msgstr "(aucun parent)"
 
@@ -5452,7 +5452,7 @@ msgstr "Retirer la page de blog du fil d’Ariane"
 msgid "%s Breadcrumbs"
 msgstr "Fil d’Ariane de %s"
 
-#: admin/class-config.php:124 admin/metabox/class-metabox.php:826
+#: admin/class-config.php:124 admin/metabox/class-metabox.php:834
 #: admin/taxonomy/class-taxonomy.php:131
 msgid "Use Image"
 msgstr "Utiliser l’image"
@@ -5632,8 +5632,8 @@ msgstr "Search Console"
 msgid "Tools"
 msgstr "Outils"
 
-#: admin/metabox/class-metabox.php:403 admin/metabox/class-metabox.php:411
-#: admin/metabox/class-metabox.php:414
+#: admin/metabox/class-metabox.php:411 admin/metabox/class-metabox.php:419
+#: admin/metabox/class-metabox.php:422
 msgid "Advanced"
 msgstr "Avancé"
 

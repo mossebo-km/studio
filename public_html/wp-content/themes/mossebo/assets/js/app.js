@@ -782,7 +782,7 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {// ==================================================
-// fancyBox v3.5.1
+// fancyBox v3.5.2
 //
 // Licensed GPLv3 for open source use
 // or fancyBox Commercial License for commercial use
@@ -1425,7 +1425,7 @@ module.exports = Component.exports
     // ============================================================
 
     translate: function(obj, str) {
-      var arr = obj.opts.i18n[obj.opts.lang];
+      var arr = obj.opts.i18n[obj.opts.lang] || obj.opts.i18n.en;
 
       return str.replace(/\{\{(\w+)\}\}/g, function(match, n) {
         var value = arr[n];
@@ -1522,6 +1522,7 @@ module.exports = Component.exports
             type = "image";
           } else if (src.match(/\.(pdf)((\?|#).*)?$/i)) {
             type = "iframe";
+            obj = $.extend(true, obj, {contentType: "pdf", opts: {iframe: {preload: false}}});
           } else if (src.charAt(0) === "#") {
             type = "inline";
           }
@@ -2563,15 +2564,13 @@ module.exports = Component.exports
         ghost;
 
       // Check if need to show loading icon
-      requestAFrame(function() {
-        requestAFrame(function() {
-          var $img = slide.$image;
+      setTimeout(function() {
+        var $img = slide.$image;
 
-          if (!self.isClosing && slide.isLoading && (!$img || !$img.length || !$img[0].complete) && !slide.hasError) {
-            self.showLoading(slide);
-          }
-        });
-      });
+        if (!self.isClosing && slide.isLoading && (!$img || !$img.length || !$img[0].complete) && !slide.hasError) {
+          self.showLoading(slide);
+        }
+      }, 50);
 
       //Check if image has srcset
       self.checkSrcset(slide);
@@ -2894,8 +2893,8 @@ module.exports = Component.exports
       // The placeholder is created so we will know where to put it back.
       if (isQuery(content) && content.parent().length) {
         // Make sure content is not already moved to fancyBox
-        if (content.hasClass("fancybox-content")) {
-          content.parent(".fancybox-slide--html").trigger("onReset");
+        if (content.hasClass("fancybox-content") || content.parent().hasClass("fancybox-content")) {
+          content.parents(".fancybox-slide").trigger("onReset");
         }
 
         // Create temporary element marking original place of the content
@@ -3369,7 +3368,13 @@ module.exports = Component.exports
           .find("video,audio")
           .filter(":visible:first")
           .trigger("play")
-          .on("ended", $.proxy(self.next, self));
+          .one("ended", function() {
+            if (this.webkitExitFullscreen) {
+              this.webkitExitFullscreen();
+            }
+
+            self.next();
+          });
       }
 
       // Try to focus on the first focusable element
@@ -3393,8 +3398,15 @@ module.exports = Component.exports
 
     preload: function(type) {
       var self = this,
-        next = self.slides[self.currPos + 1],
-        prev = self.slides[self.currPos - 1];
+        prev,
+        next;
+
+      if (self.group.length < 2) {
+        return;
+      }
+
+      next = self.slides[self.currPos + 1];
+      prev = self.slides[self.currPos - 1];
 
       if (prev && prev.type === type) {
         self.loadSlide(prev);
@@ -3812,7 +3824,7 @@ module.exports = Component.exports
   });
 
   $.fancybox = {
-    version: "3.5.1",
+    version: "3.5.2",
     defaults: defaults,
 
     // Get current instance and execute a command.
@@ -5470,7 +5482,11 @@ module.exports = Component.exports
           }
 
           self.timer = setTimeout(function() {
-            instance.jumpTo((instance.currIndex + 1) % instance.group.length);
+            if (!instance.current.opts.loop && instance.current.index == instance.group.length - 1) {
+              instance.jumpTo(0);
+            } else {
+              instance.next();
+            }
           }, current.opts.slideShow.speed);
         }
       } else {
@@ -5498,7 +5514,7 @@ module.exports = Component.exports
 
       if (current) {
         self.$button
-          .attr("title", current.opts.i18n[current.opts.lang].PLAY_STOP)
+          .attr("title", (current.opts.i18n[current.opts.lang] || current.opts.i18n.en).PLAY_STOP)
           .removeClass("fancybox-button--play")
           .addClass("fancybox-button--pause");
 
@@ -5519,7 +5535,7 @@ module.exports = Component.exports
       self.clear();
 
       self.$button
-        .attr("title", current.opts.i18n[current.opts.lang].PLAY_START)
+        .attr("title", (current.opts.i18n[current.opts.lang] || current.opts.i18n.en).PLAY_START)
         .removeClass("fancybox-button--pause")
         .addClass("fancybox-button--play");
 

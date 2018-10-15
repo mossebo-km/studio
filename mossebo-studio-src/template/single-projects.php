@@ -10,7 +10,7 @@
 
                         <?php the_post_thumbnail('full'); ?>
 
-                        <div class="single-project__status-bar">
+                        <div class="single-project__status-bar pd-40">
                             <svg class="symbol-icon">
                                 <use
                                     xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-calendar"></use>
@@ -31,10 +31,6 @@
                             <div class="single-project__comments">
                                 <?php comments_number(); ?>
                             </div>
-                        </div>
-
-                        <div class="content-text pl-40 pr-40" style="display: none !important;">
-                            <?php the_excerpt(); ?>
                         </div>
 
                         <div class="single-project__params pl-40 pr-40 pb-40">

@@ -1,0 +1,38 @@
+.archives-project {
+    &__hover {
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        height: 140px;
+        background: $color-ui;
+        border-bottom-left-radius: $radius;
+        border-bottom-right-radius: $radius;
+        transition: 0.3s;
+    }
+    &__image {
+        width: 100%;
+        background-color: $color-text-secondary;
+        background-size: cover;
+        background-position: center center;
+        border-radius: $radius;
+        &:before {
+            content: '';
+            display: block;
+            padding-top: 70%;
+        }
+    }
+    .title-h4 {
+        max-height: 64px;
+        overflow: hidden;
+    }
+    .excerpt-text {
+        max-height: 44px;
+        overflow: hidden;
+    }
+    .single-project:hover {
+        cursor: pointer;
+        .archives-project__hover {
+            opacity: 1;
+        }
+    }
+}
