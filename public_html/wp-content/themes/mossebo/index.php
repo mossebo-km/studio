@@ -1,5 +1,4 @@
-<?php get_header(); ?>
+<?php
 
-Файл шаблона index.php
-
-<?php get_footer(); ?>
+// Inclide Blog
+get_template_part('page__blog');
