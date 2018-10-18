@@ -10,7 +10,8 @@
         "watch-poll": "npm run watch -- --watch-poll",
         "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
         "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "deploy": "node deploy"
     },
     "author": "Vlad Starkovsky",
     "license": "ISC",
@@ -19,9 +20,9 @@
         "axios": "^0.18.0",
         "babel-polyfill": "^6.26.0",
         "bootstrap": "^4.1.3",
-        "browser-sync": "^2.26.0",
+        "browser-sync": "^2.26.3",
         "browser-sync-webpack-plugin": "^2.2.2",
-        "chart.js": "^2.7.2",
+        "chart.js": "^2.7.3",
         "cross-env": "^5.1.6",
         "hchs-vue-charts": "^1.2.8",
         "jquery": "^3.2",
@@ -34,5 +35,8 @@
         "postcss-short-position": "^3.0.0",
         "swiper": "^4.4.0",
         "vue": "^2.5.16"
+    },
+    "devDependencies": {
+        "ftp-deploy": "^2.1.4"
     }
 }
