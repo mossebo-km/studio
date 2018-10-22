@@ -16,7 +16,7 @@
                                     xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-calendar"></use>
                             </svg>
                             <div class="single-project__date">
-                                <?php the_date('j F Y'); ?>
+                                <?php echo get_the_date('j F Y', get_the_ID()); ?>
                             </div>
                             <svg class="symbol-icon">
                                 <use xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-views"></use>

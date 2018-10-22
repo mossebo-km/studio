@@ -5,14 +5,14 @@ $args = array(
     'posts_per_page' => 9999,
 );
 // Делаем WP_Query
-$query = new WP_Query( $args );
+$query = new WP_Query($args);
 
 $studios_id = 0;
 $studios = [];
 
 // Перебираем все студии
-if ( $query->have_posts() ) {
-    while ( $query->have_posts() ) {
+if ($query->have_posts()) {
+    while ($query->have_posts()) {
         $query->the_post();
 
         $map = json_decode(get_field('map'), true);

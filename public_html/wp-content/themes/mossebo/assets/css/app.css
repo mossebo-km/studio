@@ -5006,6 +5006,124 @@ img {
   margin-top: 32px;
 }
 
+.blog-card {
+  position: relative;
+}
+
+.blog-card__image {
+  width: 100%;
+  background-color: #969ca3;
+  background-size: cover;
+  background-position: center center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.blog-card__image:before {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), color-stop(40%, rgba(0, 0, 0, 0)), color-stop(99%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+}
+
+.blog-card__bage {
+  display: inline-block;
+  background: #fff;
+  border-radius: 30px;
+  padding: 8px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.blog-card__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.blog-card__date .symbol-icon {
+  margin-right: 8px;
+}
+
+.blog-card__views, .blog-card__comments {
+  padding: 0 24px 0 16px;
+}
+
+.blog-card__link {
+  text-decoration: none;
+  color: #969ca3;
+}
+
+.blog-card__link:hover {
+  opacity: 0.9;
+}
+
+.blog-card__categorys {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.blog-card__categorys .blog-card__bage {
+  color: #fff;
+  padding: 4px 16px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.blog-card__categorys .blog-card__bage + .blog-card__bage {
+  margin-left: 8px;
+}
+
+.blog-card .excerpt-text {
+  border-top: 1px solid #ecedf3;
+}
+
+.blog-card__status-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #969ca3;
+  border-top: 1px solid #ecedf3;
+}
+
+.blog-card .symbol-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.blog-card__40 {
+  background: #7EB0D5;
+}
+
+.blog-card__41 {
+  background: #81D6A3;
+}
+
+.blog-card__42 {
+  background: #FFB55A;
+}
+
+.blog-card__43 {
+  background: #A8B6C0;
+}
+
+.blog-card__44 {
+  background: #FB8575;
+}
+
 /**
  * Swiper 4.4.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -6802,6 +6920,10 @@ body.compensate-for-scrollbar {
 
 .archives-project .single-project:hover .archives-project__hover {
   opacity: 1;
+}
+
+.archive-blog .title-h4 {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=app.css.map*/

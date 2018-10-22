@@ -41,6 +41,8 @@
 @import "u-blocks/videoblog";
 @import "u-blocks/why-we";
 
+@import "u-blocks/blog-card";
+
 @import "plugins/swiper";
 @import "plugins/fancybox";
 
@@ -50,3 +52,5 @@
 
 @import "pages/single-project";
 @import "pages/archives-project";
+@import "pages/single-blog";
+@import "pages/archives-blog";
