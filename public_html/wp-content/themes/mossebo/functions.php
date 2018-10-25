@@ -35,6 +35,10 @@ add_action('after_setup_theme', function () {
     ));
 });
 
+## Удаляет "Рубрика: ", "Метка: " и т.д. из заголовка архива
+add_filter( 'get_the_archive_title', function( $title ){
+    return preg_replace('~^[^:]+: ~', '', $title );
+});
 
 if (! function_exists('mix')) {
     /**

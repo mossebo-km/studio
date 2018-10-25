@@ -3302,8 +3302,8 @@ a.title-h3,
 
 @media (min-width: 992px) {
   .symbol-logo--header {
-    width: 137px;
-    height: 47px;
+    width: 110px;
+    height: 39px;
   }
 }
 
@@ -3314,6 +3314,25 @@ a.title-h3,
 .header small {
   color: #969ca3;
   display: block;
+}
+
+.header__float {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.header__float_item {
+  position: relative;
 }
 
 .nav {
@@ -4134,6 +4153,25 @@ img {
 
 .wp-block-image {
   margin: 0;
+}
+
+.breadcrumbs {
+  color: #323f4c;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #969ca3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-bottom: 1px solid transparent;
+}
+
+.breadcrumbs a:hover {
+  color: #323f4c;
+  border-bottom: 1px solid #323f4c;
 }
 
 .audience-socials-slider__title span {
@@ -5026,6 +5064,8 @@ img {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), color-stop(40%, rgba(0, 0, 0, 0)), color-stop(99%, rgba(0, 0, 0, 0)));
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 99%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .blog-card__bage {
@@ -6878,19 +6918,38 @@ body.compensate-for-scrollbar {
   color: #323f4c;
 }
 
+.archives-project__item {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.archives-project__item:hover {
+  cursor: pointer;
+}
+
+.archives-project__item:hover .archives-project__hover {
+  opacity: 1;
+}
+
 .archives-project__hover {
   position: absolute;
   bottom: 0;
   opacity: 0;
-  height: 140px;
+  height: 156px;
   background: #fff;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 9;
 }
 
 .archives-project__image {
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   background-color: #969ca3;
   background-size: cover;
@@ -6907,19 +6966,15 @@ body.compensate-for-scrollbar {
 .archives-project .title-h4 {
   max-height: 64px;
   overflow: hidden;
+  border-bottom: 1px solid #ecedf3;
 }
 
 .archives-project .excerpt-text {
   max-height: 44px;
   overflow: hidden;
-}
-
-.archives-project .single-project:hover {
-  cursor: pointer;
-}
-
-.archives-project .single-project:hover .archives-project__hover {
-  opacity: 1;
+  display: block;
+  color: #323f4c;
+  text-decoration: none;
 }
 
 .archive-blog .title-h4 {

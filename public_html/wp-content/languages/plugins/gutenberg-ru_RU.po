@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Gutenberg - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-10-21 12:06:14+0000\n"
+"PO-Revision-Date: 2018-10-24 17:21:06+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -47,6 +47,43 @@ msgstr "Искать %s"
 #: languages/gutenberg-translations.php:1670
 msgid "Your post will be published at the specified date and time."
 msgstr "Ваша запись будет опубликована в указанную дату и время."
+
+#: languages/gutenberg-translations.php:1749
+msgid "Terms"
+msgstr "Термины"
+
+#: languages/gutenberg-translations.php:1667
+msgid "Are you ready to schedule?"
+msgstr "Вы готовы запланировать?"
+
+#: languages/gutenberg-translations.php:1574
+msgid "Take Over"
+msgstr "Перехватить"
+
+#. translators: 'post' is generic and may be of any type (post, page, etc.).
+#: languages/gutenberg-translations.php:1568
+msgid "Another user is currently working on this post, which means you cannot make changes, unless you take over."
+msgstr "Другой пользователь уже редактирует эту запись. Вы хотите перехватить?"
+
+#. translators: 'post' is generic and may be of any type (post, page, etc.).
+#: languages/gutenberg-translations.php:1564
+msgid "%s is currently working on this post, which means you cannot make changes, unless you take over."
+msgstr "%s уже редактирует эту запись. Вы хотите перехватить?"
+
+#: languages/gutenberg-translations.php:2046
+msgctxt "term"
+msgid "Available %s"
+msgstr "Доступный %s"
+
+#. translators: 'post' is generic and may be of any type (post, page, etc.).
+#: languages/gutenberg-translations.php:1557
+msgid "Another user now has editing control of this post. Don't worry, your changes up to this moment have been saved"
+msgstr "В данный момент другой пользователь редактирует эту запись. Не беспокойтесь, все ваши изменения на текущий момент будут сохранены"
+
+#. translators: 'post' is generic and may be of any type (post, page, etc.).
+#: languages/gutenberg-translations.php:1553
+msgid "%s now has editing control of this post. Don't worry, your changes up to this moment have been saved"
+msgstr "%s в данный момент редактирует эту запись. Не беспокойтесь, все ваши изменения на текущий момент будут сохранены"
 
 #: languages/gutenberg-translations.php:242
 msgid "Media Settings"
@@ -120,6 +157,39 @@ msgstr "Этот блок можно использовать только од�
 msgid "HTML"
 msgstr "HTML"
 
+#: languages/gutenberg-translations.php:650
+msgid "Solid Color"
+msgstr "Сплошной цвет"
+
+#: languages/gutenberg-translations.php:236
+msgid "Content is fixed size."
+msgstr "Содержимое фиксированного размера."
+
+#. translators: %s: post title
+#: gutenberg.php:273
+msgid "Export &#8220;%s&#8221; as JSON"
+msgstr "Экспортировать &#8220;%s&#8221; как JSON"
+
+#: languages/gutenberg-translations.php:1284
+msgid "Resolve Block"
+msgstr "Разрешенный блок"
+
+#: languages/gutenberg-translations.php:1291
+msgid "Resolve"
+msgstr "Разрешение"
+
+#: languages/gutenberg-translations.php:1543
+msgid "Someone else has taken over this post."
+msgstr "Кто-то еще перехватил эту запись."
+
+#: languages/gutenberg-translations.php:1294
+msgid "This block contains unexpected or invalid content."
+msgstr "Этот блок содержит неожиданный или недопустимый контент."
+
+#: languages/gutenberg-translations.php:1215
+msgid "Enable Pre-publish Checks"
+msgstr "Включить проверки перед публикацией"
+
 #: gutenberg.php:277
 msgid "Export as JSON"
 msgstr "Экспорт как JSON"
@@ -142,6 +212,67 @@ msgid_plural "%d Blocks"
 msgstr[0] "%d блок"
 msgstr[1] "%d блока"
 msgstr[2] "%d блоков"
+
+#: languages/gutenberg-translations.php:1987
+msgid "Period"
+msgstr "Период"
+
+#: languages/gutenberg-translations.php:1254
+msgid "Current"
+msgstr "Текущий"
+
+#: languages/gutenberg-translations.php:1984
+msgid "Comma"
+msgstr "Запятая"
+
+#: languages/gutenberg-translations.php:1990
+msgid "Backtick"
+msgstr "Кавычка"
+
+#: languages/gutenberg-translations.php:1248
+msgid "Change Alignment"
+msgstr "Изменить выравнивание"
+
+#: languages/gutenberg-translations.php:1239
+msgid "Change Text Alignment"
+msgstr "Изменить выравнивание текста"
+
+#. translators: The 'escape' key on a keyboard.
+#: languages/gutenberg-translations.php:1053
+msgid "Escape"
+msgstr "Экранировать"
+
+#: languages/gutenberg-translations.php:1996
+msgid "Import"
+msgstr "Импорт"
+
+#: languages/gutenberg-translations.php:1388
+msgid "Change type of %d block"
+msgid_plural "Change type of %d blocks"
+msgstr[0] "Изменить тип %d блока"
+msgstr[1] "Изменить тип %d блока"
+msgstr[2] "Изменить тип %d блока"
+
+#. translators: The forward-slash character. e.g. '/'.
+#: languages/gutenberg-translations.php:1075
+msgid "Forward-slash"
+msgstr "Обратный слеш"
+
+#: languages/gutenberg-translations.php:1251
+msgid "After Conversion"
+msgstr "После преобразования"
+
+#: languages/gutenberg-translations.php:2002
+msgid "Invalid Reusable Block JSON file"
+msgstr "Невалидный JSON файл для \"Моего блока\""
+
+#: languages/gutenberg-translations.php:763
+msgid "Template block used as a container."
+msgstr "Использовать шаблон блока как контейнер."
+
+#: languages/gutenberg-translations.php:760
+msgid "Reusable Template"
+msgstr "Мой шаблон"
 
 #: languages/gutenberg-translations.php:956
 msgid "View Posts"

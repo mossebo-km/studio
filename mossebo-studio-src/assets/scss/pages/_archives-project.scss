@@ -1,15 +1,29 @@
 .archives-project {
+    &__item {
+        position: relative;
+        box-sizing: border-box;
+        &:hover {
+            cursor: pointer;
+            .archives-project__hover {
+                opacity: 1;
+            }
+        }
+    }
     &__hover {
         position: absolute;
         bottom: 0;
         opacity: 0;
-        height: 140px;
+        height: 156px;
         background: $color-ui;
         border-bottom-left-radius: $radius;
         border-bottom-right-radius: $radius;
         transition: 0.3s;
+        z-index: 9;
     }
     &__image {
+        display: block;
+        position: relative;
+        box-sizing: border-box;
         width: 100%;
         background-color: $color-text-secondary;
         background-size: cover;
@@ -24,15 +38,13 @@
     .title-h4 {
         max-height: 64px;
         overflow: hidden;
+        border-bottom: 1px solid $color-border;
     }
     .excerpt-text {
         max-height: 44px;
         overflow: hidden;
-    }
-    .single-project:hover {
-        cursor: pointer;
-        .archives-project__hover {
-            opacity: 1;
-        }
+        display: block;
+        color: $color-text-primary;
+        text-decoration: none;
     }
 }

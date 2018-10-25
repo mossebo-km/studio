@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Really Simple SSL - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-10-14 19:08:14+0000\n"
+"PO-Revision-Date: 2018-10-22 16:46:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,6 +15,18 @@ msgstr ""
 msgid "Once every minute"
 msgstr "Один раз в минуту"
 
+#: class-multisite.php:737
+msgid "You have just started enabling or disabling SSL on multiple websites at once, and this process is not completed yet. Please refresh this page to check if the process has finished. It will proceed in the background."
+msgstr "Вы только что начали запуск либо отключение SSL на нескольких сайтах одновременно и этот процесс еще не завершен. Пожалуйста, обновите эту страницу, чтобы проверить завершен ли процесс. Процесс продолжится в фоновом режиме."
+
+#: class-multisite.php:735
+msgid "Conversion of websites %s percent complete."
+msgstr "Ковертирование веб-сайтов завершено на %s процентов"
+
+#: class-admin.php:2424
+msgid "The Complianz GDPR Privacy Suite for WordPress. Simple, Quick and Complete. Up-to-date legal documents by one of the most prominent EU IT Law firms."
+msgstr "Плагин Complianz GDPR Privacy Suite для WordPress. Простой, Быстрый и Полный. Свежайшие юридические документы от одной из самых известных IT юридических фирм ЕС."
+
 #: class-admin.php:1861
 msgid "No thanks"
 msgstr "Нет, спасибо"
@@ -26,6 +38,10 @@ msgstr "Возможно позже"
 #: class-admin.php:1859
 msgid "Leave a review"
 msgstr "Оставьте отзыв"
+
+#: class-admin.php:1855
+msgid "Hi, you have been using Really Simple SSL for a month now, awesome! If you have a moment, please consider leaving a review on WordPress.org to spread the word. We greatly appreciate it! If you have any questions or feedback, leave us a %smessage%s."
+msgstr "Привет, вы используете Really Simple SSL уже месяц, прекрасно! Если у вас есть минутка, пожалуйста, оставьте отзыв на WordPress.org, чтобы поделиться впечатлениями. Мы будем очень признательны! Если у вас есть вопросы или отзывы, отправьте нам %sсообщение%s."
 
 #: class-admin.php:2960
 msgid "Deactivate Plugin and keep SSL"
@@ -141,7 +157,7 @@ msgstr "Замечены возможные проблемы с сертифик
 
 #: class-admin.php:80
 msgid "Really Simple SSL and Really Simple SSL add-ons do not process any personal identifiable information, so the GDPR does not apply to these plugins or usage of these plugins on your website. You can find our privacy policy <a href=\"%s\" target=\"_blank\">here</a>."
-msgstr "Really Simple SSL и Really Simple SSL дополнения не обрабатывают никакой личной информации, так что GDPR не относится к данным плагинам или использованию этих плагинов на вашем веб-сайте. Вы можете ознакомиться с нашей политикой конфиденциальности<a href=\"%s\" target=\"_blank\">тут</a>"
+msgstr "Really Simple SSL и Really Simple SSL дополнения не обрабатывают никакой личной информации, так что GDPR не относится к данным плагинам или использованию этих плагинов на вашем веб-сайте. Вы можете ознакомиться с нашей политикой конфиденциальности <a href=\"%s\" target=\"_blank\">тут</a>"
 
 #: class-admin.php:434
 msgid "It is recommended to take a %sbackup%s of your site before activating SSL"

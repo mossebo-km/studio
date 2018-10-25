@@ -14,34 +14,34 @@
 
     <header class="header">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-2">
+            <div class="header__float">
+                <div class="header__float_item">
                     <a href="/" class="logo logo--header">
                         <svg class="symbol-logo symbol-logo--header">
                             <use xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#logo-header"></use>
                         </svg>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="header__float_item">
                     <div class="location">
                         Санкт-Петербург
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="header__float_item">
                     <div class="phone">
                         +7 (495) 000-00-00
                         <small>пн-пт с 10:00-19:00</small>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="header__float_item">
                     <div class="phone">
                         8 (800) 707-83-47
                         <small><?php _e('служба контроля качества', 'mossebo') ?></small>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="header__float_item">
                     <a href="#popup-call" class="button button-primary button-long js-form-popup">
-                        <?php _e('Заказать дизайн', 'mossebo') ?>
+                        <?php _e('Заказать звонок', 'mossebo') ?>
                     </a>
                 </div>
             </div>

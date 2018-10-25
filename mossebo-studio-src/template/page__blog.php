@@ -18,6 +18,9 @@ $query = new WP_Query($args);
 
 <div class="archive-blog">
     <div class="container">
+        <?php
+            get_template_part('includes/breadcrumbs');
+        ?>
         <h1 class="title-h1"><?php the_title(); ?></h1>
         <div class="row">
             <div class="col-md-9">

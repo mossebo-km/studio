@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-10-17 13:45:09+0000\n"
+"PO-Revision-Date: 2018-10-23 16:33:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,25 +11,665 @@ msgstr ""
 "Language: ru\n"
 "Project-Id-Version: Plugins - Yoast SEO - Stable (latest release)\n"
 
-#: languages/wordpress-seojs.php:206
+#. Translators: %1$s and $3$s expand to the admin search page for the keyword,
+#. %2$d expands to the number 	   of times this keyword has been used before,
+#. %4$s and %5$s expand to links to yoast.com, %6$s expands to 	   the anchor
+#. end tag
+#: languages/yoast-seo-js.php:407
+msgid "%4$sPreviously used keyphrase%6$s: You've used this keyphrase %1$s%2$d times before%3$s. %5$sDo not use your keyphrase more than once%6$s."
+msgstr "%4$sРанее использованное ключевое слово%6$s: вы уже использовали это ключевое слово %1$s%2$d раз перед%3$s. %5$sНе используйте ключевые слова более одного раза%6$s."
+
+#. Translators: %1$s and %2$s expand to an admin link where the keyword is
+#. already used. %3$s and %4$s 	   expand to links on yoast.com, %4$s expands
+#. to the anchor end tag.
+#: languages/yoast-seo-js.php:401
+msgid "%3$sPreviously used keyphrase%5$s: You've used this keyphrase %1$sonce before%2$s. %4$sDo not use your keyphrase more than once%5$s."
+msgstr "%3$sРанее использованное ключевое слово%5$s: вы уже использовали это ключевое слово %1$sодин раз перед%2$s. %4$sНе используйте ключевые слова более одного раза%5$s."
+
+#: languages/yoast-seo-js.php:396
+msgid "%1$sPreviously used keyphrase%2$s: You've not used this keyphrase before, very good."
+msgstr "%1$sРанее использованное ключевое слово%2$s: Вы еще не использовали это ключевое слово. Отлично!"
+
+#. Translators: %1$s and %2$s open links to an articles about stopwords, %3$s
+#. closes the links
+#: languages/yoast-seo-js.php:389
+msgid "%1$sSlug stopwords%3$s: The slug for this page contains a stop word. %2$sRemove it%3$s!"
+msgid_plural "%1$sSlug stopwords%3$s: The slug for this page contains stop words. %2$sRemove them%3$s!"
+msgstr[0] "%1$sСтоп-слова в ярлыке%3$s: Ярлык у этой страницы содержит стоп-слово. %2$sУберите его%3$s!"
+msgstr[1] "%1$sСтоп-слова в ярлыке%3$s: Ярлык у этой страницы содержит стоп-слова. %2$sУберите его%3$s!"
+msgstr[2] "%1$sСтоп-слова в ярлыке%3$s: Ярлык у этой страницы содержит стоп-слова. %2$sУберите его%3$s!"
+
+#. Translators:  %1$s and %2$s expand to links on yoast.com, %3$s expands to
+#. the anchor end tag
+#: languages/yoast-seo-js.php:385
+msgid "%1$sSlug too long%3$s: the slug for this page is a bit long. %2$sShorten it%3$s!"
+msgstr "%1$sЯрлык слишком длинный%3$s: ярлык для этой страницы слишком длинный. %2$sСократите его%3$s!"
+
+#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:381
+msgid "%1$sKeyphrase in slug%2$s: More than half of your keyphrase appears in the slug. That's great!"
+msgstr "%1$sКлючевое слово в ярлыке%2$s: Больше половины ключевой фразы есть в ярлыке. Это замечательно!"
+
+#. Translators:  %1$s and %2$s expand to links on yoast.com, %3$s expands to
+#. the anchor end tag
+#: languages/yoast-seo-js.php:377
+msgid "%1$sKeyphrase in slug%3$s: (Part of) your keyphrase does not appear in the slug. %2$sChange that%3$s!"
+msgstr "%1$sКлючевое слово в ярлыке%3$s: В ярлыке нет (части) фразы ключевого слова. %2$sИзмените это%3$s!"
+
+#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:372
+msgid "%1$sKeyphrase in slug%2$s: Great work!"
+msgstr "%1$sКлючевое слово в ярлыке%2$s: Отлично сделано!"
+
+#. Translators: %1$s and %2$s expand to a link on yoast.com, 	   %3$s expands
+#. to the anchor end tag, %4$s expands to the keyword of the article.
+#: languages/yoast-seo-js.php:368
+msgid "%1$sKeyphrase in title%3$s: Not all the words from your keyphrase \"%4$s\" appear in the SEO title. %2$sTry to use the exact match of your keyphrase in the SEO title%3$s."
+msgstr "%1$sКлючевая фраза в заголовке%3$s: Не все слова из вашей ключевой фразы \"%4$s\" встречаются в SEO заголовке. %2$sИспользуйте точную копию ключевой фразы в SEO заголовке%3$s."
+
+#. Translators: %1$s and %2$s expand to a link on yoast.com, 	   %3$s expands
+#. to the anchor end tag.
+#: languages/yoast-seo-js.php:363
+msgid "%1$sKeyphrase in title%3$s: Does not contain the exact match. %2$sTry to write the exact match of your keyphrase in the SEO title%3$s."
+msgstr "%1$sКлючевая фраза в заголовке%3$s: SEO заголовок не содержит точную копию ключевой фразы. %2$sИспользуйте точную копию ключевой фразы в SEO заголовке%3$s."
+
+#. Translators: %1$s and %2$s expand to a link on yoast.com, 	   %3$s expands
+#. to the anchor end tag.
+#: languages/yoast-seo-js.php:357
+msgid "%1$sKeyphrase in title%3$s: The exact match of the keyphrase appears in the SEO title, but not at the beginning. %2$sTry to move it to the beginning%3$s."
+msgstr "%1$sКлючевая фраза в заголовке%3$s: Точная копия ключевой фразы встречается в SEO заголовке, но не в его начале. %2$sПостарайтесь передвинуть его в начало SEO заголовка%3$s."
+
+#. Translators: %1$s expands to a link on yoast.com, 	   %2$s expands to the
+#. anchor end tag.
+#: languages/yoast-seo-js.php:352
+msgid "%1$sKeyphrase in title%2$s: The exact match of the keyphrase appears at the beginning of the SEO title. Good job!"
+msgstr "%1$sКлючевая фраза в заголовке%2$s: Точная копия ключевой фразы встречается в SEO заголовке. Отличная работа!"
+
+#. Translators: %1$s and %2$s expand to links on yoast.com, %3$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:347
+msgid "%1$sImage alt attributes%3$s: Images on this page do not have alt attributes with words from your keyphrase. %2$sFix that%3$s!"
+msgstr "%1$sAlt-атрибуты изображений%3$s: Изображения на этой странице не содержат alt-атрибутов со словами из вашей ключевой фразы. %2$sИсправьте это%3$s!"
+
+#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:341
+msgid "%1$sImage alt attributes%2$s: Some images on this page contain alt attributes with words from your keyphrase! Good job!"
+msgstr "%1$sAlt-атрибуты изображений%2$s: Некоторые изображения на этой странице содержат alt-атрибуты со словами из вашей ключевой фразы! Отлично!"
+
+#. Translators: %1$s and %2$s expand to links on yoast.com, %3$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:337
+msgid "%1$sImage alt attributes%3$s: No images appear on this page. %2$sAdd some%3$s!"
+msgstr "%1$sAlt-атрибуты изображений%3$s: На этой странице нет изображений. %2$sДобавьте их%3$s!"
+
+#. Translators:  %1$s and %2$s expand to links on yoast.com, %3$s expands to
+#. the anchor end tag
+#: languages/yoast-seo-js.php:333
+msgid "%1$sLink keyphrase%3$s: You're linking to another page with the words you want this page to rank for. %2$sDon't do that%3$s!"
+msgstr "%1$sСсылка с ключевой фразой%3$s: Вы ссылаетесь на другую страницу, используя слова из ключевой фразы. %2$sНе делайте этого%3$s!"
+
+#. Translators: The preceding sentence is "Text length: The text contains x
+#. words.", 	   %3$s expands to a link on yoast.com, 	   %4$s expands to the
+#. anchor end tag, 	   %5$d expands to the recommended minimum of words.
+#: languages/yoast-seo-js.php:329
+msgid "This is far below the recommended minimum of %5$d word. %3$sAdd more content%4$s."
+msgid_plural "This is far below the recommended minimum of %5$d words. %3$sAdd more content%4$s."
+msgstr[0] "Это существенно ниже рекомендуемого минимума в %5$d слово. %3$sДобавьте больше текста%4$s."
+msgstr[1] "Это существенно ниже рекомендуемого минимума в %5$d слова. %3$sДобавьте больше текста%4$s."
+msgstr[2] "Это существенно ниже рекомендуемого минимума в %5$d слов. %3$sДобавьте больше текста%4$s."
+
+#. Translators: The preceding sentence is "Text length: The text contains x
+#. words.", 	   %3$s expands to a link on yoast.com, 	   %4$s expands to the
+#. anchor end tag, 	   %5$d expands to the recommended minimum of words.
+#: languages/yoast-seo-js.php:321
+msgid "This is below the recommended minimum of %5$d word. %3$sAdd more content%4$s."
+msgid_plural "This is below the recommended minimum of %5$d words. %3$sAdd more content%4$s."
+msgstr[0] "Это ниже рекомендуемого минимума в %5$d слово. %3$sДобавьте больше текста%4$s."
+msgstr[1] "Это ниже рекомендуемого минимума в %5$d слова. %3$sДобавьте больше текста%4$s."
+msgstr[2] "Это ниже рекомендуемого минимума в %5$d слов. %3$sДобавьте больше текста%4$s."
+
+#. Translators: %1$d expands to the number of words in the text, 	   %2$s
+#. expands to a link on yoast.com, %4$d expands to the anchor end tag.
+#. Translators: %1$d expands to the number of words in the text, 	   %2$s
+#. expands to a link on yoast.com, %4$s expands to the anchor end tag.
+#: languages/yoast-seo-js.php:304
+msgid "%2$sText length%4$s: The text contains %1$d word."
+msgid_plural "%2$sText length%4$s: The text contains %1$d words."
+msgstr[0] "%2$sДлина текста%4$s: Текст содержит %1$d слово."
+msgstr[1] "%2$sДлина текста%4$s: Текст содержит %1$d слова."
+msgstr[2] "%2$sДлина текста%4$s: Текст содержит %1$d слов."
+
+#. Translators: %1$d expands to the number of words in the text, 	   %2$s
+#. expands to a link on yoast.com, %3$s expands to the anchor end tag
+#: languages/yoast-seo-js.php:291
+msgid "%2$sText length%3$s: The text contains %1$d word. Good job!"
+msgid_plural "%2$sText length%3$s: The text contains %1$d words. Good job!"
+msgstr[0] "%2$sДлина текста%3$s: Текста содержит %1$d слово. Отличная работа!"
+msgstr[1] "%2$sДлина текста%3$s: Текста содержит %1$d слова. Отличная работа!"
+msgstr[2] "%2$sДлина текста%3$s: Текста содержит %1$d слов. Отличная работа!"
+
+#. Translators: %1$s and %2$s expand to links on yoast.com, %3$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:285
+msgid "%1$sSEO title width%3$s: %2$sPlease create an SEO title%3$s."
+msgstr "%1$sШирина SEO заголовка%3$s: %2$sПожалуйста, добавьте SEO заголовок%3$s."
+
+#. Translators: %1$s and %2$s expand to links on yoast.com, %3$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:281
+msgid "%1$sSEO title width%3$s: The SEO title wider than the viewable limit. %2$sTry to make it shorter%3$s."
+msgstr "%1$sШирина SEO заголовка%3$s: Ваш SEO заголовок шире, чем видимый предел. %2$sПостарайтесь сократить его%3$s."
+
+#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:277
+msgid "%1$sSEO title width%2$s: Good job!"
+msgstr "%1$sШирина SEO заголовка%2$s: Отличная работа!"
+
+#. Translators: %1$s and %2$s expand to links on yoast.com, %3$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:273
+msgid "%1$sSEO title width%3$s: The SEO title is too short. %2$sUse the space to add keyphrase variations or create compelling call-to-action copy%3$s."
+msgstr "%1$sШирина SEO заголовка%3$s: SEO заголовок слишком короткий. %2$sИспользуйте пространство, чтобы добавить слова из ключевой фразы или призыв к действию%3$s."
+
+#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
+#. end tag
+#: languages/yoast-seo-js.php:269
+msgid "%1$sOutbound links%2$s: There are both nofollowed and normal outbound links on this page. Good job!"
+msgstr "%1$sИсходящие ссылки%2$s: Есть ссылки и нормальные и с атрибутами nofollow. Хорошо!"
+
+#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
+#. end tag
+#: languages/yoast-seo-js.php:265
+msgid "%1$sOutbound links%2$s: Good job!"
+msgstr "%1$sИсходящие ссылки%2$s: Хорошая работа!"
+
+#. Translators: %1$s and %2$s expand to links on yoast.com, %3$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:261
+msgid "%1$sOutbound links%3$s: All outbound links on this page are nofollowed. %2$sAdd some normal links%3$s."
+msgstr "%1$sИсходящие ссылки%3$s: Все исходящие ссылки имеют атрибут nofollow. %2$sДобавьте пару нормальных ссылок%3$s."
+
+#. Translators: %1$s and %2$s expand to links on yoast.com, %3$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:257
+msgid "%1$sOutbound links%3$s: No outbound links appear in this page. %2$sAdd some%3$s!"
+msgstr "%1$sИсходящие ссылки%3$s: На странице нет исходящих ссылок. %2$sДобавьте их%3$s!"
+
+#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:253
+msgid "%1$sMeta description length%2$s: Well done!"
+msgstr "%1$sДлина мета описания%2$s: Отлично!"
+
+#. Translators: %1$s and %2$s expand to links on yoast.com, %3$s expands to the
+#. anchor end tag, 	   %4$d expands to	the total available number of characters
+#. in the meta description
+#: languages/yoast-seo-js.php:249
+msgid "%1$sMeta description length%3$s: The meta description is over %4$d characters. To ensure the entire description will be visible, %2$syou should reduce the length%3$s!"
+msgstr "%1$sДлина мета описания%3$s: Ваше мета описание длиннее %4$d символов. Чтобы сделать ваше описание полностью видимым, %2$sвам надо сократить длину мета описания%3$s!"
+
+#. Translators: %1$s and %2$s expand to links on yoast.com, %3$s expands to the
+#. anchor end tag, 	   %4$d expands to the number of characters in the meta
+#. description, %5$d expands to 	   the total available number of characters in
+#. the meta description
+#: languages/yoast-seo-js.php:244
+msgid "%1$sMeta description length%3$s: The meta description is too short (under %4$d characters). Up to %5$d characters are available. %2$sUse the space%3$s!"
+msgstr "%1$sДлина мета описания%3$s: Ваше мета описание слишком короткое (менее %4$d символов). Вам доступны %5$d символов. %2$sИспользуйте их%3$s!"
+
+#. Translators:  %1$s and %2$s expand to a links on yoast.com, %3$s expands to
+#. the anchor end tag
+#: languages/yoast-seo-js.php:238
+msgid "%1$sMeta description length%3$s:  No meta description has been specified. Search engines will display copy from the page instead. %2$sMake sure to write one%3$s!"
+msgstr "%1$sДлина мета описания%3$s:  Вы еще не добавили мета описание. Вместо него поисковые системы будут отображать части содержимого с вашей страницы. %2$sСоздайте мета описание%3$s!"
+
+#: languages/yoast-seo-js.php:234
+msgid "%1$sKeyphrase in meta description%2$s: The meta description has been specified, but it does not contain the keyphrase. %3$sFix that%4$s!"
+msgstr "%1$sКлючевая фраза в мета описании%2$s: Вы добавили мета описание, но вы не включили в него вашу ключевую фразу. %3$sИсправьте это%4$s!"
+
+#: languages/yoast-seo-js.php:231
+msgid "%1$sKeyphrase in meta description%2$s: The meta description contains the keyphrase %3$s times, which is over the advised maximum of 2 times. %4$sLimit that%5$s!"
+msgstr "%1$sКлючевая фраза в мета описании%2$s: Ваше мета описание содержит ключевую фразу %3$s раз, что больше рекомендуемого максимума (2 раза). %4$sНе повторяйтесь%5$s!"
+
+#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
+#. end tag.
+#: languages/yoast-seo-js.php:228
+msgid "%1$sKeyphrase in meta description%2$s: Keyphrase or synonym appear in the meta description. Well done!"
+msgstr "%1$sКлючевая фраза в мета описании%2$s: Ключевая фраза или ее синоним встречаются в мета описании. Отлично!"
+
+#: languages/yoast-seo-js.php:224
+msgid "%4$sKeyphrase density%6$s: %1$s. This is way over the advised %3$s maximum; the keyphrase was found %2$d time. %5$sDon't overoptimize%6$s!"
+msgid_plural "%4$sKeyphrase density%6$s: %1$s. This is way over the advised %3$s maximum; the keyphrase was found %2$d times. %5$sDon't overoptimize%6$s!"
+msgstr[0] "%4$sПлотность ключевой фразы%6$s: %1$s. Это существенно выше максимальной рекомендуемой плотности %3$s; ключевое слово было найдено %2$d раз. %5$sНе пытайся переоптимизировать%6$s!"
+msgstr[1] "%4$sПлотность ключевой фразы%6$s: %1$s. Это существенно выше максимальной рекомендуемой плотности %3$s; ключевое слово было найдено %2$d раза. %5$sНе пытайся переоптимизировать%6$s!"
+msgstr[2] "%4$sПлотность ключевой фразы%6$s: %1$s. Это существенно выше максимальной рекомендуемой плотности %3$s; ключевое слово было найдено %2$d раз. %5$sНе пытайся переоптимизировать%6$s!"
+
+#: languages/yoast-seo-js.php:221
+msgid "%4$sKeyphrase density%6$s: %1$s. This is over the advised %3$s maximum; the keyphrase was found %2$d time. %5$sDon't overoptimize%6$s!"
+msgid_plural "%4$sKeyphrase density%6$s: %1$s. This is over the advised %3$s maximum; the keyphrase was found %2$d times. %5$sDon't overoptimize%6$s!"
+msgstr[0] "%4$sПлотность ключевой фразы%6$s: %1$s. Это выше максимальной рекомендуемой плотности %3$s; ключевое слово было найдено %2$d раз. %5$sНе пытайся переоптимизировать%6$s!"
+msgstr[1] "%4$sПлотность ключевой фразы%6$s: %1$s. Это выше максимальной рекомендуемой плотности %3$s; ключевое слово было найдено %2$d раза. %5$sНе пытайся переоптимизировать%6$s!"
+msgstr[2] "%4$sПлотность ключевой фразы%6$s: %1$s. Это выше максимальной рекомендуемой плотности %3$s; ключевое слово было найдено %2$d раз. %5$sНе пытайся переоптимизировать%6$s!"
+
+#: languages/yoast-seo-js.php:218
+msgid "%3$sKeyphrase density%5$s: %1$s. This is too low; the keyphrase was found %2$d time. %4$sFocus on your keyphrase%5$s!"
+msgid_plural "%3$sKeyphrase density%5$s: %1$s. This is too low; the keyphrase was found %2$d times. %4$sFocus on your keyphrase%5$s!"
+msgstr[0] "%3$sПлотность ключевой фразы%5$s: %1$s. Этого не достаточно; ключевое слово было найдено %2$d раз. %4$sИспользуйте ключевую фразу чаще%5$s!"
+msgstr[1] "%3$sПлотность ключевой фразы%5$s: %1$s. Этого не достаточно; ключевое слово было найдено %2$d раза. %4$sИспользуйте ключевую фразу чаще%5$s!"
+msgstr[2] "%3$sПлотность ключевой фразы%5$s: %1$s. Этого не достаточно; ключевое слово было найдено %2$d раз. %4$sИспользуйте ключевую фразу чаще%5$s!"
+
+#: languages/yoast-seo-js.php:215
+msgid "%3$sKeyphrase density%5$s: %1$s. This is too low; the keyphrase was found %2$d times. %4$sFocus on your keyphrase%5$s!"
+msgstr "%3$sПлотность ключевой фразы%5$s: %1$s. Этого не достаточно; ключевое слово было найдено %2$d раз. %4$sИспользуйте ключевую фразу чаще%5$s!"
+
+#: languages/yoast-seo-js.php:212
+msgid "%3$sKeyphrase length%5$s: The keyphrase is %1$d words long. That's way more than the recommended maximum of %2$d words. %4$sMake it shorter%5$s!"
+msgstr "%3$sДлина ключевой фразы%5$s: Ваша ключевая фраза содержит %1$d слов. Это существенно больше чем рекомендуемый максимум (%2$d слов). %4$sУкоротите ее%5$s!"
+
+#: languages/yoast-seo-js.php:209
+msgid "%3$sKeyphrase length%5$s: The keyphrase is %1$d words long. That's more than the recommended maximum of %2$d words. %4$sMake it shorter%5$s!"
+msgstr "%3$sДлина ключевой фразы%5$s: Ваша ключевая фраза содержит %1$d слов. Это больше чем рекомендуемый максимум (%2$d слов). %4$sУкоротите ее%5$s!"
+
+#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
+#. end tag.
+#: languages/yoast-seo-js.php:206
+msgid "%1$sKeyphrase length%2$s: Good job!"
+msgstr "%1$sДлина ключевой фразы%2$s: Отлично!"
+
+#. Translators: %1$s and %2$s expand to links on yoast.com, %3$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:202
+msgid "%1$sKeyphrase length%3$s: No focus keyphrase was set for this page. %2$sSet a keyphrase in order to calculate your SEO score%3$s."
+msgstr "%1$sДлина ключевой фразы%3$s: Для этой страницы не установлено фокусное ключевое слово. %2$sУстановите его для расчета SEO оценки%3$s."
+
+#. Translators: %1$s and %2$s expand to links on yoast.com, %3$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:198
+msgid "%1$sKeyphrase length%3$s: %2$sSet a keyphrase in order to calculate your SEO score%3$s."
+msgstr "%1$sДлина ключевой фразы%3$s: %2$sВведите ключевую фразу, чтобы мы могли посчитать вашу оценку SEO%3$s."
+
+#. Translators: %1$s expands to links to Yoast.com articles, %2$s expands to
+#. the anchor end tag
+#: languages/yoast-seo-js.php:194
+msgid "%1$sKeyphrase distribution%2$s: Good job!"
+msgstr "%1$sРаспределение ключевой фразы%2$s: Отлично!"
+
+#. Translators: %1$s and %2$s expand to links to Yoast.com articles, 	   %3$s
+#. expands to the anchor end tag
+#: languages/yoast-seo-js.php:190
+msgid "%1$sKeyphrase distribution%3$s: Uneven. Some parts of your text do not contain the keyphrase or its synonyms. %2$sDistribute them more evenly%3$s."
+msgstr "%1$sРаспределение ключевой фразы%3$s: Неравномерное. Некоторые части вашего текста не содержат ключевой фразы или ее синонимов. %2$sРаспределите их более равномерно%3$s."
+
+#. Translators: %1$s and %2$s expand to links to Yoast.com articles, 	   %3$s
+#. expands to the anchor end tag
+#: languages/yoast-seo-js.php:185
+msgid "%1$sKeyphrase distribution%3$s: Very uneven. Large parts of your text do not contain the keyphrase or its synonyms. %2$sDistribute them more evenly%3$s."
+msgstr "%1$sРаспределение ключевой фразы%3$s: Очень неравномерное. Большие части вашего текста не содержат ключевой фразы или ее синонимов. %2$sРаспределите их более равномерно%3$s."
+
+#. Translators: %1$s and %2$s expand to links to Yoast.com articles, 	   %3$s
+#. expands to the anchor end tag
+#: languages/yoast-seo-js.php:180
+msgid "%1$sKeyphrase distribution%3$s: %2$sInclude your keyphrase or its synonyms in the text so that we can check keyphrase distribution%3$s."
+msgstr "%1$sРаспределение ключевой фразы%3$s: %2$sИспользуйте в тексте вашу ключевую фразу и ее синонимы, чтобы мы могли посчитать распределение ключевой фразы%3$s."
+
+#. Translators: %1$s and %2$s expand to links on yoast.com, %3$s expands to the
+#. anchor end tag.
+#: languages/yoast-seo-js.php:175
+msgid "%1$sKeyphrase in introduction%3$s: Your keyphrase or its synonyms do not appear in the first paragraph. %2$sMake sure the topic is clear immediately%3$s."
+msgstr "%1$sКлючевая фраза во вступлении%3$s: Ваша ключевая фраза или ее синонимы не встречаются в первом абзаце. %2$sУбедитесь, что тема текста ясна сразу%3$s."
+
+#. Translators: %1$s and %2$s expand to links on yoast.com, %3$s expands to the
+#. anchor end tag.
+#: languages/yoast-seo-js.php:171
+msgid "%1$sKeyphrase in introduction%3$s:Your keyphrase or its synonyms appear in the first paragraph of the copy, but not within one sentence. %2$sFix that%3$s!"
+msgstr "%1$sКлючевая фраза во вступлении%3$s: Ваша ключевая фраза или ее синонимы встречаются в первом абзаце, но не внутри одного предложения. %2$sИсправьте это%3$s!"
+
+#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
+#. end tag.
+#: languages/yoast-seo-js.php:167
+msgid "%1$sKeyphrase in introduction%2$s: Well done!"
+msgstr "%1$sКлючевая фраза во вступлении%2$s: Отлично!"
+
+#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
+#. end tag
+#: languages/yoast-seo-js.php:163
+msgid "%1$sInternal links%2$s: There are both nofollowed and normal internal links on this page. Good job!"
+msgstr "%1$sВнутренние ссылки%2$s: В тексте есть внутренние ссылки с атрибутом nofollow и обычные внутренние ссылки. Хорошая работа!"
+
+#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
+#. end tag
+#: languages/yoast-seo-js.php:159
+msgid "%1$sInternal links%2$s: You have enough internal links. Good job!"
+msgstr "%1$sВнутренние ссылки%2$s: В вашем тексте достаточно внутренних ссылок. Хорошая работа!"
+
+#. Translators: %1$s and %2$s expand to links on yoast.com, %3$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:155
+msgid "%1$sInternal links%3$s: The internal links in this page are all nofollowed. %2$sAdd some good internal links%3$s."
+msgstr "%1$sВнутренние ссылки%3$s: В тексте есть только внутренние ссылки с атрибутом nofollow. %2$sДобавьте несколько хороших внутренних ссылок%3$s."
+
+#. Translators: %1$s and %2$s expand to links on yoast.com, %3$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:151
+msgid "%1$sInternal links%3$s: No internal links appear in this page, %2$smake sure to add some%3$s!"
+msgstr "%1$sВнутренние ссылки%3$s: В тексте нет внутренних ссылок, %2$sдобавьте несколько%3$s!"
+
+#: languages/yoast-seo-js.php:147
+msgid "%1$sFunction words in keyphrase%3$s: Your keyphrase \"%4$s\" contains function words only. %2$sLearn more about what makes a good keyphrase.%3$s"
+msgstr "%1$sСлужебные слова в ключевой фразе%3$s: Ваша ключевая фраза \"%4$s\" содержит исключительно служебные слова. %2$sУзнайте больше о хороших ключевых фразах.%3$s"
+
+#. Translators: %1$s expands to a link on yoast.com, %3$s expands to the anchor
+#. end tag.
+#: languages/yoast-seo-js.php:132
+msgid "%1$sTransition words%2$s: Well done!"
+msgstr "%1$sПереходные слова%2$s: Отличная работа!"
+
+#. Translators: %1$s and %4$s expand to a link to yoast.com, %2$s expands to
+#. the anchor end tag, 	   %3$s expands to the percentage of sentences
+#. containing transition words
+#: languages/yoast-seo-js.php:128
+msgid "%1$sTransition words%2$s: Only %3$s of the sentences contain transition words, which is not enough. %4$sUse more of them%2$s."
+msgstr "%1$sПереходные слова%2$s: Только %3$s предложений содержат переходные слова, этого не достаточно. %4$sИспользуйте больше переходных слов%2$s."
+
+#. Translators: %1$s and %3$s expand to a link to yoast.com, %2$s expands to
+#. the anchor end tag
+#: languages/yoast-seo-js.php:123
+msgid "%1$sTransition words%2$s: None of the sentences contain transition words. %3$sUse some%2$s."
+msgstr "%1$sПереходные слова%2$s: Ни одно из предложений не содержит переходных слов. %3$sИспользуйте переходные слова%2$s."
+
+#. Translators: %1$s and %3$s expand to links to articles on Yoast.com,
+#. %2$s expands to the anchor end tag
+#: languages/yoast-seo-js.php:119
+msgid "%1$sNot enough content%2$s: %3$sPlease add some content to enable a good analysis%2$s."
+msgstr "%1$sНедостаточно содержимого%2$s: %3$sПожалуйста, добавьте больше текста, чтобы мы смогли качественно его проанализировать%2$s."
+
+#. Translators: %1$s expands to a link to https://yoa.st/headings, %2$s expands
+#. to the link closing tag.
+#: languages/yoast-seo-js.php:114
+msgid "%1$sSubheading distribution%2$s: You are not using any subheadings, but your text is short enough and probably doesn't need them."
+msgstr "%1$sРаспределение подзаголовков%2$s: Вы не используете подзаголовки, но ваш текст достаточно короткий, так что возможно они и не нужны."
+
+#. Translators: %1$s and %3$s expand to a link to https://yoa.st/headings, %2$s
+#. expands to the link closing tag.
+#: languages/yoast-seo-js.php:110
+msgid "%1$sSubheading distribution%2$s: You are not using any subheadings, although your text is rather long. %3$sTry and add some subheadings%2$s."
+msgstr "%1$sРаспределение подзаголовков%2$s: Вы не используете подзаголовки хотя ваш текст достаточно длинный. %3$sПостарайтесь добавить несколько подзаголовков%2$s."
+
+#. Translators: %1$s and %5$s expand to a link on yoast.com, %3$d to the number
+#. of text sections 	   not separated by subheadings, %4$d expands to the
+#. recommended number of words following a 	   subheading, %2$s expands to the
+#. link closing tag. 	    	   Translators: %1$s and %5$s expand to a link on
+#. yoast.com, %3$d to the number of text sections 	   not separated by
+#. subheadings, %4$d expands to the recommended number of words following a
+#. subheading, %2$s expands to the link closing tag.
+#: languages/yoast-seo-js.php:106
+msgid "%1$sSubheading distribution%2$s: %3$d section of your text is longer than %4$d words and is not separated by any subheadings. %5$sAdd subheadings to improve readability%2$s."
+msgid_plural "%1$sSubheading distribution%2$s: %3$d sections of your text are longer than %4$d words and are not separated by any subheadings. %5$sAdd subheadings to improve readability%2$s."
+msgstr[0] "%1$sРаспределение подзаголовков%2$s: %3$d секция вашего текста длиннее, чем %4$d слов и не разделена подзаголовками. %5$sДобавьте подзаголовки, чтобы улучшить читаемость%2$s."
+msgstr[1] "%1$sРаспределение подзаголовков%2$s: %3$d секции вашего текста длиннее, чем %4$d слов и не разделены подзаголовками. %5$sДобавьте подзаголовки, чтобы улучшить читаемость%2$s."
+msgstr[2] "%1$sРаспределение подзаголовков%2$s: %3$d секций вашего текста длиннее, чем %4$d слов и не разделены подзаголовками. %5$sДобавьте подзаголовки, чтобы улучшить читаемость%2$s."
+
+#. Translators: %1$s expands to a link to https://yoa.st/headings, %2$s expands
+#. to the link closing tag.
+#: languages/yoast-seo-js.php:95
+msgid "%1$sSubheading distribution%2$s: Great job!"
+msgstr "%1$sРаспределение подзаголовков%2$s: Отличная работа!"
+
+#. Translators: %1$s and %6$s expand to a link on yoast.com, %2$s expands to
+#. the anchor end tag, 	   %3$d expands to percentage of sentences, %4$s
+#. expands to the recommended maximum sentence length, 	   %5$s expands to the
+#. recommended maximum percentage.
+#: languages/yoast-seo-js.php:90
+msgid "%1$sSentence length%2$s: %3$s of the sentences contain more than %4$s words, which is more than the recommended maximum of %5$s. %6$sTry to shorten the sentences%2$s."
+msgstr "%1$sДлина предложений%2$s: %3$s ваших предложений длиннее, чем %4$s слов, что больше, чем рекомендуемый максимум в %5$s. %6$sПопытайтесь укоротить предложения%2$s."
+
+#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
+#. end tag
+#: languages/yoast-seo-js.php:84
+msgid "%1$sSentence length%2$s: Great!"
+msgstr "%1$sДлина предложений%2$s: Отлично!"
+
+#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:70
+msgid "%1$sConsecutive sentences%2$s: There is enough variety in your sentences. That's great!"
+msgstr "%1$sПоследовательные предложения%2$s: В ваших предложениях достаточно разнообразия. Это очень хорошо!"
+
+#. Translators: %1$s and %5$s expand to a link on yoast.com, %2$s expands to
+#. the anchor end tag, 	   %3$d expands to the number of consecutive sentences
+#. starting with the same word, 	   %4$d expands to the number of instances
+#. where 3 or more consecutive sentences start with the same word.
+#: languages/yoast-seo-js.php:66
+msgid "%1$sConsecutive sentences%2$s: The text contains %3$d consecutive sentences starting with the same word. %5$sTry to mix things up%2$s!"
+msgid_plural "%1$sConsecutive sentences%2$s: The text contains %4$d instances where %3$d or more consecutive sentences start with the same word. %5$sTry to mix things up%2$s!"
+msgstr[0] "%1$sПоследовательные предложения%2$s: Ваш текст содержит %3$d предложений подряд, которые начинаются с одного и того же слова. %5$sДобавьте разнообразия%2$s!"
+msgstr[1] "%1$sПоследовательные предложения%2$s: Ваш текст содержит %4$d частей, где %3$d предложений подряд начинаются с одного и того же слова. %5$sДобавьте разнообразия%2$s!"
+msgstr[2] "%1$sПоследовательные предложения%2$s: Ваш текст содержит %4$d частей, где %3$d предложений подряд начинаются с одного и того же слова. %5$sДобавьте разнообразия%2$s!"
+
+#. Translators: %1$s and %5$s expand to a link on yoast.com, %2$s expands to
+#. the anchor end tag, 	   %3$s expands to the percentage of sentences in
+#. passive voice, %4$s expands to the recommended value.
+#: languages/yoast-seo-js.php:60
+msgid "%1$sPassive voice%2$s: %3$s of the sentences contain passive voice, which is more than the recommended maximum of %4$s. %5$sTry to use their active counterparts%2$s."
+msgstr "%1$sПассивный залог%2$s: %3$s ваших предложений содержат пассивный залог, что выше рекомендуемого максимума в %4$s. %5$sСтарайтесь использовать больше активного залога%2$s."
+
+#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
+#. end tag.
+#: languages/yoast-seo-js.php:55
+msgid "%1$sPassive voice%2$s: You're using enough active voice. That's great!"
+msgstr "%1$sПассивный залог%2$s: Вы используете достаточно активного залога. Это прекрасно!"
+
+#. Translators: %1$s and %5$s expand to a link on yoast.com, %2$s expands to
+#. the anchor end tag, %3$d expands to the 	   number of paragraphs over the
+#. recommended word limit, %4$d expands to the word limit
+#: languages/yoast-seo-js.php:51
+msgid "%1$sParagraph length%2$s: %3$d of the paragraphs contains more than the recommended maximum of %4$d words. %5$sShorten your paragraphs%2$s!"
+msgid_plural "%1$sParagraph length%2$s: %3$d of the paragraphs contain more than the recommended maximum of %4$d words. %5$sShorten your paragraphs%2$s!"
+msgstr[0] "%1$sДлина абзацев%2$s: %3$d из ваших абзацев содержит больше, чем рекомендуемым максимум в %4$d слов. %5$sУкоротите абзацы%2$s!"
+msgstr[1] "%1$sДлина абзацев%2$s: %3$d из ваших абзацев содержат больше, чем рекомендуемым максимум в %4$d слов. %5$sУкоротите абзацы%2$s!"
+msgstr[2] "%1$sДлина абзацев%2$s: %3$d из ваших абзацев содержат больше, чем рекомендуемым максимум в %4$d слов. %5$sУкоротите абзацы%2$s!"
+
+#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
+#. anchor end tag
+#: languages/yoast-seo-js.php:46
+msgid "%1$sParagraph length%2$s: None of the paragraphs are too long. Great job!"
+msgstr "%1$sДлина абзацев%2$s: Ни один из ваших абзацев не слишком длинный. Отличная работа!"
+
+#: languages/yoast-seo-js.php:14
+msgid "Good job!"
+msgstr "Отличная работа!"
+
+#. Translators: %1$s and %5$s expand to a link on yoast.com, 	   %2$s to the
+#. anchor end tag, 	   %7$s expands to the anchor end tag and a full stop,
+#. %3$s expands to the numeric Flesch reading ease score, 	   %4$s to the
+#. easiness of reading, 	   %6$s expands to a call to action based on the score
+#: languages/yoast-seo-js.php:11
+msgid "%1$sFlesch Reading Ease%2$s: The copy scores %3$s in the test, which is considered %4$s to read. %5$s%6$s%7$s"
+msgstr "%1$sИндекс читаемости Флеша%2$s: Ваш текст получил оценку %3$s в тесте удобочитаемости, что означает, что его %4$s читать. %5$s%6$s%7$s"
+
+#: languages/wordpress-seojs.php:78
+msgid "Focus keyphrase"
+msgstr "Фокусное ключевое слово"
+
+#: languages/wordpress-seojs.php:71
+msgid "Help on choosing the perfect focus keyphrase"
+msgstr "Помощь по выбору идеального фокусного ключевого слова."
+
+#: languages/wordpress-seojs.php:65
+msgid "Would you like to add a related keyphrase?"
+msgstr "Хотите добавить похожее ключевое слово?"
+
+#: languages/wordpress-seojs.php:8
+msgid "Go %s!"
+msgstr "Перейти %s!"
+
+#: languages/wordpress-seojs.php:5
+msgid "Did you know %s also analyzes the different word forms of your keyphrase, like plurals and past tenses?"
+msgstr "А вы знаете что %s также анализирует разные формы слов из ключевой фразы, например, множественное число или прошедшее время?"
+
+#. translators: %1$s expands to object type. %2$s expands to the object ID.
+#: inc/exceptions/class-rest-request-exception.php:25
+msgid "%1$s with ID %2$s couldn't be patched"
+msgstr "%1$s с ID %2$s не может быть исправлен"
+
+#. translators: %1$s expands to the indexable's ID.
+#: inc/exceptions/class-invalid-indexable-exception.php:41
+msgid "Invalid POST request. Meta values already exist for object with ID %1$s."
+msgstr "Неверный запрос POST. Мета значения уже существуют для объекта с ID %1$s."
+
+#. translators: %1$s expands to the indexable's ID.
+#: inc/exceptions/class-invalid-indexable-exception.php:24
+msgid "Indexable with ID `%1$s` does not exist"
+msgstr "Индексируемый объект с ID `%1$s` не существует"
+
+#. translators: %1$s expands to the object ID. %2$s resolved to the object
+#. type.
+#: inc/exceptions/class-invalid-argument-exception.php:147
+msgid "No object with ID %1$s and %2$s could be found"
+msgstr "Объекты с ID %1$s и %2$s не могут быть найдены"
+
+#. translators: %1$s expands to the object subtype. %2$s resolved to the object
+#. type.
+#: inc/exceptions/class-invalid-argument-exception.php:128
+msgid "`%1$s` is not a valid subtype of `%2$s`"
+msgstr "`%1$s` - неверный подтип `%2$s`"
+
+#. translators: %1$s expands to the object type.
+#: inc/exceptions/class-invalid-argument-exception.php:110
+msgid "The object type `%1$s` is invalid"
+msgstr "Неверный тип объекта `%1$s`"
+
+#. translators: %1$s expands to the parameter name. %2$s expands to the
+#. expected type and %3$s expands to the expected type.
+#: inc/exceptions/class-invalid-argument-exception.php:43
+msgid "Invalid type for parameter `%1$s` passed. Expected `%2$s`, but got `%3$s`"
+msgstr "Указан неверный тип параметра `%1$s`. Ожидалось `%2$s`, но получено `%3$s`"
+
+#. translators: %1$s expands to the parameter name.
+#: inc/exceptions/class-invalid-argument-exception.php:24
+msgid "The parameter `%1$s` cannot be empty."
+msgstr "Параметр `%1$s` не может быть пустым."
+
+#: inc/class-wpseo-rank.php:120
+msgid "SEO: No Focus Keyphrase"
+msgstr "SEO: Нет фокусного ключевого слова"
+
+#: inc/class-wpseo-admin-bar-menu.php:284
+msgid "Check Keyphrase Density"
+msgstr "Проверить плотность ключевых слов"
+
+#: admin/views/tabs/network/features.php:55
+msgid "Disable"
+msgstr "Отключить"
+
+#: admin/views/tabs/network/features.php:54
+msgid "Allow Control"
+msgstr "Разрешить контроль"
+
+#. translators: %s expands to Yoast SEO
+#: admin/views/tabs/network/features.php:26
+msgid "This tab allows you to selectively disable %s features for all sites in the network. By default all features are enabled, which allows site admins to choose for themselves if they want to toggle a feature on or off for their site. When you disable a feature here, site admins will not be able to use that feature at all."
+msgstr "На этой вкладке можно выборочно отключить возможности %s для всех сайтов сети. По умолчанию все возможности включены, что позволяет администраторам сайта настраивать их самостоятельно для своих сайтов. Если вы отключите какую-либо возможность здесь, то администраторы сайта не смогут ее использовать совсем."
+
+#: admin/views/sidebar.php:27 languages/wordpress-seojs.php:84
+msgid "Rank better with synonyms & related keyphrases"
+msgstr "Получите лучшую ранжировку с использованием синонимов и похожих ключевых слов"
+
+#: admin/views/licenses.php:174
+msgid "optimize a single post for synonyms and related keyphrases."
+msgstr "оптимизируйте отдельную запись по синонимам и похожим ключевым словам."
+
+#. translators: %s: argument name
+#: admin/views/class-yoast-feature-toggle.php:60
+msgid "%s is a required feature toggle argument."
+msgstr "%s - требуемый агрумент для включения или выключения возможности."
+
+#: admin/taxonomy/class-taxonomy-metabox.php:283
+msgid "Optimize a single post for synonyms and related keyphrases."
+msgstr "Оптимизируйте отдельную запись по синонимам и похожим ключевым словам."
+
+#: admin/taxonomy/class-taxonomy-metabox.php:282 admin/views/licenses.php:173
+msgid "Synonyms & related keyphrases"
+msgstr "Синонимы и похожие ключевые слова"
+
+#: admin/metabox/class-metabox.php:143
+msgid "No focus keyphrase set."
+msgstr "Фокусное ключевое слово не установлено."
+
+#: admin/metabox/class-metabox-multiple-keywords-config.php:22
+#: languages/wordpress-seojs.php:68
+msgid "Add related keyphrase"
+msgstr "Добавить похожее ключевое слово"
+
+#: admin/formatter/class-metabox-formatter.php:56
+msgid "Remove keyphrase"
+msgstr "Убрать ключевое слово"
+
+#: admin/formatter/class-metabox-formatter.php:55
+msgid "Keyphrase:"
+msgstr "Ключевое слово:"
+
+#. translators: %1$s expands to Yoast SEO Premium.
+#. translators: %1$s expands to Basic SEO training.
+#. translators: %1$s expands to Yoast SEO plugin training.
+#. translators: %1$s expands to Local SEO.
+#: admin/config-ui/components/class-component-suggestions.php:46
+#: admin/config-ui/components/class-component-suggestions.php:74
+#: admin/config-ui/components/class-component-suggestions.php:94
+#: admin/config-ui/components/class-component-suggestions.php:115
+msgid "%1$s video"
+msgstr "%1$s видео"
+
+#: admin/class-yoast-form.php:731
+msgid "This feature has been disabled by the network admin."
+msgstr "Эта возможность отключена администратором сети."
+
+#: admin/class-meta-columns.php:132 admin/class-meta-columns.php:616
+msgid "Focus keyphrase not set."
+msgstr "Фокусное ключевое слово не установлено."
+
+#: admin/class-premium-upsell-admin-block.php:47
+msgid "Multiple keyphrases"
+msgstr "Множественные ключевые слова"
+
+#: admin/class-yoast-form.php:541 admin/metabox/class-metabox.php:631
+#: admin/taxonomy/class-taxonomy-fields-presenter.php:125
+msgid "Clear Image"
+msgstr "Очистить изображение"
+
+#. translators: %s expands to 'Yoast SEO Premium'.
+#. translators: %s expands to Yoast SEO Premium
+#. translators: %s expands to 'Yoast SEO Premium'.
+#. translators: %s expands to 'Yoast SEO Premium'.
+#. translators: %s expands to Yoast SEO Premium.
+#. translators: %s is replaced by the plugin name
+#: admin/class-add-keyword-modal.php:36
+#: admin/class-keyword-synonyms-modal.php:36
+#: admin/class-multiple-keywords-modal.php:36 admin/class-premium-popup.php:80
+#: admin/formatter/class-metabox-formatter.php:200
+#: admin/metabox/class-metabox-keyword-synonyms-config.php:25
+#: admin/metabox/class-metabox-keyword-synonyms-config.php:28
+#: admin/metabox/class-metabox-multiple-keywords-config.php:25
+#: admin/metabox/class-metabox-multiple-keywords-config.php:28
+#: admin/taxonomy/class-taxonomy-metabox.php:290 admin/views/sidebar.php:38
+#: languages/wordpress-seojs.php:62
+msgid "Get %s"
+msgstr "Получите %s"
+
+#: languages/wordpress-seojs.php:200
 msgid "Optional. Customize how you want to describe the duration of the instruction"
 msgstr "Не обязательно. Настройте то, как вы хотите описать длительность инструкции"
 
-#: languages/wordpress-seojs.php:203
+#: languages/wordpress-seojs.php:197
 msgid "Describe the duration of the instruction:"
 msgstr "Опишите длительность инструкции:"
 
-#: languages/wordpress-seojs.php:45
-msgid "Learn more about Readability Analysis."
+#: languages/wordpress-seojs.php:48
+msgid "Learn more about the readability analysis"
 msgstr "Подробнее об анализе читаемости"
-
-#: languages/wordpress-seojs.php:42
-msgid "This analysis checks your writing for grammar and writing style so your content is as clear as it can be."
-msgstr "Этот анализ делает проверку напианного на грамматику и стиль письма, так что ваше содержимое будет максимально ясно насколько это возможно."
-
-#: languages/wordpress-seojs.php:35
-msgid "Readability Analysis"
-msgstr "Анализ читаемости"
 
 #: inc/class-wpseo-admin-bar-menu.php:619
 msgid "There is a new notification."
@@ -52,72 +692,72 @@ msgstr "%1$s и %2$s управляют настройками SEO вашего 
 msgid "This is a list of related content to which you could link in your post. {{a}}Read our article about site structure{{/a}} to learn more about how internal linking can help improve your SEO."
 msgstr "Это список связанного содержимого, на которое вы можете сослаться в записи. {{a}}Прочитайте нашу статью о структуре сайта{{/a}}, чтобы узнать как внутренняя перелинковка может улучшить SEO."
 
-#: languages/wordpress-seojs.php:254
+#: languages/wordpress-seojs.php:248
 msgid "%s, %s and %s"
 msgstr "%s, %s и %s"
 
-#: languages/wordpress-seojs.php:250
+#: languages/wordpress-seojs.php:244
 msgid "%s and %s"
 msgstr "%s и %s"
 
-#: languages/wordpress-seojs.php:246
+#: languages/wordpress-seojs.php:240
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d минута"
 msgstr[1] "%d минуты"
 msgstr[2] "%d минут"
 
-#: languages/wordpress-seojs.php:242
+#: languages/wordpress-seojs.php:236
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d час"
 msgstr[1] "%d часа"
 msgstr[2] "%d часов"
 
-#: languages/wordpress-seojs.php:238
+#: languages/wordpress-seojs.php:232
 msgid "%d day"
 msgid_plural "%d days"
 msgstr[0] "%d день"
 msgstr[1] "%d дня"
 msgstr[2] "%d дней"
 
-#: languages/wordpress-seojs.php:219
+#: languages/wordpress-seojs.php:213
 msgid "Enter a step title"
 msgstr "Введите название шага"
 
-#: languages/wordpress-seojs.php:200
+#: languages/wordpress-seojs.php:194
 msgid "Optional. This can give you better control over the styling of the steps."
 msgstr "Необязательно, но это даст вам больший контроль над стилем шагов."
 
-#: languages/wordpress-seojs.php:197
+#: languages/wordpress-seojs.php:191
 msgid "CSS class(es) to apply to the steps"
 msgstr "CSS класс(ы) применяемые к шагам"
 
-#: languages/wordpress-seojs.php:188
+#: languages/wordpress-seojs.php:182
 msgid "minutes"
 msgstr "минуты"
 
-#: languages/wordpress-seojs.php:185
+#: languages/wordpress-seojs.php:179
 msgid "hours"
 msgstr "часы"
 
-#: languages/wordpress-seojs.php:182
+#: languages/wordpress-seojs.php:176
 msgid "days"
 msgstr "дни"
 
-#: languages/wordpress-seojs.php:161
+#: languages/wordpress-seojs.php:155
 msgid "Create a How-to guide in an SEO-friendly way. You can only use one How-to block per post."
 msgstr "Создавайте ваши Howto-руководства в SEO-оптимизированном виде. Вы можете использовать только 1 блок Howto на запись. "
 
-#: languages/wordpress-seojs.php:127
+#: languages/wordpress-seojs.php:121
 msgid "List your Frequently Asked Questions in an SEO-friendly way. You can only use one FAQ block per post."
 msgstr "Создавайте списки ваших Часто Задаваемых Вопросов в SEO-оптимизированном виде. Вы можете использовать только 1 блок FAQ на запись."
 
-#: languages/wordpress-seojs.php:20
+#: languages/wordpress-seojs.php:26
 msgid "Copy error"
 msgstr "Ошибка копирования"
 
-#: languages/wordpress-seojs.php:17
+#: languages/wordpress-seojs.php:23
 msgid "An error occurred loading the %s primary taxonomy picker."
 msgstr "Возникла ошибка загрузки %s выбора основной таксономии."
 
@@ -126,39 +766,39 @@ msgstr "Возникла ошибка загрузки %s выбора осно�
 msgid "%1$s Structured Data Blocks"
 msgstr "%1$s структурированные блоки данных"
 
-#: languages/wordpress-seojs.php:216
+#: languages/wordpress-seojs.php:210
 msgid "Time needed:"
 msgstr "Необходимое время:"
 
-#: languages/wordpress-seojs.php:158
+#: languages/wordpress-seojs.php:152
 msgid "Move question down"
 msgstr "Переместить вопрос ниже"
 
-#: languages/wordpress-seojs.php:155
+#: languages/wordpress-seojs.php:149
 msgid "Move question up"
 msgstr "Переместить вопрос выше"
 
-#: languages/wordpress-seojs.php:152
+#: languages/wordpress-seojs.php:146
 msgid "Insert question"
 msgstr "Вставить вопрос"
 
-#: languages/wordpress-seojs.php:149
+#: languages/wordpress-seojs.php:143
 msgid "Delete question"
 msgstr "Удалить вопрос"
 
-#: languages/wordpress-seojs.php:142
+#: languages/wordpress-seojs.php:136
 msgid "Enter the answer to the question"
 msgstr "Введите ответ на вопрос"
 
-#: languages/wordpress-seojs.php:139
+#: languages/wordpress-seojs.php:133
 msgid "Enter a question"
 msgstr "Введите вопрос"
 
-#: languages/wordpress-seojs.php:136
+#: languages/wordpress-seojs.php:130
 msgid "Add question"
 msgstr "Добавить вопрос"
 
-#: languages/wordpress-seojs.php:133
+#: languages/wordpress-seojs.php:127
 msgid "Frequently Asked Questions"
 msgstr "Частозадаваемые вопросы"
 
@@ -166,11 +806,11 @@ msgstr "Частозадаваемые вопросы"
 msgid "Great news: you can, with %s!"
 msgstr "Отличная новость: вы можете, с %s!"
 
-#: languages/wordpress-seojs.php:51
+#: languages/wordpress-seojs.php:57
 msgid "(Opens in a new browser tab!)"
 msgstr "(Откроется на новой вкладке браузера!)"
 
-#: languages/wordpress-seojs.php:23
+#: languages/wordpress-seojs.php:29
 msgid "Select the primary %s"
 msgstr "Выбрать основной %s"
 
@@ -192,129 +832,112 @@ msgstr[1] "Пожалуйста, проверьте %1$sшаблона архи�
 msgstr[2] "Пожалуйста, проверьте %1$sшаблонов архива%2$s для следующих типов контента: %3$s."
 
 #: languages/yoast-components.php:176
-msgid "Are you trying to use multiple keywords? You should add them separately below."
-msgstr "Вы пытаетесь указать несколько ключевых слов? Тогда Вам необходимо указать их раздельно ниже."
-
-#: languages/yoast-components.php:179
-msgid "Focus keyword:"
-msgstr "Ключевое слово:"
+msgid "Are you trying to use multiple keyphrases? You should add them separately below."
+msgstr "Вы пытаетесь использовать несколько ключевых слов? Вы должны добавить их раздельно ниже."
 
 #: languages/yoast-components.php:170
 msgid "Mark as cornerstone content"
 msgstr "Отметить как основное содержимое"
 
-#: languages/wordpress-seojs.php:234
+#: languages/wordpress-seojs.php:228
 msgid "Move step down"
 msgstr "Переместить шаг вниз"
 
-#: languages/wordpress-seojs.php:231
+#: languages/wordpress-seojs.php:225
 msgid "Move step up"
 msgstr "Переместить шаг наверх"
 
-#: languages/wordpress-seojs.php:228
+#: languages/wordpress-seojs.php:222
 msgid "Insert step"
 msgstr "Вставить шаг"
 
-#: languages/wordpress-seojs.php:225
+#: languages/wordpress-seojs.php:219
 msgid "Delete step"
 msgstr "Удалить шаг"
 
-#: languages/wordpress-seojs.php:146
+#: languages/wordpress-seojs.php:140
 msgid "Add image"
 msgstr "Добавить изображение"
 
-#: languages/wordpress-seojs.php:222
+#: languages/wordpress-seojs.php:216
 msgid "Enter a step description"
 msgstr "Указать описание шага"
 
-#: languages/wordpress-seojs.php:212
+#: languages/wordpress-seojs.php:206
 msgid "Enter a description"
 msgstr "Указать описание"
 
-#: languages/wordpress-seojs.php:209
+#: languages/wordpress-seojs.php:203
 msgid "Unordered list"
 msgstr "Несортированый список"
 
-#: languages/wordpress-seojs.php:176
+#: languages/wordpress-seojs.php:170
 msgid "Showing step items as an ordered list."
 msgstr "Элементы шагов указаны в упорядоченном списке."
 
-#: languages/wordpress-seojs.php:173
+#: languages/wordpress-seojs.php:167
 msgid "Showing step items as an unordered list"
 msgstr "Элементы шагов указаны в неупорядоченном списке."
 
-#: languages/wordpress-seojs.php:170
+#: languages/wordpress-seojs.php:164
 msgid "Add step"
 msgstr "Добавить шаг"
 
-#: languages/wordpress-seojs.php:191
+#: languages/wordpress-seojs.php:185
 msgid "Delete total time"
 msgstr "Удалить общее время"
 
-#: languages/wordpress-seojs.php:179
+#: languages/wordpress-seojs.php:173
 msgid "Add total time"
 msgstr "Добавить общее время"
 
-#: languages/wordpress-seojs.php:167
+#: languages/wordpress-seojs.php:161
 msgid "How to"
 msgstr "How to"
 
-#: languages/wordpress-seojs.php:164
+#: languages/wordpress-seojs.php:158
 msgid "How-to"
 msgstr "How-to"
 
-#: languages/wordpress-seojs.php:14
+#: languages/wordpress-seojs.php:20
 msgid "Snippet Preview"
 msgstr "Предварительный просмотр сниппета"
 
-#: languages/wordpress-seojs.php:39
+#: languages/wordpress-seojs.php:45
 msgid "Analysis results"
 msgstr "Результаты анализа"
 
-#: languages/wordpress-seojs.php:75
-msgid "Learn more about the Keyword Analysis."
-msgstr "Узнайте больше об анализе ключевых слов."
-
-#: languages/wordpress-seojs.php:72
-msgid "A focus keyword is the term (or phrase) you'd like to be found with, in search engines. Enter it below to see how you can improve your text for this term."
-msgstr "Фокусное ключевое слово это фраза, по которой вы хотите, чтобы содержимое было найдено в поисковых системах. Введите его ниже, чтобы узнать как вы можете улучшить ваш текст."
-
-#: languages/wordpress-seojs.php:65
-msgid "Enter a focus keyword to calculate the SEO score"
+#: languages/wordpress-seojs.php:74
+msgid "Enter a focus keyphrase to calculate the SEO score"
 msgstr "Введите фокусное ключевое слово для расчета оценки SEO"
 
-#: languages/wordpress-seojs.php:11
+#: languages/wordpress-seojs.php:17
 msgid "Learn more about Cornerstone Content."
 msgstr "Узнайте больше про Основное содержимое."
 
-#: languages/wordpress-seojs.php:8
+#: languages/wordpress-seojs.php:14
 msgid "Cornerstone content should be the most important and extensive articles on your site."
 msgstr "Основным содержимым должны быть наиболее важные и обширные статьи на вашем сайте."
 
-#: admin/pages/network.php:19
+#: admin/pages/network.php:20
 msgid "Restore Site"
 msgstr "Восстановить сайт"
-
-#: admin/metabox/class-metabox-multiple-keywords-config.php:22
-#: languages/wordpress-seojs.php:62
-msgid "Add additional keyword"
-msgstr "Добавить дополнительное ключевое слово"
 
 #: admin/menu/class-network-admin-menu.php:34
 msgid "Network Settings"
 msgstr "Настройки сети"
 
-#: admin/class-yoast-network-admin.php:253
+#: admin/class-yoast-network-admin.php:256
 msgid "You are not allowed to perform this action."
 msgstr "Вам не разрешено выполнить это действие."
 
 #. translators: %s: error message
-#: admin/class-yoast-network-admin.php:190
+#: admin/class-yoast-network-admin.php:188
 msgid "Error: %s"
 msgstr "Ошибка: %s"
 
 #. translators: %s: success message
-#: admin/class-yoast-network-admin.php:187
+#: admin/class-yoast-network-admin.php:186
 msgid "Success: %s"
 msgstr "Успешно: %s"
 
@@ -335,13 +958,9 @@ msgstr "Вам не разрешено изменять незарегистри
 msgid "deleted"
 msgstr "удалено"
 
-#: admin/class-multiple-keywords-modal.php:21 languages/wordpress-seojs.php:59
-msgid "Would you like to add another keyword?"
+#: admin/class-multiple-keywords-modal.php:21
+msgid "Would you like to add another keyphrase?"
 msgstr "Хотите добавить другое ключевое слово?"
-
-#: languages/yoast-seo-js.php:165
-msgid "The exact-match %3$skeyword density%4$s is %1$s, which is too low; the focus keyword was found %2$d times."
-msgstr "%3$sРаспределение ключевого слова%4$s в тексте - %1$s, что ниже рекомендуемого; ключевое слово было использовано %2$d раз."
 
 #: languages/yoast-components.php:113
 msgid "image preview"
@@ -414,63 +1033,6 @@ msgstr "Мы недавно улучшили функциональность н
 msgid "Not all required fields are given. Missing field %1$s"
 msgstr "Заполнены не все обязательные поля. Пропущено поле %1$s"
 
-#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
-#. anchor end tag
-#: languages/yoast-seo-js.php:259
-msgid "Please create an %1$sSEO title%2$s."
-msgstr "Пожалуйста, создайте %1$sSEO заголовок%2$s."
-
-#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
-#. anchor end tag
-#: languages/yoast-seo-js.php:251
-msgid "The %1$sSEO title%2$s has a nice length."
-msgstr "Хорошая длина для %1$sSEO заголовка%2$s"
-
-#. Translators: %1$s expands to the number of outbound links, %2$s expands to a
-#. link on yoast.com, 	   %3$s expands to the anchor end tag
-#: languages/yoast-seo-js.php:243
-msgid "This page has %1$s %2$soutbound link(s)%3$s."
-msgstr "На этой странице %1$s  %2$sвнешних ссылок%3$s."
-
-#. Translators: %1$s expands to a link to a Yoast.com article about keyword and
-#. topic distribution, 	   %2$s expands to the anchor end tag
-#: languages/yoast-seo-js.php:201
-msgid "Your keyword is %1$sdistributed%2$s evenly throughout the text. That's great."
-msgid_plural "Your keyword and its synonyms are %1$sdistributed%2$s evenly throughout the text. That's great."
-msgstr[0] "Ваше ключевое слово %1$sраспределено%2$s в тексте равномерно. Отличный результат!"
-msgstr[1] "Ваше ключевое слово и его синонимы %1$sраспределены%2$s в тексте равномерно. Отличный результат!"
-msgstr[2] "Ваше ключевое слово и его синонимы %1$sраспределены%2$s в тексте равномерно. Отличный результат!"
-
-#. Translators: %1$s expands to a link to a Yoast.com article about keyword and
-#. topic distribution, 	   %2$s expands to the anchor end tag
-#: languages/yoast-seo-js.php:196
-msgid "Some parts of your text do not contain the keyword. Try to %1$sdistribute%2$s the keyword more evenly."
-msgid_plural "Some parts of your text do not contain the keyword or its synonyms. Try to %1$sdistribute%2$s them more evenly."
-msgstr[0] "Ваше ключевое слово отсутствует в некоторых частях вашего текста. Попробуйте %1$sраспределить%2$s ваше ключевое слово более равномерно."
-msgstr[1] "Ваше ключевое слово и его синонимы отсутствуют в некоторых частях вашего текста. Попробуйте %1$sраспределить%2$s их более равномерно."
-msgstr[2] "Ваше ключевое слово и его синонимы отсутствуют в некоторых частях вашего текста. Попробуйте %1$sраспределить%2$s их более равномерно."
-
-#. Translators: %1$s expands to a link to a Yoast.com article about keyword and
-#. topic distribution, 	   %2$s expands to the anchor end tag
-#: languages/yoast-seo-js.php:191
-msgid "Large parts of your text do not contain the keyword. Try to %1$sdistribute%2$s the keyword more evenly."
-msgid_plural "Large parts of your text do not contain the keyword or its synonyms. Try to %1$sdistribute%2$s them more evenly."
-msgstr[0] "Ваше ключевое слово отсутствует в больших частях вашего текста. Попробуйте %1$sраспределить%2$s ваше ключевое слово более равномерно."
-msgstr[1] "Ваше ключевое слово и его синонимы отсутствуют в больших частях вашего текста. Попробуйте %1$sраспределить%2$s их более равномерно."
-msgstr[2] "Ваше ключевое слово и его синонимы отсутствуют в больших частях вашего текста. Попробуйте %1$sраспределить%2$s их более равномерно."
-
-#. Translators: %1$s expands to a link to a Yoast.com article about keyword and
-#. topic distribution, 	   %2$s expands to the anchor end tag
-#: languages/yoast-seo-js.php:186
-msgid "Use your keyword or synonyms more often in your text so that we can check %1$skeyword distribution%2$s."
-msgstr "Чаще используйте ваше ключевое слово и его синонимы, чтобы мы могли посчитать %1$sраспределение ключевого слова%2$s в тексте."
-
-#. Translators: %1$s expands to the number of internal links, %2$s expands to a
-#. link on yoast.com, 	   %3$s expands to the anchor end tag
-#: languages/yoast-seo-js.php:141
-msgid "This page has %1$s %2$sinternal link(s)%3$s."
-msgstr "На этой странице есть %2$sвнутренние ссылки: %1$s%3$s."
-
 #. translators: %s expands to Yoast SEO Premium.
 #: admin/views/sidebar.php:119
 msgid "Upgrade to %s »"
@@ -522,27 +1084,27 @@ msgid "Free: %1$sSEO for Beginners course%2$s"
 msgstr "Бесплатно: %1$sКурс SEO для начинающих%2$s"
 
 #: admin/metabox/class-metabox-keyword-synonyms-config.php:22
-#: languages/wordpress-seojs.php:78
+#: languages/wordpress-seojs.php:51
 msgid "Add synonyms"
 msgstr "Добавить синонимы"
 
 #. translators: %1$s resolves to Basic SEO training, 2: Yoast SEO
-#: admin/config-ui/components/class-component-suggestions.php:54
+#: admin/config-ui/components/class-component-suggestions.php:61
 msgid "Do you want to learn how you can improve your SEO yourself? In our %1$s you'll learn practical SEO skills from keyword research and copywriting to technical SEO and off-page SEO. Using the %2$s plugin is one thing. Doing good SEO day-to-day is another. You simply won't get the results you want without putting in work yourself. The %1$s teaches you how."
 msgstr "Хотите узнать, как улучшить ваше SEO самостоятельно? В нашем курсе %1$s вы приобретете практические навыки SEO, начиная от определения ключевых слов и копирайтинга до технической стороны SEO и off-page SEO. Использовать плагин %2$s - это одно дело. Применять качественное SEO каждый день - совсем другое. Вы просто не получите результатов, на которые надеетесь, если не будете работать сами. %1$s научит, как это сделать."
 
 #. translators: %1$s resolves to Basic SEO training
-#: admin/config-ui/components/class-component-suggestions.php:49
+#: admin/config-ui/components/class-component-suggestions.php:56
 msgid "Learn all about SEO with our %1$s"
 msgstr "Узнайте всё о SEO с нашим %1$s"
 
-#: admin/class-keyword-synonyms-modal.php:21 languages/wordpress-seojs.php:48
-msgid "Would you like to add keyword synonyms?"
+#: admin/class-keyword-synonyms-modal.php:21 languages/wordpress-seojs.php:54
+msgid "Would you like to add keyphrase synonyms?"
 msgstr "Вы хотите добавить синонимы ключевых слов?"
 
 #: admin/class-add-keyword-modal.php:21
-#: admin/formatter/class-metabox-formatter.php:185
-msgid "Would you like to add more than one keyword?"
+#: admin/formatter/class-metabox-formatter.php:186
+msgid "Would you like to add more than one keyphrase?"
 msgstr "Вы хотите добавить несколько ключевых слов?"
 
 #. translators: %s expands to 'Yoast SEO'.
@@ -571,63 +1133,35 @@ msgstr "Вы можете редактировать SEO мета-данные �
 msgid "You haven't set a Shop page in your WooCommerce settings. Please do this first."
 msgstr "Вы не установили страницу магазина в настройках WooCommerce. Установите её сейчас."
 
-#: languages/wordpress-seojs.php:257
+#: languages/wordpress-seojs.php:251
 msgid "Current year"
 msgstr "Этот год"
 
-#. Translators: %1$s expands to a link to https://yoa.st/headings, %2$s expands
-#. to the link closing tag.
-#: languages/yoast-seo-js.php:102
-msgid "You are not using any %1$ssubheadings%2$s, but your text is short enough and probably doesn't need them."
-msgstr "Вы не используете никакой из %1$sподзаголовков%2$s, но Ваш текст достаточно краток и, наверное, не нуждается в них."
-
-#. Translators: %1$s expands to a link to https://yoa.st/headings, %2$s expands
-#. to the link closing tag.
-#: languages/yoast-seo-js.php:98
-msgid "You are not using any subheadings, although your text is rather long. Try and add  some %1$ssubheadings%2$s."
-msgstr "Вы не используете никакие подзаголовки, хотя ваш текст довольно длинный. Попробуйте добавить %1$sподзаголовки%2$s."
-
-#. Translators: %1$d expands to the number of subheadings, %2$d expands to the
-#. recommended number 	   of words following a subheading, %3$s expands to a
-#. link to https://yoa.st/headings, 	   %4$s expands to the link closing tag.
-#: languages/yoast-seo-js.php:94
-msgid "%1$d section of your text is longer than %2$d words and is not separated by any subheadings. Add %3$ssubheadings%4$s to improve readability."
-msgid_plural "%1$d sections of your text are longer than %2$d words and are not separated by any subheadings. Add %3$ssubheadings%4$s to improve readability."
-msgstr[0] "%1$d секция Вашего текста длиннее, чем %2$d слово и не разделена подзаголовками. Добавьте %3$ssubheadings%4$s для улучшения читаемости."
-msgstr[1] "%1$d секции Вашего текста длиннее, чем %2$d слова и не разделена подзаголовками. Добавьте %3$ssubheadings%4$s для улучшения читаемости."
-msgstr[2] "%1$d секций Вашего текста длиннее, чем %2$d слов и не разделена подзаголовками. Добавьте %3$ssubheadings%4$s для улучшения читаемости."
-
-#. Translators: %1$s expands to a link to https://yoa.st/headings, %2$s expands
-#. to the link closing tag.
-#: languages/yoast-seo-js.php:86
-msgid "Great job with using %1$ssubheadings%2$s!"
-msgstr "Отличная работа в использовании %1$sподзаголовков%2$s!"
-
-#: languages/yoast-components.php:247
+#: languages/yoast-components.php:244
 msgid "Something went wrong. Please reload the page."
 msgstr "Что-то пошло не так, перезагрузите страницу."
 
-#: languages/yoast-components.php:241
+#: languages/yoast-components.php:238
 msgid "Url preview"
 msgstr "Предпросмотр URL"
 
-#: languages/yoast-components.php:235
+#: languages/yoast-components.php:232
 msgid "Please provide a meta description by editing the snippet below. If you don’t, Google will try to find a relevant part of your post to show in the search results."
 msgstr "Пожалуйста, укажите мета-описание, изменив фрагмент снизу. Если Вы не сделаете этого, Google попытается найти соответствующую часть Вашего поста, чтобы показать в поисковых результатах."
 
-#: languages/yoast-components.php:203
+#: languages/yoast-components.php:200
 msgid "Insert snippet variable"
 msgstr "Введите переменную фрагмента"
 
-#: inc/class-wpseo-replace-vars.php:1304 languages/wordpress-seojs.php:272
+#: inc/class-wpseo-replace-vars.php:1304 languages/wordpress-seojs.php:266
 msgid "Tagline"
 msgstr "Подзаголовок"
 
-#: languages/wordpress-seojs.php:266
+#: languages/wordpress-seojs.php:260
 msgid "Page"
 msgstr "Страница"
 
-#: languages/wordpress-seojs.php:26 languages/yoast-components.php:220
+#: languages/wordpress-seojs.php:32 languages/yoast-components.php:217
 msgid "Modify your meta description by editing it right here"
 msgstr "Измените свое мета-описание, отредактировав его прямо здесь"
 
@@ -667,7 +1201,7 @@ msgstr "Номер страницы"
 msgid "User description"
 msgstr "Описание пользователя"
 
-#: inc/class-wpseo-replace-vars.php:1336 languages/wordpress-seojs.php:263
+#: inc/class-wpseo-replace-vars.php:1336 languages/wordpress-seojs.php:257
 msgid "ID"
 msgstr "ID"
 
@@ -683,11 +1217,11 @@ msgstr "Тип записей (plural)"
 msgid "Post type (singular)"
 msgstr "Тип записи (singular)"
 
-#: inc/class-wpseo-replace-vars.php:1315 languages/wordpress-seojs.php:293
+#: inc/class-wpseo-replace-vars.php:1315 languages/wordpress-seojs.php:287
 msgid "Separator"
 msgstr "Разделитель"
 
-#: inc/class-wpseo-replace-vars.php:1314 languages/wordpress-seojs.php:269
+#: inc/class-wpseo-replace-vars.php:1314 languages/wordpress-seojs.php:263
 msgid "Search phrase"
 msgstr "Поисковая фраза"
 
@@ -695,23 +1229,23 @@ msgstr "Поисковая фраза"
 msgid "Term title"
 msgstr "Заголовок элемента"
 
-#: inc/class-wpseo-replace-vars.php:1312 languages/wordpress-seojs.php:305
+#: inc/class-wpseo-replace-vars.php:1312 languages/wordpress-seojs.php:299
 msgid "Term description"
 msgstr "Описание элемента"
 
-#: inc/class-wpseo-replace-vars.php:1311 languages/wordpress-seojs.php:302
+#: inc/class-wpseo-replace-vars.php:1311 languages/wordpress-seojs.php:296
 msgid "Tag description"
 msgstr "Описание метки"
 
-#: inc/class-wpseo-replace-vars.php:1310 languages/wordpress-seojs.php:299
+#: inc/class-wpseo-replace-vars.php:1310 languages/wordpress-seojs.php:293
 msgid "Category description"
 msgstr "Описание рубрики"
 
-#: inc/class-wpseo-replace-vars.php:1309 languages/wordpress-seojs.php:290
+#: inc/class-wpseo-replace-vars.php:1309 languages/wordpress-seojs.php:284
 msgid "Primary category"
 msgstr "Основная рубрика"
 
-#: inc/class-wpseo-replace-vars.php:1308 languages/wordpress-seojs.php:278
+#: inc/class-wpseo-replace-vars.php:1308 languages/wordpress-seojs.php:272
 msgid "Category"
 msgstr "Рубрика"
 
@@ -719,15 +1253,15 @@ msgstr "Рубрика"
 msgid "Tag"
 msgstr "Метка"
 
-#: inc/class-wpseo-replace-vars.php:1306 languages/wordpress-seojs.php:296
+#: inc/class-wpseo-replace-vars.php:1306 languages/wordpress-seojs.php:290
 msgid "Excerpt only"
 msgstr "Только отрывок"
 
-#: inc/class-wpseo-replace-vars.php:1305 languages/wordpress-seojs.php:287
+#: inc/class-wpseo-replace-vars.php:1305 languages/wordpress-seojs.php:281
 msgid "Excerpt"
 msgstr "Отрывок"
 
-#: inc/class-wpseo-replace-vars.php:1303 languages/wordpress-seojs.php:275
+#: inc/class-wpseo-replace-vars.php:1303 languages/wordpress-seojs.php:269
 msgid "Site title"
 msgstr "Название сайта"
 
@@ -735,11 +1269,11 @@ msgstr "Название сайта"
 msgid "Archive title"
 msgstr "Заголовок архива"
 
-#: inc/class-wpseo-replace-vars.php:1301 languages/wordpress-seojs.php:284
+#: inc/class-wpseo-replace-vars.php:1301 languages/wordpress-seojs.php:278
 msgid "Parent title"
 msgstr "Заголовок родителя"
 
-#: inc/class-wpseo-replace-vars.php:1299 languages/wordpress-seojs.php:260
+#: inc/class-wpseo-replace-vars.php:1299 languages/wordpress-seojs.php:254
 msgid "Date"
 msgstr "Дата"
 
@@ -800,30 +1334,22 @@ msgstr "Настройки URL для отдельных %s"
 msgid "The settings on this page allow you to specify what the default search appearance should be for any type of content you have. You can choose which content types appear in search results and what their default description should be."
 msgstr "Настройки на этой странице позволяют указать как будет выглядеть результат поиска по умолчанию для любого типа содержимого. Вы можете выбрать какой тип содержимого появится в результатах поиска и вариант описания по умолчанию."
 
-#: languages/yoast-components.php:250
+#: languages/yoast-components.php:247
 msgid "Dismiss this notice"
 msgstr "Закрыть это уведомление"
 
-#: languages/wordpress-seojs.php:121
-msgid "Learn more about the Snippet Preview."
-msgstr "Подробнее о предпросмотре сниппета."
-
-#: languages/wordpress-seojs.php:118
-msgid "This is a rendering of what this post might look like in Google's search results."
-msgstr "Это отображение того, как это объявление может выглядеть в поисковых результатах Google."
-
-#: languages/yoast-components.php:209
+#: languages/yoast-components.php:206
 msgid "No results"
 msgstr "Нет результатов"
 
-#: languages/yoast-components.php:206
+#: languages/yoast-components.php:203
 msgid "%d result found, use up and down arrow keys to navigate"
 msgid_plural "%d results found, use up and down arrow keys to navigate"
 msgstr[0] "%d результат найден, используйте стрелки вверх и вниз для навигации"
 msgstr[1] "%d результата найдены, используйте стрелки вверх и вниз для навигации"
 msgstr[2] "%d результатов найдено, используйте стрелки вверх и вниз для навигации"
 
-#: languages/yoast-components.php:185
+#: languages/yoast-components.php:182
 msgid "Your site language is set to %s. If this is not correct, contact your site administrator."
 msgstr "Язык вашего сайта - %s. Если это неверно, сообщите администратору вашего сайта."
 
@@ -871,14 +1397,8 @@ msgstr "Вы можете %1$s отклонить это сообщение%2$s,
 msgid "Your site's settings currently allow attachment URLs on your site to exist. Please read %1$sthis post about a potential issue%2$s with attachment URLs and check whether you have the correct setting for your site."
 msgstr "Настройки Вашего сайта разрешают прикреплять URL на Ваш сайт. Пожалуйста, прочтите %1$s этот пост о потенциальных проблемах %2$s с прикреплёнными URL и проверьте, если у Вас установлены правильные настройки для Вашего сайта."
 
-#. translators: %1$s expands to the requested indexable type. %2$s expands to
-#. the request id
-#: admin/services/class-indexable.php:40
-msgid "Object %1$s with id %2$s not found"
-msgstr "Объект %1$s с id %2$s не найден"
-
 #. translators: %1$s expands to the requested indexable type
-#: admin/services/class-indexable.php:28
+#: admin/services/class-indexable.php:92
 msgid "Unknown type %1$s"
 msgstr "Неизвестный тип %1$s"
 
@@ -925,7 +1445,7 @@ msgstr "Показывать все типы содержимого"
 
 #. translators: %1$s resolves to the opening tag of the link to the comment
 #. setting page, %2$s resolves to the closing tag of the link
-#: admin/class-admin-init.php:182
+#: admin/class-admin-init.php:183
 msgid "To fix this uncheck the box in front of the \"Break comments into pages...\" on the %1$sComment settings page%2$s."
 msgstr "Чтобы исправить это, уберите галочку с \"Разделять комментарии по страницам...\" на странице %1$sНастройки комментариев%2$s."
 
@@ -1039,11 +1559,6 @@ msgstr "%s данные не найдены."
 msgid "Improve your SEO skills"
 msgstr "Улучшите ваши навыки SEO"
 
-#. translators: %s is replaced by the plugin name
-#: admin/views/sidebar.php:38
-msgid "Get %s now"
-msgstr "Получить %s сейчас"
-
 #: admin/views/sidebar.php:32
 msgid "No ads"
 msgstr "Без рекламы"
@@ -1063,10 +1578,6 @@ msgstr "Получайте мгновенные предложения по вн
 #: admin/views/sidebar.php:28
 msgid "Preview your page in Facebook and Twitter"
 msgstr "Предпросмотр вашей страницы на Facebook и Twitter"
-
-#: admin/views/sidebar.php:27 languages/wordpress-seojs.php:84
-msgid "Rank for up to 5 focus keywords per page"
-msgstr "Проверка ранга по 5 фокусным ключевым словам для каждой страницы"
 
 #. translators: %1$s expands to the plugin name
 #: admin/views/sidebar.php:23
@@ -1256,47 +1767,47 @@ msgstr "Используйте следующие блоки, чтобы вер�
 msgid "Learn more about the Webmaster Tools verification"
 msgstr "Узнать больше о верификации в Инструментах для веб-разработчиков"
 
-#: admin/views/tabs/dashboard/features.php:152
-#: languages/yoast-components.php:191
+#: admin/views/tabs/dashboard/features.php:54
+#: languages/yoast-components.php:188
 msgid "On"
 msgstr "Вкл"
 
 #. translators: %s expands to a feature's name
-#: admin/views/tabs/dashboard/features.php:145
+#: admin/views/tabs/dashboard/features.php:47
+#: admin/views/tabs/network/features.php:47
 msgid "Help on: %s"
 msgstr "Справка по: %s"
 
 #. translators: %1$s expands to Yoast SEO
-#: admin/views/tabs/dashboard/features.php:110
+#: admin/views/tabs/dashboard/features.php:26
 msgid "%1$s comes with a lot of features. You can enable / disable some of them below. Clicking the question mark gives more information about the feature."
 msgstr "%1$s предлагает множество разных сервисов. Вы можете активировать/деактивировать некоторые из них ниже. Кликните на знак вопроса, чтобы получить больше информации о сервисе."
 
-#: admin/views/tabs/dashboard/features.php:91
-#: admin/views/tabs/dashboard/features.php:153
-#: languages/yoast-components.php:194
+#: admin/views/class-yoast-feature-toggles.php:130
+#: admin/views/tabs/dashboard/features.php:55
+#: languages/yoast-components.php:191
 msgid "Off"
 msgstr "Выкл"
 
-#. translators: %1$s expands to Yoast SEO, %2$s expands to the translated
-#. version of "Off"
-#: admin/views/tabs/dashboard/features.php:89
+#. translators: 1: Yoast SEO, 2: translated version of "Off"
+#: admin/views/class-yoast-feature-toggles.php:128
 msgid "The advanced section of the %1$s meta box allows a user to remove posts from the search results or change the canonical. These are things you might not want any author to do. That's why, by default, only editors and administrators can do this. Setting to \"%2$s\" allows all users to change these settings."
 msgstr "Профессиональная секция метабокса %1$s позволяет пользователю удалять посты из результатов поиска или менять канонические ссылки. Возможно, вы не хотите, чтобы любой автор мог это делать на вашем сайте. Поэтому, по умолчанию, это могут делать только редакторы и администраторы. Настройка \"%2$s\" позволит любому пользователю менять эти настройки."
 
-#: admin/views/tabs/dashboard/features.php:85
+#: admin/views/class-yoast-feature-toggles.php:124
 msgid "Security: no advanced settings for authors"
 msgstr "Безопасность: нет дополнительных настроек для авторов"
 
-#: admin/views/tabs/dashboard/features.php:61
+#: admin/views/class-yoast-feature-toggles.php:100
 msgid "Read why XML Sitemaps are important for your site."
 msgstr "Узнайте почему XML карты важны для вашего сайта"
 
-#. translators: %s expands to Yoast SEO
-#: admin/views/tabs/dashboard/features.php:60
+#. translators: %s: Yoast SEO
+#: admin/views/class-yoast-feature-toggles.php:99
 msgid "Enable the XML sitemaps that %s generates."
 msgstr "Включите файлы Sitemap XML, которые генерирует %s."
 
-#: admin/views/tabs/dashboard/features.php:21
+#: admin/views/class-yoast-feature-toggles.php:59
 msgid "See the XML sitemap."
 msgstr "Посмотреть XML карту сайта"
 
@@ -1337,13 +1848,13 @@ msgstr "Медиа"
 msgid "Content Types"
 msgstr "Типы содержимого"
 
-#: admin/notifiers/class-configuration-notifier.php:100
+#: admin/notifiers/class-configuration-notifier.php:101
 msgid "Check SEO configuration"
 msgstr "Проверить SEO конфигурацию"
 
 #. translators: %1$s expands to Yoast SEO, %2$s is a link start tag to the
 #. Onboarding Wizard, %3$s is the link closing tag.
-#: admin/notifiers/class-configuration-notifier.php:94
+#: admin/notifiers/class-configuration-notifier.php:95
 msgid "Want to make sure your %1$s settings are still OK? %2$sOpen the configuration wizard again%3$s to validate them."
 msgstr "Если вы хотите быть уверены, что настройки %1$s в порядке, %2$sоткройте мастер настроек еще раз%3$s."
 
@@ -1364,7 +1875,7 @@ msgstr "По умолчанию для %2$s, в настоящее время: %
 msgid "Allow search engines to show this %s in search results?"
 msgstr "Разрешить поисковым системам показывать %s в результатах поиска?"
 
-#: admin/menu/class-admin-menu.php:89 frontend/class-frontend.php:1223
+#: admin/menu/class-admin-menu.php:89 frontend/class-frontend.php:1184
 msgid "Search Appearance"
 msgstr "Отображение в поисковой выдаче"
 
@@ -1387,7 +1898,7 @@ msgstr "Видимость для поисковых систем"
 
 #. translators: %s expands to an indexable object's name, like a post type or
 #. taxonomy
-#: admin/class-yoast-form.php:628
+#: admin/class-yoast-form.php:675
 msgid "Show %s in search results?"
 msgstr "Показать %s в результатах поиска?"
 
@@ -1404,11 +1915,11 @@ msgstr "Активируйте, если вы хотите, чтобы Twitter �
 msgid "Search result"
 msgstr "Результат поиска"
 
-#: admin/views/tabs/dashboard/features.php:25
+#: admin/views/class-yoast-feature-toggles.php:64
 msgid "SEO analysis"
 msgstr "SEO анализ"
 
-#: admin/views/tabs/dashboard/features.php:51
+#: admin/views/class-yoast-feature-toggles.php:90
 msgid "The text link counter helps you improve your site structure."
 msgstr "Счетчик текстовых ссылок поможет улучшить структуру вашего сайта."
 
@@ -1426,53 +1937,53 @@ msgstr "Новый запрос в поддержку"
 
 #. translators: %1$s expands to an opening strong tag, %2$s expands to a
 #. closing strong tag.
-#: admin/formatter/class-metabox-formatter.php:81
+#: admin/formatter/class-metabox-formatter.php:82
 msgid "Readability: %1$sNot available%2$s"
 msgstr "Читаемость: %1$s Не доступна %2$s"
 
 #. translators: %1$s expands to an opening strong tag, %2$s expands to a
 #. closing strong tag.
-#: admin/formatter/class-metabox-formatter.php:87
+#: admin/formatter/class-metabox-formatter.php:88
 msgid "Readability: %1$sNeeds improvement%2$s"
 msgstr "Читаемость: %1$s Требуется улучшение %2$s"
 
 #. translators: %1$s expands to an opening strong tag, %2$s expands to a
 #. closing strong tag.
-#: admin/formatter/class-metabox-formatter.php:93
+#: admin/formatter/class-metabox-formatter.php:94
 msgid "Readability: %1$sOK%2$s"
 msgstr "Читаемость: %1$s ОК %2$s"
 
 #. translators: %1$s expands to an opening strong tag, %2$s expands to a
 #. closing strong tag.
-#: admin/formatter/class-metabox-formatter.php:99
+#: admin/formatter/class-metabox-formatter.php:100
 msgid "Readability: %1$sGood%2$s"
 msgstr "Читаемость: %1$s Хорошо %2$s"
 
 #. translators: %1$s expands to an opening strong tag, %2$s expands to a
 #. closing strong tag.
-#: admin/formatter/class-metabox-formatter.php:107
+#: admin/formatter/class-metabox-formatter.php:108
 msgid "SEO: %1$sNot available%2$s"
 msgstr "SEO: %1$s Не доступно %2$s"
 
 #. translators: %1$s expands to an opening strong tag, %2$s expands to a
 #. closing strong tag.
-#: admin/formatter/class-metabox-formatter.php:113
+#: admin/formatter/class-metabox-formatter.php:114
 msgid "SEO: %1$sNeeds improvement%2$s"
 msgstr "SEO:%1$s Нужно поработать %2$s"
 
 #. translators: %1$s expands to an opening strong tag, %2$s expands to a
 #. closing strong tag.
-#: admin/formatter/class-metabox-formatter.php:119
+#: admin/formatter/class-metabox-formatter.php:120
 msgid "SEO: %1$sOK%2$s"
 msgstr "SEO: %1$s OK %2$s"
 
 #. translators: %1$s expands to an opening strong tag, %2$s expands to a
 #. closing strong tag.
-#: admin/formatter/class-metabox-formatter.php:125
+#: admin/formatter/class-metabox-formatter.php:126
 msgid "SEO: %1$sGood%2$s"
 msgstr "SEO:%1$s Хорошее %2$s"
 
-#: admin/formatter/class-metabox-formatter.php:165
+#: admin/formatter/class-metabox-formatter.php:166
 #: languages/yoast-components.php:167
 msgid "Good results"
 msgstr "Хорошие результаты"
@@ -1490,41 +2001,41 @@ msgstr "Ваша страница с контактами будет лучше,
 msgid "Allow customers to pick up their %s order locally"
 msgstr "Разрешить покупателям забрать заказ с %s на месте"
 
-#: admin/views/tabs/dashboard/features.php:27
+#: admin/views/class-yoast-feature-toggles.php:66
 msgid "The SEO analysis offers suggestions to improve the SEO of your text."
 msgstr "SEO Анализ предлагает предложения по улучшению SEO вашего текста."
 
-#: admin/views/tabs/dashboard/features.php:28
+#: admin/views/class-yoast-feature-toggles.php:67
 msgid "Learn how the SEO analysis can help you rank."
 msgstr "Узнайте, как SEO анализ может помочь вам продвинуться в результатах поиска."
 
-#: admin/views/tabs/dashboard/features.php:35
+#: admin/views/class-yoast-feature-toggles.php:74
 msgid "The readability analysis offers suggestions to improve the structure and style of your text."
 msgstr "Анализ читабельности подскажет, как улучшить структуру и стиль вашего текста."
 
-#: admin/views/tabs/dashboard/features.php:36
+#: admin/views/class-yoast-feature-toggles.php:75
 msgid "Discover why readability is important for SEO."
 msgstr "Узнайте, почему читабельность важна для SEO."
 
-#: admin/views/tabs/dashboard/features.php:43
+#: admin/views/class-yoast-feature-toggles.php:82
 msgid "The cornerstone content feature lets you to mark and filter cornerstone content on your website."
 msgstr "Функция ключевого содержимого позволяет вам указывать ключевое содержимое на вашем сайте и фильтровать по нему."
 
-#: admin/views/tabs/dashboard/features.php:44
+#: admin/views/class-yoast-feature-toggles.php:83
 msgid "Find out how cornerstone content can help you improve your site structure."
 msgstr "Узнайте, как ключевое содержимое может улучшить структуру вашего сайта."
 
-#: admin/views/tabs/dashboard/features.php:52
+#: admin/views/class-yoast-feature-toggles.php:91
 msgid "Find out how the text link counter can enhance your SEO."
 msgstr "Узнайте, как счетчик текстовых ссылок может улучшить ваше SEO."
 
-#. translators: %s expands to Ryte.
-#: admin/views/tabs/dashboard/features.php:68
+#. translators: %s: Ryte
+#: admin/views/class-yoast-feature-toggles.php:107
 msgid "%s integration"
 msgstr "%s интеграция"
 
-#. translators: %s expands to Ryte.
-#: admin/views/tabs/dashboard/features.php:73
+#. translators: %s: Ryte
+#: admin/views/class-yoast-feature-toggles.php:112
 msgid "Read more about how %s works."
 msgstr "Узнайте больше о том, как работает %s."
 
@@ -1532,15 +2043,8 @@ msgstr "Узнайте больше о том, как работает %s."
 msgid "Enable this feature if you want Facebook and other social media to display a preview with images and a text excerpt when a link to your site is shared."
 msgstr "Активируйте, если вы хотите, чтобы Facebook и другие социальные сети отображали изображения и отрывок текста в предпросмотре, если кто-то поделится ссылкой на ваш сайт."
 
-#. Translators: %1$d expands to the number of subheadings containing the
-#. keyword, %2$d expands to the 	   total number of subheadings, %3$s expands
-#. to a link on yoast.com, %4$s expands to the anchor end tag
-#: languages/yoast-seo-js.php:264
-msgid "The focus keyword appears in %1$d (out of %2$d) %3$ssubheadings%4$s in your copy."
-msgstr "Ключевое слово используется в %1$d из %2$d %3$sподзаголовков%4$s в вашей копии."
-
 #. translators: %s expands to Yoast SEO Premium.
-#: admin/class-social-admin.php:183
+#: admin/class-social-admin.php:184
 msgid "Find out why you should upgrade to %s"
 msgstr "Узнайте почему вам нужно обновиться до %s"
 
@@ -1574,71 +2078,50 @@ msgstr "Введите сюда поисковый запрос..."
 msgid "Search the Yoast Knowledge Base for answers to your questions:"
 msgstr "Используйте Базу Знаний Yoast для поиска ответов на Ваши вопросы:"
 
-#. Translators: %1$s and $3$s expand to the admin search page for the focus
-#. keyword, %2$d expands to the number 	   of times this focus keyword has been
-#. used before, %4$s and %5$s expand to a link to an article on yoast.com
-#. about why you should not use a keyword more than once.
-#: languages/yoast-seo-js.php:376
-msgid "You've used this focus keyword %1$s%2$d times before%3$s. It’s probably a good idea to read about %4$swhy you should not use your focus keyword more than once%5$s."
-msgstr "Вы уже использовали это ключевое слово %1$s ранее%3$s %2$d раз. Прочитайте нашу статью о том, %4$sпочему лучше не использовать ключевое слово больше одного раза%5$s. "
-
-#. Translators: %1$s and %2$s expand to an admin link where the focus keyword
-#. is already used. %3$s and %4$s 	   expand to a link to an article on
-#. yoast.com about why you should not use a keyword more than once.
-#: languages/yoast-seo-js.php:370
-msgid "You've used this focus keyword %1$sonce before%2$s. It’s probably a good idea to read about %3$swhy you should not use your focus keyword more than once%4$s."
-msgstr "Вы уже использовали это ключевое слово %1$sоднажды%2$s. Прочитайте нашу статью о том, %3$sпочему лучше не использовать ключевое слово больше одного раза%4$s."
-
-#: admin/formatter/class-metabox-formatter.php:169
+#: admin/formatter/class-metabox-formatter.php:170
 #: languages/yoast-components.php:149
 msgid "Remove highlight from the text"
 msgstr "Убрать выделение из текста"
 
-#: admin/formatter/class-metabox-formatter.php:166
+#: admin/formatter/class-metabox-formatter.php:167
 msgid "Your site language is set to {language}."
 msgstr "Языком Вашего сайта выбран {language}. "
 
-#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
-#. anchor end tag
-#: languages/yoast-seo-js.php:224
-msgid "The %1$smeta description%2$s has a nice length."
-msgstr "%1$sМета-описание%2$s имеет хорошую длину."
-
 #. translators: %1$s expands to Yoast SEO, %2$s is a link start tag to the
 #. Onboarding Wizard, %3$s is the link closing tag.
-#: admin/notifiers/class-configuration-notifier.php:111
+#: admin/notifiers/class-configuration-notifier.php:112
 msgid "Get started quickly with the %1$s %2$sconfiguration wizard%3$s!"
 msgstr "Быстро начать работу с %1$s %2$sмастером настройки%3$s!"
 
-#: admin/notifiers/class-configuration-notifier.php:117
+#: admin/notifiers/class-configuration-notifier.php:118
 msgid "First-time SEO configuration"
 msgstr "Первичная SEO настройка"
 
-#: admin/formatter/class-metabox-formatter.php:167
+#: admin/formatter/class-metabox-formatter.php:168
 msgid "Your site language is set to {language}. If this is not correct, contact your site administrator."
 msgstr "Языком Вашего сайта выбран {language}. Если эта информация не верна, свяжитесь с администратором Вашего сайта."
 
-#: languages/yoast-components.php:182
+#: languages/yoast-components.php:179
 msgid "Your site language is set to %s. "
 msgstr "Язык вашего сайта установлен как %s."
 
-#: admin/formatter/class-metabox-formatter.php:168
+#: admin/formatter/class-metabox-formatter.php:169
 #: languages/yoast-components.php:152
 msgid "Highlight this result in the text"
 msgstr "Выделить результат в тексте"
 
-#: admin/formatter/class-metabox-formatter.php:164
+#: admin/formatter/class-metabox-formatter.php:165
 #: languages/yoast-components.php:164
 msgid "Considerations"
 msgstr "На рассмотрении"
 
-#: admin/formatter/class-metabox-formatter.php:161
+#: admin/formatter/class-metabox-formatter.php:162
 #: languages/yoast-components.php:155
 msgid "Errors"
 msgstr "Ошибки"
 
-#: admin/formatter/class-metabox-formatter.php:160
-#: languages/yoast-components.php:188
+#: admin/formatter/class-metabox-formatter.php:161
+#: languages/yoast-components.php:185
 msgid "Change language"
 msgstr "Сменить язык"
 
@@ -1727,7 +2210,7 @@ msgstr "Безупречная интергация %2$s c  %1$s для ана�
 
 #. translators: %1$s expands to Yoast SEO, %2$s expands to the plugin version,
 #. %3$s expands to the plugin name
-#: admin/class-admin-init.php:339
+#: admin/class-admin-init.php:340
 msgid "%1$s and %2$s can work together a lot better by adding a helper plugin. Please install %3$s to make your life better."
 msgstr "%1$s и %2$s могут работать лучше, если установить дополнительный плагин. Пожалуйста, установите %3$s, чтобы сделать жизнь проще."
 
@@ -1742,7 +2225,7 @@ msgstr "Настройка вида в результатах поиска дл�
 
 #. translators: %1$s expands to the posttype label, %2$s expands anchor to blog
 #. post about cornerstone content, %3$s expands to </a>
-#: admin/filters/class-cornerstone-filter.php:65
+#: admin/filters/class-cornerstone-filter.php:81
 msgid "Mark the most important %1$s as 'cornerstone content' to improve your site structure. %2$sLearn more about cornerstone content%3$s."
 msgstr "Обозначьте, какой контент (%1$s) является 'ключевым содержимым'. Это улучшит структуру вашего сайта. %2$sУзнайте больше о ключевом содержимом%3$s."
 
@@ -1770,12 +2253,12 @@ msgstr "Назад"
 msgid "Go back to the search results"
 msgstr "Назад к результатам поиска"
 
-#: admin/class-add-keyword-modal.php:38 admin/class-help-center.php:263
+#: admin/class-add-keyword-modal.php:40 admin/class-help-center.php:263
 #: admin/class-keyword-synonyms-modal.php:40
 #: admin/class-multiple-keywords-modal.php:40
-#: admin/formatter/class-metabox-formatter.php:171
-#: admin/formatter/class-metabox-formatter.php:202
-#: languages/yoast-components.php:253
+#: admin/formatter/class-metabox-formatter.php:172
+#: admin/formatter/class-metabox-formatter.php:203
+#: languages/yoast-components.php:250
 msgid "(Opens in a new browser tab)"
 msgstr "(Откроется на новой вкладке браузера)"
 
@@ -1790,7 +2273,7 @@ msgstr "Хотите быть экспертом Yoast SEO?"
 #. translators: %1$s expands to an opening strong tag, %2$s expands to a
 #. closing strong tag
 #: admin/statistics/class-statistics-service.php:197
-msgid "Posts %1$swithout%2$s a focus keyword"
+msgid "Posts %1$swithout%2$s a focus keyphrase"
 msgstr "Записи %1$sбез%2$s фокусного ключевого слова"
 
 #: admin/statistics/class-statistics-service.php:65
@@ -1981,7 +2464,7 @@ msgstr "Спрятанные проблемы:"
 
 #. translators: %1$s expands to the social network's name, %2$s to Yoast SEO
 #. Premium.
-#: admin/class-social-admin.php:176
+#: admin/class-social-admin.php:177
 msgid "Do you want to preview what it will look like if people share this post on %1$s? You can, with %2$s."
 msgstr "Хотите увидеть, как ваша запись будет смотреться, если кто-то поделится ею на %1$s? Это возможно с %2$s."
 
@@ -2010,49 +2493,49 @@ msgstr ""
 "В настоящее время функция <strong>Счётчик текстовых ссылок</strong>  отключена (введена в %1$s %2$s). Для работы этой функции %1$s необходимо создать таблицу в вашей базе данных. Мы не смогли создать эту таблицу автоматически.\n"
 "\t\t\t\t\tЧтобы узнать, как решить эту проблему,  %3$sпрочитайте эту статью в базе знаний%4$s."
 
-#: admin/links/class-link-reindex-dashboard.php:191
+#: admin/links/class-link-reindex-dashboard.php:158
 msgid "Good job! All the links in your texts have been counted."
 msgstr "Отличная работа! Все ссылки в ваших текстах посчитаны."
 
-#: admin/links/class-link-reindex-dashboard.php:169
+#: admin/links/class-link-reindex-dashboard.php:136
 msgid "Calculation completed."
 msgstr "Подсчет завершен."
 
-#: admin/links/class-link-reindex-dashboard.php:168
+#: admin/links/class-link-reindex-dashboard.php:135
 msgid "Calculation in progress..."
 msgstr "Идет подсчет ..."
 
-#: admin/links/class-link-reindex-dashboard.php:143
+#: admin/links/class-link-reindex-dashboard.php:110
 msgid "Stop counting"
 msgstr "Остановить подсчет"
 
-#: admin/links/class-link-reindex-dashboard.php:136
+#: admin/links/class-link-reindex-dashboard.php:103
 msgid "Counting links in your texts"
 msgstr "Считаем ссылки в ваших текстах"
 
 #. translators: 1: expands to a <span> containing the number of items
 #. recalculated. 2: expands to a <strong> containing the total number of items.
-#: admin/links/class-link-reindex-dashboard.php:126
+#: admin/links/class-link-reindex-dashboard.php:93
 msgid "Text %1$s of %2$s processed."
 msgstr "Обработан текст %1$s из %2$s ."
 
-#: admin/links/class-link-reindex-dashboard.php:119
+#: admin/links/class-link-reindex-dashboard.php:86
 msgid "All your texts are already counted, there is no need to count them again."
 msgstr "Все ваши тексты уже пересчитаны, нет необходимости делать это снова."
 
-#: admin/links/class-link-reindex-dashboard.php:221
+#: admin/links/class-link-reindex-dashboard.php:188
 msgid "Count links in your texts"
 msgstr "Считать ссылки в ваших текстах"
 
 #. translators: 1: link to yoast.com post about internal linking suggestion. 4:
 #. is Yoast.com 3: is anchor closing.
-#: admin/links/class-link-reindex-dashboard.php:83
+#: admin/links/class-link-reindex-dashboard.php:209
 msgid "The links in all your public texts need to be counted. This will provide insights of which texts need more links to them. If you want to know more about the why and how of internal linking, check out %1$sthe article about internal linking on %2$s%3$s."
 msgstr "Если вы проанализируете все ссылки во всех опубликованных текстах на вашем сайте, то сможете понять, каким текстам нужно больше ссылок. Если вы хотите знать больше о том, как работают внутренние ссылки, почитайте %1$sнашу статью на %2$s%3$s."
 
 #: admin/links/class-link-reindex-dashboard.php:56
-#: admin/links/class-link-reindex-dashboard.php:80
-#: admin/views/tabs/dashboard/features.php:49
+#: admin/links/class-link-reindex-dashboard.php:206
+#: admin/views/class-yoast-feature-toggles.php:88
 msgid "Text link counter"
 msgstr "Счетчик текстовых ссылок"
 
@@ -2117,30 +2600,11 @@ msgstr "%s Столбцы"
 msgid "Readability score"
 msgstr "Оценка читабельности"
 
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
-#. end tag
-#: languages/yoast-seo-js.php:131
-msgid "No %1$sinternal links%2$s appear in this page, consider adding some as appropriate."
-msgstr "На этой странице нет %1$sвнутренних ссылок%2$s. Возможно, вы можете добавить несколько, если это улучшит ваш текст."
-
-#. Translators: %1$s expands to the number of nofollow links, %2$s expands to a
-#. link on yoast.com, 	   %3$s expands to the anchor end tag, %4$s to the
-#. number of internal links
-#: languages/yoast-seo-js.php:146
-msgid "This page has %1$s nofollowed %2$sinternal link(s)%3$s and %4$s normal internal link(s)."
-msgstr "На странице %1$s %2$sвнутренних%3$s nofollow ссылок и %4$s обычных внутренних ссылок."
-
-#. Translators: %1$s expands the number of internal links, %2$s expands to a
-#. link on yoast.com, 	   %3$s expands to the anchor end tag
-#: languages/yoast-seo-js.php:136
-msgid "This page has %1$s %2$sinternal link(s)%3$s, all nofollowed."
-msgstr "На странице %1$s %2$sвнутренних ссылок%3$s, все с аттрибутом nofollow."
-
 #. translators: %s expands to 'Yoast SEO Premium'.
 #: admin/class-add-keyword-modal.php:30
 #: admin/class-keyword-synonyms-modal.php:30
 #: admin/class-multiple-keywords-modal.php:30
-#: admin/formatter/class-metabox-formatter.php:194
+#: admin/formatter/class-metabox-formatter.php:195
 #: languages/wordpress-seojs.php:108
 msgid "Other benefits of %s for you:"
 msgstr "Другие возможности %s для вас:"
@@ -2156,7 +2620,7 @@ msgstr "Настройте %s за пару шагов"
 msgid "%1$sSocial media preview%2$s: Facebook &amp; Twitter"
 msgstr "%1$sПредпросмотр в соцсетях%2$s: Facebook &amp; Twitter"
 
-#: languages/yoast-components.php:232 languages/yoast-seo-js.php:457
+#: languages/yoast-components.php:229 languages/yoast-seo-js.php:488
 msgid "Scroll to see the preview content."
 msgstr "Прокрутите, чтобы увидеть предпросмотр содержимого."
 
@@ -2164,33 +2628,34 @@ msgstr "Прокрутите, чтобы увидеть предпросмотр
 msgid "Enter authorization code here..."
 msgstr "Введите код авторизации"
 
-#: admin/filters/class-cornerstone-filter.php:48
-#: admin/views/tabs/dashboard/features.php:41 languages/wordpress-seojs.php:5
+#: admin/filters/class-cornerstone-filter.php:64
+#: admin/views/class-yoast-feature-toggles.php:80
+#: languages/wordpress-seojs.php:11
 msgid "Cornerstone content"
 msgstr "Ключевое содержимое"
 
 #. translators: %1$s expands to Yoast SEO.
 #: admin/config-ui/fields/class-field-success-message.php:21
-msgid "%1$s will now take care of all the needed technical optimization of your site. To really improve your site's performance in the search results, it's important to start creating content that ranks well for keywords you care about. Check out this video in which we explain how to use the %1$s metabox when you edit posts or pages."
+msgid "%1$s will now take care of all the needed technical optimization of your site. To really improve your site's performance in the search results, it's important to start creating content that ranks well for keyphrases you care about. Check out this video in which we explain how to use the %1$s metabox when you edit posts or pages."
 msgstr "%1$s теперь позаботится обо всем, что касается технической оптимизации вашего сайта. Для того, чтобы улучшить показатели вашего сайта в поисковой выдаче, очень важно создавать содержимое, которое хорошо подходит для тех ключевых слов, которые вам важны. Посмотрите это видео, в котором мы объясняем как использовать %1$s метабокс когда вы редактируете статьи или страницы."
 
 #. translators: %1$s resolves to Local SEO
-#: admin/config-ui/components/class-component-suggestions.php:84
+#: admin/config-ui/components/class-component-suggestions.php:105
 msgid "If you want to outrank the competition in a specific town or region, check out our %1$s plugin! You’ll be able to easily insert Google maps, opening hours, contact information and a store locator. Besides that %1$s helps you to improve the usability of your contact page."
 msgstr "Если вы хотите иметь более высокий ранг по сравнению с конкурентами в определенном городе или регионе, смотрите наш %1$s плагин! Вы лекго сможете добавить Google карты, часы работы, контактную информацию и поиск местоположений. Кроме этого %1$s помогает вам улучшить удобство использования вашей страницы контактов."
 
-#: admin/config-ui/components/class-component-suggestions.php:82
+#: admin/config-ui/components/class-component-suggestions.php:103
 msgid "Attract more customers near you"
 msgstr "Привлечь больше клиентов возле вас"
 
 #. translators: %1$s resolves to Yoast SEO
-#: admin/config-ui/components/class-component-suggestions.php:70
+#: admin/config-ui/components/class-component-suggestions.php:84
 msgid "Do you want to know all the ins and outs of the %1$s plugin? Do you want to learn all about our advanced settings? Want to be able to really get the most out of the %1$s plugin? Check out our %1$s plugin training and start outranking the competition!"
 msgstr "Хотите узнать все тонкости %1$s плагина? Хотите узнать все о наших расширенных настройках? Хотите иметь возможность действительно получить максимум от %1$s плагина? Узнайте больше о наших обучающих курсах по работе с плагином %1$s и начните превосходить конкурентов! "
 
 #. translators: %1$s resolves to Yoast SEO, %2$s resolves to Yoast SEO plugin
 #. training
-#: admin/config-ui/components/class-component-suggestions.php:68
+#: admin/config-ui/components/class-component-suggestions.php:82
 msgid "Get the most out of %1$s with the %2$s"
 msgstr "Получите максимум от %1$s с %2$s"
 
@@ -2200,7 +2665,7 @@ msgstr "Обновитесь до Премиум"
 
 #. translators: %1$s resolves to Yoast SEO Premium
 #: admin/config-ui/components/class-component-suggestions.php:36
-msgid "Do you want to outrank your competition? %1$s gives you awesome additional features that'll help you to set up your SEO strategy like a professional. Use the multiple focus keywords functionality, the redirect manager and our internal linking tool. %1$s will also give you access to premium support."
+msgid "Do you want to outrank your competition? %1$s gives you awesome additional features that'll help you to set up your SEO strategy like a professional. Add synonyms and related keywords, use our Premium SEO analysis, the redirect manager and our internal linking tool. %1$s will also give you access to premium support."
 msgstr "Хотите ли вы иметь более высокий ранг по сравнению с конкурентами? %1$s предоставляет отличные дополнительные возможности, которые помогут вам профессионально построить вашу SEO стратегию. Используйте функцию добавления множества ключевых слов, менеджера редиректов и наш инструмент внутренней перелинковки. %1$s также предоставит вам доступ к премиум поддержке."
 
 #. translators: %s resolves to Yoast SEO Premium
@@ -2233,11 +2698,11 @@ msgstr "Новостная рассылка"
 
 #. translators: %1$s resolves to Yoast SEO, %2$s resolves to the starting tag
 #. of the link to the wizard, %3$s resolves to the closing link tag
-#: admin/config-ui/class-configuration-page.php:234
+#: admin/config-ui/class-configuration-page.php:219
 msgid "We have detected that you have not finished this wizard yet, so we recommend you to %2$sstart the configuration wizard to configure %1$s%3$s."
 msgstr "Мы обнаружили что вы ещё не закончили настройку, поэтому мы рекомендуем вам %2$sзапустить мастера настройки для того, чтобы сконфигурировать %1$s%3$s."
 
-#: admin/config-ui/class-configuration-page.php:230
+#: admin/config-ui/class-configuration-page.php:215
 msgid "The configuration wizard helps you to easily configure your site to have the optimal SEO settings."
 msgstr "Мастер настройки поможет вам с легкостью сконфигурировать оптимальные SEO настройки для вашего сайта."
 
@@ -2260,19 +2725,19 @@ msgstr "Мгновенно предлагаемые внутренние ссы�
 #: admin/class-add-keyword-modal.php:24
 #: admin/class-keyword-synonyms-modal.php:24
 #: admin/class-multiple-keywords-modal.php:24
-#: admin/formatter/class-metabox-formatter.php:188
+#: admin/formatter/class-metabox-formatter.php:189
 #: languages/wordpress-seojs.php:115
 msgid "Great news: you can, with %1$s!"
 msgstr "Отличные новости: вы можете с %1$s!"
 
-#: admin/class-yoast-form.php:149
+#: admin/class-yoast-form.php:150
 msgid "Save changes"
 msgstr "Сохранить изменения"
 
-#: admin/class-add-keyword-modal.php:37
+#: admin/class-add-keyword-modal.php:39
 #: admin/class-keyword-synonyms-modal.php:39
 #: admin/class-multiple-keywords-modal.php:39 admin/class-premium-popup.php:85
-#: admin/formatter/class-metabox-formatter.php:201
+#: admin/formatter/class-metabox-formatter.php:202
 #: languages/wordpress-seojs.php:112
 msgid "1 year free updates and upgrades included!"
 msgstr "1 год бесплатных обновлений и улучшений включен!"
@@ -2333,19 +2798,6 @@ msgstr "Больше никаких мертвых ссылок"
 msgid "Increase your SEO reach"
 msgstr "Увеличить SEO-доступность"
 
-#: admin/class-premium-upsell-admin-block.php:47
-msgid "Multiple keywords"
-msgstr "Несколько ключевых слов"
-
-#. Translators: %1$s opens a link to a Yoast article about stop words, %2$s
-#. closes the link
-#: languages/yoast-seo-js.php:181
-msgid "The focus keyword contains a stop word. This may or may not be wise depending on the circumstances. %1$sLearn more about the stop words%2$s."
-msgid_plural "The focus keyword contains %3$d stop words. This may or may not be wise depending on the circumstances. %1$sLearn more about the stop words%2$s."
-msgstr[0] "Ключевое фокус-слово содержит стоп-слово. Это может хорошо или плохо в зависимости от обстоятельств. %1$sПодробнее о стоп-слове%2$s."
-msgstr[1] "Ключевое фокус-слово содержит %3$d стоп-слова. Это может хорошо или плохо в зависимости от обстоятельств. %1$sПодробнее о стоп-словах%2$s."
-msgstr[2] "Ключевое фокус-слово содержит %3$d стоп-слов. Это может хорошо или плохо в зависимости от обстоятельств. %1$sПодробнее о стоп-словах%2$s."
-
 #: admin/views/tabs/metas/paper-content/rss-content.php:30
 #: inc/class-wpseo-replace-vars.php:1042
 msgid "Variable"
@@ -2365,15 +2817,8 @@ msgstr "Если вам нужна помощь в создании качест
 msgid "Scroll to see the table content."
 msgstr "Прокрутите, чтобы увидеть содержимое таблицы."
 
-#: languages/yoast-seo-js.php:177
-msgid "The exact-match %4$skeyword density%5$s is %1$s, which is way over the advised %3$s maximum; the focus keyword was found %2$d time."
-msgid_plural "The exact-match %4$skeyword density%5$s is %1$s, which is way over the advised %3$s maximum; the focus keyword was found %2$d times."
-msgstr[0] "%4$sПлотность ключевых слов%5$s — %1$s, это гораздо больше рекомендуемого максимума (%3$s); фокусное ключевое слово было найдено %2$d раз."
-msgstr[1] "%4$sПлотность ключевых слов%5$s — %1$s, это гораздо больше рекомендуемого максимума (%3$s); фокусное ключевое слово было найдено %2$d раза."
-msgstr[2] "%4$sПлотность ключевых слов%5$s — %1$s, это гораздо больше рекомендуемого максимума (%3$s); фокусное ключевое слово было найдено %2$d раз."
-
 #. Translators: %1$s expands to the name of the assessment.
-#: languages/yoast-seo-js.php:362
+#: languages/yoast-seo-js.php:393
 msgid "An error occurred in the '%1$s' assessment"
 msgstr "Ошибка при оценке '%1$s'"
 
@@ -2381,7 +2826,7 @@ msgstr "Ошибка при оценке '%1$s'"
 #. to a link on yoast.com, 	   %3$d expands to the recommended maximum number
 #. of syllables, 	   %4$s expands to the anchor end tag, %5$s expands to the
 #. recommended maximum number of syllables.
-#: languages/yoast-seo-js.php:127
+#: languages/yoast-seo-js.php:144
 msgid "%1$s of the words contain %2$sover %3$s syllables%4$s, which is more than the recommended maximum of %5$s."
 msgstr "%1$s слов содержат %2$sболее %3$s слогов%4$s, это больше рекомендуемого максимума (%5$s)."
 
@@ -2389,108 +2834,24 @@ msgstr "%1$s слов содержат %2$sболее %3$s слогов%4$s, э�
 #. to a link on yoast.com, 	   %3$d expands to the recommended maximum number
 #. of syllables, 	   %4$s expands to the anchor end tag, %5$s expands to the
 #. recommended maximum number of syllables.
-#: languages/yoast-seo-js.php:121
+#: languages/yoast-seo-js.php:138
 msgid "%1$s of the words contain %2$sover %3$s syllables%4$s, which is less than or equal to the recommended maximum of %5$s."
 msgstr "%1$s слов содержат %2$sболее %3$s слогов%4$s, это меньше рекомендованного максимума %5$s или равно ему."
 
-#. Translators: %1$s opens a link to a wikipedia article about stop words, %2$s
-#. closes the link
-#: languages/yoast-seo-js.php:354
-msgid "The slug for this page contains a %1$sstop word%2$s, consider removing it."
-msgid_plural "The slug for this page contains %1$sstop words%2$s, consider removing them."
-msgstr[0] "URL страницы содержит %1$sстоп слов%2$s, возможно, их стоит удалить."
-msgstr[1] "URL страницы содержит %1$sстоп слов%2$s, возможно, их стоит удалить."
-msgstr[2] "URL страницы содержит %1$sстоп слов%2$s, возможно, их стоит удалить."
-
-#. Translators: %1$s expands to the number of sentences containing transition
-#. words, %2$s expands to a link on yoast.com, 	   %3$s expands to the anchor
-#. end tag.
-#: languages/yoast-seo-js.php:115
-msgid "%1$s of the sentences contain a %2$stransition word%3$s or phrase, which is great."
-msgstr "%1$s предложений содержат %2$sпереходное слово%3$s или словосочетание, что очень хорошо."
-
-#. Translators: %1$s expands to the number of sentences containing transition
-#. words, %2$s expands to a link on yoast.com, 	   %3$s expands to the anchor
-#. end tag, %4$s expands to the recommended value.
-#: languages/yoast-seo-js.php:110
-msgid "%1$s of the sentences contain a %2$stransition word%3$s or phrase, which is less than the recommended minimum of %4$s."
-msgstr "%1$s предложений содержат %2$sпереходное слово%3$s или словосочетание, это меньше необходимого минимума %4$s."
-
-#. Translators: %1$s expands to the keyphrase, %2$s expands to a link on
-#. yoast.com, 	   %3$s expands to the anchor end tag.
-#: languages/yoast-seo-js.php:331
-msgid "The focus keyword '%1$s' does not appear in the %2$sSEO title%3$s."
-msgstr "Фокусное ключевое слово '%1$s' отсутствует в %2$sSEO-заголовке%3$s страницы."
-
-#. Translators: The preceding sentence is "The text contains x words.", %2$s
-#. expands to a link on yoast.com, 	   %3$s expands to the anchor end tag,
-#. %4$s expands to the recommended minimum of words.
-#: languages/yoast-seo-js.php:306
-msgid "This is far below the %2$srecommended minimum%3$s of %4$d word. Add more content that is relevant for the topic."
-msgid_plural "This is far below the %2$srecommended minimum%3$s of %4$d words. Add more content that is relevant for the topic."
-msgstr[0] "Это намного меньше %2$sрекомендованного минимума%3$s в %4$d слово. Добавьте больше содержания, имеющего отношение к данной теме."
-msgstr[1] "Это намного меньше %2$sрекомендованного минимума%3$s в %4$d слова. Добавьте больше содержания, имеющего отношение к данной теме."
-msgstr[2] "Это намного меньше %2$sрекомендованного минимума%3$s в %4$d слов. Добавьте больше содержания, имеющего отношение к данной теме."
-
-#. Translators: The preceding sentence is "The text contains x words.", %2$s
-#. expands to a link on yoast.com, 	   %3$s expands to the anchor end tag, %4$s
-#. expands to the recommended minimum of words.
-#: languages/yoast-seo-js.php:300
-msgid "This is below the %2$srecommended minimum%3$s of %4$d word. Add more content that is relevant for the topic."
-msgid_plural "This is below the %2$srecommended minimum%3$s of %4$d words. Add more content that is relevant for the topic."
-msgstr[0] "Это меньше %2$sрекомендованного минимума%3$s в %4$d слово. Добавьте больше содержания, имеющего отношение к данной теме."
-msgstr[1] "Это меньше %2$sрекомендованного минимума%3$s в %4$d слова. Добавьте больше содержания, имеющего отношение к данной теме."
-msgstr[2] "Это меньше %2$sрекомендованного минимума%3$s в %4$d слов. Добавьте больше содержания, имеющего отношение к данной теме."
-
-#. Translators: The preceding sentence is "The text contains x words.", %2$s
-#. expands to a link on yoast.com, 	   %3$s expands to the anchor end tag, %4$s
-#. expands to the recommended minimum of words.
-#: languages/yoast-seo-js.php:293
-msgid "This is slightly below the %2$srecommended minimum%3$s of %4$d word. Add a bit more copy."
-msgid_plural "This is slightly below the %2$srecommended minimum%3$s of %4$d words. Add a bit more copy."
-msgstr[0] "Это немного меньше %2$sрекомендованного минимума%3$s в %4$d слово. Добавьте чуть больше содержания, имеющего отношение к данной теме."
-msgstr[1] "Это немного меньше %2$sрекомендованного минимума%3$s в %4$d слова. Добавьте чуть больше содержания, имеющего отношение к данной теме."
-msgstr[2] "Это немного меньше %2$sрекомендованного минимума%3$s в %4$d слов. Добавьте чуть больше содержания, имеющего отношение к данной теме."
-
-#. Translators: The preceding sentence is "The text contains x words.", %2$s
-#. expands to a link on yoast.com, 	   %3$s expands to the anchor end tag,	%4$s
-#. expands to the recommended minimum of words.
-#: languages/yoast-seo-js.php:287
-msgid "This is more than or equal to the %2$srecommended minimum%3$s of %4$d word."
-msgid_plural "This is more than or equal to the %2$srecommended minimum%3$s of %4$d words."
-msgstr[0] "Это больше %2$sрекомендованного минимума%3$s %4$d слово или равно ему."
-msgstr[1] "Это больше %2$sрекомендованного минимума%3$s %4$d слова или равно ему."
-msgstr[2] "Это больше %2$sрекомендованного минимума%3$s %4$d слов или равно ему."
-
-#. Translators: %1$d expands to the number of words in the text.
-#. Translators: %1$d expands to the number of words in the text
-#: languages/yoast-seo-js.php:281
-msgid "The text contains %1$d word."
-msgid_plural "The text contains %1$d words."
-msgstr[0] "Текст содержит %1$d слово."
-msgstr[1] "Текст содержит %1$d слова."
-msgstr[2] "Текст содержит %1$d слов."
-
-#. Translators: %1$d expands to percentage of sentences, %2$s expands to a link
-#. on yoast.com, 	   %3$s expands to the recommended maximum sentence length,
-#. %4$s expands to the anchor end tag, 	   %5$s expands to the recommended
-#. maximum percentage.
-#: languages/yoast-seo-js.php:81
-msgid "%1$s of the sentences contain %2$smore than %3$s words%4$s, which is more than the recommended maximum of %5$s. Try to shorten the sentences."
-msgstr "%1$s из предложений содержит %2$s более %3$s слов%4$s, что более, чем рекомендуемый максимум %5$s предложений. Попробуйте сократить фразы."
-
-#. Translators: %1$d expands to percentage of sentences, %2$s expands to a link
-#. on yoast.com, 	   %3$s expands to the recommended maximum sentence length,
-#. %4$s expands to the anchor end tag, 	   %5$s expands to the recommended
-#. maximum percentage.
-#: languages/yoast-seo-js.php:75
-msgid "%1$s of the sentences contain %2$smore than %3$s words%4$s, which is less than or equal to the recommended maximum of %5$s."
-msgstr "%1$s из предложений содержит %2$s более, чем %3$s слов%4$s, что меньше рекомендуемого максимума %5$s или равно ему."
+#. Translators: The preceding sentence is "Text length: The text contains x
+#. words.", 	   %3$s expands to a link on yoast.com, 	   %4$s expands to the
+#. anchor end tag, 	   %5$d expands to the recommended minimum of words.
+#: languages/yoast-seo-js.php:312
+msgid "This is slightly below the recommended minimum of %5$d word. %3$sAdd a bit more copy%4$s."
+msgid_plural "This is slightly below the recommended minimum of %5$d words. %3$sAdd a bit more copy%4$s."
+msgstr[0] "Это немного меньше рекомендованного минимума в %5$d слово. %3$sДобавьте чуть больше содержания, имеющего отношение к данной теме%4$s."
+msgstr[1] "Это немного меньше рекомендованного минимума в %5$d слова. %3$sДобавьте чуть больше содержания, имеющего отношение к данной теме%4$s."
+msgstr[2] "Это немного меньше рекомендованного минимума в %5$d слов. %3$sДобавьте чуть больше содержания, имеющего отношение к данной теме%4$s."
 
 #. Translators: %1$d expands to number of sentences, %2$s expands to a link on
 #. yoast.com, 	   %3$s expands to the recommended maximum sentence length, %4$s
 #. expands to the anchor end tag.
-#: languages/yoast-seo-js.php:69
+#: languages/yoast-seo-js.php:80
 msgid "The meta description contains %1$d sentence %2$sover %3$s words%4$s. Try to shorten this sentence."
 msgid_plural "The meta description contains %1$d sentences %2$sover %3$s words%4$s. Try to shorten these sentences."
 msgstr[0] "Мета-описание содержит %1$d предложение, состоящее из %2$sболее %3$s слов%4$s. Постарайтесь сократить это предложение."
@@ -2499,56 +2860,9 @@ msgstr[2] "Мета-описание содержит %1$d предложени�
 
 #. Translators: %1$s expands to a link on yoast.com, %2$s expands to the
 #. recommended maximum sentence length, 	   %3$s expands to the anchor end tag.
-#: languages/yoast-seo-js.php:64
+#: languages/yoast-seo-js.php:75
 msgid "The meta description contains no sentences %1$sover %2$s words%3$s."
 msgstr "Мета-описание не содержит предложений, состоящих из %1$sболее %2$s слов%3$s."
-
-#. Translators: %1$d expands to the number of instances where 3 or more
-#. consecutive sentences start with the same word. 	   %2$d expands to the
-#. number of consecutive sentences starting with the same word.
-#: languages/yoast-seo-js.php:59
-msgid "The text contains %2$d consecutive sentences starting with the same word. Try to mix things up!"
-msgid_plural "The text contains %1$d instances where %2$d or more consecutive sentences start with the same word. Try to mix things up!"
-msgstr[0] "В тексте встречаются %2$d или более последовательных предложений начинаются с одного и того же слова. Постарайтесь изменить порядок слов."
-msgstr[1] "В тексте найдено %1$d случая, когда %2$d или более последовательных предложений начинаются с одного и того же слова. Постарайтесь изменить порядок слов."
-msgstr[2] "В тексте найдено %1$d случаев, когда %2$d или более последовательных предложений начинаются с одного и того же слова. Постарайтесь изменить порядок слов."
-
-#. Translators: %1$s expands to the number of sentences in passive voice, %2$s
-#. expands to a link on yoast.com, 	   %3$s expands to the anchor end tag, %4$s
-#. expands to the recommended value.
-#: languages/yoast-seo-js.php:54
-msgid "%1$s of the sentences contain %2$spassive voice%3$s, which is more than the recommended maximum of %4$s. Try to use their active counterparts."
-msgstr "%1$s предложений содержат %2$sстрадательный залог%3$s, что превышает рекомендуемый максимум в %4$s . Постарайтесь использовать активный залог."
-
-#. Translators: %1$s expands to the number of sentences in passive voice, %2$s
-#. expands to a link on yoast.com, 	   %3$s expands to the anchor end tag, %4$s
-#. expands to the recommended value.
-#: languages/yoast-seo-js.php:49
-msgid "%1$s of the sentences contain %2$spassive voice%3$s, which is less than or equal to the recommended maximum of %4$s."
-msgstr "%1$s предложений содержат %2$sстрадательный залог%3$s, что меньше рекомендованного максимума в %4$s или равно ему."
-
-#. Translators: %1$d expands to the number of paragraphs, %2$d expands to the
-#. recommended value
-#: languages/yoast-seo-js.php:44
-msgid "%1$d of the paragraphs contains more than the recommended maximum of %2$d words. Are you sure all information is about the same topic, and therefore belongs in one single paragraph?"
-msgid_plural "%1$d of the paragraphs contain more than the recommended maximum of %2$d words. Are you sure all information within each of these paragraphs is about the same topic, and therefore belongs in a single paragraph?"
-msgstr[0] "%1$d абзац содержит больше слов, чем рекомендуемый максимум - %2$d. Вы уверены, что вся информация в каждом из этих абзацев принадлежит той же теме и поэтому принадлежит одному абзацу?"
-msgstr[1] "%1$d абзаца содержит больше слов, чем рекомендуемый максимум - %2$d. Вы уверены, что вся информация в каждом из этих абзацев принадлежит той же теме и поэтому принадлежит одному абзацу?"
-msgstr[2] "%1$d абзацев содержит больше слов, чем рекомендуемый максимум - %2$d. Вы уверены, что вся информация в каждом из этих абзацев принадлежит той же теме и поэтому принадлежит одному абзацу?"
-
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
-#. end tag, 	   %3$d expands to	the total available number of characters in the
-#. meta description
-#: languages/yoast-seo-js.php:220
-msgid "The %1$smeta description%2$s is over %3$d characters. Reducing the length will ensure the entire description will be visible."
-msgstr "Данное %1$sмета-описание%2$s содержит более %3$d символов. Стоит сократить его, чтобы оно было видно целиком."
-
-#: languages/yoast-seo-js.php:168
-msgid "The exact-match %3$skeyword density%4$s is %1$s, which is too low; the focus keyword was found %2$d time."
-msgid_plural "The exact-match %3$skeyword density%4$s is %1$s, which is too low; the focus keyword was found %2$d times."
-msgstr[0] "%3$sПлотность ключевых слов%4$s слишком низкая — %1$s; фокусное ключевое слово было найдено %2$d раз."
-msgstr[1] "%3$sПлотность ключевых слов%4$s слишком низкая — %1$s; фокусное ключевое слово было найдено %2$d раза."
-msgstr[2] "%3$sПлотность ключевых слов%4$s слишком низкая — %1$s; фокусное ключевое слово было найдено %2$d раз."
 
 #: languages/yoast-components.php:68
 msgid "Step %1$d: %2$s"
@@ -2573,15 +2887,15 @@ msgid "Save"
 msgstr "Сохранить"
 
 #. translators: 1: Author name; 2: Site name.
-#: inc/options/class-wpseo-option-titles.php:198
+#: inc/options/class-wpseo-option-titles.php:203
 msgid "%1$s, Author at %2$s"
 msgstr "%1$s, Автор в %2$s"
 
-#: languages/yoast-components.php:197 languages/yoast-seo-js.php:454
+#: languages/yoast-components.php:194 languages/yoast-seo-js.php:485
 msgid "Mobile preview"
 msgstr "Предварительный просмотр для мобильного устройства."
 
-#: languages/yoast-components.php:200 languages/yoast-seo-js.php:451
+#: languages/yoast-components.php:197 languages/yoast-seo-js.php:482
 msgid "Desktop preview"
 msgstr "Предварительный просмотр для Настольного ПК"
 
@@ -2613,126 +2927,76 @@ msgstr "<b> Внимание!</b> Ваша %s лицензия бездейст�
 msgid "<b>Warning!</b> You didn't set your %s license key yet, which means you're missing out on updates and support! <a href=\"%s\">Enter your license key</a> or <a href=\"%s\" target=\"_blank\">get a license here</a>."
 msgstr "<b>Внимание!!</b>  Вы еще не установили %s лицензионный ключ, а это значит, у вас не нет обновлений и технической поддержки! <a href=\"%s\">Введите ваш лицензионный ключ</a> или <a href=\"%s\" target=\"_blank\">получить лицензию здесь</a>."
 
-#: languages/yoast-seo-js.php:460
+#: languages/yoast-seo-js.php:491
 msgid "Please provide an SEO title by editing the snippet below."
 msgstr "Укажите SEO-заголовок страницы в этом сниппете."
 
-#: languages/yoast-seo-js.php:445
+#: languages/yoast-seo-js.php:476
 msgid "Meta description preview:"
 msgstr "Просмотр мета-описания:"
 
-#: languages/yoast-seo-js.php:442
+#: languages/yoast-seo-js.php:473
 msgid "Slug preview:"
 msgstr "Просмотр ярлыка:"
 
-#: languages/yoast-seo-js.php:439
+#: languages/yoast-seo-js.php:470
 msgid "SEO title preview:"
 msgstr "Предварительный просмотр SEO названия:"
 
-#: languages/yoast-components.php:223 languages/yoast-seo-js.php:433
+#: languages/yoast-components.php:220 languages/yoast-seo-js.php:464
 msgid "Close snippet editor"
 msgstr "Закрыть редактор сниппета"
 
-#: languages/yoast-components.php:229 languages/yoast-seo-js.php:427
+#: languages/yoast-components.php:226 languages/yoast-seo-js.php:458
 msgid "Slug"
 msgstr "Ярлык"
 
-#: languages/yoast-seo-js.php:418
+#: languages/yoast-seo-js.php:449
 msgid "Remove marks in the text"
 msgstr "Удалить метки в тексте"
 
-#: languages/yoast-seo-js.php:415
+#: languages/yoast-seo-js.php:446
 msgid "Mark this result in the text"
 msgstr "Отметить этот результат в тексте"
 
-#: admin/formatter/class-metabox-formatter.php:170
-#: languages/yoast-components.php:146 languages/yoast-seo-js.php:412
+#: admin/formatter/class-metabox-formatter.php:171
+#: languages/yoast-components.php:146 languages/yoast-seo-js.php:443
 msgid "Marks are disabled in current view"
 msgstr "Маhrths отключены в текущем представлении"
 
-#: languages/yoast-seo-js.php:406
+#: languages/yoast-seo-js.php:437
 msgid "Content optimization: Good SEO score"
 msgstr "Оптимизация контента: Оценка SEO Хорошо"
 
-#: languages/yoast-seo-js.php:403
+#: languages/yoast-seo-js.php:434
 msgid "Good SEO score"
 msgstr "Хорошая оценка SEO"
 
-#: languages/yoast-seo-js.php:397
+#: languages/yoast-seo-js.php:428
 msgid "Content optimization: OK SEO score"
 msgstr "Оптимизация контента: Оценка SEO Уд-но"
 
-#: languages/yoast-seo-js.php:394
+#: languages/yoast-seo-js.php:425
 msgid "OK SEO score"
 msgstr "Оценка SEO: уд-ная"
 
-#: languages/yoast-seo-js.php:388
+#: languages/yoast-seo-js.php:419
 msgid "Content optimization: Bad SEO score"
 msgstr "Оптимизация контента: Оценка SEO Плохо"
 
-#: languages/yoast-seo-js.php:385
+#: languages/yoast-seo-js.php:416
 msgid "Bad SEO score"
 msgstr "Оценка SEO: плохая"
 
-#: languages/yoast-seo-js.php:382
+#: languages/yoast-seo-js.php:413
 msgid "Content optimization: Has feedback"
 msgstr "Оптимизация контента: имеются отзывы"
 
-#: languages/yoast-seo-js.php:379
+#: languages/yoast-seo-js.php:410
 msgid "Feedback"
 msgstr "Обратная связь"
 
-#. Translators: this link is referred to in the content analysis when a slug
-#. contains one or more stop words
-#: languages/yoast-seo-js.php:358
-msgid "http://en.wikipedia.org/wiki/Stop_words"
-msgstr "https://ru.wikipedia.org/wiki/Шумовые_слова"
-
-#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
-#. anchor end tag
-#: languages/yoast-seo-js.php:347
-msgid "The focus keyword appears in the %1$sURL%2$s for this page."
-msgstr "%1$sURL%2$s этой страницы содержит фокусное ключевое слово."
-
-#: languages/yoast-seo-js.php:105
-msgid "You have far too little content, please add some content to enable a good analysis."
-msgstr "У вас слишком мало текста. Добавьте больше текста, чтобы улучшить результат анализа."
-
-#: languages/yoast-seo-js.php:323
-msgid "The %1$simages%2$s on this page contain alt attributes."
-msgstr "У %1$sизображений%2$s на этой странице есть атрибут alt."
-
-#: languages/yoast-seo-js.php:320
-msgid "The %1$simages%2$s on this page do not have alt attributes containing the focus keyword."
-msgstr "У %1$sизображений%2$s на этой странице нет атрибутов alt, содержащих ключевое слово."
-
-#: languages/yoast-seo-js.php:317
-msgid "The %1$simages%2$s on this page contain alt attributes with the focus keyword."
-msgstr "У %1$sизображений%2$s на этой странице атрибут alt содержит фокусное ключевое слово."
-
-#: languages/yoast-seo-js.php:40
-msgid "None of the paragraphs are too long, which is great."
-msgstr "Ни один из абзацев не слишком длинный, и это здорово."
-
-#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
-#. anchor end tag
-#: languages/yoast-seo-js.php:255
-msgid "The %1$sSEO title%2$s is wider than the viewable limit."
-msgstr "%1$sЗаголовок SEO%2$s шире чем предел просмотра."
-
-#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
-#. anchor end tag
-#: languages/yoast-seo-js.php:247
-msgid "The %1$sSEO title%2$s is too short. Use the space to add keyword variations or create compelling call-to-action copy."
-msgstr "%1$sЗаголовок SEO%2$s слишком короткий. Используйте пространство для добавления ключевых слов или создайте убедительный призыв к действию."
-
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
-#. end tag
-#: languages/yoast-seo-js.php:162
-msgid "The %1$skeyphrase%2$s is over 10 words, a keyphrase should be shorter."
-msgstr "%1$sКлючевая фраза%2$s состоит из более 10 слов, она должна быть короче."
-
-#: languages/yoast-seo-js.php:21
+#: languages/yoast-seo-js.php:26
 msgid "ok"
 msgstr "OK"
 
@@ -2780,23 +3044,23 @@ msgstr "Повторно авторизоваться с помощью Google"
 msgid "To allow %s to fetch your Google Search Console information, please enter your Google Authorization Code. Clicking the button below will open a new window."
 msgstr "Чтобы разрешить %s извлечь информацию Google Search Console, введите код авторизации Google. При нажатии на кнопку ниже, откроется новое окно."
 
-#: languages/wordpress-seojs.php:124 languages/yoast-seo-js.php:463
+#: languages/wordpress-seojs.php:118 languages/yoast-seo-js.php:494
 msgid "Please provide a meta description by editing the snippet below."
 msgstr "Укажите мета-описание страницы в этом сниппете."
 
-#: languages/yoast-components.php:226 languages/yoast-seo-js.php:421
+#: languages/yoast-components.php:223 languages/yoast-seo-js.php:452
 msgid "Edit snippet"
 msgstr "Изменить сниппет"
 
-#: languages/yoast-seo-js.php:448
+#: languages/yoast-seo-js.php:479
 msgid "You can click on each element in the preview to jump to the Snippet Editor."
 msgstr "Кликните на любом элементе предпросмотра, чтобы перейти к редактору снипета."
 
-#: languages/yoast-components.php:238
+#: languages/yoast-components.php:235
 msgid "SEO title preview"
 msgstr "Предварительный просмотр SEO названия: "
 
-#: languages/yoast-components.php:244
+#: languages/yoast-components.php:241
 msgid "Meta description preview"
 msgstr "Просмотр мета-описания: "
 
@@ -2819,24 +3083,6 @@ msgstr "Следующий шаг"
 #: admin/views/tool-import-export.php:88
 msgid "Export settings"
 msgstr "Экспорт настроек"
-
-#. translators: %s expands to 'Yoast SEO Premium'.
-#. translators: %s expands to Yoast SEO Premium
-#. translators: %s expands to 'Yoast SEO Premium'.
-#. translators: %s expands to 'Yoast SEO Premium'.
-#. translators: %s expands to Yoast SEO Premium.
-#: admin/class-add-keyword-modal.php:35
-#: admin/class-keyword-synonyms-modal.php:36
-#: admin/class-multiple-keywords-modal.php:36 admin/class-premium-popup.php:80
-#: admin/formatter/class-metabox-formatter.php:199
-#: admin/metabox/class-metabox-keyword-synonyms-config.php:25
-#: admin/metabox/class-metabox-keyword-synonyms-config.php:28
-#: admin/metabox/class-metabox-multiple-keywords-config.php:25
-#: admin/metabox/class-metabox-multiple-keywords-config.php:28
-#: admin/taxonomy/class-taxonomy-metabox.php:290
-#: languages/wordpress-seojs.php:56
-msgid "Get %s now!"
-msgstr "Получить %s сейчас!"
 
 #. translators: %1$s expands to Yoast SEO Premium.
 #: admin/taxonomy/class-taxonomy-metabox.php:279
@@ -2880,15 +3126,11 @@ msgstr "Настройка архивов по датам"
 msgid "Author archives settings"
 msgstr "Настройки архивов авторов"
 
-#: admin/formatter/class-metabox-formatter.php:56
-msgid "Remove keyword"
-msgstr "Удалить ключевое слово"
-
 #. translators: %1$s expands to the image recommended width, %2$s to its
 #. height.
 #: admin/class-social-admin.php:49 admin/class-social-admin.php:52
-#: admin/taxonomy/class-taxonomy-social-fields.php:99
-#: admin/taxonomy/class-taxonomy-social-fields.php:103
+#: admin/taxonomy/class-taxonomy-social-fields.php:104
+#: admin/taxonomy/class-taxonomy-social-fields.php:108
 msgid "%1$s by %2$s"
 msgstr "%1$s от %2$s"
 
@@ -2905,7 +3147,7 @@ msgstr "Выберите ваш файл settings.zip"
 #. translators: %1$s expands anchor to premium plugin page, %2$s expands to
 #. </a>
 #: admin/class-product-upsell-notice.php:120
-msgid "By the way, did you know we also have a %1$sPremium plugin%2$s? It offers advanced features, like a redirect manager and support for multiple keywords. It also comes with 24/7 personal support."
+msgid "By the way, did you know we also have a %1$sPremium plugin%2$s? It offers advanced features, like a redirect manager and support for multiple keyphrases. It also comes with 24/7 personal support."
 msgstr "Кстати, знаете ли вы, у нас также есть %1$sПремиум плагин%2$s? Он предлагает расширенные функции, такие как переадресация и поддержка нескольких ключевых слов. Он поставляется с 24/7 персональной поддержкой."
 
 #: admin/class-bulk-editor-list-table.php:796
@@ -2916,21 +3158,23 @@ msgstr "(нет заголовка)"
 msgid "%s installation wizard"
 msgstr "%s мастер установки"
 
-#. translators: %1$s expands to Yoast SEO
-#: admin/views/tabs/dashboard/features.php:81
+#. translators: 1: Yoast SEO
+#: admin/views/class-yoast-feature-toggles.php:120
 msgid "The %1$s admin bar menu contains useful links to third-party tools for analyzing pages and makes it easy to see if you have new notifications."
 msgstr "%1$s меню администратора. Панель содержит список инструментов анализа страниц и предложения для исправлений."
 
-#: admin/views/tabs/dashboard/features.php:78
+#: admin/views/class-yoast-feature-toggles.php:117
 msgid "Admin bar menu"
 msgstr "Меню панели администратора"
 
-#. translators: %1$s expands to Ryte.
-#: admin/views/tabs/dashboard/features.php:71
+#. translators: 1: Ryte
+#: admin/views/class-yoast-feature-toggles.php:110
 msgid "%1$s will check weekly if your site is still indexable by search engines and Yoast SEO will notify you when this is not the case."
 msgstr "%1$s проверяет ежедневно, если ваш сайт индексируется поисковыми системами и уведомляет вас, если это не так."
 
-#: admin/pages/dashboard.php:49 admin/views/tabs/dashboard/features.php:105
+#: admin/pages/dashboard.php:49 admin/pages/network.php:19
+#: admin/views/tabs/dashboard/features.php:21
+#: admin/views/tabs/network/features.php:21
 msgid "Features"
 msgstr "Возможности"
 
@@ -2954,16 +3198,12 @@ msgstr "Проверьте, что ваш Facebook или Twitter сообщен
 msgid "Social Previews"
 msgstr "Предварительный просмотр социальных сетей"
 
-#: admin/taxonomy/class-taxonomy-metabox.php:283
-msgid "Optimize a single post for up to 5 keywords."
-msgstr "Оптимизировать каждую запись по 5 ключевым словам."
-
 #: admin/taxonomy/class-taxonomy-metabox.php:281
 msgid "Create and manage redirects within your WordPress install."
 msgstr "Создайте и управляйте переадресацией в вашем WordPress."
 
-#: admin/metabox/class-metabox.php:60 languages/yoast-components.php:213
-#: languages/yoast-seo-js.php:424
+#: admin/metabox/class-metabox.php:60 languages/yoast-components.php:210
+#: languages/yoast-seo-js.php:455
 msgid "SEO title"
 msgstr "SEO-заголовок"
 
@@ -3043,7 +3283,7 @@ msgstr "Выберите символ для использования в ка�
 msgid "The name of the person"
 msgstr "Имя лица"
 
-#: admin/class-yoast-form.php:620
+#: admin/class-yoast-form.php:667
 #: admin/config-ui/fields/class-field-choice-post-type.php:31
 #: admin/config-ui/fields/class-field-multiple-authors.php:25
 #: admin/metabox/class-metabox.php:72 admin/metabox/class-metabox.php:77
@@ -3052,7 +3292,7 @@ msgstr "Имя лица"
 msgid "No"
 msgstr "Нет"
 
-#: admin/class-yoast-form.php:619
+#: admin/class-yoast-form.php:666
 #: admin/config-ui/fields/class-field-choice-post-type.php:30
 #: admin/config-ui/fields/class-field-multiple-authors.php:24
 #: admin/metabox/class-metabox.php:71 admin/metabox/class-metabox.php:76
@@ -3181,14 +3421,6 @@ msgstr "Проверяет, как будет выглядеть запись в
 msgid "Social previews"
 msgstr "Социальные предварительные просмотры"
 
-#: admin/views/licenses.php:174
-msgid "optimize a single post for up to 5 keywords."
-msgstr "оптимизировать одну запись по 5 ключевым словам."
-
-#: admin/taxonomy/class-taxonomy-metabox.php:282 admin/views/licenses.php:173
-msgid "Multiple focus keywords"
-msgstr "Несколько ключевых слов"
-
 #: admin/views/licenses.php:170
 msgid "create and manage redirects from within your WordPress install."
 msgstr "создавать и управлять переадресацией из вашего WordPress."
@@ -3284,8 +3516,8 @@ msgid "Notifications"
 msgstr "Уведомления"
 
 #: admin/views/user-profile.php:44
-msgid "Removes the keyword tab from the metabox and disables all SEO-related suggestions."
-msgstr "Удаляет вкладку \"Ключевые слова\" из METABOX и отключает все предложения связанные с ней."
+msgid "Removes the focus keyphrase section from the metabox and disables all SEO-related suggestions."
+msgstr "Удаляет вкладку ключевых слов из METABOX и отключает все  связанные с ней SEO предложения."
 
 #: admin/views/user-profile.php:41
 msgid "Disable SEO analysis"
@@ -3373,14 +3605,15 @@ msgid "Disable readability analysis"
 msgstr "Отключить анализ читаемости"
 
 #: admin/views/user-profile.php:56
-msgid "Removes the readability tab from the metabox and disables all readability-related suggestions."
+msgid "Removes the readability analysis section from the metabox and disables all readability-related suggestions."
 msgstr "Удаляет вкладку \"Читаемость\" из METABOX и отключает все связанные с ней предложения."
 
-#: admin/views/tabs/dashboard/features.php:33
+#: admin/views/class-yoast-feature-toggles.php:72
+#: languages/wordpress-seojs.php:41
 msgid "Readability analysis"
 msgstr "Анализ удобочитаемости"
 
-#: inc/class-wpseo-rank.php:105 languages/yoast-seo-js.php:391
+#: inc/class-wpseo-rank.php:105 languages/yoast-seo-js.php:422
 msgid "Needs improvement"
 msgstr "Требуется улучшение"
 
@@ -3393,7 +3626,7 @@ msgstr "Читабельность"
 msgid "You are trying to load non-minified files. These are only available in our development package. Check out %1$s to see all the source files."
 msgstr "Вы пытаетесь загрузить не уменьшенные файлы, они доступны только в нашем пакете разработки. Проверьте %1$s чтобы увидеть исходные файлы."
 
-#: admin/formatter/class-metabox-formatter.php:163
+#: admin/formatter/class-metabox-formatter.php:164
 #: languages/yoast-components.php:161
 msgid "Improvements"
 msgstr "Улучшения"
@@ -3402,7 +3635,7 @@ msgstr "Улучшения"
 msgid "Restore this item."
 msgstr "Восстановить элемент."
 
-#: admin/notifiers/class-configuration-notifier.php:149
+#: admin/notifiers/class-configuration-notifier.php:150
 #: admin/views/partial-alerts-template.php:20
 msgid "Dismiss this item."
 msgstr "Скрыть элемент."
@@ -3415,22 +3648,18 @@ msgstr "Отличная работа! Каких-либо серьезных п
 msgid "We have detected the following issues that affect the SEO of your site."
 msgstr "Мы обнаружили следующие проблемы, влияющие на SEO вашего сайта."
 
-#: admin/formatter/class-metabox-formatter.php:162
+#: admin/formatter/class-metabox-formatter.php:163
 #: admin/views/partial-alerts-errors.php:11 languages/yoast-components.php:158
 msgid "Problems"
 msgstr "Проблемы"
 
-#: admin/formatter/class-metabox-formatter.php:133
+#: admin/formatter/class-metabox-formatter.php:134
 msgid "Analysis"
 msgstr "Анализ"
 
 #: inc/class-wpseo-rank.php:103
 msgid "Not available"
 msgstr "Недоступен"
-
-#: admin/formatter/class-metabox-formatter.php:55
-msgid "Keyword:"
-msgstr "Ключевое слово:"
 
 #: admin/class-meta-columns.php:202
 msgid "Filter by SEO Score"
@@ -3475,11 +3704,11 @@ msgstr "Консоль"
 
 #. translators: %1$s resolves to the starting tag of the link to the permalink
 #. settings page, %2$s resolves to the closing tag of the link
-#: admin/class-admin-init.php:229
+#: admin/class-admin-init.php:230
 msgid "You can fix this on the %1$sPermalink settings page%2$s."
 msgstr "Вы можете исправить это на %1$s Постоянная ссылка страницы настройки %2$s."
 
-#: admin/class-admin-init.php:177
+#: admin/class-admin-init.php:178
 msgid "Paging comments is enabled, this is not needed in 999 out of 1000 cases, we recommend to disable it."
 msgstr "Включено деление комментариев на страницы. Этого не требуется в 999 из 1000 случаев. Рекомендуем отключить."
 
@@ -3601,18 +3830,18 @@ msgstr "Для элемента задан атрибут noindex."
 msgid "Author archives"
 msgstr "Архивы авторов"
 
-#: admin/class-yoast-form.php:650
+#: admin/class-yoast-form.php:697
 msgid "Show"
 msgstr "Показать"
 
-#: admin/class-yoast-form.php:307
+#: admin/class-yoast-form.php:309
 #: admin/views/tabs/metas/paper-content/author-archive-settings.php:15
 #: admin/views/tabs/metas/paper-content/date-archives-settings.php:15
 #: admin/views/tabs/metas/paper-content/taxonomy-content.php:18
 msgid "Enabled"
 msgstr "Включено"
 
-#: admin/class-yoast-form.php:307
+#: admin/class-yoast-form.php:309
 #: admin/views/tabs/metas/paper-content/author-archive-settings.php:16
 #: admin/views/tabs/metas/paper-content/date-archives-settings.php:16
 #: admin/views/tabs/metas/paper-content/taxonomy-content.php:18
@@ -3702,8 +3931,8 @@ msgid "Facebook / Open Graph metadata"
 msgstr "Метаданные Facebook / Open Graph"
 
 #: admin/class-recalculate-scores.php:47
-msgid "Recalculating SEO scores for all pieces of content with a focus keyword."
-msgstr "Перерасчет оценки SEO для всех частей содержимого с фокусным ключевым словом."
+msgid "Recalculating SEO scores for all pieces of content with a focus keyphrase."
+msgstr "Перерасчет оценки SEO для всех частей содержания с фокусным ключевым словом."
 
 #. translators: 1: expands to a <span> containing the number of posts
 #. recalculated. 2: expands to a <strong> containing the total number of posts.
@@ -3713,7 +3942,7 @@ msgstr "%1$s из %2$s готово."
 
 #. translators: 1: is a link to 'admin_url /
 #. admin.php?page=wpseo_tools&recalculate=1' 2: closing link tag
-#: admin/class-admin-init.php:429
+#: admin/class-admin-init.php:430
 msgid "We've updated our SEO score algorithm. %1$sRecalculate the SEO scores%2$s for all posts and pages."
 msgstr "Мы обновили алгоритм оценки SEO. %1$s Пересчитать оценки SEO %2$s для всех сообщений и страниц."
 
@@ -3725,7 +3954,7 @@ msgstr "Команда Yoast"
 msgid "The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more."
 msgstr "Первое настоящее и полноценное решение для SEO в WordPress, в которое включен анализ содержимого страницы, создание карты сайта в формате XML и многое другое."
 
-#. #-#-#-#-#  wordpress-seo-code.pot (Yoast SEO 8.4)  #-#-#-#-#
+#. #-#-#-#-#  wordpress-seo-code.pot (Yoast SEO 9.0.1)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: admin/capabilities/class-capability-manager-integration.php:68
 msgid "Yoast SEO"
@@ -3933,10 +4162,6 @@ msgstr "Проверить Заголовки"
 msgid "Check Google Cache"
 msgstr "Проверить кэш Google "
 
-#: inc/class-wpseo-admin-bar-menu.php:284
-msgid "Check Keyword Density"
-msgstr "Проверить плотность ключевых слов"
-
 #: inc/class-wpseo-admin-bar-menu.php:271
 msgid "Analyze this page"
 msgstr "Проанализировать эту страницу"
@@ -3954,89 +4179,89 @@ msgid "Keyword Research"
 msgstr "Исследование ключевых слов"
 
 #. translators: %s expands to an invalid URL.
-#: inc/options/class-wpseo-option.php:313
+#: inc/options/class-wpseo-option.php:323
 msgid "%s does not seem to be a valid url. Please correct."
 msgstr "%s — некорректный адрес URL. Пожалуйста, исправьте его."
 
 #. translators: 1: Verification string from user input; 2: Service name.
-#: inc/options/class-wpseo-option.php:278
+#: inc/options/class-wpseo-option.php:288
 msgid "%1$s does not seem to be a valid %2$s verification string. Please correct."
 msgstr "Похоже, что %1$s — некорректный проверочный код для %2$s. Пожалуйста исправьте его."
 
 #. translators: %s expands to the name of a post type (plural).
-#: inc/options/class-wpseo-option-titles.php:249
+#: inc/options/class-wpseo-option-titles.php:242
 msgid "%s Archive"
 msgstr "Архив %s"
 
 #. translators: %s expands to the search phrase.
-#: inc/options/class-wpseo-option-titles.php:200
+#: inc/options/class-wpseo-option-titles.php:205
 msgid "You searched for %s"
 msgstr "Вы искали %s"
 
 #. translators: %s expands to a twitter user name.
-#: inc/options/class-wpseo-option-social.php:169
+#: inc/options/class-wpseo-option-social.php:180
 msgid "%s does not seem to be a valid Twitter user-id. Please correct."
 msgstr "%s — некорректное имя пользователя в Twitter. Пожалуйста, исправьте его."
 
-#: inc/options/class-wpseo-option-social.php:93
+#: inc/options/class-wpseo-option-social.php:95
 msgid "Summary with large image"
 msgstr "Краткое содержание с большой картинкой"
 
-#: inc/options/class-wpseo-option-social.php:92
+#: inc/options/class-wpseo-option-social.php:94
 msgid "Summary"
 msgstr "Краткое содержание"
 
 #. translators: 1: link to post; 2: link to blog.
-#: inc/options/class-wpseo-option-titles.php:203
+#: inc/options/class-wpseo-option-titles.php:208
 msgid "The post %1$s appeared first on %2$s."
 msgstr "Сообщение %1$s появились сначала на %2$s."
 
-#: inc/options/class-wpseo-option-ms.php:186
+#: inc/options/class-wpseo-option-ms.php:197
 msgid "No numeric value was received."
 msgstr "Нет числового значения."
 
 #. translators: %s is the ID number of a blog.
-#: inc/options/class-wpseo-option-ms.php:174
+#: inc/options/class-wpseo-option-ms.php:185
 msgid "This must be an existing blog. Blog %s does not exist or has been marked as deleted."
 msgstr "Этот идентификатор должен принадлежать существующему блогу. Блог %s - не существует, или помечен на удаление."
 
-#: inc/options/class-wpseo-option-ms.php:170
-#: inc/options/class-wpseo-option-ms.php:186
+#: inc/options/class-wpseo-option-ms.php:181
+#: inc/options/class-wpseo-option-ms.php:197
 msgid "The default blog setting must be the numeric blog id of the blog you want to use as default."
 msgstr "Настройка «блог по умолчанию» должна быть числовым ID того блога, который вы хотите использовать по умолчанию."
 
 #. translators: %1$s expands to the option name and %2$sexpands to Yoast SEO
-#: inc/options/class-wpseo-option-ms.php:150
+#: inc/options/class-wpseo-option-ms.php:161
 msgid "%1$s is not a valid choice for who should be allowed access to the %2$s settings. Value reset to the default."
 msgstr "%1$s — это неправильное значение для имени пользователя, которому можно разрешить доступ к настройкам %2$s. Значение сброшено к первоначальному."
 
 #. translators: %s expands to a taxonomy slug.
-#: inc/options/class-wpseo-option-titles.php:467
+#: inc/options/class-wpseo-option-titles.php:450
 msgid "Please select a valid post type for taxonomy \"%s\""
 msgstr "Пожалуйста выберите корректный тип записи для таксономии «%s»"
 
 #. translators: %s expands to a post type.
-#: inc/options/class-wpseo-option-titles.php:430
+#: inc/options/class-wpseo-option-titles.php:413
 msgid "Please select a valid taxonomy for post type \"%s\""
 msgstr "Пожалуйста, выберите допустимую таксономию для типа записей «%s»"
 
-#: inc/options/class-wpseo-option-titles.php:208
+#: inc/options/class-wpseo-option-titles.php:213
 msgid "You searched for"
 msgstr "Вы искали"
 
-#: inc/options/class-wpseo-option-titles.php:207
+#: inc/options/class-wpseo-option-titles.php:212
 msgid "Home"
 msgstr "Главная страница"
 
-#: inc/options/class-wpseo-option-titles.php:206
+#: inc/options/class-wpseo-option-titles.php:211
 msgid "Archives for"
 msgstr "Архивы для"
 
-#: inc/options/class-wpseo-option-titles.php:205
+#: inc/options/class-wpseo-option-titles.php:210
 msgid "Error 404: Page not found"
 msgstr "Ошибка 404: страница не найдена"
 
-#: inc/class-wpseo-rank.php:107 languages/yoast-seo-js.php:409
+#: inc/class-wpseo-rank.php:107 languages/yoast-seo-js.php:440
 msgid "Good"
 msgstr "Хорошо"
 
@@ -4057,7 +4282,7 @@ msgid "Replaced with the slug which caused the 404"
 msgstr "Ярлык, вызвавший ошибку 404"
 
 #: inc/class-wpseo-replace-vars.php:1343
-msgid "Replaced with the posts focus keyword"
+msgid "Replaced with the posts focus keyphrase"
 msgstr "Заменяется фокусным ключевым словом записи"
 
 #: inc/class-wpseo-replace-vars.php:1342
@@ -4175,26 +4400,26 @@ msgstr "Переменная для замены может содержать �
 
 #. Translators: %1$s resolves to the SEO menu item, %2$s resolves to the Search
 #. Appearance submenu item.
-#: frontend/class-frontend.php:1221
+#: frontend/class-frontend.php:1182
 msgid "Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [%1$s - %2$s] menu and set up a template."
 msgstr "Заметка для администратора: на этой странице не отображается мета-описание, потому что оно не задано. Укажите его для данной страницы, либо перейдите в меню [%1$s - %2$s] и настройте шаблон."
 
-#: frontend/class-frontend.php:555
-#: inc/options/class-wpseo-option-titles.php:201
+#: frontend/class-frontend.php:516
+#: inc/options/class-wpseo-option-titles.php:206
 msgid "Page not found"
 msgstr "Страница не найдена"
 
 #. translators: %s expands to a time period, i.e. month name, year or specific
 #. date.
 #. translators: %s expands to the variable used for term title.
-#: frontend/class-frontend.php:532 frontend/class-frontend.php:536
-#: frontend/class-frontend.php:540
+#: frontend/class-frontend.php:493 frontend/class-frontend.php:497
+#: frontend/class-frontend.php:501
 #: inc/options/class-wpseo-option-titles.php:265
 msgid "%s Archives"
 msgstr "Архивы %s"
 
 #. translators: %s expands to the search phrase.
-#: frontend/class-frontend.php:491
+#: frontend/class-frontend.php:452
 msgid "Search for \"%s\""
 msgstr "Поиск \"%s\""
 
@@ -4598,7 +4823,7 @@ msgid "author archives"
 msgstr "Архивы автора"
 
 #: admin/views/tabs/social/facebook.php:44 admin/views/tool-bulk-editor.php:77
-#: inc/class-wpseo-replace-vars.php:1300 languages/wordpress-seojs.php:281
+#: inc/class-wpseo-replace-vars.php:1300 languages/wordpress-seojs.php:275
 msgid "Title"
 msgstr "Название"
 
@@ -4609,7 +4834,7 @@ msgstr "Название"
 msgid "%1$s Meta Box"
 msgstr "Блок %1$s"
 
-#: admin/class-yoast-form.php:651
+#: admin/class-yoast-form.php:698
 msgid "Hide"
 msgstr "Скрыть"
 
@@ -4733,7 +4958,7 @@ msgstr "Название сайта"
 msgid "Webmaster Tools"
 msgstr "Инструменты веб-мастеров"
 
-#: admin/class-admin-init.php:225
+#: admin/class-admin-init.php:226
 msgid "You do not have your postname in the URL of your posts and pages, it is highly recommended that you do. Consider setting your permalink structure to <strong>/%postname%/</strong>."
 msgstr "В URL-адресах Ваших записей и страниц отсутствует заголовок. Настоятельно рекомендуется, чтобы он там был. Советуем выбрать <strong>/%postname%/</strong> в качестве структуры постоянных ссылок."
 
@@ -4953,8 +5178,8 @@ msgstr "Деактивировать %s"
 msgid "The %1$s plugin might cause issues when used in conjunction with %2$s."
 msgstr "Плагин %1$s может вызвать проблемы в сочетании с %2$s."
 
-#: admin/class-yoast-form.php:505 admin/metabox/class-metabox.php:612
-#: admin/taxonomy/class-taxonomy-fields-presenter.php:106
+#: admin/class-yoast-form.php:534 admin/metabox/class-metabox.php:626
+#: admin/taxonomy/class-taxonomy-fields-presenter.php:119
 msgid "Upload Image"
 msgstr "Загрузить изображение"
 
@@ -4987,7 +5212,7 @@ msgstr "Pinterest"
 msgid "Other"
 msgstr "Другое"
 
-#: admin/pages/metas.php:25 frontend/class-frontend.php:543
+#: admin/pages/metas.php:25 frontend/class-frontend.php:504
 msgid "Archives"
 msgstr "Архивы"
 
@@ -5005,7 +5230,7 @@ msgstr "Далее"
 
 #: admin/class-yoast-modal.php:84
 #: admin/google_search_console/views/gsc-redirect-nopremium.php:25
-#: languages/wordpress-seojs.php:32 languages/yoast-components.php:62
+#: languages/wordpress-seojs.php:38 languages/yoast-components.php:62
 msgid "Close"
 msgstr "Закрыть"
 
@@ -5047,14 +5272,15 @@ msgstr "Описание для %s"
 msgid "%s Title"
 msgstr "Заголовок для %s"
 
-#: admin/class-social-admin.php:43 admin/class-social-admin.php:166
+#: admin/class-social-admin.php:43 admin/class-social-admin.php:167
 #: admin/pages/social.php:20
-#: admin/taxonomy/class-taxonomy-social-fields.php:101
+#: admin/taxonomy/class-taxonomy-social-fields.php:106
 msgid "Twitter"
 msgstr "Twitter"
 
-#: admin/class-social-admin.php:42 admin/class-social-admin.php:163
-#: admin/pages/social.php:19 admin/taxonomy/class-taxonomy-social-fields.php:97
+#: admin/class-social-admin.php:42 admin/class-social-admin.php:164
+#: admin/pages/social.php:19
+#: admin/taxonomy/class-taxonomy-social-fields.php:102
 msgid "Facebook"
 msgstr "Facebook"
 
@@ -5069,8 +5295,8 @@ msgstr "Рекомендованный размер изображения дл�
 
 #. translators: %s expands to the social network's name.
 #: admin/class-social-admin.php:36
-msgid "If you want to override the image used on %s for this post, upload / choose an image or add the URL here."
-msgstr "Если вы хотите использовать для этой записи другое изображение в %s, загрузите (выберите) его или введите здесь его URL-адрес."
+msgid "If you want to override the image used on %s for this post, upload / choose an image here."
+msgstr "Если вы хотите использовать для этой записи другое изображение в %s, загрузите (выберите) его."
 
 #. translators: %s expands to the social network's name.
 #: admin/class-social-admin.php:33
@@ -5082,172 +5308,41 @@ msgstr "Если вы не хотите использовать мета-опи
 msgid "If you don't want to use the post title for sharing the post on %s but instead want another title there, write it here."
 msgstr "Если вы хотите использовать для публикации в %s другой заголовок Записи, тогда введите его здесь."
 
-#: languages/yoast-seo-js.php:37
+#: languages/yoast-seo-js.php:42
 msgid "very difficult"
 msgstr "очень трудно"
 
-#: languages/yoast-seo-js.php:34
-msgid "Try to make shorter sentences, using less difficult words to improve readability."
+#: languages/yoast-seo-js.php:39
+msgid "Try to make shorter sentences, using less difficult words to improve readability"
 msgstr "Попробуйте писать более короткими предложениями и использовать меньше трудных слов, чтобы улучшить читабельность."
 
-#: languages/yoast-seo-js.php:30
+#: languages/yoast-seo-js.php:35
 msgid "difficult"
 msgstr "трудно"
 
-#: languages/yoast-seo-js.php:27
-msgid "Try to make shorter sentences to improve readability."
+#: languages/yoast-seo-js.php:32
+msgid "Try to make shorter sentences to improve readability"
 msgstr "Попробуйте писать более короткими предложениями, чтобы улучшить читабельность."
 
-#: languages/yoast-seo-js.php:24
+#: languages/yoast-seo-js.php:29
 msgid "fairly difficult"
 msgstr "довольно трудно"
 
-#: inc/class-wpseo-rank.php:106 languages/yoast-seo-js.php:400
+#: inc/class-wpseo-rank.php:106 languages/yoast-seo-js.php:431
 msgid "OK"
 msgstr "ОК"
 
-#: languages/yoast-seo-js.php:18
+#: languages/yoast-seo-js.php:23
 msgid "fairly easy"
 msgstr "довольно легко"
 
-#: languages/yoast-seo-js.php:15
+#: languages/yoast-seo-js.php:20
 msgid "easy"
 msgstr "легко"
 
-#: languages/yoast-seo-js.php:12
+#: languages/yoast-seo-js.php:17
 msgid "very easy"
 msgstr "очень легко"
-
-#. Translators: %1$s expands to the numeric Flesch reading ease score, 	   %2$s
-#. to a link to a Yoast.com article about Flesch reading ease score, 	   %3$s
-#. to the easyness of reading, 	   %4$s expands to a note about the flesch
-#. reading score.
-#: languages/yoast-seo-js.php:9
-msgid "The copy scores %1$s in the %2$s test, which is considered %3$s to read. %4$s"
-msgstr "Ваш текст получил оценку %1$s в тесте %2$s, что означает, что текст %3$s читать. %4$s"
-
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
-#. end tag.
-#: languages/yoast-seo-js.php:150
-msgid "The focus keyword appears in the %1$sfirst paragraph%2$s of the copy."
-msgstr "%1$sПервый абзац%2$s содержит фокусное ключевое слово."
-
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
-#. end tag.
-#: languages/yoast-seo-js.php:154
-msgid "The focus keyword doesn't appear in the %1$sfirst paragraph%2$s of the copy. Make sure the topic is clear immediately."
-msgstr "%1$sПервый абзац%2$s не содержит фокусное ключевое слово. Убедитесь, что тема записи понятна сразу."
-
-#: languages/yoast-seo-js.php:171
-msgid "The exact-match %3$skeyword density%4$s is %1$s, which is great; the focus keyword was found %2$d time."
-msgid_plural "The exact-match %3$skeyword density%4$s is %1$s, which is great; the focus keyword was found %2$d times."
-msgstr[0] "%3$sПлотность ключевых слов%4$s - %1$s, это отлично! Ключевое слово было найдено %2$d раз."
-msgstr[1] "%3$sПлотность ключевых слов%4$s - %1$s, это отлично! Ключевое слово было найдено %2$d раза."
-msgstr[2] "%3$sПлотность ключевых слов%4$s - %1$s, это отлично! Ключевое слово было найдено %2$d раз."
-
-#: languages/yoast-seo-js.php:174
-msgid "The exact-match %4$skeyword density%5$s is %1$s, which is over the advised %3$s maximum; the focus keyword was found %2$d time."
-msgid_plural "The exact-match %4$skeyword density%5$s is %1$s, which is over the advised %3$s maximum; the focus keyword was found %2$d times."
-msgstr[0] "%4$sПлотность ключевых слов%5$s - %1$s, что превышает максимально рекомендуемые %3$s, ключевое слово было найдено %2$d раз."
-msgstr[1] "%4$sПлотность ключевых слов%5$s - %1$s, что превышает максимально рекомендуемые %3$s, ключевое слово было найдено %2$d раза."
-msgstr[2] "%4$sПлотность ключевых слов%5$s - %1$s, что превышает максимально рекомендуемые %3$s, ключевое слово было найдено %2$d раз."
-
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
-#. end tag.
-#: languages/yoast-seo-js.php:205
-msgid "A meta description has been specified, but it %1$sdoes not contain the focus keyword%2$s."
-msgstr "Мета-описание указано, но оно %1$sне содержит фокусного ключевого слова%2$s."
-
-#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
-#. anchor end tag
-#: languages/yoast-seo-js.php:209
-msgid "No %1$smeta description%2$s has been specified. Search engines will display copy from the page instead."
-msgstr "%1$sМета-описание%2$s не задано, поисковые системы будут вместо него отображать часть текста страницы."
-
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
-#. end tag, 	   %3$d expands to the number of characters in the meta
-#. description, %4$d expands to 	   the total available number of characters in
-#. the meta description
-#: languages/yoast-seo-js.php:215
-msgid "The %1$smeta description%2$s is under %3$d characters long. However, up to %4$d characters are available."
-msgstr "%1$sМета-описание%2$s содержит менее %3$d символов, всего доступно до %4$d символов."
-
-#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
-#. anchor end tag
-#: languages/yoast-seo-js.php:268
-msgid "You have not used the focus keyword in any %1$ssubheading%2$s (such as an H2) in your copy."
-msgstr "Вы не использовали фокусное ключевое слово в %1$sподзаголовках%2$s (например, H2) вашей статьи."
-
-#: languages/yoast-seo-js.php:326
-msgid "The %1$simages%2$s on this page are missing alt attributes."
-msgstr "У %1$sизображений%2$s на этой странице отсутствует атрибут alt."
-
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
-#. end tag
-#: languages/yoast-seo-js.php:228
-msgid "No %1$soutbound links%2$s appear in this page, consider adding some as appropriate."
-msgstr "Страница не содержит %1$sисходящих ссылок%2$s, возможно, вы можете добавить несколько."
-
-#. Translators: %1$s expands to the number of nofollow links, %2$s expands to a
-#. link on yoast.com, 	   %3$s expands to the anchor end tag, %4$s to the
-#. number of outbound links
-#: languages/yoast-seo-js.php:238
-msgid "This page has %1$s nofollowed %2$soutbound link(s)%3$s and %4$s normal outbound link(s)."
-msgstr "Эта страница содержит %2$sисходящие ссылки%3$s с атрибутом nofollow (%1$s) и обычные исходящие ссылки  (%4$s)."
-
-#. Translators: %1$s expands the number of outbound links, %2$s expands to a
-#. link on yoast.com, 	   %3$s expands to the anchor end tag
-#: languages/yoast-seo-js.php:233
-msgid "This page has %1$s %2$soutbound link(s)%3$s, all nofollowed."
-msgstr "Эта страница имеет %1$s %2$sисходящих ссылок%3$s, все с nofollow."
-
-#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
-#. anchor end tag
-#: languages/yoast-seo-js.php:310
-msgid "You're %1$slinking to another page with the focus keyword%2$s you want this page to rank for. Consider changing that if you truly want this page to rank."
-msgstr "На этой странице вы %1$sссылаетесь на другую страницу с тем же фокусным ключевым словом%2$s. Подумайте, как изменить эту ситуацию, если вы действительно хотите ранжировать эту страницу."
-
-#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
-#. anchor end tag
-#: languages/yoast-seo-js.php:314
-msgid "No %1$simages%2$s appear in this page, consider adding some as appropriate."
-msgstr "На этой странице нет ни одного%1$s изображения%2$s. Рассмотрите возможность добавления изображения, если это сделает вашу страницу лучше."
-
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
-#. end tag.
-#: languages/yoast-seo-js.php:339
-msgid "The %1$sSEO title%2$s contains the focus keyword, but it does not appear at the beginning; try and move it to the beginning."
-msgstr "%1$sSEO заголовок%2$s содержит фокусное ключевое слово, но не в начале; попробуйте переместить его в начало."
-
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
-#. end tag.
-#: languages/yoast-seo-js.php:335
-msgid "The %1$sSEO title%2$s contains the focus keyword, at the beginning which is considered to improve rankings."
-msgstr "%1$sSEO заголовок%2$s содержит фокусное ключевое слово в начале, это должно улучшить рейтинг."
-
-#: languages/yoast-seo-js.php:350
-msgid "The slug for this page is a bit long, consider shortening it."
-msgstr "Ярлык этой страницы слишком длинный, подумайте, как сократить его."
-
-#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the
-#. anchor end tag
-#: languages/yoast-seo-js.php:343
-msgid "The focus keyword does not appear in the %1$sURL%2$s for this page. If you decide to rename the URL be sure to check the old URL 301 redirects to the new one!"
-msgstr "В %1$sURL-адресе%2$s страницы отсутствует фокусное ключевое слово. Если вы решите изменить URL-адрес — убедитесь, что старый адрес перенаправляет на новый с кодом 301."
-
-#: languages/yoast-seo-js.php:365
-msgid "You've %1$snever used this focus keyword before%2$s, very good."
-msgstr "Очень хорошо, вы %1$sеще не использовали это фокусное ключевое слово%2$s."
-
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor
-#. end tag.
-#: languages/yoast-seo-js.php:158
-msgid "No %1$sfocus keyword%2$s was set for this page. If you do not set a focus keyword, no score can be calculated."
-msgstr "Для этой страницы не задано %1$sфокусное ключевое слово%2$s. Без фокусного ключевого слова оценку выполнить нельзя."
-
-#: admin/class-meta-columns.php:132 admin/class-meta-columns.php:616
-msgid "Focus keyword not set."
-msgstr "Фокусное ключевое слово не задано."
 
 #: admin/class-meta-columns.php:78
 msgid "Focus KW"
@@ -5273,21 +5368,13 @@ msgstr "SEO: Хорошо"
 msgid "SEO: OK"
 msgstr "SEO: OK"
 
-#: inc/class-wpseo-rank.php:120
-msgid "SEO: No Focus Keyword"
-msgstr "SEO: Нет фокусного ключевого слова"
-
-#: admin/metabox/class-metabox.php:822
+#: admin/metabox/class-metabox.php:842
 msgid "SEO issue: The featured image should be at least 200 by 200 pixels to be picked up by Facebook and other social media sites."
 msgstr "Это изображение должно быть как минимум 200х200 пикселей, чтобы Facebook и другие социальные сети могли его использовать."
 
 #: admin/metabox/class-metabox.php:250 admin/taxonomy/class-taxonomy.php:231
 msgid "(no parent)"
 msgstr "(без родителя)"
-
-#: admin/metabox/class-metabox.php:143
-msgid "No focus keyword set."
-msgstr "Фокусное ключевое слово не установлено."
 
 #: admin/class-meta-columns.php:607 admin/metabox/class-metabox.php:136
 msgid "Post is set to noindex."
@@ -5335,7 +5422,7 @@ msgstr "Не индексировать изображения"
 #: admin/class-yoast-network-admin.php:39 admin/metabox/class-metabox.php:83
 #: admin/views/tabs/metas/paper-content/breadcrumbs-content.php:46
 #: admin/views/tabs/metas/paper-content/breadcrumbs-content.php:75
-#: inc/class-wpseo-meta.php:373
+#: inc/class-wpseo-meta.php:374
 msgid "None"
 msgstr "Пусто"
 
@@ -5357,8 +5444,8 @@ msgstr "Расширенная настройка тега Meta Robots "
 msgid "Warning: even though you can set the meta robots setting here, the entire site is set to noindex in the sitewide privacy settings, so these settings won't have an effect."
 msgstr "Предупреждение: Вы можете указать здесь параметры мета-тегов robots, однако в настройках чтения Вашего сайта включена опция «Попросить поисковые системы не индексировать сайт», так что эти настройки ни на что не повлияют."
 
-#: admin/metabox/class-metabox.php:62 languages/yoast-components.php:217
-#: languages/yoast-seo-js.php:430
+#: admin/metabox/class-metabox.php:62 languages/yoast-components.php:214
+#: languages/yoast-seo-js.php:461
 msgid "Meta description"
 msgstr "Мета-описание"
 
@@ -5366,11 +5453,11 @@ msgstr "Мета-описание"
 msgid "SEO Title"
 msgstr "SEO заголовок"
 
-#: inc/class-wpseo-replace-vars.php:1343 languages/wordpress-seojs.php:69
+#: inc/class-wpseo-replace-vars.php:1343
 msgid "Focus keyword"
 msgstr "Фокусное ключевое слово"
 
-#: languages/wordpress-seojs.php:29 languages/yoast-seo-js.php:436
+#: languages/wordpress-seojs.php:35 languages/yoast-seo-js.php:467
 msgid "Snippet preview"
 msgstr "Просмотр сниппета"
 
@@ -5458,11 +5545,11 @@ msgid "Remove blog page from breadcrumbs"
 msgstr "Удалить страницу блога из «хлебных крошек»"
 
 #. translators: %s is the name of the plugin
-#: admin/class-customizer.php:54
+#: admin/class-customizer.php:53
 msgid "%s Breadcrumbs"
 msgstr "«Хлебные крошки» %s"
 
-#: admin/class-config.php:124 admin/metabox/class-metabox.php:834
+#: admin/class-config.php:124 admin/metabox/class-metabox.php:854
 #: admin/taxonomy/class-taxonomy.php:131
 msgid "Use Image"
 msgstr "Использовать изображение"
@@ -5556,7 +5643,7 @@ msgstr "Ваше имя на Twitter (без @)"
 msgid "Google+"
 msgstr "Google+"
 
-#: admin/class-admin.php:224 languages/wordpress-seojs.php:130
+#: admin/class-admin.php:224 languages/wordpress-seojs.php:124
 msgid "FAQ"
 msgstr "FAQ"
 
@@ -5569,17 +5656,17 @@ msgstr "Премиум поддержка"
 #: admin/taxonomy/class-taxonomy-metabox.php:156
 #: admin/taxonomy/class-taxonomy-metabox.php:164
 #: admin/taxonomy/class-taxonomy-metabox.php:167
-#: languages/wordpress-seojs.php:194
+#: languages/wordpress-seojs.php:188
 msgid "Settings"
 msgstr "Настройки"
 
 #. translators: %1$s resolves to the opening tag of the link to the reading
 #. settings, %1$s resolves to the closing tag for the link
-#: admin/class-admin-init.php:149
+#: admin/class-admin-init.php:150
 msgid "You must %1$sgo to your Reading Settings%2$s and uncheck the box for Search Engine Visibility."
 msgstr "Вы должны %1$sзайти в Настройки чтения%2$s и убрать галочку рядом с пунктом \"Видимость для поисковых систем\"."
 
-#: admin/class-admin-init.php:146
+#: admin/class-admin-init.php:147
 msgid "Huge SEO Issue: You're blocking access to robots."
 msgstr "Серьёзная проблема для SEO: Вы блокируете доступ для поисковых роботов."
 
@@ -5591,38 +5678,38 @@ msgstr "Записи"
 msgid "Edit Files"
 msgstr "Изменить файлы"
 
-#: admin/class-admin.php:523 admin/class-admin.php:524
+#: admin/class-admin.php:518 admin/class-admin.php:519
 #: admin/help_center/class-template-variables-tab.php:93
 msgid "Advanced Variables"
 msgstr "Дополнительные переменные"
 
-#: admin/class-admin.php:515 admin/class-admin.php:516
+#: admin/class-admin.php:510 admin/class-admin.php:511
 #: admin/help_center/class-template-variables-tab.php:87
 msgid "Basic Variables"
 msgstr "Основные переменные"
 
-#: admin/class-admin.php:508
+#: admin/class-admin.php:503
 msgid "Note that not all variables can be used in every template."
 msgstr "Обратите внимание, что не все переменные могут быть использованы в каждом шаблоне"
 
 #. translators: %1$s expands to Yoast SEO.
-#: admin/class-admin.php:505
+#: admin/class-admin.php:500
 msgid "The title &amp; metas settings for %1$s are made up of variables that are replaced by specific values from the page when the page is displayed. The tabs on the left explain the available variables."
 msgstr "Параметры заголовков и мета-описаний для %1$s состоят из переменных, которые заменяются на определенные значения при отображении страницы посетителю. На вкладках слева показаны доступные переменные."
 
-#: admin/class-admin.php:501 admin/class-admin.php:502
+#: admin/class-admin.php:496 admin/class-admin.php:497
 msgid "Template explanation"
 msgstr "Информация о шаблоне"
 
-#: admin/class-admin.php:495
+#: admin/class-admin.php:490
 msgid "Why Google won't display the right page title"
 msgstr "Почему Google не отображает правильный заголовок страницы"
 
-#: admin/class-admin.php:494
+#: admin/class-admin.php:489
 msgid "Title optimization"
 msgstr "Оптимизация заголовка"
 
-#: admin/class-admin.php:493
+#: admin/class-admin.php:488
 msgid "For more information:"
 msgstr "Более подробная информация:"
 
@@ -5649,7 +5736,7 @@ msgstr "Инструменты"
 msgid "Advanced"
 msgstr "Дополнительно"
 
-#: admin/views/tabs/dashboard/features.php:57
+#: admin/views/class-yoast-feature-toggles.php:96
 msgid "XML sitemaps"
 msgstr "XML-карта сайта"
 
@@ -5661,7 +5748,7 @@ msgid "Social"
 msgstr "Социальные сети"
 
 #: admin/menu/class-admin-menu.php:38
-#: admin/menu/class-network-admin-menu.php:35 frontend/class-frontend.php:1222
+#: admin/menu/class-network-admin-menu.php:35 frontend/class-frontend.php:1183
 #: inc/class-wpseo-admin-bar-menu.php:442
 msgid "SEO"
 msgstr "SEO"
@@ -5673,16 +5760,16 @@ msgstr "SEO"
 #. translators: %1$s expands to Yoast SEO, %2$s expands to the plugin version,
 #. %3$s expands to the plugin name
 #: admin/class-admin-gutenberg-compatibility-notification.php:72
-#: admin/class-admin-init.php:286 admin/class-admin-init.php:389
+#: admin/class-admin-init.php:287 admin/class-admin-init.php:390
 msgid "%1$s detected you are using version %2$s of %3$s, please update to the latest version to prevent compatibility issues."
 msgstr "%1$s обнаружил, что используется версия %3$s или %2$s. Обновите плагин до последней версии, чтобы предотвратить проблемы совместимости."
 
-#: admin/class-admin-init.php:215
+#: admin/class-admin-init.php:216
 msgid "Just another WordPress site"
 msgstr "Просто еще один сайт WordPress"
 
 #. translators: 1: link open tag; 2: link close tag.
-#: admin/class-admin-init.php:119
+#: admin/class-admin-init.php:120
 msgid "You still have the default WordPress tagline, even an empty one is probably better. %1$sYou can fix this in the customizer%2$s."
 msgstr "У вас в WordPress, до сих пор установлено название сайта по умолчанию. Наверно лучше сделать его пустым, чем как сейчас. %1$s вы всегда можете исправить его в настройщике %2$s."
 
