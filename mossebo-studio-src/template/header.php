@@ -2,7 +2,7 @@
 <html>
 <head>
 
-    <?php get_template_part('includes/meta') ?>
+    <?php get_template_part('includes/meta'); ?>
 
     <?php wp_head(); ?>
 
@@ -21,6 +21,11 @@
                             <use xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#logo-header"></use>
                         </svg>
                     </a>
+                </div>
+                <div class="header__float_item">
+                    <div class="projects">
+                        Наши проекты
+                    </div>
                 </div>
                 <div class="header__float_item">
                     <div class="location">

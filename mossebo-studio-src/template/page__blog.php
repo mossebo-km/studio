@@ -29,8 +29,11 @@ $query = new WP_Query($args);
                 if ($query->have_posts()) {
                     while ($query->have_posts()) {
                         $query->the_post();
-
-                        get_template_part('includes/blog-card');
+                        ?>
+                        <div class="mb-40">
+                            <?php get_template_part('includes/blog-card'); ?>
+                        </div>
+                        <?php
                     }
                 } else {
                     // Постов не найдено

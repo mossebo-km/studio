@@ -3,7 +3,7 @@ $caterogys = wp_get_post_categories(get_the_ID());
 ?>
 
 
-<article class="blog-card block-ui mb-40">
+<article class="blog-card block-ui">
     <a href="<?php echo get_permalink(); ?>"
        class="blog-card__link">
         <div class="blog-card__image"

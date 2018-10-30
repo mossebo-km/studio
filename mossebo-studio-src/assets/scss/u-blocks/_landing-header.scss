@@ -1,0 +1,29 @@
+.landing-header {
+    position: relative;
+    &__image {
+        position: relative;
+        background-position: center center;
+        background-size: cover;
+        &:before {
+            content: '';
+            display: block;
+            padding-top: 45.0%;
+        }
+    }
+    &__layout {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        padding: 32px 0;
+    }
+    &__title {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+}

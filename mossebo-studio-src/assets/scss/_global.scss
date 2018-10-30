@@ -94,6 +94,12 @@ html, body {
     margin-top: 0;
 }
 
+.title-sub {
+    color: $color-text-primary;
+    font-size: 16px / 32px;
+    font-weight: normal;
+}
+
 .block-ui {
     border-radius: $radius;
     box-shadow: $shadows-primary;

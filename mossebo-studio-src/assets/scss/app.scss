@@ -42,6 +42,8 @@
 @import "u-blocks/videoblog";
 @import "u-blocks/why-we";
 @import "u-blocks/blog-card";
+@import "u-blocks/landing-header";
+@import "u-blocks/instagram";
 
 
 @import "plugins/swiper";
@@ -51,6 +53,7 @@
 
 // Pages
 
+@import "pages/interior-design";
 @import "pages/single-project";
 @import "pages/archives-project";
 @import "pages/single-blog";

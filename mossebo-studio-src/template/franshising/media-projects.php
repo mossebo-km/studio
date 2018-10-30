@@ -8,4 +8,8 @@
     </div>
 </div>
 
-<div class="media-projects" style="height: 535px; background-color: cyan; margin-top: 42px"></div>
+<div class="media-projects">
+
+
+
+</div>

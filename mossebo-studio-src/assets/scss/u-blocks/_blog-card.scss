@@ -50,15 +50,17 @@
         top: 0;
         left: 0;
         margin-top: 16px;
-        margin-left: 16px;
+        margin-left: 8px;
         .blog-card__bage {
             color: $color-ui;
             padding: 4px 16px;
             font-size: 14px / 17px;
-        }
-        .blog-card__bage + .blog-card__bage {
             margin-left: 8px;
+            margin-bottom: 8px;
         }
+    }
+    .title-h4 {
+        margin-bottom: 0;
     }
     .excerpt-text {
         border-top: 1px solid $color-border;

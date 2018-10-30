@@ -121,6 +121,7 @@ import InteriorPano from './components/InteriorPano'
 import MobileSlider from './components/MobileSlider'
 import StudiosMap from './components/map/StudiosMap'
 import BackgroundImageLoader from './components/imageLoaders/BackgroundImageLoader'
+import UBlockInstagram from './components/UBlockInstagram'
 
 const breakpoints = {
     xs: 1,
@@ -137,8 +138,9 @@ const app = new Vue({
         InteriorPano,
         StudiosMap,
         BackgroundImageLoader,
-        MobileSlider
-    },
+        MobileSlider,
+        UBlockInstagram
+},
 
     data: {
         windowWidth: window.innerWidth
