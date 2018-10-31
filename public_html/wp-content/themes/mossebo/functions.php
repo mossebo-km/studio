@@ -164,3 +164,32 @@ if (! function_exists('toEscapedJson')) {
         );
     }
 }
+
+function FRANCHISE_HEAD_FORM_processing_function(){
+    check_ajax_referer('FRANCHISE_HEAD_FORM_nonce');
+
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+
+    if (empty($first_name) || empty($last_name)) {
+        echo json_encode([
+            'success' => 0,
+            'message' => 'Вы не указали имя или фамилию.'
+        ]);
+
+        wp_die();
+    }
+
+    echo json_encode([
+        'success' => 1,
+        'message' => 'Все окей.'
+    ]);
+
+    wp_die();
+}
+
+//если вы хотите принимать запрос только от авторизованных пользователей, тогда добавьте этот хук
+add_action('wp_ajax_FRANCHISE_HEAD_FORM', 'FRANCHISE_HEAD_FORM_processing_function');
+//если вы хотите получить запрос от неавторизованных пользователей, тогда добавьте этот хук
+add_action('wp_ajax_nopriv_FRANCHISE_HEAD_FORM', 'FRANCHISE_HEAD_FORM_processing_function');
+//Если хотите, чтобы оба вариант работали, тогда оставьте оба хука

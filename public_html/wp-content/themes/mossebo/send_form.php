@@ -1,5 +1,20 @@
 <?php
 
+//return json_encode([
+//    'status' => 'success',
+//    'redirect' => '/thanks'
+//], JSON_UNESCAPED_UNICODE);
+
+require_once ($_SERVER['DOCUMENT_ROOT'] . '/wp-includes/class-wp-ajax-response.php');
+
+$response = new WP_Ajax_Response([
+    'status' => 'success',
+    'redirect' => '/thanks'
+]);
+
+$response->send();
+exit;
+
 require_once './includes/amocrm.phar';
 
 $envDomain = '';

@@ -196,6 +196,8 @@
 </div>
 <!-- /APP -->
 
+<?php get_template_part( 'translates/js' ) ?>
+
 <script src="<?php echo mix('assets/js/manifest.js') ?>" defer></script>
 <script src="<?php echo mix('assets/js/vendor.js') ?>" defer></script>
 <script src="<?php echo mix('assets/js/app.js') ?>" defer></script>
