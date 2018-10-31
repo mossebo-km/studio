@@ -40,7 +40,7 @@
     </h2>
 </div>
 
-<div class="videoblog-slider swiper-container js-blog-slider">
+<div class="videoblog-slider swiper-container js-videoblog-slider">
     <div class="swiper-wrapper">
         <?php foreach (getBlogVideos() as $video) : ?>
         <div class="swiper-slide">
@@ -61,5 +61,5 @@
         <?php endforeach ?>
     </div>
 
-    <div class="swiper-pagination js-blog-slider-pagination"></div>
+    <div class="swiper-pagination js-videoblog-slider-pagination"></div>
 </div>

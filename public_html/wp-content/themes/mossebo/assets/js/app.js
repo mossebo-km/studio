@@ -6,6 +6,7 @@ webpackJsonp([1],{
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap__ = __webpack_require__("./mossebo-studio-src/assets/js/bootstrap.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__bootstrap__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__global_configs__ = __webpack_require__("./mossebo-studio-src/assets/js/global-configs.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue__ = __webpack_require__("./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue__);
@@ -19,8 +20,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_imageLoaders_BackgroundImageLoader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_imageLoaders_BackgroundImageLoader__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_UBlockInstagram__ = __webpack_require__("./mossebo-studio-src/assets/js/components/UBlockInstagram.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_UBlockInstagram___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_UBlockInstagram__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_pages_page_franshising__ = __webpack_require__("./mossebo-studio-src/assets/js/components/pages/page__franshising.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_pages_page_franshising___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_pages_page_franshising__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_plugins_social_slider__ = __webpack_require__("./mossebo-studio-src/assets/js/components/plugins/social-slider.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_plugins_social_slider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_plugins_social_slider__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_plugins_video_blog__ = __webpack_require__("./mossebo-studio-src/assets/js/components/plugins/video-blog.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_plugins_video_blog___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_plugins_video_blog__);
 /**
  * GLOBAL
  */
@@ -40,7 +43,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-// Franshising
+// Plugins Imports
+
 
 
 /**
@@ -105,16 +109,11 @@ window.app = app;
 /***/ }),
 
 /***/ "./mossebo-studio-src/assets/js/bootstrap.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fancyapps_fancybox__ = __webpack_require__("./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fancyapps_fancybox___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__fancyapps_fancybox__);
-
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {
 window._ = __webpack_require__("./node_modules/lodash/lodash.js");
 __webpack_require__("./node_modules/babel-polyfill/lib/index.js");
-
-
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -135,7 +134,7 @@ try {
 window.axios = __webpack_require__("./node_modules/axios/index.js");
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -337,7 +336,7 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue")
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue")
 }
 var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
 /* script */
@@ -710,24 +709,12 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ "./mossebo-studio-src/assets/js/components/pages/page__franshising.js":
+/***/ "./mossebo-studio-src/assets/js/components/plugins/social-slider.js":
 /***/ (function(module, exports) {
 
 
-// Слайдер видеоблога на странице франшизы
+// Слайдер Социальных сетей
 window.addEventListener('DOMContentLoaded', function () {
-    initSliderWithFancybox('.js-blog-slider', {
-        direction: 'horizontal',
-        slidesPerView: 'auto',
-        centeredSlides: true,
-        spaceBetween: 32,
-        loop: true,
-        freeModeMomentumVelocityRatio: 0.5,
-        pagination: {
-            el: '.js-blog-slider-pagination',
-            clickable: true
-        }
-    });
 
     new Swiper('.js-socials-slider', {
         direction: 'horizontal',
@@ -736,6 +723,28 @@ window.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 32,
         loop: true,
         freeModeMomentumVelocityRatio: 0.5
+    });
+});
+
+/***/ }),
+
+/***/ "./mossebo-studio-src/assets/js/components/plugins/video-blog.js":
+/***/ (function(module, exports) {
+
+
+// Слайдер видеоблога на странице франшизы
+window.addEventListener('DOMContentLoaded', function () {
+    initSliderWithFancybox('.js-videoblog-slider', {
+        direction: 'horizontal',
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 32,
+        loop: true,
+        freeModeMomentumVelocityRatio: 0.5,
+        pagination: {
+            el: '.js-videoblog-slider-pagination',
+            clickable: true
+        }
     });
 });
 
@@ -750,6 +759,9 @@ window.addEventListener('DOMContentLoaded', function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_swiper__ = __webpack_require__("./node_modules/swiper/dist/js/swiper.esm.bundle.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hchs_vue_charts__ = __webpack_require__("./node_modules/hchs-vue-charts/dist/vue-charts.min.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hchs_vue_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hchs_vue_charts__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox__ = __webpack_require__("./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox__);
+
 
 
 
@@ -774,6 +786,7 @@ function setChartFontSize() {
         __WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.defaults.global.defaultFontSize = 14;
     }
 }
+
 setChartFontSize();
 
 __WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.pluginService.register({
@@ -22561,7 +22574,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue":
+/***/ "./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(true);
@@ -22569,7 +22582,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.instagram-photo[data-v-e3c6aefc] {\n  width: 100%;\n  position: relative;\n  display: block;\n  text-decoration: none;\n  color: #323f4c;\n  border-radius: 5px;\n  margin-bottom: 32px;\n  background-position: center center;\n  background-size: cover;\n}\n.instagram-photo[data-v-e3c6aefc]:before {\n    content: '';\n    display: block;\n    padding-top: 100%;\n}\n.instagram-likes[data-v-e3c6aefc] {\n  position: absolute;\n  bottom: 8px;\n  left: 12px;\n  color: #fff;\n  font-weight: 500;\n  font-size: 20px;\n}\n.instagram-icon[data-v-e3c6aefc] {\n  width: 24px;\n  height: 24px;\n  vertical-align: text-bottom;\n  margin-right: 4px;\n  display: inline-block;\n  fill: #fff;\n}\n", "", {"version":3,"sources":["/Users/vladstarkovsky/DEVSRV/mossebo-studio/mossebo-studio-src/assets/js/components/UBlockInstagram.vue"],"names":[],"mappings":";AAAA;EACE,YAAY;EACZ,mBAAmB;EACnB,eAAe;EACf,sBAAsB;EACtB,eAAe;EACf,mBAAmB;EACnB,oBAAoB;EACpB,mCAAmC;EACnC,uBAAuB;CAAE;AACzB;IACE,YAAY;IACZ,eAAe;IACf,kBAAkB;CAAE;AAExB;EACE,mBAAmB;EACnB,YAAY;EACZ,WAAW;EACX,YAAY;EACZ,iBAAiB;EACjB,gBAAgB;CAAE;AAEpB;EACE,YAAY;EACZ,aAAa;EACb,4BAA4B;EAC5B,kBAAkB;EAClB,sBAAsB;EACtB,WAAW;CAAE","file":"UBlockInstagram.vue","sourcesContent":[".instagram-photo {\n  width: 100%;\n  position: relative;\n  display: block;\n  text-decoration: none;\n  color: #323f4c;\n  border-radius: 5px;\n  margin-bottom: 32px;\n  background-position: center center;\n  background-size: cover; }\n  .instagram-photo:before {\n    content: '';\n    display: block;\n    padding-top: 100%; }\n\n.instagram-likes {\n  position: absolute;\n  bottom: 8px;\n  left: 12px;\n  color: #fff;\n  font-weight: 500;\n  font-size: 20px; }\n\n.instagram-icon {\n  width: 24px;\n  height: 24px;\n  vertical-align: text-bottom;\n  margin-right: 4px;\n  display: inline-block;\n  fill: #fff; }\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"UBlockInstagram.vue","sourceRoot":""}]);
 
 // exports
 
@@ -48530,23 +48543,23 @@ if (false) {
 
 /***/ }),
 
-/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue":
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue");
+var content = __webpack_require__("./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue");
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("146b118a", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("5bdcb302", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./UBlockInstagram.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./UBlockInstagram.vue");
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./UBlockInstagram.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./UBlockInstagram.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });

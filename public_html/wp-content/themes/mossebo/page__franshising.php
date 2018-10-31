@@ -97,12 +97,6 @@ get_header();
     </div>
     <!-- Обучение франчайзи конец -->
 
-    <!-- Медиа проекты -->
-    <div class="mt-64">
-        <?php get_template_part( 'franshising/media-projects' ) ?>
-    </div>
-    <!-- Медиа проекты конец -->
-
     <!-- Друзья -->
     <div class="mt-64">
         <?php get_template_part( 'franshising/friends' ) ?>

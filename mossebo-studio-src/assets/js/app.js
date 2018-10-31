@@ -17,8 +17,9 @@ import StudiosMap from './components/map/StudiosMap'
 import BackgroundImageLoader from './components/imageLoaders/BackgroundImageLoader'
 import UBlockInstagram from './components/UBlockInstagram'
 
-// Franshising
-import './components/pages/page__franshising'
+// Plugins Imports
+import './components/plugins/social-slider'
+import './components/plugins/video-blog'
 
 /**
  * App

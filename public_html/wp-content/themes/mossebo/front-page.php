@@ -248,11 +248,21 @@ $query = new WP_Query($args);
 </div>
 <!-- Инстаграм конец -->
 
+
+
 <!-- Медиа проекты -->
-<div class="mt-64">
-    <?php get_template_part( 'franshising/media-projects' ) ?>
+<div class="mt-32">
+    <div class="container">
+        <div class="title-h2 mb-0"><?php _e('Медиа-проекты Mossebo', 'mossebo') ?></div>
+        <div class="title-sub"><?php _e('Еще больше о Mossebo и проектах найдешь тут ', 'mossebo') ?></div>
+    </div>
+    <!-- Слайдер соц сетей -->
+    <?php get_template_part( 'includes/social-slider' ) ?>
+    <!-- Слайдер соц сетей конец -->
 </div>
 <!-- Медиа проекты конец -->
+
+
 
 <!-- Карта -->
 <div class="mt-64">
