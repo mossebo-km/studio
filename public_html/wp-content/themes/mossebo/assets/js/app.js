@@ -22,10 +22,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_MobileSlider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_MobileSlider__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap__ = __webpack_require__("./mossebo-studio-src/assets/js/components/map/StudiosMap.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_imageLoaders_BackgroundImageLoader__ = __webpack_require__("./mossebo-studio-src/assets/js/components/imageLoaders/BackgroundImageLoader.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_imageLoaders_BackgroundImageLoader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_imageLoaders_BackgroundImageLoader__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_UBlockInstagram__ = __webpack_require__("./mossebo-studio-src/assets/js/components/UBlockInstagram.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_UBlockInstagram___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_UBlockInstagram__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_YoutubeVideo__ = __webpack_require__("./mossebo-studio-src/assets/js/components/YoutubeVideo.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_YoutubeVideo___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_YoutubeVideo__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_imageLoaders_BackgroundImageLoader__ = __webpack_require__("./mossebo-studio-src/assets/js/components/imageLoaders/BackgroundImageLoader.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_imageLoaders_BackgroundImageLoader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_imageLoaders_BackgroundImageLoader__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_UBlockInstagram__ = __webpack_require__("./mossebo-studio-src/assets/js/components/UBlockInstagram.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_UBlockInstagram___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_UBlockInstagram__);
 /**
  * GLOBAL
  */
@@ -146,6 +148,7 @@ window.initSliderWithFancybox = function (query, config) {
 
 
 
+
 var breakpoints = {
     xs: 1,
     sm: 576,
@@ -160,9 +163,10 @@ var app = new __WEBPACK_IMPORTED_MODULE_1_vue___default.a({
     components: {
         InteriorPano: __WEBPACK_IMPORTED_MODULE_6__components_InteriorPano___default.a,
         StudiosMap: __WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap___default.a,
-        BackgroundImageLoader: __WEBPACK_IMPORTED_MODULE_9__components_imageLoaders_BackgroundImageLoader___default.a,
+        BackgroundImageLoader: __WEBPACK_IMPORTED_MODULE_10__components_imageLoaders_BackgroundImageLoader___default.a,
         MobileSlider: __WEBPACK_IMPORTED_MODULE_7__components_MobileSlider___default.a,
-        UBlockInstagram: __WEBPACK_IMPORTED_MODULE_10__components_UBlockInstagram___default.a
+        UBlockInstagram: __WEBPACK_IMPORTED_MODULE_11__components_UBlockInstagram___default.a,
+        YoutubeVideo: __WEBPACK_IMPORTED_MODULE_9__components_YoutubeVideo___default.a
     },
 
     data: {
@@ -489,6 +493,58 @@ if (false) {(function () {
     hotAPI.createRecord("data-v-e3c6aefc", Component.options)
   } else {
     hotAPI.reload("data-v-e3c6aefc", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ "./mossebo-studio-src/assets/js/components/YoutubeVideo.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ce0cc380\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/YoutubeVideo.vue")
+}
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./mossebo-studio-src/assets/js/components/YoutubeVideo.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-ce0cc380\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/YoutubeVideo.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "mossebo-studio-src/assets/js/components/YoutubeVideo.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-ce0cc380", Component.options)
+  } else {
+    hotAPI.reload("data-v-ce0cc380", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -7040,6 +7096,77 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 likes: 67423
             }]
         };
+    }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./mossebo-studio-src/assets/js/components/YoutubeVideo.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "youtube-video",
+
+    props: {
+        videoId: String
+    },
+
+    data: function data() {
+        return {
+            activeButton: true,
+            activeVideo: false,
+            videoUrl: null
+        };
+    },
+
+
+    methods: {
+        showVideo: function showVideo(e) {
+            e.preventDefault();
+
+            this.activeButton = false;
+            this.activeVideo = true;
+            this.videoUrl = this.video;
+        }
+    },
+
+    computed: {
+        video: function video() {
+            return '//www.youtube.com/embed/' + this.videoId + '?enablejsapi=1&rel=0&playsinline=1&autoplay=1&showinfo=0&autohide=1&modestbranding=1';
+        },
+        videoThumb: function videoThumb() {
+            console.log('//img.youtube.com/vi/' + this.videoId + '/hqdefault.jpg');
+            return '//img.youtube.com/vi/' + this.videoId + '/hqdefault.jpg';
+        }
     }
 });
 
@@ -22531,6 +22658,21 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ce0cc380\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/YoutubeVideo.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(true);
+// imports
+
+
+// module
+exports.push([module.i, "\n.player-box {\n  position: relative;\n  padding: 0;\n}\n.player-box__button {\n    position: absolute;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    top: 50%;\n    left: 50%;\n    margin-top: -35px;\n    margin-left: -35px;\n    width: 70px;\n    height: 70px;\n    padding: 0 0 0 5px;\n    color: #fafbfc;\n    background: #fcc600;\n    border: 1px solid #fcc600;\n    border-radius: 50%;\n    z-index: 9;\n    cursor: pointer;\n    -webkit-box-sizing: border-box;\n            box-sizing: border-box;\n    -webkit-transition: 0.3s;\n    transition: 0.3s;\n    opacity: .8;\n}\n.player-box__icon {\n    width: 30px;\n    height: 32px;\n    fill: #fff;\n}\n.player-box__preview {\n    margin: auto;\n    width: 100%;\n    max-width: 100%;\n    background-size: cover;\n    background-position: 50%;\n    background-repeat: no-repeat;\n}\n.player-box__preview:before {\n      content: \"\";\n      display: block;\n      padding-top: 56.25%;\n}\n.player-box__wrap:hover {\n    cursor: pointer;\n}\n.player-box__wrap:hover .player-box__button {\n    opacity: 1;\n}\n.player-box__video, .player-box__wrap {\n    position: absolute;\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    width: 100%;\n    height: 100%;\n}\n.player-box__video {\n    z-index: 3;\n}\n", "", {"version":3,"sources":["/Users/Urij/code/mossebo-studio/mossebo-studio-src/assets/js/components/YoutubeVideo.vue"],"names":[],"mappings":";AAAA;EACE,mBAAmB;EACnB,WAAW;CAAE;AACb;IACE,mBAAmB;IACnB,qBAAc;IAAd,qBAAc;IAAd,cAAc;IACd,0BAAoB;QAApB,uBAAoB;YAApB,oBAAoB;IACpB,yBAAwB;QAAxB,sBAAwB;YAAxB,wBAAwB;IACxB,SAAS;IACT,UAAU;IACV,kBAAkB;IAClB,mBAAmB;IACnB,YAAY;IACZ,aAAa;IACb,mBAAmB;IACnB,eAAe;IACf,oBAAoB;IACpB,0BAA0B;IAC1B,mBAAmB;IACnB,WAAW;IACX,gBAAgB;IAChB,+BAAuB;YAAvB,uBAAuB;IACvB,yBAAiB;IAAjB,iBAAiB;IACjB,YAAY;CAAE;AAChB;IACE,YAAY;IACZ,aAAa;IACb,WAAW;CAAE;AACf;IACE,aAAa;IACb,YAAY;IACZ,gBAAgB;IAChB,uBAAuB;IACvB,yBAAyB;IACzB,6BAA6B;CAAE;AAC/B;MACE,YAAY;MACZ,eAAe;MACf,oBAAoB;CAAE;AAC1B;IACE,gBAAgB;CAAE;AACpB;IACE,WAAW;CAAE;AACf;IACE,mBAAmB;IACnB,QAAQ;IACR,SAAS;IACT,OAAO;IACP,UAAU;IACV,YAAY;IACZ,aAAa;CAAE;AACjB;IACE,WAAW;CAAE","file":"YoutubeVideo.vue","sourcesContent":[".player-box {\n  position: relative;\n  padding: 0; }\n  .player-box__button {\n    position: absolute;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    top: 50%;\n    left: 50%;\n    margin-top: -35px;\n    margin-left: -35px;\n    width: 70px;\n    height: 70px;\n    padding: 0 0 0 5px;\n    color: #fafbfc;\n    background: #fcc600;\n    border: 1px solid #fcc600;\n    border-radius: 50%;\n    z-index: 9;\n    cursor: pointer;\n    box-sizing: border-box;\n    transition: 0.3s;\n    opacity: .8; }\n  .player-box__icon {\n    width: 30px;\n    height: 32px;\n    fill: #fff; }\n  .player-box__preview {\n    margin: auto;\n    width: 100%;\n    max-width: 100%;\n    background-size: cover;\n    background-position: 50%;\n    background-repeat: no-repeat; }\n    .player-box__preview:before {\n      content: \"\";\n      display: block;\n      padding-top: 56.25%; }\n  .player-box__wrap:hover {\n    cursor: pointer; }\n  .player-box__wrap:hover .player-box__button {\n    opacity: 1; }\n  .player-box__video, .player-box__wrap {\n    position: absolute;\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    width: 100%;\n    height: 100%; }\n  .player-box__video {\n    z-index: 3; }\n"],"sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22539,7 +22681,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.instagram-photo[data-v-e3c6aefc] {\n  width: 100%;\n  position: relative;\n  display: block;\n  text-decoration: none;\n  color: #323f4c;\n  border-radius: 5px;\n  margin-bottom: 32px;\n  background-position: center center;\n  background-size: cover;\n}\n.instagram-photo[data-v-e3c6aefc]:before {\n    content: '';\n    display: block;\n    padding-top: 100%;\n}\n.instagram-likes[data-v-e3c6aefc] {\n  position: absolute;\n  bottom: 8px;\n  left: 12px;\n  color: #fff;\n  font-weight: 500;\n  font-size: 20px;\n}\n.instagram-icon[data-v-e3c6aefc] {\n  width: 24px;\n  height: 24px;\n  vertical-align: text-bottom;\n  margin-right: 4px;\n  display: inline-block;\n  fill: #fff;\n}\n", "", {"version":3,"sources":["/Users/vladstarkovsky/DEVSRV/mossebo-studio/mossebo-studio-src/assets/js/components/UBlockInstagram.vue"],"names":[],"mappings":";AAAA;EACE,YAAY;EACZ,mBAAmB;EACnB,eAAe;EACf,sBAAsB;EACtB,eAAe;EACf,mBAAmB;EACnB,oBAAoB;EACpB,mCAAmC;EACnC,uBAAuB;CAAE;AACzB;IACE,YAAY;IACZ,eAAe;IACf,kBAAkB;CAAE;AAExB;EACE,mBAAmB;EACnB,YAAY;EACZ,WAAW;EACX,YAAY;EACZ,iBAAiB;EACjB,gBAAgB;CAAE;AAEpB;EACE,YAAY;EACZ,aAAa;EACb,4BAA4B;EAC5B,kBAAkB;EAClB,sBAAsB;EACtB,WAAW;CAAE","file":"UBlockInstagram.vue","sourcesContent":[".instagram-photo {\n  width: 100%;\n  position: relative;\n  display: block;\n  text-decoration: none;\n  color: #323f4c;\n  border-radius: 5px;\n  margin-bottom: 32px;\n  background-position: center center;\n  background-size: cover; }\n  .instagram-photo:before {\n    content: '';\n    display: block;\n    padding-top: 100%; }\n\n.instagram-likes {\n  position: absolute;\n  bottom: 8px;\n  left: 12px;\n  color: #fff;\n  font-weight: 500;\n  font-size: 20px; }\n\n.instagram-icon {\n  width: 24px;\n  height: 24px;\n  vertical-align: text-bottom;\n  margin-right: 4px;\n  display: inline-block;\n  fill: #fff; }\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.instagram-photo[data-v-e3c6aefc] {\n  width: 100%;\n  position: relative;\n  display: block;\n  text-decoration: none;\n  color: #323f4c;\n  border-radius: 5px;\n  margin-bottom: 32px;\n  background-position: center center;\n  background-size: cover;\n}\n.instagram-photo[data-v-e3c6aefc]:before {\n    content: '';\n    display: block;\n    padding-top: 100%;\n}\n.instagram-likes[data-v-e3c6aefc] {\n  position: absolute;\n  bottom: 8px;\n  left: 12px;\n  color: #fff;\n  font-weight: 500;\n  font-size: 20px;\n}\n.instagram-icon[data-v-e3c6aefc] {\n  width: 24px;\n  height: 24px;\n  vertical-align: text-bottom;\n  margin-right: 4px;\n  display: inline-block;\n  fill: #fff;\n}\n", "", {"version":3,"sources":["/Users/Urij/code/mossebo-studio/mossebo-studio-src/assets/js/components/UBlockInstagram.vue"],"names":[],"mappings":";AAAA;EACE,YAAY;EACZ,mBAAmB;EACnB,eAAe;EACf,sBAAsB;EACtB,eAAe;EACf,mBAAmB;EACnB,oBAAoB;EACpB,mCAAmC;EACnC,uBAAuB;CAAE;AACzB;IACE,YAAY;IACZ,eAAe;IACf,kBAAkB;CAAE;AAExB;EACE,mBAAmB;EACnB,YAAY;EACZ,WAAW;EACX,YAAY;EACZ,iBAAiB;EACjB,gBAAgB;CAAE;AAEpB;EACE,YAAY;EACZ,aAAa;EACb,4BAA4B;EAC5B,kBAAkB;EAClB,sBAAsB;EACtB,WAAW;CAAE","file":"UBlockInstagram.vue","sourcesContent":[".instagram-photo {\n  width: 100%;\n  position: relative;\n  display: block;\n  text-decoration: none;\n  color: #323f4c;\n  border-radius: 5px;\n  margin-bottom: 32px;\n  background-position: center center;\n  background-size: cover; }\n  .instagram-photo:before {\n    content: '';\n    display: block;\n    padding-top: 100%; }\n\n.instagram-likes {\n  position: absolute;\n  bottom: 8px;\n  left: 12px;\n  color: #fff;\n  font-weight: 500;\n  font-size: 20px; }\n\n.instagram-icon {\n  width: 24px;\n  height: 24px;\n  vertical-align: text-bottom;\n  margin-right: 4px;\n  display: inline-block;\n  fill: #fff; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -48445,6 +48587,85 @@ if (false) {
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-ce0cc380\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/YoutubeVideo.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "player-box" }, [
+    _c(
+      "div",
+      {
+        staticClass: "player-box__preview",
+        style: { backgroundImage: "url(" + _vm.videoThumb + ")" }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "player-box__wrap", on: { click: _vm.showVideo } },
+          [
+            _c(
+              "button",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.activeButton,
+                    expression: "activeButton"
+                  }
+                ],
+                staticClass: "player-box__button"
+              },
+              [
+                _c("svg", { staticClass: "player-box__icon" }, [
+                  _c("use", {
+                    attrs: {
+                      "xlink:href":
+                        "/wp-content/themes/mossebo/assets/images/icons.svg#symbol-triangle"
+                    }
+                  })
+                ])
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("iframe", {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.activeVideo,
+              expression: "activeVideo"
+            }
+          ],
+          staticClass: "player-box__video",
+          attrs: {
+            src: _vm.videoUrl,
+            frameborder: "0",
+            allow: "autoplay; encrypted-media",
+            allowfullscreen: ""
+          }
+        })
+      ]
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-ce0cc380", module.exports)
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-e3c6aefc\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -48496,6 +48717,33 @@ if (false) {
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-e3c6aefc", module.exports)
   }
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ce0cc380\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/YoutubeVideo.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ce0cc380\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/YoutubeVideo.vue");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("48515e9a", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ce0cc380\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./YoutubeVideo.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ce0cc380\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./YoutubeVideo.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
 }
 
 /***/ }),

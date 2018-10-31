@@ -120,6 +120,7 @@ window.initSliderWithFancybox = function(query, config) {
 import InteriorPano from './components/InteriorPano'
 import MobileSlider from './components/MobileSlider'
 import StudiosMap from './components/map/StudiosMap'
+import YoutubeVideo from './components/YoutubeVideo'
 import BackgroundImageLoader from './components/imageLoaders/BackgroundImageLoader'
 import UBlockInstagram from './components/UBlockInstagram'
 
@@ -139,7 +140,8 @@ const app = new Vue({
         StudiosMap,
         BackgroundImageLoader,
         MobileSlider,
-        UBlockInstagram
+        UBlockInstagram,
+        YoutubeVideo
 },
 
     data: {

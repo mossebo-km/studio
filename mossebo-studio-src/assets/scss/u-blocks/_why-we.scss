@@ -1,9 +1,11 @@
-.why-we {
-    &__container {
-        margin-top: -32px;
-    }
+@include media-breakpoint-up(md) {
+    .why-we {
+        &__container {
+            margin-top: -32px;
+        }
 
-    &__item {
-        margin-top: 32px;
+        &__item {
+            margin-top: 32px;
+        }
     }
 }

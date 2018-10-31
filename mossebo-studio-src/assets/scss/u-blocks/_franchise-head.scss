@@ -1,0 +1,78 @@
+.franchise-head {
+    background-image: url('../images/franchise/franchise-head.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        max-width: 375px;
+        margin: 0 auto;
+    }
+
+    &__right {
+        margin-top: 40px;
+    }
+
+    &__text,
+    &__title {
+        color: #fff;
+    }
+
+    &__text {
+        font-size: 16px / 22px;
+        max-width: 375px;
+    }
+
+    &__video {
+        display: none;
+        max-width: 520px;
+        margin-top: 28px;
+    }
+
+    &__form {
+        height: 100%;
+    }
+
+    @include media-breakpoint-up(md) {
+        text-align: left;
+
+        &__content {
+            padding: 32px 0 24px;
+            max-width: none;
+            flex-direction: row;
+        }
+
+        &__left {
+            width: calc(100% - 375px);
+            padding-right: 32px;
+        }
+
+        &__right {
+            width: 375px;
+            margin-top: 0;
+        }
+
+        &__video {
+            display: block;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        &__content {
+            align-items: unset;
+        }
+
+        &__left {
+            width: calc(100% - 440px);
+        }
+
+        &__right {
+            width: 440px;
+        }
+    }
+}

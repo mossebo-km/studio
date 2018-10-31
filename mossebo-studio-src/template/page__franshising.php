@@ -8,9 +8,12 @@ get_header();
 ?>
 
 <main>
+    <?php get_template_part( 'franshising/franchise-head' ) ?>
 
     <!-- Брэнды -->
-    <?php get_template_part( 'franshising/brands' ) ?>
+    <div class="mt-40">
+        <?php get_template_part( 'franshising/brands' ) ?>
+    </div>
     <!-- Брэнды конец -->
 
     <!-- Почему мы? -->
@@ -96,12 +99,6 @@ get_header();
         <?php get_template_part( 'franshising/franchise-training' ) ?>
     </div>
     <!-- Обучение франчайзи конец -->
-
-    <!-- Медиа проекты -->
-    <div class="mt-64">
-        <?php get_template_part( 'franshising/media-projects' ) ?>
-    </div>
-    <!-- Медиа проекты конец -->
 
     <!-- Друзья -->
     <div class="mt-64">

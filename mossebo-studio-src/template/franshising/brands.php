@@ -1,16 +1,12 @@
-
-
 <div class="container">
     <div class="brands">
-        <div class="brands__row row row--half">
+        <div class="brands__row">
             <?php foreach (getMedia() as $media) : ?>
-            <div class="col-auto">
-                <img
-                    src="<?= $media['src'] ?>"
-                    srcset="<?= $media['srcset'] ?> 2x"
-                    alt="<?= $media['name'] ?>"
+            <div class="brands__item">
+                <div
+                    style="background-image: url(<?= $media['srcset'] ?>)"
                     class="brand-image"
-                >
+                ></div>
             </div>
             <?php endforeach; ?>
         </div>
