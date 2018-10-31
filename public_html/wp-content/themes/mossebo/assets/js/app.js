@@ -5,35 +5,33 @@ webpackJsonp([1],{
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap__ = __webpack_require__("./mossebo-studio-src/assets/js/bootstrap.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__bootstrap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__("./node_modules/vue/dist/vue.common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_swiper__ = __webpack_require__("./node_modules/swiper/dist/js/swiper.esm.bundle.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox__ = __webpack_require__("./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_chart_js__ = __webpack_require__("./node_modules/chart.js/src/chart.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_chart_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_hchs_vue_charts__ = __webpack_require__("./node_modules/hchs-vue-charts/dist/vue-charts.min.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_hchs_vue_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_hchs_vue_charts__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_InteriorPano__ = __webpack_require__("./mossebo-studio-src/assets/js/components/InteriorPano.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_InteriorPano___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_InteriorPano__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_MobileSlider__ = __webpack_require__("./mossebo-studio-src/assets/js/components/MobileSlider.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_MobileSlider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_MobileSlider__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap__ = __webpack_require__("./mossebo-studio-src/assets/js/components/map/StudiosMap.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_imageLoaders_BackgroundImageLoader__ = __webpack_require__("./mossebo-studio-src/assets/js/components/imageLoaders/BackgroundImageLoader.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_imageLoaders_BackgroundImageLoader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_imageLoaders_BackgroundImageLoader__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_UBlockInstagram__ = __webpack_require__("./mossebo-studio-src/assets/js/components/UBlockInstagram.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_UBlockInstagram___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_UBlockInstagram__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap__ = __webpack_require__("./mossebo-studio-src/assets/js/bootstrap.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__global_configs__ = __webpack_require__("./mossebo-studio-src/assets/js/global-configs.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue__ = __webpack_require__("./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_InteriorPano__ = __webpack_require__("./mossebo-studio-src/assets/js/components/InteriorPano.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_InteriorPano___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_InteriorPano__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_MobileSlider__ = __webpack_require__("./mossebo-studio-src/assets/js/components/MobileSlider.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_MobileSlider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_MobileSlider__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_map_StudiosMap__ = __webpack_require__("./mossebo-studio-src/assets/js/components/map/StudiosMap.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_map_StudiosMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_map_StudiosMap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_imageLoaders_BackgroundImageLoader__ = __webpack_require__("./mossebo-studio-src/assets/js/components/imageLoaders/BackgroundImageLoader.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_imageLoaders_BackgroundImageLoader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_imageLoaders_BackgroundImageLoader__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_UBlockInstagram__ = __webpack_require__("./mossebo-studio-src/assets/js/components/UBlockInstagram.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_UBlockInstagram___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_UBlockInstagram__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_pages_page_franshising__ = __webpack_require__("./mossebo-studio-src/assets/js/components/pages/page__franshising.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_pages_page_franshising___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_pages_page_franshising__);
 /**
  * GLOBAL
  */
 
 
 
+
+
+
 /**
- * Imports
+ * Components
  */
 
 
@@ -42,109 +40,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+// Franshising
 
-function getLocale() {
-    return window.navigator.userLanguage || window.navigator.language;
-}
-
-__WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontFamily = 'Montserrat';
-__WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontColor = '#979797';
-
-function setChartFontSize() {
-    if (window.innerWidth < 375) {
-        __WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontSize = 8;
-    } else if (window.innerWidth < 576) {
-        __WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontSize = 10;
-    } else if (window.innerWidth < 768) {
-        __WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontSize = 12;
-    } else {
-        __WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontSize = 14;
-    }
-}
-
-setChartFontSize();
-
-__WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.pluginService.register({
-    beforeRender: function beforeRender(chart, easing) {
-        var _loop = function _loop(i) {
-            var scale = chart.scales[i];
-
-            if (scale.options.ticks.formatNumber) {
-                scale.ticksAsNumbers.forEach(function (number, index) {
-                    number = new Intl.NumberFormat(getLocale(), { maximumSignificantDigits: 3 }).format(number);
-
-                    scale._ticks[index].label = number.replace(' ', '&thinsp;');
-                });
-            }
-
-            if (scale.options.ticks.hideZero) {
-                scale.ticksAsNumbers.forEach(function (number, index) {
-                    if (number === 0) {
-                        scale._ticks[index].label = '';
-                    }
-                });
-            }
-        };
-
-        for (var i in chart.scales) {
-            _loop(i);
-        }
-    },
-    resize: function resize(chart, easing) {
-        setChartFontSize();
-    }
-});
-
-__WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(VueCharts);
-
-window.Swiper = __WEBPACK_IMPORTED_MODULE_2_swiper__["a" /* default */];
-
-window.initSliderWithFancybox = function (query, config) {
-    var sliderEl = document.querySelector(query);
-
-    if (!sliderEl) return;
-
-    var slider = new __WEBPACK_IMPORTED_MODULE_2_swiper__["a" /* default */](sliderEl, config);
-
-    var selector = query + ' .swiper-slide:not(.swiper-slide-duplicate) .js-fancybox-true';
-
-    $().fancybox({
-        selector: selector,
-        backFocus: false
-    });
-
-    var $document = $(document);
-
-    $document.on('click', query + ' .js-fancybox-clicker', function (e) {
-        var $this = $(this);
-
-        if ($this.is(selector)) return;
-
-        e.preventDefault();
-
-        $document.find(selector).filter('[data-key="' + this.getAttribute('data-key') + '"]').trigger("click.fb-start", {
-            $trigger: $this
-        });
-    });
-
-    return {
-        slider: slider,
-
-        destroy: function destroy() {
-            $document.off('click', query + ' .js-fancybox-clicker');
-            slider.destroy(true, true);
-        }
-    };
-};
 
 /**
  * App
  */
 
-
-
-
-
+__WEBPACK_IMPORTED_MODULE_2_vue___default.a.use(VueCharts);
 
 var breakpoints = {
     xs: 1,
@@ -154,15 +57,15 @@ var breakpoints = {
     xl: 1200
 };
 
-var app = new __WEBPACK_IMPORTED_MODULE_1_vue___default.a({
+var app = new __WEBPACK_IMPORTED_MODULE_2_vue___default.a({
     el: '#app',
 
     components: {
-        InteriorPano: __WEBPACK_IMPORTED_MODULE_6__components_InteriorPano___default.a,
-        StudiosMap: __WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap___default.a,
-        BackgroundImageLoader: __WEBPACK_IMPORTED_MODULE_9__components_imageLoaders_BackgroundImageLoader___default.a,
-        MobileSlider: __WEBPACK_IMPORTED_MODULE_7__components_MobileSlider___default.a,
-        UBlockInstagram: __WEBPACK_IMPORTED_MODULE_10__components_UBlockInstagram___default.a
+        InteriorPano: __WEBPACK_IMPORTED_MODULE_3__components_InteriorPano___default.a,
+        StudiosMap: __WEBPACK_IMPORTED_MODULE_5__components_map_StudiosMap___default.a,
+        BackgroundImageLoader: __WEBPACK_IMPORTED_MODULE_6__components_imageLoaders_BackgroundImageLoader___default.a,
+        MobileSlider: __WEBPACK_IMPORTED_MODULE_4__components_MobileSlider___default.a,
+        UBlockInstagram: __WEBPACK_IMPORTED_MODULE_7__components_UBlockInstagram___default.a
     },
 
     data: {
@@ -199,49 +102,19 @@ var app = new __WEBPACK_IMPORTED_MODULE_1_vue___default.a({
 
 window.app = app;
 
-// Слайдер видеоблога на странице франшизы
-window.addEventListener('DOMContentLoaded', function () {
-    initSliderWithFancybox('.js-blog-slider', {
-        direction: 'horizontal',
-        slidesPerView: 'auto',
-        centeredSlides: true,
-        spaceBetween: 32,
-        loop: true,
-        freeModeMomentumVelocityRatio: 0.5,
-        pagination: {
-            el: '.js-blog-slider-pagination',
-            clickable: true
-        }
-    });
-
-    new __WEBPACK_IMPORTED_MODULE_2_swiper__["a" /* default */]('.js-socials-slider', {
-        direction: 'horizontal',
-        slidesPerView: 'auto',
-        centeredSlides: true,
-        spaceBetween: 32,
-        loop: true,
-        freeModeMomentumVelocityRatio: 0.5
-    });
-});
-
-// Проверка на ретина дисплей
-window.isHighDensity = function () {
-    var isHighDensity = window.matchMedia && (window.matchMedia('only screen and (min-resolution: 124dpi), only screen and (min-resolution: 1.3dppx), only screen and (min-resolution: 48.8dpcm)').matches || window.matchMedia('only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3)').matches) || window.devicePixelRatio && window.devicePixelRatio > 1.3;
-
-    return function () {
-        return isHighDensity;
-    };
-}();
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
-
 /***/ }),
 
 /***/ "./mossebo-studio-src/assets/js/bootstrap.js":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {
+"use strict";
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fancyapps_fancybox__ = __webpack_require__("./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fancyapps_fancybox___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__fancyapps_fancybox__);
+
 window._ = __webpack_require__("./node_modules/lodash/lodash.js");
 __webpack_require__("./node_modules/babel-polyfill/lib/index.js");
+
+
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -252,7 +125,17 @@ __webpack_require__("./node_modules/babel-polyfill/lib/index.js");
 try {
   window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__("./node_modules/jquery/dist/jquery.js");
 } catch (e) {}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
+
+/**
+ * We'll load the axios HTTP library which allows us to easily issue requests
+ * to our Laravel back-end. This library automatically handles sending the
+ * CSRF token as a header based on the value of the "XSRF" token cookie.
+ */
+
+window.axios = __webpack_require__("./node_modules/axios/index.js");
+
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -824,6 +707,153 @@ module.exports = Component.exports
         }
     }
 });
+
+/***/ }),
+
+/***/ "./mossebo-studio-src/assets/js/components/pages/page__franshising.js":
+/***/ (function(module, exports) {
+
+
+// Слайдер видеоблога на странице франшизы
+window.addEventListener('DOMContentLoaded', function () {
+    initSliderWithFancybox('.js-blog-slider', {
+        direction: 'horizontal',
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 32,
+        loop: true,
+        freeModeMomentumVelocityRatio: 0.5,
+        pagination: {
+            el: '.js-blog-slider-pagination',
+            clickable: true
+        }
+    });
+
+    new Swiper('.js-socials-slider', {
+        direction: 'horizontal',
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 32,
+        loop: true,
+        freeModeMomentumVelocityRatio: 0.5
+    });
+});
+
+/***/ }),
+
+/***/ "./mossebo-studio-src/assets/js/global-configs.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_chart_js__ = __webpack_require__("./node_modules/chart.js/src/chart.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_chart_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_swiper__ = __webpack_require__("./node_modules/swiper/dist/js/swiper.esm.bundle.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hchs_vue_charts__ = __webpack_require__("./node_modules/hchs-vue-charts/dist/vue-charts.min.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hchs_vue_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hchs_vue_charts__);
+
+
+
+
+window.Swiper = __WEBPACK_IMPORTED_MODULE_1_swiper__["a" /* default */];
+
+function getLocale() {
+    return window.navigator.userLanguage || window.navigator.language;
+}
+
+__WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.defaults.global.defaultFontFamily = 'Montserrat';
+__WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.defaults.global.defaultFontColor = '#979797';
+
+function setChartFontSize() {
+    if (window.innerWidth < 375) {
+        __WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.defaults.global.defaultFontSize = 8;
+    } else if (window.innerWidth < 576) {
+        __WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.defaults.global.defaultFontSize = 10;
+    } else if (window.innerWidth < 768) {
+        __WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.defaults.global.defaultFontSize = 12;
+    } else {
+        __WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.defaults.global.defaultFontSize = 14;
+    }
+}
+setChartFontSize();
+
+__WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.pluginService.register({
+    beforeRender: function beforeRender(chart, easing) {
+        var _loop = function _loop(i) {
+            var scale = chart.scales[i];
+
+            if (scale.options.ticks.formatNumber) {
+                scale.ticksAsNumbers.forEach(function (number, index) {
+                    number = new Intl.NumberFormat(getLocale(), { maximumSignificantDigits: 3 }).format(number);
+
+                    scale._ticks[index].label = number.replace(' ', '&thinsp;');
+                });
+            }
+
+            if (scale.options.ticks.hideZero) {
+                scale.ticksAsNumbers.forEach(function (number, index) {
+                    if (number === 0) {
+                        scale._ticks[index].label = '';
+                    }
+                });
+            }
+        };
+
+        for (var i in chart.scales) {
+            _loop(i);
+        }
+    },
+    resize: function resize(chart, easing) {
+        setChartFontSize();
+    }
+});
+
+window.initSliderWithFancybox = function (query, config) {
+    var sliderEl = document.querySelector(query);
+
+    if (!sliderEl) return;
+
+    var slider = new __WEBPACK_IMPORTED_MODULE_1_swiper__["a" /* default */](sliderEl, config);
+
+    var selector = query + ' .swiper-slide:not(.swiper-slide-duplicate) .js-fancybox-true';
+
+    $().fancybox({
+        selector: selector,
+        backFocus: false
+    });
+
+    var $document = $(document);
+
+    $document.on('click', query + ' .js-fancybox-clicker', function (e) {
+        var $this = $(this);
+
+        if ($this.is(selector)) return;
+
+        e.preventDefault();
+
+        $document.find(selector).filter('[data-key="' + this.getAttribute('data-key') + '"]').trigger("click.fb-start", {
+            $trigger: $this
+        });
+    });
+
+    return {
+        slider: slider,
+
+        destroy: function destroy() {
+            $document.off('click', query + ' .js-fancybox-clicker');
+            slider.destroy(true, true);
+        }
+    };
+};
+
+// Проверка на ретина дисплей
+window.isHighDensity = function () {
+    var isHighDensity = window.matchMedia && (window.matchMedia('only screen and (min-resolution: 124dpi), only screen and (min-resolution: 1.3dppx), only screen and (min-resolution: 48.8dpcm)').matches || window.matchMedia('only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3)').matches) || window.devicePixelRatio && window.devicePixelRatio > 1.3;
+
+    return function () {
+        return isHighDensity;
+    };
+}();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 

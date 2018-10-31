@@ -33,7 +33,7 @@ $query = new WP_Query($args);
     </div>
 </div>
 
-<div class="interior-design-features pt-32 pb-72">
+<div class="interior-design-features pt-32 pb-64">
     <div class="container">
         <div class="row">
             <div class="col-4">
@@ -124,7 +124,7 @@ $query = new WP_Query($args);
 
 
 
-<div class="interior-design-stats pb-72">
+<div class="interior-design-stats">
     <div class="container">
         <div class="row">
             <div class="col-8">

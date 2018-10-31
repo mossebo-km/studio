@@ -73,7 +73,7 @@
     }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 
     @import "../../scss/variables/variables";
     @import "../../scss/variables/colors";
