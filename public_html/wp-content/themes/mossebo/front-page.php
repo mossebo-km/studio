@@ -33,7 +33,7 @@ $query = new WP_Query($args);
     </div>
 </div>
 
-<div class="interior-design-features pt-32 pb-72">
+<div class="interior-design-features pt-32 pb-64">
     <div class="container">
         <div class="row">
             <div class="col-4">
@@ -124,7 +124,7 @@ $query = new WP_Query($args);
 
 
 
-<div class="interior-design-stats pb-72">
+<div class="interior-design-stats">
     <div class="container">
         <div class="row">
             <div class="col-8">
@@ -248,11 +248,21 @@ $query = new WP_Query($args);
 </div>
 <!-- Инстаграм конец -->
 
+
+
 <!-- Медиа проекты -->
-<div class="mt-64">
-    <?php get_template_part( 'franshising/media-projects' ) ?>
+<div class="mt-32">
+    <div class="container">
+        <div class="title-h2 mb-0"><?php _e('Медиа-проекты Mossebo', 'mossebo') ?></div>
+        <div class="title-sub"><?php _e('Еще больше о Mossebo и проектах найдешь тут ', 'mossebo') ?></div>
+    </div>
+    <!-- Слайдер соц сетей -->
+    <?php get_template_part( 'includes/social-slider' ) ?>
+    <!-- Слайдер соц сетей конец -->
 </div>
 <!-- Медиа проекты конец -->
+
+
 
 <!-- Карта -->
 <div class="mt-64">

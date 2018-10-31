@@ -5,37 +5,38 @@ webpackJsonp([1],{
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap__ = __webpack_require__("./mossebo-studio-src/assets/js/bootstrap.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap__ = __webpack_require__("./mossebo-studio-src/assets/js/bootstrap.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__bootstrap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__("./node_modules/vue/dist/vue.common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_swiper__ = __webpack_require__("./node_modules/swiper/dist/js/swiper.esm.bundle.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox__ = __webpack_require__("./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_chart_js__ = __webpack_require__("./node_modules/chart.js/src/chart.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_chart_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_hchs_vue_charts__ = __webpack_require__("./node_modules/hchs-vue-charts/dist/vue-charts.min.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_hchs_vue_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_hchs_vue_charts__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_InteriorPano__ = __webpack_require__("./mossebo-studio-src/assets/js/components/InteriorPano.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_InteriorPano___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_InteriorPano__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_MobileSlider__ = __webpack_require__("./mossebo-studio-src/assets/js/components/MobileSlider.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_MobileSlider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_MobileSlider__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap__ = __webpack_require__("./mossebo-studio-src/assets/js/components/map/StudiosMap.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_YoutubeVideo__ = __webpack_require__("./mossebo-studio-src/assets/js/components/YoutubeVideo.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_YoutubeVideo___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_YoutubeVideo__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_imageLoaders_BackgroundImageLoader__ = __webpack_require__("./mossebo-studio-src/assets/js/components/imageLoaders/BackgroundImageLoader.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_imageLoaders_BackgroundImageLoader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_imageLoaders_BackgroundImageLoader__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_UBlockInstagram__ = __webpack_require__("./mossebo-studio-src/assets/js/components/UBlockInstagram.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_UBlockInstagram___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_UBlockInstagram__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__global_configs__ = __webpack_require__("./mossebo-studio-src/assets/js/global-configs.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue__ = __webpack_require__("./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_InteriorPano__ = __webpack_require__("./mossebo-studio-src/assets/js/components/InteriorPano.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_InteriorPano___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_InteriorPano__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_MobileSlider__ = __webpack_require__("./mossebo-studio-src/assets/js/components/MobileSlider.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_MobileSlider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_MobileSlider__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_map_StudiosMap__ = __webpack_require__("./mossebo-studio-src/assets/js/components/map/StudiosMap.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_map_StudiosMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_map_StudiosMap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_YoutubeVideo__ = __webpack_require__("./mossebo-studio-src/assets/js/components/YoutubeVideo.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_YoutubeVideo___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_YoutubeVideo__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_imageLoaders_BackgroundImageLoader__ = __webpack_require__("./mossebo-studio-src/assets/js/components/imageLoaders/BackgroundImageLoader.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_imageLoaders_BackgroundImageLoader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_imageLoaders_BackgroundImageLoader__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_UBlockInstagram__ = __webpack_require__("./mossebo-studio-src/assets/js/components/UBlockInstagram.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_UBlockInstagram___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_UBlockInstagram__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_plugins_social_slider__ = __webpack_require__("./mossebo-studio-src/assets/js/components/plugins/social-slider.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_plugins_social_slider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_plugins_social_slider__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_plugins_video_blog__ = __webpack_require__("./mossebo-studio-src/assets/js/components/plugins/video-blog.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_plugins_video_blog___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_plugins_video_blog__);
 /**
  * GLOBAL
  */
 
 
 
+
+
+
 /**
- * Imports
+ * Components
  */
 
 
@@ -45,109 +46,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-function getLocale() {
-    return window.navigator.userLanguage || window.navigator.language;
-}
+// Plugins Imports
 
-__WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontFamily = 'Montserrat';
-__WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontColor = '#979797';
 
-function setChartFontSize() {
-    if (window.innerWidth < 375) {
-        __WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontSize = 8;
-    } else if (window.innerWidth < 576) {
-        __WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontSize = 10;
-    } else if (window.innerWidth < 768) {
-        __WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontSize = 12;
-    } else {
-        __WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.defaults.global.defaultFontSize = 14;
-    }
-}
-
-setChartFontSize();
-
-__WEBPACK_IMPORTED_MODULE_4_chart_js___default.a.pluginService.register({
-    beforeRender: function beforeRender(chart, easing) {
-        var _loop = function _loop(i) {
-            var scale = chart.scales[i];
-
-            if (scale.options.ticks.formatNumber) {
-                scale.ticksAsNumbers.forEach(function (number, index) {
-                    number = new Intl.NumberFormat(getLocale(), { maximumSignificantDigits: 3 }).format(number);
-
-                    scale._ticks[index].label = number.replace(' ', '&thinsp;');
-                });
-            }
-
-            if (scale.options.ticks.hideZero) {
-                scale.ticksAsNumbers.forEach(function (number, index) {
-                    if (number === 0) {
-                        scale._ticks[index].label = '';
-                    }
-                });
-            }
-        };
-
-        for (var i in chart.scales) {
-            _loop(i);
-        }
-    },
-    resize: function resize(chart, easing) {
-        setChartFontSize();
-    }
-});
-
-__WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(VueCharts);
-
-window.Swiper = __WEBPACK_IMPORTED_MODULE_2_swiper__["a" /* default */];
-
-window.initSliderWithFancybox = function (query, config) {
-    var sliderEl = document.querySelector(query);
-
-    if (!sliderEl) return;
-
-    var slider = new __WEBPACK_IMPORTED_MODULE_2_swiper__["a" /* default */](sliderEl, config);
-
-    var selector = query + ' .swiper-slide:not(.swiper-slide-duplicate) .js-fancybox-true';
-
-    $().fancybox({
-        selector: selector,
-        backFocus: false
-    });
-
-    var $document = $(document);
-
-    $document.on('click', query + ' .js-fancybox-clicker', function (e) {
-        var $this = $(this);
-
-        if ($this.is(selector)) return;
-
-        e.preventDefault();
-
-        $document.find(selector).filter('[data-key="' + this.getAttribute('data-key') + '"]').trigger("click.fb-start", {
-            $trigger: $this
-        });
-    });
-
-    return {
-        slider: slider,
-
-        destroy: function destroy() {
-            $document.off('click', query + ' .js-fancybox-clicker');
-            slider.destroy(true, true);
-        }
-    };
-};
 
 /**
  * App
  */
 
-
-
-
-
-
+__WEBPACK_IMPORTED_MODULE_2_vue___default.a.use(VueCharts);
 
 var breakpoints = {
     xs: 1,
@@ -157,16 +64,16 @@ var breakpoints = {
     xl: 1200
 };
 
-var app = new __WEBPACK_IMPORTED_MODULE_1_vue___default.a({
+var app = new __WEBPACK_IMPORTED_MODULE_2_vue___default.a({
     el: '#app',
 
     components: {
-        InteriorPano: __WEBPACK_IMPORTED_MODULE_6__components_InteriorPano___default.a,
-        StudiosMap: __WEBPACK_IMPORTED_MODULE_8__components_map_StudiosMap___default.a,
-        BackgroundImageLoader: __WEBPACK_IMPORTED_MODULE_10__components_imageLoaders_BackgroundImageLoader___default.a,
-        MobileSlider: __WEBPACK_IMPORTED_MODULE_7__components_MobileSlider___default.a,
-        UBlockInstagram: __WEBPACK_IMPORTED_MODULE_11__components_UBlockInstagram___default.a,
-        YoutubeVideo: __WEBPACK_IMPORTED_MODULE_9__components_YoutubeVideo___default.a
+        InteriorPano: __WEBPACK_IMPORTED_MODULE_3__components_InteriorPano___default.a,
+        StudiosMap: __WEBPACK_IMPORTED_MODULE_5__components_map_StudiosMap___default.a,
+        BackgroundImageLoader: __WEBPACK_IMPORTED_MODULE_7__components_imageLoaders_BackgroundImageLoader___default.a,
+        MobileSlider: __WEBPACK_IMPORTED_MODULE_4__components_MobileSlider___default.a,
+        UBlockInstagram: __WEBPACK_IMPORTED_MODULE_8__components_UBlockInstagram___default.a,
+        YoutubeVideo: __WEBPACK_IMPORTED_MODULE_6__components_YoutubeVideo___default.a
     },
 
     data: {
@@ -203,41 +110,6 @@ var app = new __WEBPACK_IMPORTED_MODULE_1_vue___default.a({
 
 window.app = app;
 
-// Слайдер видеоблога на странице франшизы
-window.addEventListener('DOMContentLoaded', function () {
-    initSliderWithFancybox('.js-blog-slider', {
-        direction: 'horizontal',
-        slidesPerView: 'auto',
-        centeredSlides: true,
-        spaceBetween: 32,
-        loop: true,
-        freeModeMomentumVelocityRatio: 0.5,
-        pagination: {
-            el: '.js-blog-slider-pagination',
-            clickable: true
-        }
-    });
-
-    new __WEBPACK_IMPORTED_MODULE_2_swiper__["a" /* default */]('.js-socials-slider', {
-        direction: 'horizontal',
-        slidesPerView: 'auto',
-        centeredSlides: true,
-        spaceBetween: 32,
-        loop: true,
-        freeModeMomentumVelocityRatio: 0.5
-    });
-});
-
-// Проверка на ретина дисплей
-window.isHighDensity = function () {
-    var isHighDensity = window.matchMedia && (window.matchMedia('only screen and (min-resolution: 124dpi), only screen and (min-resolution: 1.3dppx), only screen and (min-resolution: 48.8dpcm)').matches || window.matchMedia('only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3)').matches) || window.devicePixelRatio && window.devicePixelRatio > 1.3;
-
-    return function () {
-        return isHighDensity;
-    };
-}();
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
-
 /***/ }),
 
 /***/ "./mossebo-studio-src/assets/js/bootstrap.js":
@@ -256,6 +128,16 @@ __webpack_require__("./node_modules/babel-polyfill/lib/index.js");
 try {
   window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__("./node_modules/jquery/dist/jquery.js");
 } catch (e) {}
+
+/**
+ * We'll load the axios HTTP library which allows us to easily issue requests
+ * to our Laravel back-end. This library automatically handles sending the
+ * CSRF token as a header based on the value of the "XSRF" token cookie.
+ */
+
+window.axios = __webpack_require__("./node_modules/axios/index.js");
+
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -456,21 +338,17 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue")
-}
 var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
 /* script */
 var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue")
 /* template */
-var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-e3c6aefc\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue")
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-e3c6aefc\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue")
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = injectStyle
+var __vue_styles__ = null
 /* scopeId */
-var __vue_scopeId__ = "data-v-e3c6aefc"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -880,6 +758,167 @@ module.exports = Component.exports
         }
     }
 });
+
+/***/ }),
+
+/***/ "./mossebo-studio-src/assets/js/components/plugins/social-slider.js":
+/***/ (function(module, exports) {
+
+
+// Слайдер Социальных сетей
+window.addEventListener('DOMContentLoaded', function () {
+
+    new Swiper('.js-socials-slider', {
+        direction: 'horizontal',
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 32,
+        loop: true,
+        freeModeMomentumVelocityRatio: 0.5
+    });
+});
+
+/***/ }),
+
+/***/ "./mossebo-studio-src/assets/js/components/plugins/video-blog.js":
+/***/ (function(module, exports) {
+
+
+// Слайдер видеоблога на странице франшизы
+window.addEventListener('DOMContentLoaded', function () {
+    initSliderWithFancybox('.js-videoblog-slider', {
+        direction: 'horizontal',
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 32,
+        loop: true,
+        freeModeMomentumVelocityRatio: 0.5,
+        pagination: {
+            el: '.js-videoblog-slider-pagination',
+            clickable: true
+        }
+    });
+});
+
+/***/ }),
+
+/***/ "./mossebo-studio-src/assets/js/global-configs.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_chart_js__ = __webpack_require__("./node_modules/chart.js/src/chart.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_chart_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_swiper__ = __webpack_require__("./node_modules/swiper/dist/js/swiper.esm.bundle.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hchs_vue_charts__ = __webpack_require__("./node_modules/hchs-vue-charts/dist/vue-charts.min.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hchs_vue_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hchs_vue_charts__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox__ = __webpack_require__("./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__fancyapps_fancybox__);
+
+
+
+
+
+window.Swiper = __WEBPACK_IMPORTED_MODULE_1_swiper__["a" /* default */];
+
+function getLocale() {
+    return window.navigator.userLanguage || window.navigator.language;
+}
+
+__WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.defaults.global.defaultFontFamily = 'Montserrat';
+__WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.defaults.global.defaultFontColor = '#979797';
+
+function setChartFontSize() {
+    if (window.innerWidth < 375) {
+        __WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.defaults.global.defaultFontSize = 8;
+    } else if (window.innerWidth < 576) {
+        __WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.defaults.global.defaultFontSize = 10;
+    } else if (window.innerWidth < 768) {
+        __WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.defaults.global.defaultFontSize = 12;
+    } else {
+        __WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.defaults.global.defaultFontSize = 14;
+    }
+}
+
+setChartFontSize();
+
+__WEBPACK_IMPORTED_MODULE_0_chart_js___default.a.pluginService.register({
+    beforeRender: function beforeRender(chart, easing) {
+        var _loop = function _loop(i) {
+            var scale = chart.scales[i];
+
+            if (scale.options.ticks.formatNumber) {
+                scale.ticksAsNumbers.forEach(function (number, index) {
+                    number = new Intl.NumberFormat(getLocale(), { maximumSignificantDigits: 3 }).format(number);
+
+                    scale._ticks[index].label = number.replace(' ', '&thinsp;');
+                });
+            }
+
+            if (scale.options.ticks.hideZero) {
+                scale.ticksAsNumbers.forEach(function (number, index) {
+                    if (number === 0) {
+                        scale._ticks[index].label = '';
+                    }
+                });
+            }
+        };
+
+        for (var i in chart.scales) {
+            _loop(i);
+        }
+    },
+    resize: function resize(chart, easing) {
+        setChartFontSize();
+    }
+});
+
+window.initSliderWithFancybox = function (query, config) {
+    var sliderEl = document.querySelector(query);
+
+    if (!sliderEl) return;
+
+    var slider = new __WEBPACK_IMPORTED_MODULE_1_swiper__["a" /* default */](sliderEl, config);
+
+    var selector = query + ' .swiper-slide:not(.swiper-slide-duplicate) .js-fancybox-true';
+
+    $().fancybox({
+        selector: selector,
+        backFocus: false
+    });
+
+    var $document = $(document);
+
+    $document.on('click', query + ' .js-fancybox-clicker', function (e) {
+        var $this = $(this);
+
+        if ($this.is(selector)) return;
+
+        e.preventDefault();
+
+        $document.find(selector).filter('[data-key="' + this.getAttribute('data-key') + '"]').trigger("click.fb-start", {
+            $trigger: $this
+        });
+    });
+
+    return {
+        slider: slider,
+
+        destroy: function destroy() {
+            $document.off('click', query + ' .js-fancybox-clicker');
+            slider.destroy(true, true);
+        }
+    };
+};
+
+// Проверка на ретина дисплей
+window.isHighDensity = function () {
+    var isHighDensity = window.matchMedia && (window.matchMedia('only screen and (min-resolution: 124dpi), only screen and (min-resolution: 1.3dppx), only screen and (min-resolution: 48.8dpcm)').matches || window.matchMedia('only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3)').matches) || window.devicePixelRatio && window.devicePixelRatio > 1.3;
+
+    return function () {
+        return isHighDensity;
+    };
+}();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -22667,21 +22706,6 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 // module
 exports.push([module.i, "\n.player-box {\n  position: relative;\n  padding: 0;\n}\n.player-box__button {\n    position: absolute;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    top: 50%;\n    left: 50%;\n    margin-top: -35px;\n    margin-left: -35px;\n    width: 70px;\n    height: 70px;\n    padding: 0 0 0 5px;\n    color: #fafbfc;\n    background: #fcc600;\n    border: 1px solid #fcc600;\n    border-radius: 50%;\n    z-index: 9;\n    cursor: pointer;\n    -webkit-box-sizing: border-box;\n            box-sizing: border-box;\n    -webkit-transition: 0.3s;\n    transition: 0.3s;\n    opacity: .8;\n}\n.player-box__icon {\n    width: 30px;\n    height: 32px;\n    fill: #fff;\n}\n.player-box__preview {\n    margin: auto;\n    width: 100%;\n    max-width: 100%;\n    background-size: cover;\n    background-position: 50%;\n    background-repeat: no-repeat;\n}\n.player-box__preview:before {\n      content: \"\";\n      display: block;\n      padding-top: 56.25%;\n}\n.player-box__wrap:hover {\n    cursor: pointer;\n}\n.player-box__wrap:hover .player-box__button {\n    opacity: 1;\n}\n.player-box__video, .player-box__wrap {\n    position: absolute;\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    width: 100%;\n    height: 100%;\n}\n.player-box__video {\n    z-index: 3;\n}\n", "", {"version":3,"sources":["/Users/Urij/code/mossebo-studio/mossebo-studio-src/assets/js/components/YoutubeVideo.vue"],"names":[],"mappings":";AAAA;EACE,mBAAmB;EACnB,WAAW;CAAE;AACb;IACE,mBAAmB;IACnB,qBAAc;IAAd,qBAAc;IAAd,cAAc;IACd,0BAAoB;QAApB,uBAAoB;YAApB,oBAAoB;IACpB,yBAAwB;QAAxB,sBAAwB;YAAxB,wBAAwB;IACxB,SAAS;IACT,UAAU;IACV,kBAAkB;IAClB,mBAAmB;IACnB,YAAY;IACZ,aAAa;IACb,mBAAmB;IACnB,eAAe;IACf,oBAAoB;IACpB,0BAA0B;IAC1B,mBAAmB;IACnB,WAAW;IACX,gBAAgB;IAChB,+BAAuB;YAAvB,uBAAuB;IACvB,yBAAiB;IAAjB,iBAAiB;IACjB,YAAY;CAAE;AAChB;IACE,YAAY;IACZ,aAAa;IACb,WAAW;CAAE;AACf;IACE,aAAa;IACb,YAAY;IACZ,gBAAgB;IAChB,uBAAuB;IACvB,yBAAyB;IACzB,6BAA6B;CAAE;AAC/B;MACE,YAAY;MACZ,eAAe;MACf,oBAAoB;CAAE;AAC1B;IACE,gBAAgB;CAAE;AACpB;IACE,WAAW;CAAE;AACf;IACE,mBAAmB;IACnB,QAAQ;IACR,SAAS;IACT,OAAO;IACP,UAAU;IACV,YAAY;IACZ,aAAa;CAAE;AACjB;IACE,WAAW;CAAE","file":"YoutubeVideo.vue","sourcesContent":[".player-box {\n  position: relative;\n  padding: 0; }\n  .player-box__button {\n    position: absolute;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    top: 50%;\n    left: 50%;\n    margin-top: -35px;\n    margin-left: -35px;\n    width: 70px;\n    height: 70px;\n    padding: 0 0 0 5px;\n    color: #fafbfc;\n    background: #fcc600;\n    border: 1px solid #fcc600;\n    border-radius: 50%;\n    z-index: 9;\n    cursor: pointer;\n    box-sizing: border-box;\n    transition: 0.3s;\n    opacity: .8; }\n  .player-box__icon {\n    width: 30px;\n    height: 32px;\n    fill: #fff; }\n  .player-box__preview {\n    margin: auto;\n    width: 100%;\n    max-width: 100%;\n    background-size: cover;\n    background-position: 50%;\n    background-repeat: no-repeat; }\n    .player-box__preview:before {\n      content: \"\";\n      display: block;\n      padding-top: 56.25%; }\n  .player-box__wrap:hover {\n    cursor: pointer; }\n  .player-box__wrap:hover .player-box__button {\n    opacity: 1; }\n  .player-box__video, .player-box__wrap {\n    position: absolute;\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    width: 100%;\n    height: 100%; }\n  .player-box__video {\n    z-index: 3; }\n"],"sourceRoot":""}]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(true);
-// imports
-
-
-// module
-exports.push([module.i, "\n.instagram-photo[data-v-e3c6aefc] {\n  width: 100%;\n  position: relative;\n  display: block;\n  text-decoration: none;\n  color: #323f4c;\n  border-radius: 5px;\n  margin-bottom: 32px;\n  background-position: center center;\n  background-size: cover;\n}\n.instagram-photo[data-v-e3c6aefc]:before {\n    content: '';\n    display: block;\n    padding-top: 100%;\n}\n.instagram-likes[data-v-e3c6aefc] {\n  position: absolute;\n  bottom: 8px;\n  left: 12px;\n  color: #fff;\n  font-weight: 500;\n  font-size: 20px;\n}\n.instagram-icon[data-v-e3c6aefc] {\n  width: 24px;\n  height: 24px;\n  vertical-align: text-bottom;\n  margin-right: 4px;\n  display: inline-block;\n  fill: #fff;\n}\n", "", {"version":3,"sources":["/Users/Urij/code/mossebo-studio/mossebo-studio-src/assets/js/components/UBlockInstagram.vue"],"names":[],"mappings":";AAAA;EACE,YAAY;EACZ,mBAAmB;EACnB,eAAe;EACf,sBAAsB;EACtB,eAAe;EACf,mBAAmB;EACnB,oBAAoB;EACpB,mCAAmC;EACnC,uBAAuB;CAAE;AACzB;IACE,YAAY;IACZ,eAAe;IACf,kBAAkB;CAAE;AAExB;EACE,mBAAmB;EACnB,YAAY;EACZ,WAAW;EACX,YAAY;EACZ,iBAAiB;EACjB,gBAAgB;CAAE;AAEpB;EACE,YAAY;EACZ,aAAa;EACb,4BAA4B;EAC5B,kBAAkB;EAClB,sBAAsB;EACtB,WAAW;CAAE","file":"UBlockInstagram.vue","sourcesContent":[".instagram-photo {\n  width: 100%;\n  position: relative;\n  display: block;\n  text-decoration: none;\n  color: #323f4c;\n  border-radius: 5px;\n  margin-bottom: 32px;\n  background-position: center center;\n  background-size: cover; }\n  .instagram-photo:before {\n    content: '';\n    display: block;\n    padding-top: 100%; }\n\n.instagram-likes {\n  position: absolute;\n  bottom: 8px;\n  left: 12px;\n  color: #fff;\n  font-weight: 500;\n  font-size: 20px; }\n\n.instagram-icon {\n  width: 24px;\n  height: 24px;\n  vertical-align: text-bottom;\n  margin-right: 4px;\n  display: inline-block;\n  fill: #fff; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -48666,7 +48690,7 @@ if (false) {
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-e3c6aefc\",\"hasScoped\":true,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue":
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-e3c6aefc\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -48738,33 +48762,6 @@ if(false) {
  if(!content.locals) {
    module.hot.accept("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ce0cc380\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./YoutubeVideo.vue", function() {
      var newContent = require("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ce0cc380\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./YoutubeVideo.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/UBlockInstagram.vue");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("146b118a", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./UBlockInstagram.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3c6aefc\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./UBlockInstagram.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });

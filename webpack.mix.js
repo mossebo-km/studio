@@ -35,7 +35,8 @@ mix.js(src + '/assets/js/app.js', publicDir + '/assets/js')
         'babel-polyfill',
         'jquery',
         'vue',
-        'lodash'
+        'lodash',
+        'axios'
     ])
     .version();
 
