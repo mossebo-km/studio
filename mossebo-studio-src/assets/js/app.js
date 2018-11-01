@@ -83,3 +83,12 @@ const app = new Vue({
 
 
 window.app = app
+
+
+
+
+import FormSender from './scripts/FormSender'
+
+;[].forEach.call(document.querySelectorAll('.js-fs'), el => {
+    new FormSender(el)
+})

@@ -31,7 +31,7 @@
                         </div>
 
                         <div class="accent-form__form">
-                            <form class="form">
+                            <form class="form js-fs" action="<?php echo THEME_DIR; ?>/send_form.php">
                                 <div class="form-group mt-16">
                                     <input
                                         class="form-input"
@@ -60,8 +60,14 @@
                                 </div>
 
                                 <div class="form-submit mt-32">
-                                    <button type="submit" class="button button-dark">
-                                        Отправить заявку
+                                    <button type="submit" class="button button-loading button-dark">
+                                        <span class="button-loading__content">
+                                            Отправить заявку
+                                        </span>
+
+                                        <svg class="button-loading__loader">
+                                            <use xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-spinner"></use>
+                                        </svg>
                                     </button>
                                 </div>
 
