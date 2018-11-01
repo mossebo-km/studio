@@ -85,7 +85,6 @@ export default class Alerty extends BlankPlugin {
                 el.innerHTML = button.text
             }
 
-
             let buttonEl = document.createElement('div')
             buttonEl.classList.add('popup__button')
             buttonEl.appendChild(el)

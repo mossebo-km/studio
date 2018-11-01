@@ -40,6 +40,12 @@ get_header();
     </div>
     <!-- Блог основателей конец -->
 
+    <!-- Получите план прибыли -->
+    <div class="mt-64">
+        <?php get_template_part( 'franshising/franchise-plan' ) ?>
+    </div>
+    <!-- Получите план прибыли конец -->
+
     <!-- Франшиза №1 -->
     <div class="mt-64">
         <?php get_template_part( 'franshising/franchise-top' ) ?>
@@ -71,7 +77,7 @@ get_header();
     <!-- О маркете конец -->
 
     <!-- Независимость от сезонности -->
-    <div class="mt-64">
+    <div class="mt-80">
         <?php get_template_part( 'franshising/seasonality-chart' ) ?>
     </div>
     <!-- Независимость от сезонности конец -->

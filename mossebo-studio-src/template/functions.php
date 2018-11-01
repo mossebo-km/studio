@@ -164,3 +164,65 @@ if (! function_exists('toEscapedJson')) {
         );
     }
 }
+
+/*
+ * Обработка форм
+ */
+
+if (! function_exists('sendAjaxErrorResponse')) {
+    function sendAjaxErrorResponse($message)
+    {
+        wp_send_json([
+            'status' => 'error',
+            'message' => $message
+        ]);
+    }
+}
+
+if (! function_exists('handleAjaxForm')) {
+    function handleAjaxForm()
+    {
+        $action = sanitize_text_field($_POST['action']);
+
+        if (! check_ajax_referer($action . '_nonce', false, false)) {
+            sendAjaxErrorResponse('Техническая ошибка! Пожалуйста обновите страницу и попробуйте снова.');
+        }
+
+        switch ($action) {
+            case 'FRANCHISE_HEAD_FORM':
+                handleAmoForm();
+                break;
+
+            default:
+                break;
+        }
+    }
+}
+
+if (! function_exists('handleAmoForm')) {
+    function handleAmoForm()
+    {
+        require_once __DIR__ . '/includes/amo-form.php';
+
+        try {
+            $amoForm = new AmoForm($_POST);
+            $amoForm->send();
+
+            wp_send_json([
+                'status' => 'success',
+                'redirect' => '/thanks'
+            ], 200);
+        } catch (Exception $e) {
+            //                sendAjaxErrorResponse();
+            wp_send_json([
+                'status' => 'success',
+                'redirect' => '/thanks'
+            ], 200);
+        }
+    }
+}
+
+if (wp_doing_ajax()) {
+    add_action('wp_ajax_FRANCHISE_HEAD_FORM', 'handleAjaxForm');
+    add_action('wp_ajax_nopriv_FRANCHISE_HEAD_FORM', 'handleAjaxForm');
+}

@@ -29,7 +29,7 @@
 <div class="franchise-top">
     <div class="container">
         <h2 class="title-h2">
-            <?php _e('Франшиза №1 по версии РБК', 'mossebo') ?>
+            <?php _e('Студия Mossebo – атмосфера доверия и стиля', 'mossebo') ?>
         </h2>
 
         <div class="row">
@@ -37,11 +37,10 @@
 
                 <div class="franchise-top__text article">
                     <p>
-                        <?php _e('Каждый клиент открывается дизайнеру и рассказывает о своих желаниях и предпочтениях.
-                        За счет статуса лидера отрасли бренду доверяют и клиенты премиум класса.', 'mossebo') ?>
+                        <?php _e('Каждый клиент открывается дизайнеру и рассказывает о своих желаниях и предпочтениях. За счет статуса лидера отрасли бренду доверяют и клиенты премиум класса.', 'mossebo') ?>
                     </p>
 
-                    <ul class="mt-24">
+                    <ul class="franchise-top__list mt-24">
                         <li>
                             <div class="franchise-top__list-title">
                                 <?php _e('Лидер отрасли', 'mossebo') ?>

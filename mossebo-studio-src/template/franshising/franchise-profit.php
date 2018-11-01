@@ -18,6 +18,10 @@
                 <strong>48&thinsp;025</strong>&nbsp;BYN
             </div>
 
+            <div class="franchise-profit__info">
+                * Ежемесячная прибыль каждой студии через 1,5 года при соблюдении стандартов обслуживания в любом городе
+            </div>
+
         </div>
     </div>
 </div>

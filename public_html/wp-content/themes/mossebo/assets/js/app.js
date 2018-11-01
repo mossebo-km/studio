@@ -1653,7 +1653,7 @@ var Request = function () {
             this.currentUrl = window.location.href;
 
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.request(this.config).then(function (response) {
-                _this2._setStatus('success');
+                // this._setStatus('success')
                 _this2._handleResponse(response);
             }).catch(function (error) {
                 if (__WEBPACK_IMPORTED_MODULE_1_axios___default.a.isCancel(error)) return;
@@ -1703,6 +1703,8 @@ var Request = function () {
         value: function _handleResponse(response) {
             this.response = response;
 
+            console.log(response);
+
             var data = response.data;
 
             if ((typeof data === 'undefined' ? 'undefined' : _typeof(data)) !== 'object' || data === null) {
@@ -1713,7 +1715,7 @@ var Request = function () {
                 var redirect = data.redirect;
 
                 if (redirect.indexOf('/') === 0) {
-                    redirect = '/' + __WEBPACK_IMPORTED_MODULE_0__core_index__["a" /* default */].trim(redirect, '/');
+                    redirect = '/' + _.trim(redirect, '/');
                 }
 
                 window.location.href = redirect;
@@ -1986,7 +1988,7 @@ var Core = {
     translate: function translate(identif) {
         var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
-        return _.get(window.mossebo.translates, identif);
+        return _.get(window.translates, identif);
     },
     getLang: function getLang() {
         return 'ru';

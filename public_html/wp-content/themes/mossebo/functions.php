@@ -165,31 +165,64 @@ if (! function_exists('toEscapedJson')) {
     }
 }
 
-function FRANCHISE_HEAD_FORM_processing_function(){
-    check_ajax_referer('FRANCHISE_HEAD_FORM_nonce');
+/*
+ * Обработка форм
+ */
 
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-
-    if (empty($first_name) || empty($last_name)) {
-        echo json_encode([
-            'success' => 0,
-            'message' => 'Вы не указали имя или фамилию.'
+if (! function_exists('sendAjaxErrorResponse')) {
+    function sendAjaxErrorResponse($message)
+    {
+        wp_send_json([
+            'status' => 'error',
+            'message' => $message
         ]);
-
-        wp_die();
     }
-
-    echo json_encode([
-        'success' => 1,
-        'message' => 'Все окей.'
-    ]);
-
-    wp_die();
 }
 
-//если вы хотите принимать запрос только от авторизованных пользователей, тогда добавьте этот хук
-add_action('wp_ajax_FRANCHISE_HEAD_FORM', 'FRANCHISE_HEAD_FORM_processing_function');
-//если вы хотите получить запрос от неавторизованных пользователей, тогда добавьте этот хук
-add_action('wp_ajax_nopriv_FRANCHISE_HEAD_FORM', 'FRANCHISE_HEAD_FORM_processing_function');
-//Если хотите, чтобы оба вариант работали, тогда оставьте оба хука
+if (! function_exists('handleAjaxForm')) {
+    function handleAjaxForm()
+    {
+        $action = sanitize_text_field($_POST['action']);
+
+        if (! check_ajax_referer($action . '_nonce', false, false)) {
+            sendAjaxErrorResponse('Техническая ошибка! Пожалуйста обновите страницу и попробуйте снова.');
+        }
+
+        switch ($action) {
+            case 'FRANCHISE_HEAD_FORM':
+                handleAmoForm();
+                break;
+
+            default:
+                break;
+        }
+    }
+}
+
+if (! function_exists('handleAmoForm')) {
+    function handleAmoForm()
+    {
+        require_once __DIR__ . '/includes/amo-form.php';
+
+        try {
+            $amoForm = new AmoForm($_POST);
+            $amoForm->send();
+
+            wp_send_json([
+                'status' => 'success',
+                'redirect' => '/thanks'
+            ], 200);
+        } catch (Exception $e) {
+            //                sendAjaxErrorResponse();
+            wp_send_json([
+                'status' => 'success',
+                'redirect' => '/thanks'
+            ], 200);
+        }
+    }
+}
+
+if (wp_doing_ajax()) {
+    add_action('wp_ajax_FRANCHISE_HEAD_FORM', 'handleAjaxForm');
+    add_action('wp_ajax_nopriv_FRANCHISE_HEAD_FORM', 'handleAjaxForm');
+}

@@ -2,7 +2,7 @@ import Alerty from '../Alerty'
 
 let Core = {
     translate(identif, data = {}) {
-        return _.get(window.mossebo.translates, identif)
+        return _.get(window.translates, identif)
     },
 
     getLang() {
