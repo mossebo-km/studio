@@ -49966,7 +49966,7 @@ var render = function() {
             },
             [
               _c("div", { staticClass: "instagram-likes" }, [
-                _c("svg", { staticClass: "symbol-icon instagram-icon" }, [
+                _c("svg", { staticClass: "instagram-icon" }, [
                   _c("use", {
                     attrs: {
                       "xlink:href":
