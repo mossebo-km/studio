@@ -50079,7 +50079,7 @@ var render = function() {
                       _c("use", {
                         attrs: {
                           "xlink:href":
-                            "<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-spinner"
+                            "/wp-content/themes/mossebo/assets/images/icons.svg#symbol-spinner"
                         }
                       })
                     ])

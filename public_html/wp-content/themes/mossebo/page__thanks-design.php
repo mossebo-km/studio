@@ -78,4 +78,10 @@ get_header();
     </div>
 </div>
 
+<div class="mt-48">
+    <div class="container">
+        <?php get_template_part( 'interior-design/blog-last-post-4' ) ?>
+    </div>
+</div>
+
 <?php get_footer(); ?>
