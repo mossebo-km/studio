@@ -228,16 +228,24 @@
 
     &--dark &__checkmark {
         background-color: $color-text-primary;
-        border-color: $color-primary;
+        border-color: transparent;
 
         &::after {
             border-color: $color-primary;
         }
     }
 
+    &--dark:hover &__input ~ &__checkmark {
+        border-color: transparent;
+    }
+
     &--dark &__input:checked ~ &__checkmark {
         background-color: $color-text-primary;
-        border-color: $color-primary;
+        border-color: transparent;
+    }
+
+    &--white-check &__checkmark::after {
+        border-color: $color-ui;
     }
 }
 
@@ -351,13 +359,19 @@
 
 .accent-form {
     background-color: $color-primary;
-    border-radius: $border-radius;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, .14);
     padding: 24px 24px 32px;
     text-align: center;
     display: flex;
     align-items: center;
     height: 100%;
+
+    &--transparent {
+        background-color: rgba(255, 255, 255, .95);
+    }
+
+    &--empty {
+        background-color: transparent;
+    }
 
     &__content {
         width: 100%;

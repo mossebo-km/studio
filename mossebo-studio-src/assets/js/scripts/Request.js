@@ -139,8 +139,6 @@ export default class Request {
     _handleResponse(response) {
         this.response = response
 
-        console.log(response)
-
         const data = response.data
 
         if (typeof data !== 'object' || data === null) {

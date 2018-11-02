@@ -23,12 +23,6 @@
     $query1 = new WP_Query($args1);
     ?>
     <div class="container">
-        <div class="title-h2">
-            <?php _e('Блог', 'mossebo') ?>
-        </div>
-        <div class="title-sub mb-32">
-            <?php _e('Авторские статьи от дизайнеров Mossebo', 'mossebo') ?>
-        </div>
         <div class="row">
             <div class="col-6">
                 <?php

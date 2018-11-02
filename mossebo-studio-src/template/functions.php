@@ -205,8 +205,12 @@ if (! function_exists('handleAjaxForm')) {
         }
 
         switch ($action) {
-            case 'FRANCHISE_HEAD_FORM':
+            case 'FRANCHISE_FORM':
                 handleAmoForm('/thanks-franchise');
+                break;
+
+            case 'SUBSCRIBE_FORM':
+                handleSubscribe();
                 break;
 
             default:
@@ -234,9 +238,42 @@ if (! function_exists('handleAmoForm')) {
     }
 }
 
-if (wp_doing_ajax()) {
-    add_action('wp_ajax_FRANCHISE_HEAD_FORM', 'handleAjaxForm');
-    add_action('wp_ajax_nopriv_FRANCHISE_HEAD_FORM', 'handleAjaxForm');
+if (! function_exists('handleSubscribe')) {
+    function handleSubscribe()
+    {
+        require_once __DIR__ . '/includes/mossebo-api.php';
+
+        $request = new MosseboServicesRequest();
+
+        $request->put('subscribe', [
+            'email' => sanitize_text_field($_POST['email']),
+            'type'  => sanitize_text_field($_POST['type']),
+        ]);
+
+        $result = $request->send();
+
+        var_dump($result);
+
+        wp_send_json([
+            'status' => 'success',
+            'message' => 'Спасибо! Чувствуйте себя хорошо, пожалуйста!'
+        ], 200);
+    }
 }
 
+if (wp_doing_ajax()) {
+    add_action('wp_ajax_FRANCHISE_FORM', 'handleAjaxForm');
+    add_action('wp_ajax_nopriv_FRANCHISE_FORM', 'handleAjaxForm');
+
+    add_action('wp_ajax_SUBSCRIBE_FORM', 'handleAjaxForm');
+    add_action('wp_ajax_nopriv_SUBSCRIBE_FORM', 'handleAjaxForm');
+}
+
+if (! function_exists('currentUrl')) {
+    function currentUrl()
+    {
+        global $wp;
+        return home_url( $wp->request );
+    }
+}
 

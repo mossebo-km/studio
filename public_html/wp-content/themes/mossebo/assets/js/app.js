@@ -1542,7 +1542,7 @@ var FormSender = function (_FormInputs) {
             new __WEBPACK_IMPORTED_MODULE_2__Request__["a" /* default */]('post', this.url, new FormData(this.el)).success(function () {
                 return _this5.applyToFields('reset');
             }).fail(function (response) {
-                if ('data' in response && 'errors' in response.data) {
+                if (response && 'data' in response && 'errors' in response.data) {
                     _this5.showErrors(response.data.errors);
                 }
             }).any(function () {
@@ -1890,8 +1890,6 @@ var Request = function () {
         key: '_handleResponse',
         value: function _handleResponse(response) {
             this.response = response;
-
-            console.log(response);
 
             var data = response.data;
 

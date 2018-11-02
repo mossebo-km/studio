@@ -291,7 +291,7 @@ export default class FormSender extends FormInputs {
         new Request('post', this.url, new FormData(this.el))
             .success(() => this.applyToFields('reset'))
             .fail(response => {
-                if ('data' in response && 'errors' in response.data) {
+                if (response && 'data' in response && 'errors' in response.data) {
                     this.showErrors(response.data.errors)
                 }
             })
