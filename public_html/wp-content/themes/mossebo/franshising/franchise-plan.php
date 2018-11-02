@@ -1,7 +1,7 @@
 <div class="container">
-    <div class="franchise-plan">
-        <div class="franchise-plan__content">
-            <div class="franchise-plan__left">
+    <div class="franchise-plan form-row">
+        <div class="form-row__content">
+            <div class="form-row__left">
                 <h2 class="title-h2">
                     <?php _e('Получите план прибыли и инвестиций', 'mossebo'); ?>
                 </h2>
@@ -17,7 +17,7 @@
                 >
             </div>
 
-            <div class="franchise-plan__right">
+            <div class="form-row__right">
                 <?php get_template_part( 'franshising/franchise-form' ) ?>
             </div>
         </div>

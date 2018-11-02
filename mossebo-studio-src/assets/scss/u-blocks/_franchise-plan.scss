@@ -1,41 +1,11 @@
 .franchise-plan {
     text-align: left;
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        padding: 40px 0;
-        max-width: 375px;
-        margin: 0 auto;
-    }
-
-    &__right {
-        margin-top: 40px;
-        position: relative;
-        z-index: 2;
-    }
-
     &__image {
         display: none;
     }
 
     @include media-breakpoint-up(md) {
-        &__content {
-            padding: 32px 0 24px;
-            max-width: none;
-            flex-direction: row;
-        }
-
-        &__left {
-            width: calc(100% - 375px);
-            padding-right: 32px;
-        }
-
-        &__right {
-            width: 375px;
-            margin-top: 0;
-        }
-
         &__image {
             display: block;
             max-width: none;
@@ -46,18 +16,6 @@
     }
 
     @include media-breakpoint-up(lg) {
-        &__content {
-            padding: 32px 0 80px;
-        }
-
-        &__left {
-            width: calc(100% - 440px);
-        }
-
-        &__right {
-            width: 440px;
-        }
-
         &__image {
             width: auto;
             transform: translate3d(-10%, -10%, 0);

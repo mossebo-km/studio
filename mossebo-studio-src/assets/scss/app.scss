@@ -10,23 +10,30 @@
 @import "variables/icons";
 
 
-@import "ui/header";
-@import "ui/footer";
 @import "ui/article";
 @import "ui/buttons";
 @import "ui/chart-list";
-@import "ui/icon-label";
-@import "ui/links";
-@import "ui/tabs";
-@import "ui/images";
+@import "ui/footer";
 @import "ui/form-elements";
+@import "ui/header";
+@import "ui/icon-label";
+@import "ui/images";
+@import "ui/instagram-title-link";
+@import "ui/links";
+@import "ui/loading-wrap";
+@import "ui/tabs";
+@import "ui/_watch-all-button";
+
 
 @import "u-blocks/breadcrumbs";
 @import "u-blocks/audience-socials-slider";
 @import "u-blocks/audience-coverage-chart";
 @import "u-blocks/brands";
 @import "u-blocks/company-important-info";
+@import "u-blocks/form-row";
 @import "u-blocks/franchise-head";
+@import "u-blocks/franchise-interiors-pano";
+@import "u-blocks/franchise-open";
 @import "u-blocks/franchise-plan";
 @import "u-blocks/franchise-presentation";
 @import "u-blocks/franchise-pricing";
@@ -41,6 +48,7 @@
 @import "u-blocks/market-about";
 @import "u-blocks/media-about-us";
 @import "u-blocks/single-style";
+@import "u-blocks/studio-audience";
 @import "u-blocks/studios-map";
 @import "u-blocks/videoblog";
 @import "u-blocks/why-we";
@@ -51,6 +59,7 @@
 
 @import "plugins/swiper";
 @import "plugins/fancybox";
+@import "plugins/youtube-video";
 
 @import "animations";
 
@@ -61,3 +70,4 @@
 @import "pages/archives-project";
 @import "pages/single-blog";
 @import "pages/archives-blog";
+@import "pages/thanks-franchise";

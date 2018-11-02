@@ -1,7 +1,7 @@
 <div class="media-about-us">
     <div class="container">
         <h2 class="title-h2">
-            <?php _e('СМИ о нас', 'mossebo') ?>
+            <?php _e('Mossebo в медиа и СМИ', 'mossebo') ?>
         </h2>
 
         <div class="media-about-us__container">

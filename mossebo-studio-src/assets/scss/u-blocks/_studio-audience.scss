@@ -1,0 +1,30 @@
+.studio-audience {
+    &__title {
+        max-width: 730px;
+    }
+
+    &__list {
+        margin-right: -32px;
+
+        li {
+            display: inline-block;
+            padding-right: 32px;
+        }
+    }
+
+    &__chart {
+        margin-top: 32px;
+    }
+
+    @include media-breakpoint-up(md) {
+        &__list li {
+            display: list-item;
+        }
+
+        &__chart {
+            margin-top: 0;
+        }
+    }
+}
+
+

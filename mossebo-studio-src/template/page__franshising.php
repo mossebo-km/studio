@@ -64,6 +64,12 @@ get_header();
     </div>
     <!-- Прибыль с франшизы конец -->
 
+    <!-- Портфолио -->
+    <div class="mt-64">
+        <?php get_template_part( 'franshising/franchise-portfolio' ) ?>
+    </div>
+    <!-- Портфолио конец -->
+
     <!-- Единый фирменный стиль -->
     <div class="mt-64">
         <?php get_template_part( 'franshising/single-style' ) ?>
@@ -106,6 +112,12 @@ get_header();
     </div>
     <!-- Обучение франчайзи конец -->
 
+    <!-- Аудитория социальных сетей -->
+    <div class="mt-64">
+        <?php get_template_part( 'franshising/audience-socials-slider' ) ?>
+    </div>
+    <!-- Аудитория социальных сетей конец -->
+
     <!-- Друзья -->
     <div class="mt-64">
         <?php get_template_part( 'franshising/friends' ) ?>
@@ -118,12 +130,6 @@ get_header();
     </div>
     <!-- Сми о нас конец -->
 
-    <!-- Аудитория социальных сетей -->
-    <div class="mt-64">
-        <?php get_template_part( 'franshising/audience-socials-slider' ) ?>
-    </div>
-    <!-- Аудитория социальных сетей конец -->
-
     <!-- График охвата аудитории -->
     <div class="mt-64">
         <?php get_template_part( 'franshising/audience-coverage-chart' ) ?>
@@ -135,6 +141,12 @@ get_header();
         <?php get_template_part( 'franshising/company-important-info' ) ?>
     </div>
     <!-- Важное о компании конец -->
+
+    <!-- Откройте франшизу Mossebo уже сейчас -->
+    <div class="mt-64">
+        <?php get_template_part( 'franshising/franchise-open' ) ?>
+    </div>
+    <!-- Откройте франшизу Mossebo уже сейчас конец -->
 
 </main>
 

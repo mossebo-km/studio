@@ -1,8 +1,8 @@
-<div class="franchise-head">
+<div class="franchise-head form-row">
 
     <div class="container">
-        <div class="franchise-head__content">
-            <div class="franchise-head__left">
+        <div class="form-row__content">
+            <div class="form-row__left">
                 <h1 class="franchise-head__title title-h1">
                     Дизайн интерьера в Cанкт&#8209;Петербурге
                 </h1>
@@ -18,7 +18,7 @@
                 </div>
             </div>
 
-            <div class="franchise-head__right">
+            <div class="form-row__right">
                 <div class="franchise-head__form">
                     <?php get_template_part( 'franshising/franchise-form' ) ?>
                 </div>

@@ -1,29 +1,31 @@
 <?php
+if (! function_exists('getFranchiseTopImages')) {
     function getFranchiseTopImages()
     {
         return [
             [
-                "preview"   => THEME_DIR. "/assets/images/interior/bulbasaur__preview.jpg",
-                "src"       => THEME_DIR. "/assets/images/interior/bulbasaur.jpg",
+                "preview" => THEME_DIR . "/assets/images/interior/bulbasaur__preview.jpg",
+                "src" => THEME_DIR . "/assets/images/interior/bulbasaur.jpg",
                 "itemClass" => 'col-lg-6'
             ],
             [
-                "preview"   => THEME_DIR. "/assets/images/interior/charmander__preview.jpg",
-                "src"       => THEME_DIR. "/assets/images/interior/charmander.jpg",
+                "preview" => THEME_DIR . "/assets/images/interior/charmander__preview.jpg",
+                "src" => THEME_DIR . "/assets/images/interior/charmander.jpg",
                 "itemClass" => 'col-lg-6'
             ],
             [
-                "preview"   => THEME_DIR. "/assets/images/interior/pikachu__preview.jpg",
-                "src"       => THEME_DIR. "/assets/images/interior/pikachu.jpg",
+                "preview" => THEME_DIR . "/assets/images/interior/pikachu__preview.jpg",
+                "src" => THEME_DIR . "/assets/images/interior/pikachu.jpg",
                 "itemClass" => 'd-md-none d-lg-block col-lg-6'
             ],
             [
-                "preview"   => THEME_DIR. "/assets/images/interior/squirtle__preview.jpg",
-                "src"       => THEME_DIR. "/assets/images/interior/squirtle.jpg",
+                "preview" => THEME_DIR . "/assets/images/interior/squirtle__preview.jpg",
+                "src" => THEME_DIR . "/assets/images/interior/squirtle.jpg",
                 "itemClass" => 'd-md-none d-lg-block col-lg-6'
             ]
         ];
     }
+}
 ?>
 
 <div class="franchise-top">
@@ -73,7 +75,7 @@
 
                 <div class="franchise-top__images">
                     <mobile-slider
-                        js-class="js-slider-top-1"
+                        js-class="js-slider-top"
                         breakpoint="md"
                         class="row"
                     >
@@ -84,7 +86,7 @@
                                     href="<?= $image['src'] ?>"
                                     class="image-preview image-preview--3-2 block-ui block-ui--with-hover"
                                     style="background-image: url(<?= $image['preview'] ?>);"
-                                    data-fancybox="gallery"
+                                    data-fancybox="franchise-top-gallery"
                                 ></a>
                             </div>
 

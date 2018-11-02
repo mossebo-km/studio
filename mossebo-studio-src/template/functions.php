@@ -165,6 +165,22 @@ if (! function_exists('toEscapedJson')) {
     }
 }
 
+if (! function_exists('_get_field')) {
+    function _get_field($key)
+    {
+        return '#';
+        return get_field($key, 19);
+    }
+}
+
+if (! function_exists('_the_field')) {
+    function _the_field($key)
+    {
+        echo _get_field($key);
+    }
+}
+
+
 /*
  * Обработка форм
  */
@@ -190,7 +206,7 @@ if (! function_exists('handleAjaxForm')) {
 
         switch ($action) {
             case 'FRANCHISE_HEAD_FORM':
-                handleAmoForm();
+                handleAmoForm('/thanks-franchise');
                 break;
 
             default:
@@ -200,25 +216,21 @@ if (! function_exists('handleAjaxForm')) {
 }
 
 if (! function_exists('handleAmoForm')) {
-    function handleAmoForm()
+    function handleAmoForm($redirectTo)
     {
         require_once __DIR__ . '/includes/amo-form.php';
 
         try {
             $amoForm = new AmoForm($_POST);
             $amoForm->send();
-
-            wp_send_json([
-                'status' => 'success',
-                'redirect' => '/thanks'
-            ], 200);
         } catch (Exception $e) {
             //                sendAjaxErrorResponse();
-            wp_send_json([
-                'status' => 'success',
-                'redirect' => '/thanks'
-            ], 200);
         }
+
+        wp_send_json([
+            'status' => 'success',
+            'redirect' => $redirectTo
+        ], 200);
     }
 }
 
@@ -226,3 +238,5 @@ if (wp_doing_ajax()) {
     add_action('wp_ajax_FRANCHISE_HEAD_FORM', 'handleAjaxForm');
     add_action('wp_ajax_nopriv_FRANCHISE_HEAD_FORM', 'handleAjaxForm');
 }
+
+

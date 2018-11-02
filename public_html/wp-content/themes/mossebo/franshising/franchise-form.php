@@ -19,6 +19,7 @@
                         type="text"
                         name="name"
                         placeholder="Ваше имя"
+                        required
                     >
                 </div>
 
@@ -28,6 +29,7 @@
                         type="tel"
                         name="phone"
                         placeholder="Номер телефона"
+                        required
                     >
                 </div>
 
@@ -37,14 +39,15 @@
                         type="email"
                         name="email"
                         placeholder="E-mail"
+                        required
                     >
                 </div>
 
                 <div class="form-submit mt-32">
                     <button type="submit" class="button button-loading button-dark">
-                                        <span class="button-loading__content">
-                                            Отправить заявку
-                                        </span>
+                        <span class="button-loading__content">
+                            Отправить заявку
+                        </span>
 
                         <svg class="button-loading__loader">
                             <use xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-spinner"></use>
@@ -64,8 +67,8 @@
                         <span class="form-checkbox__checkmark"></span>
 
                         <span class="form-checkbox__value">
-                                            Согласен на обработку персональных данных и принимаю <a class="link link--inverse" href="/privacy-policy" target="_blank">политику конфиденциальности</a>
-                                        </span>
+                            Согласен на обработку персональных данных и принимаю <a class="link link--inverse" href="/privacy-policy" target="_blank">политику конфиденциальности</a>
+                        </span>
                     </label>
                 </div>
             </form>

@@ -195,6 +195,54 @@ module.exports = Component.exports
 
 /***/ }),
 
+/***/ "./mossebo-studio-src/assets/js/components/Loading.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./mossebo-studio-src/assets/js/components/Loading.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-6a268978\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/Loading.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "mossebo-studio-src/assets/js/components/Loading.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-6a268978", Component.options)
+  } else {
+    hotAPI.reload("data-v-6a268978", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
 /***/ "./mossebo-studio-src/assets/js/components/LoadingIcon.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -391,10 +439,6 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ce0cc380\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/YoutubeVideo.vue")
-}
 var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
 /* script */
 var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./mossebo-studio-src/assets/js/components/YoutubeVideo.vue")
@@ -403,7 +447,7 @@ var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/templa
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = injectStyle
+var __vue_styles__ = null
 /* scopeId */
 var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
@@ -1536,6 +1580,98 @@ var FormSender = function (_FormInputs) {
 
 /* harmony default export */ __webpack_exports__["a"] = (FormSender);
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./mossebo-studio-src/assets/js/scripts/InstagramData.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__base_BlankPlugin__ = __webpack_require__("./mossebo-studio-src/assets/js/scripts/base/BlankPlugin.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+var InstagramDataLoader = function (_BlankPlugin) {
+    _inherits(InstagramDataLoader, _BlankPlugin);
+
+    function InstagramDataLoader() {
+        _classCallCheck(this, InstagramDataLoader);
+
+        var _this = _possibleConstructorReturn(this, (InstagramDataLoader.__proto__ || Object.getPrototypeOf(InstagramDataLoader)).call(this));
+
+        _this.loaded = {};
+        return _this;
+    }
+
+    _createClass(InstagramDataLoader, [{
+        key: 'makeKey',
+        value: function makeKey(profileName, count) {
+            return profileName + '-' + count;
+        }
+    }, {
+        key: 'getData',
+        value: function getData(profileName, count, callback) {
+            var key = this.makeKey(profileName, count);
+
+            if (key in this.loaded) {
+                callback(this.loaded[key]);
+
+                return;
+            }
+
+            this.on(key, function (data) {
+                callback(data);
+            });
+
+            this.load({
+                profile: profileName,
+                count: count
+            });
+        }
+    }, {
+        key: 'setData',
+        value: function setData(profileName, images) {
+            var key = this.makeKey(profileName, images.length);
+
+            this.loaded[key] = images;
+            this.trigger(key, images);
+        }
+    }, {
+        key: 'load',
+        value: function load(params) {
+            var script = document.createElement('script');
+
+            params = Object.keys(params).reduce(function (acc, key) {
+                acc.push(key + '=' + encodeURIComponent(params[key]));
+
+                return acc;
+            }, []);
+
+            script.src = '//mossebo.market/api/instagram?callback=showInstagramWidget&' + params.join('&');
+            script.type = 'text/javascript';
+            script.async = true;
+
+            document.body.appendChild(script);
+        }
+    }]);
+
+    return InstagramDataLoader;
+}(__WEBPACK_IMPORTED_MODULE_0__base_BlankPlugin__["a" /* default */]);
+
+window.showInstagramWidget = function (data) {
+    instagramDataLoader.setData(data.profile, data.images);
+};
+
+var instagramDataLoader = new InstagramDataLoader();
+
+/* harmony default export */ __webpack_exports__["a"] = (instagramDataLoader);
 
 /***/ }),
 
@@ -7931,6 +8067,63 @@ function getRandomInt(min, max) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./mossebo-studio-src/assets/js/components/Loading.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__LoadingIcon__ = __webpack_require__("./mossebo-studio-src/assets/js/components/LoadingIcon.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__LoadingIcon___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__LoadingIcon__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'loading',
+
+    components: {
+        LoadingIcon: __WEBPACK_IMPORTED_MODULE_0__LoadingIcon___default.a
+    },
+
+    props: {
+        loading: {
+            type: Boolean,
+            default: false
+        },
+        sticky: {
+            type: Boolean,
+            default: false
+        },
+        noOverlay: {
+            type: Boolean,
+            default: false
+        },
+        noMinHeight: {
+            type: Boolean,
+            default: false
+        }
+    }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./mossebo-studio-src/assets/js/components/LoadingIcon.vue":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8183,6 +8376,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Loading__ = __webpack_require__("./mossebo-studio-src/assets/js/components/Loading.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Loading___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Loading__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scripts_InstagramData__ = __webpack_require__("./mossebo-studio-src/assets/js/scripts/InstagramData.js");
 //
 //
 //
@@ -8207,44 +8403,42 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "UBlockInstagram",
+
+    components: {
+        Loading: __WEBPACK_IMPORTED_MODULE_0__Loading___default.a
+    },
+
+    props: {
+        profile: {
+            type: String
+        },
+        count: {
+            type: Number,
+            default: 8
+        }
+    },
+
     data: function data() {
         return {
-            photos: [{
-                link: 'https://www.instagram.com/p/BphdfvKHLXs/',
-                src: 'https://scontent-arn2-1.cdninstagram.com/vp/1db9f6fc949bcd2e89410d1ebbf7394f/5C6452AE/t51.2885-15/e35/s1080x1080/43820575_113725412877163_6767113257458388321_n.jpg',
-                likes: 6423
-            }, {
-                link: 'https://www.instagram.com/p/BphdfvKHLXs/',
-                src: 'https://scontent-arn2-1.cdninstagram.com/vp/1db9f6fc949bcd2e89410d1ebbf7394f/5C6452AE/t51.2885-15/e35/s1080x1080/43820575_113725412877163_6767113257458388321_n.jpg',
-                likes: 523423
-            }, {
-                link: 'https://www.instagram.com/p/BphdfvKHLXs/',
-                src: 'https://scontent-arn2-1.cdninstagram.com/vp/1db9f6fc949bcd2e89410d1ebbf7394f/5C6452AE/t51.2885-15/e35/s1080x1080/43820575_113725412877163_6767113257458388321_n.jpg',
-                likes: 24523
-            }, {
-                link: 'https://www.instagram.com/p/BphdfvKHLXs/',
-                src: 'https://scontent-arn2-1.cdninstagram.com/vp/1db9f6fc949bcd2e89410d1ebbf7394f/5C6452AE/t51.2885-15/e35/s1080x1080/43820575_113725412877163_6767113257458388321_n.jpg',
-                likes: 234234
-            }, {
-                link: 'https://www.instagram.com/p/BphdfvKHLXs/',
-                src: 'https://scontent-arn2-1.cdninstagram.com/vp/1db9f6fc949bcd2e89410d1ebbf7394f/5C6452AE/t51.2885-15/e35/s1080x1080/43820575_113725412877163_6767113257458388321_n.jpg',
-                likes: 23433
-            }, {
-                link: 'https://www.instagram.com/p/BphdfvKHLXs/',
-                src: 'https://scontent-arn2-1.cdninstagram.com/vp/1db9f6fc949bcd2e89410d1ebbf7394f/5C6452AE/t51.2885-15/e35/s1080x1080/43820575_113725412877163_6767113257458388321_n.jpg',
-                likes: 23421
-            }, {
-                link: 'https://www.instagram.com/p/BphdfvKHLXs/',
-                src: 'https://scontent-arn2-1.cdninstagram.com/vp/1db9f6fc949bcd2e89410d1ebbf7394f/5C6452AE/t51.2885-15/e35/s1080x1080/43820575_113725412877163_6767113257458388321_n.jpg',
-                likes: 61423
-            }, {
-                link: 'https://www.instagram.com/p/BphdfvKHLXs/',
-                src: 'https://scontent-arn2-1.cdninstagram.com/vp/1db9f6fc949bcd2e89410d1ebbf7394f/5C6452AE/t51.2885-15/e35/s1080x1080/43820575_113725412877163_6767113257458388321_n.jpg',
-                likes: 67423
-            }]
+            loading: true,
+            photos: []
         };
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        __WEBPACK_IMPORTED_MODULE_1__scripts_InstagramData__["a" /* default */].getData(this.profile, this.count, function (images) {
+            _this.photos = images;
+
+            _this.$nextTick(function () {
+                return _this.loading = false;
+            });
+        });
     }
 });
 
@@ -8313,7 +8507,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             return '//www.youtube.com/embed/' + this.videoId + '?enablejsapi=1&rel=0&playsinline=1&autoplay=1&showinfo=0&autohide=1&modestbranding=1';
         },
         videoThumb: function videoThumb() {
-            console.log('//img.youtube.com/vi/' + this.videoId + '/hqdefault.jpg');
             return '//img.youtube.com/vi/' + this.videoId + '/hqdefault.jpg';
         }
     }
@@ -23803,104 +23996,6 @@ module.exports = {
 	"yellow": [255, 255, 0],
 	"yellowgreen": [154, 205, 50]
 };
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ce0cc380\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/YoutubeVideo.vue":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(true);
-// imports
-
-
-// module
-exports.push([module.i, "\n.player-box {\n  position: relative;\n  padding: 0;\n}\n.player-box__button {\n    position: absolute;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    top: 50%;\n    left: 50%;\n    margin-top: -35px;\n    margin-left: -35px;\n    width: 70px;\n    height: 70px;\n    padding: 0 0 0 5px;\n    color: #fafbfc;\n    background: #fcc600;\n    border: 1px solid #fcc600;\n    border-radius: 50%;\n    z-index: 9;\n    cursor: pointer;\n    -webkit-box-sizing: border-box;\n            box-sizing: border-box;\n    -webkit-transition: 0.3s;\n    transition: 0.3s;\n    opacity: .8;\n}\n.player-box__icon {\n    width: 30px;\n    height: 32px;\n    fill: #fff;\n}\n.player-box__preview {\n    margin: auto;\n    width: 100%;\n    max-width: 100%;\n    background-size: cover;\n    background-position: 50%;\n    background-repeat: no-repeat;\n}\n.player-box__preview:before {\n      content: \"\";\n      display: block;\n      padding-top: 56.25%;\n}\n.player-box__wrap:hover {\n    cursor: pointer;\n}\n.player-box__wrap:hover .player-box__button {\n    opacity: 1;\n}\n.player-box__video, .player-box__wrap {\n    position: absolute;\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    width: 100%;\n    height: 100%;\n}\n.player-box__video {\n    z-index: 3;\n}\n", "", {"version":3,"sources":["/Users/Urij/code/mossebo-studio/mossebo-studio-src/assets/js/components/YoutubeVideo.vue"],"names":[],"mappings":";AAAA;EACE,mBAAmB;EACnB,WAAW;CAAE;AACb;IACE,mBAAmB;IACnB,qBAAc;IAAd,qBAAc;IAAd,cAAc;IACd,0BAAoB;QAApB,uBAAoB;YAApB,oBAAoB;IACpB,yBAAwB;QAAxB,sBAAwB;YAAxB,wBAAwB;IACxB,SAAS;IACT,UAAU;IACV,kBAAkB;IAClB,mBAAmB;IACnB,YAAY;IACZ,aAAa;IACb,mBAAmB;IACnB,eAAe;IACf,oBAAoB;IACpB,0BAA0B;IAC1B,mBAAmB;IACnB,WAAW;IACX,gBAAgB;IAChB,+BAAuB;YAAvB,uBAAuB;IACvB,yBAAiB;IAAjB,iBAAiB;IACjB,YAAY;CAAE;AAChB;IACE,YAAY;IACZ,aAAa;IACb,WAAW;CAAE;AACf;IACE,aAAa;IACb,YAAY;IACZ,gBAAgB;IAChB,uBAAuB;IACvB,yBAAyB;IACzB,6BAA6B;CAAE;AAC/B;MACE,YAAY;MACZ,eAAe;MACf,oBAAoB;CAAE;AAC1B;IACE,gBAAgB;CAAE;AACpB;IACE,WAAW;CAAE;AACf;IACE,mBAAmB;IACnB,QAAQ;IACR,SAAS;IACT,OAAO;IACP,UAAU;IACV,YAAY;IACZ,aAAa;CAAE;AACjB;IACE,WAAW;CAAE","file":"YoutubeVideo.vue","sourcesContent":[".player-box {\n  position: relative;\n  padding: 0; }\n  .player-box__button {\n    position: absolute;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    top: 50%;\n    left: 50%;\n    margin-top: -35px;\n    margin-left: -35px;\n    width: 70px;\n    height: 70px;\n    padding: 0 0 0 5px;\n    color: #fafbfc;\n    background: #fcc600;\n    border: 1px solid #fcc600;\n    border-radius: 50%;\n    z-index: 9;\n    cursor: pointer;\n    box-sizing: border-box;\n    transition: 0.3s;\n    opacity: .8; }\n  .player-box__icon {\n    width: 30px;\n    height: 32px;\n    fill: #fff; }\n  .player-box__preview {\n    margin: auto;\n    width: 100%;\n    max-width: 100%;\n    background-size: cover;\n    background-position: 50%;\n    background-repeat: no-repeat; }\n    .player-box__preview:before {\n      content: \"\";\n      display: block;\n      padding-top: 56.25%; }\n  .player-box__wrap:hover {\n    cursor: pointer; }\n  .player-box__wrap:hover .player-box__button {\n    opacity: 1; }\n  .player-box__video, .player-box__wrap {\n    position: absolute;\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    width: 100%;\n    height: 100%; }\n  .player-box__video {\n    z-index: 3; }\n"],"sourceRoot":""}]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/lib/css-base.js":
-/***/ (function(module, exports) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function(useSourceMap) {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		return this.map(function (item) {
-			var content = cssWithMappingToString(item, useSourceMap);
-			if(item[2]) {
-				return "@media " + item[2] + "{" + content + "}";
-			} else {
-				return content;
-			}
-		}).join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
-		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-	var content = item[1] || '';
-	var cssMapping = item[3];
-	if (!cssMapping) {
-		return content;
-	}
-
-	if (useSourceMap && typeof btoa === 'function') {
-		var sourceMapping = toComment(cssMapping);
-		var sourceURLs = cssMapping.sources.map(function (source) {
-			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
-		});
-
-		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-	}
-
-	return [content].join('\n');
-}
-
-// Adapted from convert-source-map (MIT)
-function toComment(sourceMap) {
-	// eslint-disable-next-line no-undef
-	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-
-	return '/*# ' + data + ' */';
-}
 
 
 /***/ }),
@@ -49641,6 +49736,55 @@ if (false) {
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-6a268978\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/Loading.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      class: {
+        "loading-wrap": true,
+        "loading-wrap--no-overlay": _vm.noOverlay,
+        "loading-wrap--no-min-height": _vm.noMinHeight,
+        "loading-wrap--sticky": _vm.sticky && _vm.loading,
+        loaded: !_vm.loading
+      }
+    },
+    [
+      _vm.loading
+        ? _c(
+            "div",
+            { staticClass: "loading-wrap__spinner" },
+            [_c("loading-icon", { staticClass: "loading-wrap__icon" })],
+            1
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "loading-wrap__content" },
+        [_vm._t("default")],
+        2
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-6a268978", module.exports)
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-7c517d46\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./mossebo-studio-src/assets/js/components/LoadingIcon.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -49807,12 +49951,12 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("loading", { attrs: { loading: _vm.loading } }, [
     _c(
       "div",
       { staticClass: "row" },
       _vm._l(_vm.photos, function(photo) {
-        return _c("div", { staticClass: "col-3" }, [
+        return _c("div", { staticClass: "col-6 col-sm-4 col-md-3" }, [
           _c(
             "a",
             {
@@ -49852,296 +49996,6 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-e3c6aefc", module.exports)
   }
 }
-
-/***/ }),
-
-/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ce0cc380\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/YoutubeVideo.vue":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("./node_modules/css-loader/index.js?sourceMap!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ce0cc380\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mossebo-studio-src/assets/js/components/YoutubeVideo.vue");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("48515e9a", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ce0cc380\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./YoutubeVideo.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ce0cc380\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./YoutubeVideo.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ "./node_modules/vue-style-loader/lib/addStylesClient.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-  Modified by Evan You @yyx990803
-*/
-
-var hasDocument = typeof document !== 'undefined'
-
-if (typeof DEBUG !== 'undefined' && DEBUG) {
-  if (!hasDocument) {
-    throw new Error(
-    'vue-style-loader cannot be used in a non-browser environment. ' +
-    "Use { target: 'node' } in your Webpack config to indicate a server-rendering environment."
-  ) }
-}
-
-var listToStyles = __webpack_require__("./node_modules/vue-style-loader/lib/listToStyles.js")
-
-/*
-type StyleObject = {
-  id: number;
-  parts: Array<StyleObjectPart>
-}
-
-type StyleObjectPart = {
-  css: string;
-  media: string;
-  sourceMap: ?string
-}
-*/
-
-var stylesInDom = {/*
-  [id: number]: {
-    id: number,
-    refs: number,
-    parts: Array<(obj?: StyleObjectPart) => void>
-  }
-*/}
-
-var head = hasDocument && (document.head || document.getElementsByTagName('head')[0])
-var singletonElement = null
-var singletonCounter = 0
-var isProduction = false
-var noop = function () {}
-var options = null
-var ssrIdKey = 'data-vue-ssr-id'
-
-// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-// tags it will allow on a page
-var isOldIE = typeof navigator !== 'undefined' && /msie [6-9]\b/.test(navigator.userAgent.toLowerCase())
-
-module.exports = function (parentId, list, _isProduction, _options) {
-  isProduction = _isProduction
-
-  options = _options || {}
-
-  var styles = listToStyles(parentId, list)
-  addStylesToDom(styles)
-
-  return function update (newList) {
-    var mayRemove = []
-    for (var i = 0; i < styles.length; i++) {
-      var item = styles[i]
-      var domStyle = stylesInDom[item.id]
-      domStyle.refs--
-      mayRemove.push(domStyle)
-    }
-    if (newList) {
-      styles = listToStyles(parentId, newList)
-      addStylesToDom(styles)
-    } else {
-      styles = []
-    }
-    for (var i = 0; i < mayRemove.length; i++) {
-      var domStyle = mayRemove[i]
-      if (domStyle.refs === 0) {
-        for (var j = 0; j < domStyle.parts.length; j++) {
-          domStyle.parts[j]()
-        }
-        delete stylesInDom[domStyle.id]
-      }
-    }
-  }
-}
-
-function addStylesToDom (styles /* Array<StyleObject> */) {
-  for (var i = 0; i < styles.length; i++) {
-    var item = styles[i]
-    var domStyle = stylesInDom[item.id]
-    if (domStyle) {
-      domStyle.refs++
-      for (var j = 0; j < domStyle.parts.length; j++) {
-        domStyle.parts[j](item.parts[j])
-      }
-      for (; j < item.parts.length; j++) {
-        domStyle.parts.push(addStyle(item.parts[j]))
-      }
-      if (domStyle.parts.length > item.parts.length) {
-        domStyle.parts.length = item.parts.length
-      }
-    } else {
-      var parts = []
-      for (var j = 0; j < item.parts.length; j++) {
-        parts.push(addStyle(item.parts[j]))
-      }
-      stylesInDom[item.id] = { id: item.id, refs: 1, parts: parts }
-    }
-  }
-}
-
-function createStyleElement () {
-  var styleElement = document.createElement('style')
-  styleElement.type = 'text/css'
-  head.appendChild(styleElement)
-  return styleElement
-}
-
-function addStyle (obj /* StyleObjectPart */) {
-  var update, remove
-  var styleElement = document.querySelector('style[' + ssrIdKey + '~="' + obj.id + '"]')
-
-  if (styleElement) {
-    if (isProduction) {
-      // has SSR styles and in production mode.
-      // simply do nothing.
-      return noop
-    } else {
-      // has SSR styles but in dev mode.
-      // for some reason Chrome can't handle source map in server-rendered
-      // style tags - source maps in <style> only works if the style tag is
-      // created and inserted dynamically. So we remove the server rendered
-      // styles and inject new ones.
-      styleElement.parentNode.removeChild(styleElement)
-    }
-  }
-
-  if (isOldIE) {
-    // use singleton mode for IE9.
-    var styleIndex = singletonCounter++
-    styleElement = singletonElement || (singletonElement = createStyleElement())
-    update = applyToSingletonTag.bind(null, styleElement, styleIndex, false)
-    remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true)
-  } else {
-    // use multi-style-tag mode in all other cases
-    styleElement = createStyleElement()
-    update = applyToTag.bind(null, styleElement)
-    remove = function () {
-      styleElement.parentNode.removeChild(styleElement)
-    }
-  }
-
-  update(obj)
-
-  return function updateStyle (newObj /* StyleObjectPart */) {
-    if (newObj) {
-      if (newObj.css === obj.css &&
-          newObj.media === obj.media &&
-          newObj.sourceMap === obj.sourceMap) {
-        return
-      }
-      update(obj = newObj)
-    } else {
-      remove()
-    }
-  }
-}
-
-var replaceText = (function () {
-  var textStore = []
-
-  return function (index, replacement) {
-    textStore[index] = replacement
-    return textStore.filter(Boolean).join('\n')
-  }
-})()
-
-function applyToSingletonTag (styleElement, index, remove, obj) {
-  var css = remove ? '' : obj.css
-
-  if (styleElement.styleSheet) {
-    styleElement.styleSheet.cssText = replaceText(index, css)
-  } else {
-    var cssNode = document.createTextNode(css)
-    var childNodes = styleElement.childNodes
-    if (childNodes[index]) styleElement.removeChild(childNodes[index])
-    if (childNodes.length) {
-      styleElement.insertBefore(cssNode, childNodes[index])
-    } else {
-      styleElement.appendChild(cssNode)
-    }
-  }
-}
-
-function applyToTag (styleElement, obj) {
-  var css = obj.css
-  var media = obj.media
-  var sourceMap = obj.sourceMap
-
-  if (media) {
-    styleElement.setAttribute('media', media)
-  }
-  if (options.ssrId) {
-    styleElement.setAttribute(ssrIdKey, obj.id)
-  }
-
-  if (sourceMap) {
-    // https://developer.chrome.com/devtools/docs/javascript-debugging
-    // this makes source maps inside style tags work properly in Chrome
-    css += '\n/*# sourceURL=' + sourceMap.sources[0] + ' */'
-    // http://stackoverflow.com/a/26603875
-    css += '\n/*# sourceMappingURL=data:application/json;base64,' + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + ' */'
-  }
-
-  if (styleElement.styleSheet) {
-    styleElement.styleSheet.cssText = css
-  } else {
-    while (styleElement.firstChild) {
-      styleElement.removeChild(styleElement.firstChild)
-    }
-    styleElement.appendChild(document.createTextNode(css))
-  }
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-style-loader/lib/listToStyles.js":
-/***/ (function(module, exports) {
-
-/**
- * Translates the list format produced by css-loader into something
- * easier to manipulate.
- */
-module.exports = function listToStyles (parentId, list) {
-  var styles = []
-  var newStyles = {}
-  for (var i = 0; i < list.length; i++) {
-    var item = list[i]
-    var id = item[0]
-    var css = item[1]
-    var media = item[2]
-    var sourceMap = item[3]
-    var part = {
-      id: parentId + ':' + i,
-      css: css,
-      media: media,
-      sourceMap: sourceMap
-    }
-    if (!newStyles[id]) {
-      styles.push(newStyles[id] = { id: id, parts: [part] })
-    } else {
-      newStyles[id].parts.push(part)
-    }
-  }
-  return styles
-}
-
 
 /***/ }),
 
