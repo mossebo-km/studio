@@ -52,7 +52,7 @@
                                         </span>
 
                                 <svg class="button-loading__loader">
-                                    <use xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-spinner"></use>
+                                    <use xlink:href="/wp-content/themes/mossebo/assets/images/icons.svg#symbol-spinner"></use>
                                 </svg>
                             </button>
                         </div>
