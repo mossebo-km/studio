@@ -10,7 +10,7 @@
                    target="_blank"
                 >
                     <div class="instagram-likes">
-                        <svg class="symbol-icon instagram-icon">
+                        <svg class="instagram-icon">
                             <use xlink:href="/wp-content/themes/mossebo/assets/images/icons.svg#symbol-heart"></use>
                         </svg>
                         {{ photo.likes }}

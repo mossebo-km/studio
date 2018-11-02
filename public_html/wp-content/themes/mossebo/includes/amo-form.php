@@ -93,8 +93,8 @@ class AmoForm
         $lead = $amo->lead;
         //$lead->debug(true); // Режим отладки
         $lead['name'] = 'Заявка с сайта ' . $this->data['name'];
-        $lead['status_id'] = 19742383;
-        $lead['responsible_user_id'] = 2410540;
+        $lead['status_id'] = $this->statusId;
+        $lead['responsible_user_id'] = $this->responsibleUserId;
         $lead['tags'] = ['eus.spb.ru', $this->data['utm_source']];
 
         $lead->addCustomField(402305, $this->data[ 'utm_source' ] . ' ' . $this->data[ 'utm_medium' ] . ' ' . $this->data[ 'utm_campaign' ] . ' ' . $this->data[ 'utm_content' ] . ' ' . $this->data[ 'utm_term' ]);

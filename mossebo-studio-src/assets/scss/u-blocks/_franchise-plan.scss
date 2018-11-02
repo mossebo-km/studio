@@ -16,6 +16,8 @@
     }
 
     @include media-breakpoint-up(lg) {
+        padding-bottom: 40px;
+
         &__image {
             width: auto;
             transform: translate3d(-10%, -10%, 0);

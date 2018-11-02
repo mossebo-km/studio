@@ -1,4 +1,4 @@
-<div class="accent-form">
+<div class="accent-form block-ui">
     <div class="accent-form__content">
         <div class="accent-form__title">
             Узнайте подробнее
@@ -10,8 +10,9 @@
 
         <div class="accent-form__form">
             <form class="form js-fs" action="<?php echo admin_url('admin-ajax.php'); ?>">
-                <input type="hidden" name="_ajax_nonce" value="<?php echo wp_create_nonce( 'FRANCHISE_HEAD_FORM_nonce' ); ?>">
-                <input type="hidden" name="action" value="FRANCHISE_HEAD_FORM">
+                <input type="hidden" name="_ajax_nonce" value="<?php echo wp_create_nonce( 'FRANCHISE_FORM_nonce' ); ?>">
+                <input type="hidden" name="action" value="FRANCHISE_FORM">
+                <input type="hidden" name="page_url" value="<?= currentUrl() ?>">
 
                 <div class="form-group mt-16">
                     <input
