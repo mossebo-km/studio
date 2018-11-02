@@ -117,6 +117,14 @@
 
 <!-- Блог последние 4 статьи -->
 <div class="mt-64">
+    <div class="container">
+        <div class="title-h2">
+            <?php _e('Блог', 'mossebo') ?>
+        </div>
+        <div class="title-sub mb-32">
+            <?php _e('Авторские статьи от дизайнеров Mossebo', 'mossebo') ?>
+        </div>
+    </div>
     <?php get_template_part( 'interior-design/blog-last-post-4' ) ?>
 </div>
 <!-- Блог последние 4 статьи конец -->
