@@ -84,6 +84,11 @@
         &:focus:-ms-input-placeholder {
             opacity: 0;
         }
+
+        &--large {
+            padding-top: 17px;
+            padding-bottom: 17px;
+        }
     }
 
     &-textarea {
@@ -344,12 +349,6 @@
 
 
 
-
-
-
-
-
-
 .accent-form {
     background-color: $color-primary;
     border-radius: $border-radius;
@@ -358,6 +357,7 @@
     text-align: center;
     display: flex;
     align-items: center;
+    height: 100%;
 
     &__content {
         width: 100%;

@@ -30,8 +30,34 @@
         }
 
         &--gray {
-            background: #979797;
             background: $color-text-secondary;
+        }
+
+        &--instagram {
+            background: #FF8F52;
+        }
+
+        &--yandex {
+            background: #FDD43E;
+        }
+
+        &--google {
+            background: #65D6FF;
+        }
+
+        &--my-target {
+            background: #9DAAC8;
+        }
+
+        &--youtube {
+            background: #FF001F;
         }
     }
 }
+
+
+
+
+
+
+

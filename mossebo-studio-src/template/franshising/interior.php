@@ -40,18 +40,21 @@
     }
 ?>
 
-<div class="container">
-    <h2 class="title-h2">
-        <?php _e('Оформление студий дизайна интерьера Mossebo', 'mossebo') ?>
-    </h2>
+<div class="franchise-interiors-pano">
+    <div class="container">
+        <h2 class="title-h2">
+            <?php _e('Оформление студий дизайна интерьера Mossebo', 'mossebo') ?>
+        </h2>
 
-    <p>
-        <?php _e('Оснащение целиком приобретается в управляющей компании по методу «единого окна» с существенной экономией, в
+        <div class="franchise-interiors-pano__text">
+            <?php _e('Оснащение целиком приобретается в управляющей компании по методу «единого окна» с существенной экономией, в
         т.ч. на компьютерном оборудовании.', 'mossebo') ?>
-    </p>
-</div>
+        </div>
+    </div>
 
-<interior-pano
-    :tabs="<?= getInteriorTabs(); ?>"
-    :images="<?= getInteriorImages(); ?>"
-></interior-pano>
+    <interior-pano
+        :tabs="<?= getInteriorTabs(); ?>"
+        :images="<?= getInteriorImages(); ?>"
+    ></interior-pano>
+
+</div>

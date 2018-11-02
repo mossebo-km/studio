@@ -56,7 +56,6 @@
             },
 
             videoThumb() {
-                console.log('//img.youtube.com/vi/' + this.videoId + '/hqdefault.jpg')
                 return '//img.youtube.com/vi/' + this.videoId + '/hqdefault.jpg'
             }
         }

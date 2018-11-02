@@ -67,6 +67,12 @@
         margin-top: 21px;
     }
 
+    &--license &__icon {
+        width: 210px;
+        height: 100px;
+        fill: $color-text-primary;
+    }
+
     @include media-breakpoint-up(md) {
         text-align: center;
         padding: 54px 34px 24px;

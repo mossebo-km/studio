@@ -1,0 +1,11 @@
+.franchise-open {
+    @include media-breakpoint-up(md) {
+        &__images {
+            margin-top: -32px;
+        }
+
+        &__image {
+            margin-top: 32px;
+        }
+    }
+}

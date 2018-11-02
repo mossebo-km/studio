@@ -89,7 +89,7 @@ export default class Request {
 
         axios.request(this.config)
             .then(response => {
-                this._setStatus('success')
+                // this._setStatus('success')
                 this._handleResponse(response)
             })
             .catch(error => {
@@ -139,6 +139,8 @@ export default class Request {
     _handleResponse(response) {
         this.response = response
 
+        console.log(response)
+
         const data = response.data
 
         if (typeof data !== 'object' || data === null) {
@@ -149,7 +151,7 @@ export default class Request {
             let redirect = data.redirect
 
             if (redirect.indexOf('/') === 0) {
-                redirect = '/' + Core.trim(redirect, '/')
+                redirect = '/' + _.trim(redirect, '/')
             }
 
             window.location.href = redirect

@@ -16,7 +16,7 @@
         font-size: 22px / 40px;
 
         span {
-            font-size: 32px;
+            font-size: 48px;
             font-weight: 500;
             color: $color-primary;
         }
@@ -30,6 +30,11 @@
     &__currency {
         font-size: 14px / 18px;
         margin-top: 21px;
+    }
+
+    &__info {
+        font-size: 14px / 18px;
+        margin-top: 8px;
     }
 
     @include media-breakpoint-up(md) {

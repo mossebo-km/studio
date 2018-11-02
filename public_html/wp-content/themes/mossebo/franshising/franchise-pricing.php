@@ -8,9 +8,9 @@
         <div class="franchise-pricing__container">
             <div class="row justify-content-center">
                 <div class="franchise-pricing__item col-md-6 col-lg-4">
-                    <div class="info-card block-ui">
+                    <div class="info-card info-card--license block-ui">
                         <svg class="info-card__icon">
-                            <use xlink:href="<?= THEME_DIR; ?>/assets/images/icons.svg#symbol-certificate"></use>
+                            <use xlink:href="<?= THEME_DIR; ?>/assets/images/icons.svg#symbol-converison-license"></use>
                         </svg>
 
                         <div class="info-card__head">
@@ -35,9 +35,9 @@
                 </div>
 
                 <div class="franchise-pricing__item col-md-6 col-lg-4">
-                    <div class="info-card block-ui">
+                    <div class="info-card info-card--license block-ui">
                         <svg class="info-card__icon">
-                            <use xlink:href="<?= THEME_DIR; ?>/assets/images/icons.svg#symbol-walls"></use>
+                            <use xlink:href="<?= THEME_DIR; ?>/assets/images/icons.svg#symbol-standart-license"></use>
                         </svg>
 
                         <div class="info-card__head">
@@ -57,9 +57,9 @@
                 </div>
 
                 <div class="franchise-pricing__item col-md-6 col-lg-4">
-                    <div class="info-card block-ui">
+                    <div class="info-card info-card--license block-ui">
                         <svg class="info-card__icon">
-                            <use xlink:href="<?= THEME_DIR; ?>/assets/images/icons.svg#symbol-settlement"></use>
+                            <use xlink:href="<?= THEME_DIR; ?>/assets/images/icons.svg#symbol-exclusive-license"></use>
                         </svg>
 
                         <div class="info-card__head">
