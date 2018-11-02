@@ -6037,25 +6037,12 @@ img {
 
 .landing-header {
   position: relative;
-}
-
-.landing-header__image {
-  position: relative;
-  background-position: center center;
-  background-size: cover;
-}
-
-.landing-header__image:before {
-  content: '';
-  display: block;
-  padding-top: 45.0%;
-}
-
-.landing-header__layout {
-  position: absolute;
-  width: 100%;
-  top: 0;
+  background-position: bottom center;
+  background-repeat: no-repeat;
   padding: 32px 0;
+  height: 540px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .landing-header__title {
@@ -6066,8 +6053,8 @@ img {
 
 .landing-header__subtitle {
   font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 16px;
+  line-height: 22px;
+  max-width: 375px;
 }
 
 .u-block-instagramm .title-h2 {
