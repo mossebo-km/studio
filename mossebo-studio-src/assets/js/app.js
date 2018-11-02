@@ -17,6 +17,7 @@ import StudiosMap from './components/map/StudiosMap'
 import YoutubeVideo from './components/YoutubeVideo'
 import BackgroundImageLoader from './components/imageLoaders/BackgroundImageLoader'
 import UBlockInstagram from './components/UBlockInstagram'
+import FormStandart from './components/forms/FormStandart'
 
 // Plugins Imports
 import './components/plugins/social-slider'
@@ -46,7 +47,8 @@ const app = new Vue({
         BackgroundImageLoader,
         MobileSlider,
         UBlockInstagram,
-        YoutubeVideo
+        YoutubeVideo,
+        FormStandart
 },
 
     data: {
