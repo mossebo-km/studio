@@ -16,17 +16,17 @@
                 </div>
                 <div class="col-md-5">
                     <form-standart class="form-standart"
-                                   form-action="<?php echo THEME_DIR; ?>/send_form.php"
+                                   form-action="<?= THEME_DIR ?>/send_form.php"
                                    form-title="Получите бесплатную консультацию:"
                                    form-email="true"
                     >
-
                     </form-standart>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
 <div class="interior-design-features pt-32 pb-64">
     <div class="container">
