@@ -1,22 +1,27 @@
 <?php get_header(); ?>
 
-<div class="landing-header">
-    <div class="landing-header__image"
-         style="background-image: url(https://pp.userapi.com/c848636/v848636859/a4efc/Oy6iIzIa8CU.jpg);"
-    ></div>
+<div class="landing-header"
+     style="background-image: url(<?= THEME_DIR ?>/assets/images/interior-design/header-bg-1.jpg);"
+>
     <div class="landing-header__layout">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="landing-header__title">
+                <div class="col-md-7">
+                    <div class="title-h1 landing-header__title">
                         Дизайн интерьера в Cанкт-Петербурге
                     </div>
                     <div class="landing-header__subtitle">
                         Создаем дизайн квартир и коммерческих помещений
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
+                    <form-standart class="form-standart"
+                                   form-action="<?php echo THEME_DIR; ?>/send_form.php"
+                                   form-title="Получите бесплатную консультацию:"
+                                   form-email="true"
+                    >
 
+                    </form-standart>
                 </div>
             </div>
         </div>
