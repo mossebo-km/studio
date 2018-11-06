@@ -2,7 +2,7 @@
 
 class MosseboServicesRequest
 {
-    protected $baseUrl = 'https://services.mossebo.ru/api/v1';
+    protected $baseUrl = 'https://mossebo-services.test/api/v1';
     protected $key = '7 belosnezhek i 1 gnom';
 
     protected $ch = null;
@@ -18,6 +18,8 @@ class MosseboServicesRequest
 
         curl_setopt($ch, CURLOPT_URL, $this->makeUrl($action));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
         curl_setopt($ch, CURLOPT_HEADER, 0);
 
         $this->ch = @$ch;
@@ -55,6 +57,11 @@ class MosseboServicesRequest
     public function send()
     {
         $output = curl_exec($this->ch);
+
+//        if ($output === false) {
+//            var_dump(curl_error($this->ch), curl_errno($this->ch));
+//            wp_die();
+//        }
 
         curl_close($this->ch);
 
