@@ -14,37 +14,57 @@
 
     <header class="header">
         <div class="container">
-            <div class="header__float">
-                <div class="header__float_item">
+            <div class="header__flex">
+                <div class="header__flex_item">
+                    <a href="" class="header__flex_item--link burger">
+                        <div class="burger__icon">
+                            <span class="burger__icon-item"></span>
+                            <span class="burger__icon-item"></span>
+                            <span class="burger__icon-item"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__flex_item">
                     <a href="/" class="logo logo--header">
                         <svg class="symbol-logo symbol-logo--header">
-                            <use xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#logo-header"></use>
+                            <use xlink:href="<?= THEME_DIR ?>/assets/images/icons.svg#logo-header"></use>
                         </svg>
                     </a>
                 </div>
-                <div class="header__float_item">
-                    <div class="projects">
+                <div class="header__flex_item">
+                    <a href="" class="header__flex_item--link projects">
+                        <svg class="symbol-icon symbol-projects">
+                            <use xlink:href="<?= THEME_DIR ?>/assets/images/icons.svg#symbol-projects"></use>
+                        </svg>
                         Наши проекты
-                    </div>
+                    </a>
                 </div>
-                <div class="header__float_item">
-                    <div class="location">
+                <div class="header__flex_item">
+                    <a href="" class="header__flex_item--link location">
+                        <svg class="symbol-icon symbol-location">
+                            <use xlink:href="<?= THEME_DIR ?>/assets/images/icons.svg#symbol-location"></use>
+                        </svg>
                         Санкт-Петербург
-                    </div>
+                    </a>
                 </div>
-                <div class="header__float_item">
+                <div class="header__flex_item">
                     <div class="phone">
                         +7 (495) 000-00-00
                         <small>пн-пт с 10:00-19:00</small>
                     </div>
                 </div>
-                <div class="header__float_item">
+                <div class="header__flex_item">
                     <div class="phone">
                         8 (800) 707-83-47
                         <small><?php _e('служба контроля качества', 'mossebo') ?></small>
                     </div>
                 </div>
-                <div class="header__float_item">
+                <div class="header__flex_item">
+                    <a href="" class="header__flex_item--link phone">
+                        <svg class="symbol-icon symbol-phone">
+                            <use xlink:href="<?= THEME_DIR ?>/assets/images/icons.svg#symbol-phone"></use>
+                        </svg>
+                    </a>
                     <a href="#popup-call" class="button button-primary button-long js-form-popup">
                         <?php _e('Заказать звонок', 'mossebo') ?>
                     </a>
@@ -59,7 +79,7 @@
                         <?php wp_nav_menu(array('theme_location' => 'header_menu')); ?>
                     </div>
                     <div class="col-2">
-                        <?php do_action('wpml_add_language_selector'); ?>
+                        <?php //do_action('wpml_add_language_selector'); ?>
                     </div>
 
                 </div>

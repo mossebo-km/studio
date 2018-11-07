@@ -201,12 +201,18 @@ if (! function_exists('handleAjaxForm')) {
         $action = sanitize_text_field($_POST['action']);
 
         if (! check_ajax_referer($action . '_nonce', false, false)) {
-            sendAjaxErrorResponse('Техническая ошибка! Пожалуйста обновите страницу и попробуйте снова.');
+            sendAjaxErrorResponse(
+                __('Техническая ошибка! Пожалуйста обновите страницу и попробуйте снова.')
+            );
         }
 
         switch ($action) {
             case 'FRANCHISE_FORM':
                 handleAmoForm('/thanks-franchise');
+                break;
+
+            case 'DESIGN_INTERIOR':
+                handleAmoForm('/thanks');
                 break;
 
             case 'SUBSCRIBE_FORM':
@@ -245,25 +251,35 @@ if (! function_exists('handleSubscribe')) {
 
         $request = new MosseboServicesRequest();
 
+        $type = sanitize_text_field($_POST['type']);
+
         $request->put('subscribe', [
             'email' => sanitize_text_field($_POST['email']),
-            'type'  => sanitize_text_field($_POST['type']),
+            'type'  => $type,
         ]);
 
         $result = $request->send();
 
-        var_dump($result);
-
-        wp_send_json([
+        $response = [
             'status' => 'success',
-            'message' => 'Спасибо! Чувствуйте себя хорошо, пожалуйста!'
-        ], 200);
+            'message' => __('Спасибо! Чувствуйте себя хорошо, пожалуйста!')
+        ];
+
+        // файл-портфолио
+        if ($type === 'studio-styles') {
+            $response['file'] = home_url('/wp-content/uploads/2017/04/BRj8BH9KB10.zip');
+        }
+
+        wp_send_json($response, 200);
     }
 }
 
 if (wp_doing_ajax()) {
     add_action('wp_ajax_FRANCHISE_FORM', 'handleAjaxForm');
     add_action('wp_ajax_nopriv_FRANCHISE_FORM', 'handleAjaxForm');
+
+    add_action('wp_ajax_DESIGN_INTERIOR_FORM', 'handleAjaxForm');
+    add_action('wp_ajax_nopriv_DESIGN_INTERIOR_FORM', 'handleAjaxForm');
 
     add_action('wp_ajax_SUBSCRIBE_FORM', 'handleAjaxForm');
     add_action('wp_ajax_nopriv_SUBSCRIBE_FORM', 'handleAjaxForm');

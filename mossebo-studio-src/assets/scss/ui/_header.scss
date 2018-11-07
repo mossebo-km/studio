@@ -5,7 +5,7 @@
         color: $color-text-secondary;
         display: block;
     }
-    &__float {
+    &__flex {
         height: 70px;
         display: flex;
         justify-content: space-between;
@@ -13,7 +13,67 @@
         flex-wrap: nowrap;
         &_item {
             position: relative;
+            &--link {
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                text-decoration: none;
+                color: $color-text-primary;
+                &:hover {
+                    .symbol-icon {
+                        fill: $color-text-primary;
+                    }
+                }
+            }
+            // Burger
+            &:nth-child(1) {
+                @include media-breakpoint-up(md) {
+                    display: none;
+                }
+            }
+            //Logo
+            &:nth-child(2) {
+                @include media-breakpoint-up(md) {
+
+                }
+            }
+            // Projects
+            &:nth-child(3) {
+                .symbol-icon {
+                    margin-right: 8px;
+                }
+                @include media-breakpoint-up(md) {
+
+                }
+            }
+            //Location
+            &:nth-child(4) {
+                .symbol-icon {
+                    margin-right: 2px;
+                    width: 24px;
+                    height: 24px;
+                }
+                @include media-breakpoint-up(md) {
+                    //display: none;
+                }
+            }
+            //Phone Call
+            &:nth-child(7) {
+                @include media-breakpoint-up(md) {
+                    .header__flex_item--link {
+                        padding: 0;
+                    }
+                    .symbol-icon {
+                        display: none;
+                    }
+                }
+            }
         }
+    }
+    .symbol-icon {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -43,5 +103,33 @@
     &--header {
         padding-top: 16px;
         padding-bottom: 16px;
+    }
+}
+
+.burger {
+    &__icon {
+        width: 20px;
+        height: 16px;
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        &-item {
+            width: 100%;
+            height: 2px;
+            background: $color-primary;
+            position: absolute;
+            &:nth-child(1) {
+                left: 0;
+                top: 0;
+            }
+            &:nth-child(2) {
+                left: 0;
+                top: 7px;
+            }
+            &:nth-child(3) {
+                left: 0;
+                top: 14px;
+            }
+        }
     }
 }

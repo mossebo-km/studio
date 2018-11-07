@@ -126,6 +126,11 @@ get_header();
 
     <!-- Сми о нас -->
     <div class="mt-64">
+        <div class="container">
+            <h2 class="title-h2">
+                <?php _e('Mossebo в медиа и СМИ', 'mossebo') ?>
+            </h2>
+        </div>
         <?php get_template_part( 'franshising/media-about-us' ) ?>
     </div>
     <!-- Сми о нас конец -->

@@ -21,7 +21,11 @@
     ></u-block-instagram>
 
     <div class="watch-all-btn-wrap">
-        <a href="<?php _the_field('instagram-mossebo') ?>" class="watch-all-btn" target="_blank" rel="nofollow noreferrer noopener">
+        <a href="https://www.instagram.com/mossebo.official/"
+           class="watch-all-btn"
+           target="_blank"
+           rel="nofollow noreferrer noopener"
+        >
                 <span class="watch-all-btn__label">
                     Смотреть все
                 </span>

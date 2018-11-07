@@ -156,6 +156,10 @@ export default class Request {
             return
         }
 
+        if ('file' in data) {
+            window.location.href = data.file
+        }
+
         if ('status' in data) {
             this._setStatus(data.status)
         }

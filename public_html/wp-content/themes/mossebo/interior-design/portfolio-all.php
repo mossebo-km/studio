@@ -18,7 +18,7 @@ $query = new WP_Query($args);
 
                 <div class="col-md-6">
                     <div class="archives-project__item">
-                        <article class="block-ui mb-40">
+                        <article class="block-ui mb-32">
                             <a href="<?php echo get_permalink(); ?>"
                                class="archives-project__image"
                                style="background-image: url(<?php the_post_thumbnail_url('medium'); ?>);">
