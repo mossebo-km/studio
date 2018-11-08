@@ -92,8 +92,24 @@
         a {
             text-decoration: none;
             display: block;
-            padding: 20px 15px;
+            padding: 16px 16px;
             color: $color-text-primary;
+        }
+    }
+    .portfolio-nav {
+        display: flex;
+        align-items: center;
+        padding: 16px 0;
+        text-decoration: none;
+        color: $color-text-primary;
+        font-weight: 500;
+        border-right: 1px solid $color-border;
+        transition: 0.3s;
+        &:hover {
+            color: $color-primary;
+        }
+        .burger__icon {
+            margin-right: 24px;
         }
     }
 }
@@ -131,5 +147,52 @@
                 top: 14px;
             }
         }
+    }
+}
+
+.mossebo-projects {
+    padding: 26px;
+    width: 90vw;
+    max-width: 375px;
+    .row>* {
+        padding: 16px;
+    }
+}
+
+.mossebo-project-link {
+    display: block;
+    text-align: center;
+    margin: 0 -8px;
+    text-decoration: none;
+
+    &__image {
+        width: 100%;
+        max-width: 46px;
+        display: inline-block;
+        vertical-align: bottom;
+        background-size: contain;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__name {
+        margin-top: 8px;
+        color: $color-text-primary;
+    }
+
+    &__link {
+        border-bottom: 1px solid transparent;
+        transition: all .3s;
+        color: $color-text-secondary;
+    }
+
+    &:hover &__link {
+        color: $color-text-primary;
+        border-color: $color-text-primary;
+    }
+
+    &.is-active &__link {
+        color: $color-text-primary;
+        border-bottom: 0;
     }
 }

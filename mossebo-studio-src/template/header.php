@@ -16,7 +16,7 @@
         <div class="container">
             <div class="header__flex">
                 <div class="header__flex_item">
-                    <a href="" class="header__flex_item--link burger">
+                    <a href="javascript:void(0);" class="header__flex_item--link burger">
                         <div class="burger__icon">
                             <span class="burger__icon-item"></span>
                             <span class="burger__icon-item"></span>
@@ -32,15 +32,113 @@
                     </a>
                 </div>
                 <div class="header__flex_item">
-                    <a href="" class="header__flex_item--link projects">
+                    <a href="javascript:void(0);" class="header__flex_item--link projects js-ht">
                         <svg class="symbol-icon symbol-projects">
                             <use xlink:href="<?= THEME_DIR ?>/assets/images/icons.svg#symbol-projects"></use>
                         </svg>
                         Наши проекты
                     </a>
+
+                    <div class="ht-container ht-container--popup ht-container--projects">
+                        <div class="ht-inner block-ui">
+                            <div class="mossebo-projects">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="https://mossebo.market" target="_self"
+                                           rel="nofollow noreferrer noopener" class="mossebo-project-link">
+                                            <div class="mossebo-project-link__image image-preview image-preview--1-1"
+                                                 style="background-image: url(https://mossebo.market/assets/images/projects/market.png);"></div>
+                                            <div class="mossebo-project-link__name">
+                                                <span class="mossebo-project-link__link">
+                                                    Маркет
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mossebo-project-link is-active">
+                                            <div class="mossebo-project-link__image image-preview image-preview--1-1"
+                                                 style="background-image: url(https://mossebo.market/assets/images/projects/studio.png);"></div>
+                                            <div class="mossebo-project-link__name">
+                                                <span class="mossebo-project-link__link">
+                                                    Студия
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="https://www.youtube.com/channel/UCmoIMunKnQwi0ui_G9W0Wmw"
+                                           target="_blank" rel="nofollow noreferrer noopener"
+                                           class="mossebo-project-link">
+                                            <div class="mossebo-project-link__image image-preview image-preview--1-1"
+                                                 style="background-image: url(https://mossebo.market/assets/images/projects/haip.png);"></div>
+                                            <div class="mossebo-project-link__name">
+                                                <span class="mossebo-project-link__link">
+                                                    Хайповый бизнес
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="https://www.youtube.com/channel/UClJbFjwrAKSggogdIuHEHBg"
+                                           target="_blank" rel="nofollow noreferrer noopener"
+                                           class="mossebo-project-link">
+                                            <div class="mossebo-project-link__image image-preview image-preview--1-1"
+                                                 style="background-image: url(https://mossebo.market/assets/images/projects/travel.png);"></div>
+                                            <div class="mossebo-project-link__name">
+                                                <span class="mossebo-project-link__link">
+                                                    Хайповый Travel
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="https://www.youtube.com/channel/UCX4d_WGl2y04iATm6DtXAWg"
+                                           target="_blank" rel="nofollow noreferrer noopener"
+                                           class="mossebo-project-link">
+                                            <div class="mossebo-project-link__image image-preview image-preview--1-1"
+                                                 style="background-image: url(https://mossebo.market/assets/images/projects/top_top.png);"></div>
+                                            <div class="mossebo-project-link__name">
+                                                <span class="mossebo-project-link__link">
+                                                    TOP&nbsp;TOP
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="https://www.youtube.com/channel/UCmYjYyeZDuFb9hOgEUNYJuQ"
+                                           target="_blank" rel="nofollow noreferrer noopener"
+                                           class="mossebo-project-link">
+                                            <div class="mossebo-project-link__image image-preview image-preview--1-1"
+                                                 style="background-image: url(https://mossebo.market/assets/images/projects/dizainy.png);"></div>
+                                            <div class="mossebo-project-link__name">
+                                                <span class="mossebo-project-link__link">
+                                                    ДизайНю
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="https://www.youtube.com/channel/UCdAe9MxWKjvU_jGGkU-Ke_Q"
+                                           target="_blank" rel="nofollow noreferrer noopener"
+                                           class="mossebo-project-link">
+                                            <div class="mossebo-project-link__image image-preview image-preview--1-1"
+                                                 style="background-image: url(https://mossebo.market/assets/images/projects/lost.png);"></div>
+                                            <div class="mossebo-project-link__name">
+                                                <span class="mossebo-project-link__link">
+                                                    Потерянные
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="header__flex_item">
-                    <a href="" class="header__flex_item--link location">
+                    <a href="javascript:void(0);" class="header__flex_item--link location">
                         <svg class="symbol-icon symbol-location">
                             <use xlink:href="<?= THEME_DIR ?>/assets/images/icons.svg#symbol-location"></use>
                         </svg>
@@ -75,7 +173,17 @@
         <nav class="nav">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-10">
+                    <div class="col-2">
+                        <a href="javascript:void(0);" class="portfolio-nav">
+                            <div class="burger__icon">
+                                <span class="burger__icon-item"></span>
+                                <span class="burger__icon-item"></span>
+                                <span class="burger__icon-item"></span>
+                            </div>
+                            Портфолио
+                        </a>
+                    </div>
+                    <div class="col-8 pd-0">
                         <?php wp_nav_menu(array('theme_location' => 'header_menu')); ?>
                     </div>
                     <div class="col-2">

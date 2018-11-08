@@ -59,6 +59,10 @@ img {
         padding-top: 54.5454545%;
     }
 
+    &--1-1::before {
+        padding-top: 100%;
+    }
+
     &--3-2::before {
         padding-top: 66.6666667%;
     }

@@ -22,7 +22,7 @@ import FormStandart from './components/forms/FormStandart'
 // Plugins Imports
 import './components/plugins/social-slider'
 import './components/plugins/video-blog'
-
+import './components/plugins/HeightToggle'
 /**
  * App
  */
@@ -62,6 +62,11 @@ const app = new Vue({
         }, 50)
 
         window.addEventListener('resize', this.resizeHandler, { passive: true })
+    },
+    mounted() {
+        heightToggle('.js-ht', {
+            bindCloseEvents: true
+        })
     },
 
     methods: {
