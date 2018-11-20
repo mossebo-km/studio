@@ -44,7 +44,7 @@ wp_reset_postdata();
 </div>
 <studios-map
     :points="<?php echo htmlspecialchars(json_encode($studios, JSON_UNESCAPED_UNICODE)) ?>"
-    text="Таким образом консультация с широким активом представляет собой интересный эксперимент проверки направлений прогрессивного развития."
+    text="На карте не отображаются студии Mossebo в процессе открытия и студии со 100% загруженностью дизайнеров."
 >
     <div class="studio-map-plug"></div>
 </studios-map>

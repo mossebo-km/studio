@@ -11,6 +11,10 @@
 
     .logo {
         margin-bottom: 32px;
+        @include media-breakpoint-down(sm) {
+            display: block;
+            text-align: center;
+        }
     }
 
     &-company-info {
@@ -21,6 +25,11 @@
     &-buttons {
         margin-top: 32px;
         margin-bottom: 32px;
+        @include media-breakpoint-down(md) {
+            .col-9 + .col-9 {
+                padding-top: 16px;
+            }
+        }
     }
 
     &-nav {
@@ -103,12 +112,18 @@
     display: inline-block;
     vertical-align: middle;
     margin-bottom: 24px;
-
+    @include media-breakpoint-down(md) {
+        display: block;
+        text-align: center;
+    }
     &__container {
         margin: -8px 0 0 -8px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        @include media-breakpoint-down(sm) {
+            justify-content: center;
+        }
     }
 
     &__item {

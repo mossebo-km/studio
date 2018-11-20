@@ -4,16 +4,16 @@
         <div class="form-row__content">
             <div class="form-row__left">
                 <h1 class="franchise-head__title title-h1">
-                    Дизайн интерьера в Cанкт&#8209;Петербурге
+                    <?php the_field('header-title'); ?>
                 </h1>
 
                 <div class="franchise-head__text">
-                    Бизнес – студия по дизайну интерьера с гарантированным клиентопотоком
+                    <?php the_field('header-subtitle'); ?>
                 </div>
 
                 <div class="franchise-head__video">
                     <youtube-video
-                        video-id="VIBVyQ8P02M"
+                        video-id="<?php the_field('youtube-code'); ?>"
                     ></youtube-video>
                 </div>
             </div>

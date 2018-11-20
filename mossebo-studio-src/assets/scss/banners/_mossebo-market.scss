@@ -1,0 +1,29 @@
+.banner-mossebo-market {
+    width: 100%;
+    text-align: center;
+    @include media-breakpoint-up(lg) {
+        text-align: left;
+    }
+    .symbol-logo-market {
+        @include media-breakpoint-up(lg) {
+            margin-left: 0;
+        }
+    }
+    &__content {
+        padding: 16px 24px 24px;
+    }
+    &__image {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        @include media-breakpoint-up(lg) {
+            //margin-top: -70px;
+        }
+        @include media-breakpoint-up(xl) {
+            margin-top: -70px;
+        }
+    }
+    &__text {
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+}

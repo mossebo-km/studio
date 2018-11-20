@@ -82,19 +82,19 @@ get_header();
 <div class="mt-48">
     <div class="container">
         <h2 class="title-h2">
-            <a class="instagram-title-link" href="<?php _the_field('instagram-yuri') ?>" target="_blank" rel="nofollow noreferrer noopener">
+            <a class="instagram-title-link" href="https://www.instagram.com/<?php _the_field('instagram-yuri') ?>" target="_blank" rel="nofollow noreferrer noopener">
                 <img
                     src="<?= THEME_DIR ?>/assets/images/icons/socials/instagram.png"
                     srcset="<?= THEME_DIR ?>/assets/images/icons/socials/instagram@2x.png 2x"
-                    alt="@yurieremin"
+                    alt="@<?php _the_field('instagram-yuri') ?>"
                 >
 
-                @yurieremin
+                @<?php _the_field('instagram-yuri') ?>
             </a>
         </h2>
 
         <u-block-instagram
-            profile="yuriereminv"
+            profile="<?php _the_field('instagram-yuri') ?>"
             :count="4"
         ></u-block-instagram>
     </div>
@@ -103,19 +103,19 @@ get_header();
 <div class="mt-48">
     <div class="container">
         <h2 class="title-h2">
-            <a class="instagram-title-link" href="<?php _the_field('instagram-mark') ?>" target="_blank" rel="nofollow noreferrer noopener">
+            <a class="instagram-title-link" href="https://www.instagram.com/<?php _the_field('instagram-mark') ?>" target="_blank" rel="nofollow noreferrer noopener">
                 <img
                     src="<?= THEME_DIR ?>/assets/images/icons/socials/instagram.png"
                     srcset="<?= THEME_DIR ?>/assets/images/icons/socials/instagram@2x.png 2x"
-                    alt="@markeremin"
+                    alt="@<?php _the_field('instagram-mark') ?>"
                 >
 
-                @markeremin
+                @<?php _the_field('instagram-mark') ?>
             </a>
         </h2>
 
         <u-block-instagram
-            profile="markeremin"
+            profile="<?php _the_field('instagram-mark') ?>"
             :count="4"
         ></u-block-instagram>
     </div>
@@ -124,19 +124,19 @@ get_header();
 <div class="mt-48">
     <div class="container">
         <h2 class="title-h2">
-            <a class="instagram-title-link" href="<?php _the_field('instagram-turjanskii') ?>" target="_blank" rel="nofollow noreferrer noopener">
+            <a class="instagram-title-link" href="https://www.instagram.com/<?php _the_field('instagram-turjanskii') ?>" target="_blank" rel="nofollow noreferrer noopener">
                 <img
                     src="<?= THEME_DIR ?>/assets/images/icons/socials/instagram.png"
                     srcset="<?= THEME_DIR ?>/assets/images/icons/socials/instagram@2x.png 2x"
-                    alt="@turjanskii"
+                    alt="@<?php _the_field('instagram-turjanskii') ?>"
                 >
 
-                @turjanskii
+                @<?php _the_field('instagram-turjanskii') ?>
             </a>
         </h2>
 
         <u-block-instagram
-            profile="turjanskii"
+            profile="<?php _the_field('instagram-turjanskii') ?>"
             :count="4"
         ></u-block-instagram>
     </div>

@@ -18,6 +18,8 @@ import YoutubeVideo from './components/YoutubeVideo'
 import BackgroundImageLoader from './components/imageLoaders/BackgroundImageLoader'
 import UBlockInstagram from './components/UBlockInstagram'
 import FormStandart from './components/forms/FormStandart'
+import FormCalc from './components/forms/FormCalc'
+import StudiosCards from './components/StudiosCards'
 
 // Plugins Imports
 import './components/plugins/social-slider'
@@ -48,7 +50,9 @@ const app = new Vue({
         MobileSlider,
         UBlockInstagram,
         YoutubeVideo,
-        FormStandart
+        FormStandart,
+        FormCalc,
+        StudiosCards
 },
 
     data: {
@@ -96,3 +100,5 @@ import FormSender from './scripts/FormSender'
 ;[].forEach.call(document.querySelectorAll('.js-fs'), el => {
     new FormSender(el)
 })
+
+$('.js-form-popup').fancybox();

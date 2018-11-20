@@ -48,7 +48,7 @@
                     <div class="form-submit mt-32">
                         <button type="submit" class="button button-loading button-dark">
                         <span class="button-loading__content">
-                            Отправить заявку
+                            {{ FormButtonText }}
                         </span>
 
                             <svg class="button-loading__loader">
@@ -75,7 +75,7 @@
                                    target="_blank">
                                     {{ PrivacyPolicyLinkText }}
                                 </a>
-                        </span>
+                            </span>
                         </label>
                     </div>
                 </form>

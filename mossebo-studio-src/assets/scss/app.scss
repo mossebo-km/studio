@@ -5,18 +5,19 @@
 @import "variables/colors";
 
 @import "~bootstrap/scss/bootstrap-grid";
+//@import "~bootstrap/scss/";
 
 @import "global";
 @import "variables/icons";
 
 
+@import "ui/header";
+@import "ui/footer";
 @import "ui/article";
 @import "ui/buttons";
 @import "ui/chart-list";
-@import "ui/footer";
-@import "ui/form-elements";
-@import "ui/form-row";
-@import "ui/header";
+@import "u-blocks/forms/form-elements";
+@import "u-blocks/forms/form-row";
 @import "ui/icon-label";
 @import "ui/images";
 @import "ui/instagram-title-link";
@@ -24,6 +25,7 @@
 @import "ui/loading-wrap";
 @import "ui/tabs";
 @import "ui/_watch-all-button";
+@import "ui/pop-up";
 
 
 @import "u-blocks/breadcrumbs";
@@ -56,8 +58,6 @@
 @import "u-blocks/landing-header";
 @import "u-blocks/instagram";
 
-@import "u-blocks/forms/interior-design-bottom";
-
 @import "plugins/swiper";
 @import "plugins/fancybox";
 @import "plugins/youtube-video";
@@ -72,5 +72,12 @@
 @import "pages/archives-project";
 @import "pages/single-blog";
 @import "pages/archives-blog";
+@import "pages/contacts";
 @import "pages/thanks-form";
 @import "pages/thanks-franchise";
+
+
+// Banners
+
+@import "banners/mossebo-market";
+@import "banners/take-catalog";

@@ -45,7 +45,7 @@ class InstagramDataLoader extends BlankPlugin {
             return acc
         }, [])
 
-        script.src = '//mossebo.market/api/instagram?callback=showInstagramWidget&' + params.join('&')
+        script.src = '//services.mossebo.ru/api/v1/instagram?callback=showInstagramWidget&' + params.join('&')
         script.type  = 'text/javascript'
         script.async = true
 

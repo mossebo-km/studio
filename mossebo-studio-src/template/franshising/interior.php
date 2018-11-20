@@ -13,30 +13,43 @@
 
     function getInteriorImages()
     {
-        $interiorImages = [
-            [
-                "place"   => "studio",
-                "preview" => THEME_DIR . "/assets/images/interior/bulbasaur__preview.jpg",
-                "src"     => THEME_DIR . "/assets/images/interior/bulbasaur.jpg"
-            ],
-            [
-                "place"   => "negotiating",
-                "preview" => THEME_DIR . "/assets/images/interior/charmander__preview.jpg",
-                "src"     => THEME_DIR . "/assets/images/interior/charmander.jpg"
-            ],
-            [
-                "place"   => "designers",
-                "preview" => THEME_DIR . "/assets/images/interior/pikachu__preview.jpg",
-                "src"     => THEME_DIR . "/assets/images/interior/pikachu.jpg"
-            ],
-            [
-                "place"   => "reception",
-                "preview" => THEME_DIR . "/assets/images/interior/squirtle__preview.jpg",
-                "src"     => THEME_DIR . "/assets/images/interior/squirtle.jpg"
-            ]
-        ];
+        $gallery__studios = get_field('gallery-studios',17);
+        $gallery__negotiating = get_field('gallery-negotiating',17);
+        $gallery__designers = get_field('gallery-designers',17);
+        $gallery__reception = get_field('gallery-reception',17);
 
-        return toEscapedJson($interiorImages);
+        $gallery__all = [];
+
+        foreach($gallery__studios as $studio) {
+            $gallery__all[] = [
+                "place"   => "studio",
+                "preview" => $studio['sizes']['thumbnail'],
+                "src"     => $studio['url']
+            ];
+        }
+        foreach($gallery__negotiating as $negotiating) {
+            $gallery__all[] = [
+                "place"   => "negotiating",
+                "preview" => $negotiating['sizes']['thumbnail'],
+                "src"     => $negotiating['url']
+            ];
+        }
+        foreach($gallery__designers as $designers) {
+            $gallery__all[] = [
+                "place"   => "designers",
+                "preview" => $designers['sizes']['thumbnail'],
+                "src"     => $designers['url']
+            ];
+        }
+        foreach($gallery__reception as $reception) {
+            $gallery__all[] = [
+                "place"   => "reception",
+                "preview" => $reception['sizes']['thumbnail'],
+                "src"     => $reception['url']
+            ];
+        }
+
+        return toEscapedJson($gallery__all);
     }
 ?>
 

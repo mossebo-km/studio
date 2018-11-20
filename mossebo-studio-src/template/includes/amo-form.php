@@ -9,7 +9,7 @@ class AmoForm
     protected $statusId = '';
     protected $responsibleUserId = '';
     protected $tags = '';
-    protected $mailTo = 'trigur@yandex.ru';
+    protected $mailTo = 'vlad.starkovsky@gmail.com';
 
     protected $fields = [
         'name' => 'Имя не введено',

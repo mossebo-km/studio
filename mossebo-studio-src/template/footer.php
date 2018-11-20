@@ -13,7 +13,7 @@
                         <div class="social-links__container">
                             <div class="social-links__item">
                                 <a
-                                    href="#"
+                                    href="https://www.instagram.com/<?php _the_field('instagram-mossebo') ?>"
                                     class="social-links__link"
                                     target="_blank"
                                     rel="nofollow noreferrer noopener"
@@ -26,7 +26,7 @@
 
                             <div class="social-links__item">
                                 <a
-                                    href="#"
+                                    href="https://vk.com/<?php _the_field('vk-mossebo') ?>"
                                     class="social-links__link"
                                     target="_blank"
                                     rel="nofollow noreferrer noopener"
@@ -39,7 +39,7 @@
 
                             <div class="social-links__item">
                                 <a
-                                    href="#"
+                                    href="https://www.facebook.com/<?php _the_field('fb-mossebo') ?>"
                                     class="social-links__link"
                                     target="_blank"
                                     rel="nofollow noreferrer noopener"
@@ -52,7 +52,7 @@
 
                             <div class="social-links__item">
                                 <a
-                                    href="#"
+                                    href="https://ok.ru/<?php _the_field('ok-mossebo') ?>"
                                     class="social-links__link"
                                     target="_blank"
                                     rel="nofollow noreferrer noopener"
@@ -65,7 +65,7 @@
 
                             <div class="social-links__item">
                                 <a
-                                    href="#"
+                                    href="https://zen.yandex.ru/<?php _the_field('zen-mossebo') ?>"
                                     class="social-links__link"
                                     target="_blank"
                                     rel="nofollow noreferrer noopener"
@@ -78,7 +78,7 @@
 
                             <div class="social-links__item">
                                 <a
-                                    href="#"
+                                    href="https://www.pinterest.ru/<?php _the_field('pinterest-mossebo') ?>"
                                     class="social-links__link"
                                     target="_blank"
                                     rel="nofollow noreferrer noopener"
@@ -91,7 +91,7 @@
 
                             <div class="social-links__item">
                                 <a
-                                    href="#"
+                                    href="https://www.youtube.com/<?php _the_field('youtube-mossebo') ?>"
                                     class="social-links__link"
                                     target="_blank"
                                     rel="nofollow noreferrer noopener"
@@ -175,13 +175,13 @@
                 <div class="col-md-5 footer-bottom__links">
                     <div class="row">
                         <div class="col-lg-6">
-                            <a href="#">
+                            <a href="/privacy-policy">
                                 <?php _e('Правила пользования', 'mossebo') ?>
                             </a>
                         </div>
 
                         <div class="col-lg-6">
-                            <a href="#">
+                            <a href="/privacy-policy">
                                 <?php _e('Политика конфиденциальности', 'mossebo') ?>
                             </a>
                         </div>
@@ -192,6 +192,8 @@
     </div>
 
 </footer>
+
+<?php get_template_part( 'includes/form-popup' ) ?>
 
 </div>
 <!-- /APP -->

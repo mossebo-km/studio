@@ -1,0 +1,95 @@
+.contacts {
+
+    &-central {
+        .col-md-4 {
+            //min-height: 400px;
+        }
+        &__left {
+            height: 100%;
+            padding: 16px;
+            overflow: hidden;
+        }
+        &__right {
+            height: 100%;
+            margin-top: 16px;
+            padding: 16px;
+            @include media-breakpoint-up(md) {
+                margin-top: 0;
+            }
+        }
+        &__link {
+            display: block;
+            color: $color-primary;
+            text-decoration: none;
+            margin-bottom: 16px;
+        }
+        &__mail {
+            display: block;
+            color: $color-primary;
+            font-weight: 500;
+            text-decoration: none;
+            margin-bottom: 8px;
+        }
+        &__text {
+            padding-bottom: 24px;
+        }
+        &__office-image {
+            background-image: url(/wp-content/themes/mossebo/assets/images/contacts/place.png);
+            background-size: cover;
+            background-position: center center;
+            margin-right: -16px;
+            margin-left: -16px;
+            margin-bottom: -16px;
+            &::before {
+                content: '';
+                display: block;
+                padding-top: 40%;
+            }
+        }
+    }
+
+
+    &__form-bottom {
+        @include media-breakpoint-up(md) {
+            &__images {
+                margin-top: -32px;
+            }
+
+            &__image {
+                margin-top: 32px;
+            }
+        }
+    }
+
+}
+
+.studios-cards {
+    &__item {
+        margin-bottom: 24px;
+        padding: 24px;
+        height: 145px;
+        box-sizing: border-box;
+    }
+    &__city {
+        font-size: 16px;
+        color: $color-primary;
+        font-weight: 500;
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .symbol-location {
+            margin-right: 8px;
+            fill: $color-primary;
+        }
+    }
+    &__adress {
+        color: $color-text-primary;
+        font-size: 14px / 16px;
+        padding: 0 8px;
+        margin-bottom: 8px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

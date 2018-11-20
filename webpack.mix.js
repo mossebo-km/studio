@@ -60,7 +60,8 @@ mix.browserSync({
         target: "https://mossebo-studio.test"
     },
     https: true,
-    open: false
+    open: false,
+    notify: false
 });
 
 

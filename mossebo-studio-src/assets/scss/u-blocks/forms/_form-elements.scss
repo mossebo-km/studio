@@ -96,6 +96,22 @@
         min-height: 110px;
     }
 
+    &-select {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid $color-border;
+        border-radius: $radius;
+        padding: 16px;
+        color: $color-text-primary;
+        -webkit-appearance: none;
+        transition: border-color .3s ease-out;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
     &-label {
         display: block;
         padding-left: 6px;
@@ -354,9 +370,6 @@
 
 
 
-
-
-
 .accent-form {
     background-color: $color-primary;
     padding: 24px 24px 32px;
@@ -408,4 +421,62 @@
             font-size: 24px / 28px;
         }
     }
+}
+
+
+.form-calc {
+    background-color: $color-primary;
+    padding: 24px 24px 32px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    @include media-breakpoint-up(md) {
+        padding: 24px 32px 32px;
+
+        &__title {
+            font-size: 24px / 28px;
+        }
+    }
+    &__content {
+        width: 100%;
+    }
+
+    &__title {
+        margin-bottom: 22px;
+        font-size: 16px / 24px;
+        font-weight: 500;
+    }
+
+    &__form {
+        position: relative;
+        min-height: 208px;
+    }
+
+    &-step {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        &__description {
+            text-align: left;
+        }
+        &__by_step {
+            padding-top: 32px;
+            text-align: center;
+        }
+    }
+
+    .button {
+        min-width: 60%;
+    }
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+    opacity: 0;
 }

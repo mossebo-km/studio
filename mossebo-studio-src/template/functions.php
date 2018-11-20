@@ -156,6 +156,14 @@ if (! function_exists('mix')) {
     }
 }
 
+
+// ACF options page
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page();
+}
+
+
+
 if (! function_exists('toEscapedJson')) {
     function toEscapedJson($data)
     {
@@ -168,8 +176,8 @@ if (! function_exists('toEscapedJson')) {
 if (! function_exists('_get_field')) {
     function _get_field($key)
     {
-        return '#';
-        return get_field($key, 19);
+        //return '#';
+        return get_field($key, 2722);
     }
 }
 
@@ -211,7 +219,7 @@ if (! function_exists('handleAjaxForm')) {
                 handleAmoForm('/thanks-franchise');
                 break;
 
-            case 'DESIGN_INTERIOR':
+            case 'DESIGN_INTERIOR_FORM':
                 handleAmoForm('/thanks');
                 break;
 

@@ -7,7 +7,7 @@
                 alt="@mossebo.official"
             >
 
-            @mossebo.official
+            @<?php _the_field('instagram-mossebo') ?>
         </a>
     </h2>
 
@@ -16,12 +16,12 @@
     </div>
 
     <u-block-instagram
-        profile="mossebo.official"
+        profile="<?php _the_field('instagram-mossebo') ?>"
         :count="8"
     ></u-block-instagram>
 
     <div class="watch-all-btn-wrap">
-        <a href="https://www.instagram.com/mossebo.official/"
+        <a href="https://www.instagram.com/<?php _the_field('instagram-mossebo') ?>"
            class="watch-all-btn"
            target="_blank"
            rel="nofollow noreferrer noopener"

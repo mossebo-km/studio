@@ -47,14 +47,14 @@ msgstr "Šios temos gali būti naudojamos kituose Jūsų tinklo tinklalapiuose."
 msgid "Are you sure you wish to delete this theme?"
 msgstr "Ar tikrai norite ištrinti šią temą?"
 
-#: wp-admin/network/site-themes.php:183 wp-admin/network/themes.php:279
+#: wp-admin/network/themes.php:279 wp-admin/network/site-themes.php:183
 msgid "%s theme disabled."
 msgid_plural "%s themes disabled."
 msgstr[0] "Išjungta temų: %s "
 msgstr[1] "Išjungta temų: %s "
 msgstr[2] "Išjungta temų: %s "
 
-#: wp-admin/network/site-themes.php:175 wp-admin/network/themes.php:271
+#: wp-admin/network/themes.php:271 wp-admin/network/site-themes.php:175
 msgid "%s theme enabled."
 msgid_plural "%s themes enabled."
 msgstr[0] "Įjungta temų: %s "
@@ -280,13 +280,13 @@ msgid "Dashboard leads to the Dashboard for that site."
 msgstr "Skydelis: Būsite perkelti į pasirinkto tinklalapio administravimo sąsają."
 
 #. translators: %s: site name
-#: wp-admin/network/site-info.php:117 wp-admin/network/site-settings.php:70
-#: wp-admin/network/site-themes.php:153 wp-admin/network/site-users.php:196
+#: wp-admin/network/site-info.php:117 wp-admin/network/site-users.php:196
+#: wp-admin/network/site-themes.php:153 wp-admin/network/site-settings.php:70
 msgid "Edit Site: %s"
 msgstr "Tinklalapio redagavimas: %s"
 
-#: wp-admin/network/site-info.php:23 wp-admin/network/site-settings.php:22
-#: wp-admin/network/site-themes.php:43 wp-admin/network/site-users.php:38
+#: wp-admin/network/site-info.php:23 wp-admin/network/site-users.php:38
+#: wp-admin/network/site-themes.php:43 wp-admin/network/site-settings.php:22
 msgid "Invalid site ID."
 msgstr "Netinkamas tinklalapio ID."
 
@@ -395,12 +395,12 @@ msgstr "Temos %s"
 msgid "Installed Themes"
 msgstr "Įdiegtos temos"
 
-#: wp-admin/network/menu.php:53 wp-admin/network/themes.php:253
+#: wp-admin/network/themes.php:253 wp-admin/network/menu.php:53
 msgctxt "theme"
 msgid "Add New"
 msgstr "Įdiegti temą"
 
-#: wp-admin/network/menu.php:67 wp-admin/network/settings.php:19
+#: wp-admin/network/settings.php:19 wp-admin/network/menu.php:67
 msgid "Network Settings"
 msgstr "Tinklo nustatymai"
 
@@ -408,8 +408,8 @@ msgstr "Tinklo nustatymai"
 msgid "Updates"
 msgstr "Atnaujinimai"
 
-#: wp-admin/network/menu.php:34 wp-admin/network/upgrade.php:15
-#: wp-admin/network/upgrade.php:40 wp-admin/network/upgrade.php:131
+#: wp-admin/network/upgrade.php:15 wp-admin/network/upgrade.php:40
+#: wp-admin/network/upgrade.php:131 wp-admin/network/menu.php:34
 msgid "Upgrade Network"
 msgstr "Atnaujinti tinklą"
 
@@ -553,15 +553,15 @@ msgstr "Administratoriaus el. paštas"
 msgid "A new user will be created if the above email address is not in the database."
 msgstr "Jei el. pašto adreso dar nėra duomenų bazėje, bus sukurtas naujas vartotojas."
 
-#: wp-admin/network/site-themes.php:173 wp-admin/network/themes.php:269
+#: wp-admin/network/themes.php:269 wp-admin/network/site-themes.php:173
 msgid "Theme enabled."
 msgstr "%s tema įgalinta."
 
-#: wp-admin/network/site-themes.php:181 wp-admin/network/themes.php:277
+#: wp-admin/network/themes.php:277 wp-admin/network/site-themes.php:181
 msgid "Theme disabled."
 msgstr "%s tema išjungta."
 
-#: wp-admin/network/site-themes.php:187 wp-admin/network/themes.php:291
+#: wp-admin/network/themes.php:291 wp-admin/network/site-themes.php:187
 msgid "No theme selected."
 msgstr "Tema nepasirinkta."
 
@@ -593,7 +593,7 @@ msgstr "Įveskite vartotojo vardą ir el. pašto adresą."
 msgid "Duplicated username or email address."
 msgstr "Vartotojo vardas arba el. pašto adresas jau naudojamas."
 
-#: wp-admin/network/site-users.php:310 wp-admin/network/user-new.php:129
+#: wp-admin/network/user-new.php:129 wp-admin/network/site-users.php:310
 msgid "Add User"
 msgstr "Pridėti vartotoją"
 
@@ -757,12 +757,12 @@ msgstr "You are about to mark the site %s as not mature."
 msgid "The requested action is not valid."
 msgstr "Šis veiksmas negalimas."
 
-#: wp-admin/network/site-info.php:28 wp-admin/network/site-settings.php:26
-#: wp-admin/network/site-themes.php:49 wp-admin/network/site-users.php:42
+#: wp-admin/network/site-info.php:28 wp-admin/network/site-users.php:42
+#: wp-admin/network/site-themes.php:49 wp-admin/network/site-settings.php:26
 msgid "The requested site does not exist."
 msgstr "Toks tinklalapis neegzistuoja."
 
-#: wp-admin/network/site-users.php:346 wp-admin/network/user-new.php:117
+#: wp-admin/network/user-new.php:117 wp-admin/network/site-users.php:346
 msgid "A password reset link will be sent to the user via email."
 msgstr "Slaptažodžio atstatymo nuoroda bus išsiųsta vartotojui el.paštu."
 
@@ -1203,8 +1203,8 @@ msgstr "Deja, Jūs negalite tvarkyti tinklo temų."
 msgid "Sorry, you are not allowed to delete themes for this site."
 msgstr "Deja, Jūs negalite trinti temų šiame tinklalapyje."
 
-#: wp-admin/network/site-info.php:14 wp-admin/network/site-settings.php:14
-#: wp-admin/network/site-users.php:14
+#: wp-admin/network/site-info.php:14 wp-admin/network/site-users.php:14
+#: wp-admin/network/site-settings.php:14
 msgid "Sorry, you are not allowed to edit this site."
 msgstr "Deja, Jūs negalite redaguoti šio tinklalapio."
 
@@ -1226,10 +1226,6 @@ msgstr "Deja, Jūs negalite keisti šio tinklalapio."
 msgid "Add the following to your %1$s file in %2$s <strong>above</strong> the line reading %3$s:"
 msgstr "Pridėkite šias eilutes į savo tinklalapio %1$s failą (jį rasite %2$s), <strong>virš</strong> eilutės %3$s:"
 
-#. translators: This string should only be translated if wp-config-sample.php
-#. is localized. You can check the localized release package or
-#. https://i18n.svn.wordpress.org/<locale code>/branches/<wp
-#. version>/dist/wp-config-sample.php
 #: wp-admin/includes/network.php:436
 msgid "That&#8217;s all, stop editing! Happy blogging."
 msgstr "That&#8217;s all, stop editing! Happy blogging."

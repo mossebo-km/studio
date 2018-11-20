@@ -1,131 +1,69 @@
-
 .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
     background: $color-ui;
-    small {
-        color: $color-text-secondary;
-        display: block;
+    box-shadow: $shadows-primary;
+    @include media-breakpoint-up(lg) {
+        position: relative;
     }
-    &__flex {
-        height: 70px;
+    &-flex {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: nowrap;
-        &_item {
-            position: relative;
-            &--link {
-                padding: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                text-decoration: none;
-                color: $color-text-primary;
-                &:hover {
-                    .symbol-icon {
-                        fill: $color-text-primary;
-                    }
-                }
-            }
-            // Burger
-            &:nth-child(1) {
-                @include media-breakpoint-up(md) {
-                    display: none;
-                }
-            }
-            //Logo
-            &:nth-child(2) {
-                @include media-breakpoint-up(md) {
-
-                }
-            }
-            // Projects
-            &:nth-child(3) {
-                .symbol-icon {
-                    margin-right: 8px;
-                }
-                @include media-breakpoint-up(md) {
-
-                }
-            }
-            //Location
-            &:nth-child(4) {
-                .symbol-icon {
-                    margin-right: 2px;
-                    width: 24px;
-                    height: 24px;
-                }
-                @include media-breakpoint-up(md) {
-                    //display: none;
-                }
-            }
-            //Phone Call
-            &:nth-child(7) {
-                @include media-breakpoint-up(md) {
-                    .header__flex_item--link {
-                        padding: 0;
-                    }
-                    .symbol-icon {
-                        display: none;
-                    }
-                }
-            }
+        margin: 0 -16px;
+        height: 55px;
+        @include media-breakpoint-up(lg) {
+            height: 70px;
         }
     }
-    .symbol-icon {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-.nav {
-    border-top: 1px solid $color-border;
-    border-bottom: 1px solid $color-border;
-    .menu {
-        display: block;
-        position: relative;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        &-item {
-            display: inline-block;
-        }
-        a {
-            text-decoration: none;
-            display: block;
-            padding: 16px 16px;
-            color: $color-text-primary;
-        }
-    }
-    .portfolio-nav {
+    &--nav-icon {
+        width: 55px;
+        height: 55px;
+        box-sizing: border-box;
         display: flex;
         align-items: center;
-        padding: 16px 0;
+        justify-content: center;
+        @include media-breakpoint-up(lg) {
+            width: auto;
+            height: 70px;
+        }
+    }
+    .button {
+        display: none;
+        @include media-breakpoint-up(lg) {
+            display: inline-flex;
+            max-width: 165px;
+        }
+        @include media-breakpoint-up(xl) {
+            max-width: 180px;
+        }
+    }
+    a {
         text-decoration: none;
         color: $color-text-primary;
-        font-weight: 500;
-        border-right: 1px solid $color-border;
-        transition: 0.3s;
-        &:hover {
-            color: $color-primary;
-        }
-        .burger__icon {
-            margin-right: 24px;
+    }
+    &-fixed {
+        height: 55px;
+        @include media-breakpoint-up(lg) {
+            display: none;
         }
     }
 }
 
-.logo {
-    display: inline-block;
-    &--header {
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
-}
 
 .burger {
+    padding: 20px 15px;
+    border-left: 1px solid $color-border;
+    border-right: 1px solid $color-border;
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
     &__icon {
         width: 20px;
-        height: 16px;
+        height: 12px;
         display: block;
         position: relative;
         box-sizing: border-box;
@@ -140,13 +78,104 @@
             }
             &:nth-child(2) {
                 left: 0;
-                top: 7px;
+                top: 5px;
             }
             &:nth-child(3) {
                 left: 0;
-                top: 14px;
+                top: 10px;
             }
         }
+    }
+}
+
+.logo {
+    display: inline-block;
+    &--header {
+        flex: 1;
+        padding: 0 16px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include media-breakpoint-up(lg) {
+            flex: auto;
+        }
+    }
+}
+
+.projects {
+    display: none;
+    transition: 0.3s;
+    &:hover {
+        .symbol-projects {
+            fill: $color-text-primary;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        display: block;
+        width: 150px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .symbol-projects {
+            margin-right: 8px;
+        }
+    }
+    &__layout {
+        position: relative;
+    }
+}
+
+.location {
+    border-left: 1px solid $color-border;
+    border-right: 1px solid $color-border;
+    transition: 0.3s;
+    &:hover {
+        .symbol-location {
+            fill: $color-text-primary;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        border: none;
+        padding: 0 8px;
+    }
+    @include media-breakpoint-up(xl) {
+        padding: 0 24px;
+    }
+    &__text {
+        display: none;
+        margin-left: 2px;
+        @include media-breakpoint-up(lg) {
+            display: inline-block;
+        }
+    }
+}
+
+.phone {
+    display: none;
+    padding: 0 8px;
+    small {
+        display: block;
+        color: $color-text-secondary;
+        font-size: 12px;
+    }
+    @include media-breakpoint-up(lg) {
+        display: block;
+    }
+    @include media-breakpoint-up(xl) {
+        padding: 0 40px;
+    }
+}
+
+.callback {
+    background: $color-primary;
+    border-right: 1px solid $color-border;
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+    .symbol-phone {
+        fill: $color-text-primary;
     }
 }
 
@@ -154,7 +183,7 @@
     padding: 26px;
     width: 90vw;
     max-width: 375px;
-    .row>* {
+    .row > * {
         padding: 16px;
     }
 }
@@ -194,5 +223,58 @@
     &.is-active &__link {
         color: $color-text-primary;
         border-bottom: 0;
+    }
+}
+
+.symbol-projects {
+    width: 20px;
+    height: 20px;
+}
+
+.symbol-location,
+.symbol-phone {
+    max-width: 24px;
+    max-height: 24px;
+}
+
+
+.nav {
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+    .menu {
+        display: block;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        &-item {
+            display: inline-block;
+        }
+        a {
+            text-decoration: none;
+            display: block;
+            padding: 16px 16px;
+            color: $color-text-primary;
+        }
+    }
+    .portfolio-nav {
+
+        display: flex;
+        align-items: center;
+        padding: 16px 24px 16px 16px;
+        text-decoration: none;
+        color: $color-text-primary;
+        font-weight: 500;
+        border-right: 1px solid $color-border;
+        transition: 0.3s;
+        &:hover {
+            color: $color-primary;
+        }
+        .burger__icon {
+            margin-right: 24px;
+        }
     }
 }

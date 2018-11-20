@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Really Simple SSL - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-10-15 18:46:44+0000\n"
+"PO-Revision-Date: 2018-11-12 17:55:45+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,39 +11,47 @@ msgstr ""
 "Language: uk_UA\n"
 "Project-Id-Version: Plugins - Really Simple SSL - Stable (latest release)\n"
 
+#: class-admin.php:2335
+msgid "Really Simple SSL has received no response from the webpage. See our knowledge base for %sinstructions on how to fix this warning%s."
+msgstr "Really Simple SSL не отримав відповідь від веб-сторінки. Подивіться в нашій базі знань %sінструкції щодо виправлення цього попередження%s. "
+
+#: class-admin.php:2518
+msgid "The Complianz Privacy Suite (GDPR/CaCPA) for WordPress. Simple, Quick and Complete. Up-to-date customized legal documents by a prominent IT Law firm."
+msgstr "The Complianz Privacy Suite (GDPR/CaCPA) для WordPress. Просто, швидко та в повному обсязі. Найсвіжіші персоналізовані юридичні документи від відомої фірми в галузі IT законодавства."
+
+#: class-admin.php:402
+msgid "Really Simple SSL failed to detect a valid SSL certificate. If you do have an SSL certificate, try to reload this page over https by clicking this button: %sReload over https%s. The built-in certificate check will run once daily, to force a new certificate check visit the SSL settings page. "
+msgstr "Really Simple SSL не зміг виявити дійсний SSL сертифікат. Якщо у вас дійсно є SSL сертифікат, спробуйте перезавантажити цю сторінку через https натиснувши цю клавішу: %sПерезавантажити через https%s. Вбудована перевірка сертифікату буде виконуватися один раз щоденно, щоб змусити нову перевірку сертифікату зайти на сторінку налаштувань SSL. "
+
 #: multisite-cron.php:11
 msgid "Once every minute"
 msgstr "Одного разу кожну хвилину"
 
-#: class-admin.php:1861
+#: class-admin.php:1948
 msgid "No thanks"
 msgstr "Ні, дякую"
 
-#: class-admin.php:1860
+#: class-admin.php:1947
 msgid "Maybe later"
 msgstr "Можливо пізніше"
 
-#: class-admin.php:1859
+#: class-admin.php:1946
 msgid "Leave a review"
 msgstr "Залиште відгук"
-
-#: class-multisite.php:735
-msgid "Conversion of websites %s percent complete."
-msgstr "Перетворення сайтів %s процентів завершено."
 
 #: class-multisite.php:737
 msgid "You have just started enabling or disabling SSL on multiple websites at once, and this process is not completed yet. Please refresh this page to check if the process has finished. It will proceed in the background."
 msgstr "Ви тільки що почали активувати або вимикати SSL на кількох веб-сайтах одночасно, і цей процес ще не завершено. Будь ласка, оновіть цю сторінку, щоб перевірити, чи завершився процес. Це буде відбуватися у фоновому режимі."
 
-#: class-admin.php:2424
-msgid "The Complianz GDPR Privacy Suite for WordPress. Simple, Quick and Complete. Up-to-date legal documents by one of the most prominent EU IT Law firms."
-msgstr "Complianz GDPR Privacy Suite для WordPress. Простий, швидкий і завершений. Сучасні юридичні документи однієї з найвідоміших EU IT юридичних фірм."
-
-#: class-admin.php:1855
+#: class-admin.php:1942
 msgid "Hi, you have been using Really Simple SSL for a month now, awesome! If you have a moment, please consider leaving a review on WordPress.org to spread the word. We greatly appreciate it! If you have any questions or feedback, leave us a %smessage%s."
 msgstr "Привіт, ви використовуєте Really Simple SSL протягом місяця, чудово! Якщо у вас є час, будь ласка, залиште огляд на WordPress.org, щоб поділитися вашими враженнями. Ми дуже цінуємо це! Якщо у вас виникли питання або відгуки, залиште нам %sповідомлення%s."
 
-#: class-admin.php:2960
+#: class-multisite.php:735
+msgid "Conversion of websites %s percent complete."
+msgstr "Перетворення сайтів завершено на %s відсотків."
+
+#: class-admin.php:3089
 msgid "Deactivate Plugin and keep SSL"
 msgstr "Вимкнути плагін та зберегти SSL"
 
@@ -59,7 +67,7 @@ msgstr "Це може призвести до помилок при актива
 msgid "You run a Multisite installation with subdomains, but your site doesn't have a wildcard certificate."
 msgstr "Ви використовуєте встановлений Мультисайт з піддоменами, але ваш сайт не має підстановочного сертификату. "
 
-#: class-admin.php:2992
+#: class-admin.php:3121
 msgid "Clicking this button will deactivate the plugin while keeping your site on SSL. The WordPress 301 redirect, Javascript redirect and mixed content fixer will stop working. The site address will remain https:// and the .htaccess redirect will remain active. Deactivating the plugin via the plugins overview will revert the site back to http://."
 msgstr "Натискання на цю клавішу деактивує плагін, зберігаючи при цьому ваш сайт на SSL. Переадресування WordPress 301, переадресування Javascript і функція виправлення змішаного вмісту припинять роботу. Адреса сайту залишиться у форматі https:// та переадресування .htaccess лишаться активованими. Деактивація плагіна через вікно перегляду плагінів поверне ваш сайт до формату http://. "
 
@@ -67,53 +75,49 @@ msgstr "Натискання на цю клавішу деактивує пла�
 msgid "Activate SSL per site or install a wildcard certificate to fix this."
 msgstr "Активуйте SSL для сайту або встановіть підстановочний сертифікат, щоб виправити це."
 
-#: class-admin.php:3029
+#: class-admin.php:3165
 msgid "(revert to http)"
 msgstr "(відкат до http)"
 
-#: class-admin.php:2970
+#: class-admin.php:3099
 msgid "Deactivating the plugin via the plugins overview will revert the site back to http://."
 msgstr "Деактивація плагіну через вікно перегляду плагінів поверне сайт до http://. "
 
-#: class-admin.php:2969
+#: class-admin.php:3098
 msgid "* The .htaccess redirect will remain active"
 msgstr "* Переадресування .htaccess залишиться активним "
 
-#: class-admin.php:2968
+#: class-admin.php:3097
 msgid "* Your site address will remain https://"
 msgstr "* Адреса вашего сайту залишиться https:// "
 
-#: class-admin.php:2967
+#: class-admin.php:3096
 msgid "* The WordPress 301 and Javascript redirect will stop working"
 msgstr "* Переадресування WordPress 301 та Javascript припинять роботу "
 
-#: class-admin.php:2966
+#: class-admin.php:3095
 msgid "* The mixed content fixer will stop working"
 msgstr "* Функція виправлення змішаного вмісту припинить роботу "
 
-#: class-admin.php:2964
+#: class-admin.php:3093
 msgid "Deactivating the plugin while keeping SSL will do the following:"
 msgstr "Деактивація плагіну при збереженні SSL зробить наступне: "
 
-#: class-admin.php:2481
+#: class-admin.php:2575
 msgid "Export your WooCommerce sales directly to Moneybird."
 msgstr "Експорт ваших продажів WooCommerce напряму до Moneybird. "
 
-#: class-admin.php:2437
+#: class-admin.php:2531
 msgid "UM Tagging allows you to @tag or @mention all users on your platform."
 msgstr "UM Tagging дозволяє ставити @tag або @mention усім користувачам вашої платформи. "
 
-#: class-admin.php:2399
+#: class-admin.php:2493
 msgid "We have some suggestions for your setup. Let us know if you have a suggestion for %sus%s!"
 msgstr "У нас є кілька пропозицій щодо ваших налаштувань. Дайте нам знати, якщо у вас є будь-які пропозиції для %sнас%s! "
 
 #: class-admin.php:408
 msgid "Really Simple SSL requires a valid SSL certificate. You can check your certificate on %sQualys SSL Labs%s."
 msgstr "Really Simple SSL вимагає діючий SSL сертифікат. Ви можете перевірити ваш сертифікат на %sQualys SSL Labs%s. "
-
-#: class-admin.php:402
-msgid "Really Simple SSL failed to detect a valid SSL certificate. If you do have an SSL certificate, try to reload this page over https by clicking this button: %sReload over https%s "
-msgstr "Really Simple SSL не зміг знайти діючий SSL сертифікат. Якщо у вас є SSL сертифікат, спробуйте перезавантажити цю сторінку через https натиснувши на цю кнопку: %sЗавантажити через https%s "
 
 #: class-admin.php:395
 msgid "Detected possible certificate issues"
@@ -123,39 +127,39 @@ msgstr "Помічено можливі проблеми с сертифікат
 msgid "Really Simple SSL and Really Simple SSL add-ons do not process any personal identifiable information, so the GDPR does not apply to these plugins or usage of these plugins on your website. You can find our privacy policy <a href=\"%s\" target=\"_blank\">here</a>."
 msgstr "Really Simple SSL та додаток Really Simple SSL не оброблюють жодної особистої інформації, так що GDPR не відноситься до цих плагінів або викорастання цих плагінів на вашому веб-сайті. Ви можете ознайомитись з нашою политикою конфіденційності <a href=\"%s\" target=\"_blank\">тут</a> "
 
-#: class-admin.php:2984
+#: class-admin.php:3113
 msgid "I'm sure I want to deactivate"
 msgstr "Я впевнений, що хочу деактивувати"
 
-#: class-admin.php:2987
+#: class-admin.php:3116
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: class-admin.php:2963
+#: class-admin.php:3092
 msgid "Are you sure?"
 msgstr "Ви впевнені?"
 
-#: class-admin.php:2677
+#: class-admin.php:2771
 msgid "Deactivate plugin and keep SSL"
 msgstr "Деактивувати плагін та зберегти SSL"
 
-#: class-admin.php:2542
+#: class-admin.php:2636
 msgid "More info"
 msgstr "Детальніше"
 
-#: class-admin.php:2470
+#: class-admin.php:2564
 msgid "Export your Easy Digital Downloads sales directly to Moneybird."
 msgstr "Експорт ваших продажів Easy Digital Downloads напряму до Moneybird."
 
-#: class-admin.php:2458
+#: class-admin.php:2552
 msgid "Automatically send a notification when a user's post on the activity feed is liked or commented on."
 msgstr "Автоматично надсилати повідомлення, коли запис користувача в каналі активності вподобали або прокоментували. "
 
-#: class-admin.php:2448
+#: class-admin.php:2542
 msgid "Show the most visited users and add a 'last visited users' tab to each user profile."
 msgstr "Показуйте найбільш відвідувані користувачі та додайте вкладку 'останні відвідувані користувачі' до кожного профілю користувача."
 
-#: class-admin.php:2416
+#: class-admin.php:2510
 msgid "Really Simple SSL pro optimizes your SSL configuration: extensive scan for mixed content issues, access to premium support, HSTS and more!"
 msgstr "Really Simple SSL Pro оптимізує ваше SSL налаштування: екстенсивне сканування проблем змішаного вмісту, доступ до преміумної підтримки, HSTS і багато іншого! "
 
@@ -167,39 +171,39 @@ msgstr "Рекомендується зробити %sрезервну копі�
 msgid "https://really-simple-plugins.com"
 msgstr "https://really-simple-plugins.com"
 
-#: class-admin.php:2632 class-admin.php:2636
+#: class-admin.php:2726 class-admin.php:2730
 msgid "Learn more"
 msgstr "Дізнатись більше"
 
-#: class-admin.php:2613
+#: class-admin.php:2707
 msgid "Secure cookie settings not enabled."
 msgstr "Безпечні налаштування cookie не увімкнено. "
 
-#: class-admin.php:2607
+#: class-admin.php:2701
 msgid "Secure cookies set"
 msgstr "Безпечні cookies встановлено "
 
-#: class-admin.php:1922 class-multisite.php:759
+#: class-admin.php:2010 class-multisite.php:759
 msgid "Don't forget to change your settings in Google Analytics and Webmaster tools."
 msgstr "Не забудьте змінити ваші налаштування в Google Analytics та Webmaster tools. "
 
-#: class-admin.php:2943
+#: class-admin.php:3072
 msgid "If this option is set to true, the mixed content fixer will fire on the init hook instead of the template_redirect hook. Only use this option when you experience problems with the mixed content fixer."
 msgstr "Якщо це налаштування встановлене в true, функція виправлення змішаного вмісту буде задіяна під час init hook замість хуку template_redirect. Використовуйте це налаштування, якщо з'являються помилки з функцією виправлення змішаного вмісту. "
 
-#: class-admin.php:2675
+#: class-admin.php:2769
 msgid "Switch mixed content fixer hook"
 msgstr "Перемкнути функцію виправлення змішаного вмісту"
 
-#: class-admin.php:2891
+#: class-admin.php:3010
 msgid "The plugin could not detect any possible redirect rule."
 msgstr "Плагін не знайшов жодного можливого правила переадресування. "
 
-#: class-admin.php:2875
+#: class-admin.php:2994
 msgid "The .htaccess redirect rules that were selected by this plugin failed in the test. The following redirect rules were tested:"
 msgstr "Правила переадресування .htaccess, обрані цим плагіном, не пройшли тест. Було протестовано наступні правила переадресування: "
 
-#: class-admin.php:2282
+#: class-admin.php:2376
 msgid "and"
 msgstr "і"
 
@@ -219,11 +223,11 @@ msgstr "SSL було активовано для всієї вашої мере�
 msgid "networkwide"
 msgstr "вся мережа"
 
-#: class-admin.php:2596 class-admin.php:2615
+#: class-admin.php:2690 class-admin.php:2709
 msgid "To enable, %sget Premium%s "
 msgstr "Для активації %sотримайте Преміум%s "
 
-#: class-admin.php:2594
+#: class-admin.php:2688
 msgid "%sHTTP Strict Transport Security%s is not enabled."
 msgstr "%sHTTP Strict Transport Security%s не активовано. "
 
@@ -255,8 +259,8 @@ msgstr "Нижче ви можете встановити параметри м�
 msgid "Enable SSL"
 msgstr "Увімкнути SSL"
 
-#: class-admin.php:2805 class-admin.php:2830 class-admin.php:2863
-#: class-admin.php:3006
+#: class-admin.php:2905 class-admin.php:2937 class-admin.php:2976
+#: class-admin.php:3135
 msgid "This option is enabled on the network menu."
 msgstr "Цей параметр вмикається в мережевому меню. "
 
@@ -264,7 +268,7 @@ msgstr "Цей параметр вмикається в мережевому м�
 msgid "If you want more options to have full control over your multisite network, you can %supgrade%s your license to a multisite license, or dismiss this message"
 msgstr "Якщо ви хочете отримати більше параметрів для забезпечення повного контролю над вашою багатосайтовою мережею, ви можете %sпокращити%s вашу ліцензію до багатосайтової ліцензії або закрити це повідомлення"
 
-#: class-admin.php:2898
+#: class-admin.php:3017
 msgid "If the setting 'do not edit htaccess' is enabled, you can't change this setting."
 msgstr "При ввімкненому параметрі 'не редагуйте htaccess', ви не зможете змінити це налаштування."
 
@@ -276,79 +280,79 @@ msgstr "У вас запущено Really Simple SSL pro. Було випуще�
 msgid "You may need to login in again."
 msgstr "Можливо вам знадобиться перезайти у систему."
 
-#: class-admin.php:2869
+#: class-admin.php:2988
 msgid "A .htaccess redirect is faster. Really Simple SSL detects the redirect code that is most likely to work (99% of websites), but this is not 100%. Make sure you know how to regain access to your site if anything goes wrong!"
 msgstr "Переадресування .htaccess швидше. Really Simple SSL виявляє найбільш працездатний код переадресування (99% веб-сайтів), але це не 100%. Переконайтесь, що знаєте як знову отримати доступ до вашого сайту, коли щось піде не так! "
 
-#: class-admin.php:2903
+#: class-admin.php:3022
 msgid "Before you enable this, make sure you know how to %1$sregain access%2$s to your site in case of a redirect loop."
 msgstr "Перед увімкненням переконайтесь, що ви знаєте як %1$sотримати доступ%2$s до вашого сайту у випадку виникнення петлі переадресування. "
 
-#: class-admin.php:2874
+#: class-admin.php:2993
 msgid "The .htaccess file is not writable. Add these lines to your .htaccess manually, or set 644 writing permissions"
 msgstr "Файл .htaccess недоступний для запису. Додайте ці строки у ваш .htaccess вручну, встановіть дозволи для запису 644 "
 
-#: class-admin.php:2663
+#: class-admin.php:2757
 msgid "Enable 301 .htaccess redirect"
 msgstr "Увімкнути переадресування 301 .htaccess "
 
-#: class-admin.php:2296
+#: class-admin.php:2390
 msgid "No 301 redirect is set. Enable the WordPress 301 redirect in the settings to get a 301 permanent redirect."
 msgstr "Переадресування 301 не встановлено. Увімкніть переадресування WordPress 301 в налаштуваннях для отримання постійної 301 переадресації. "
 
-#: class-admin.php:2293
+#: class-admin.php:2387
 msgid "Https redirect cannot be set in the .htaccess. Set the .htaccess redirect manually or enable WordPress redirect in the settings."
 msgstr "Https переадресування не може бути встановлено у .htaccess. Встановіть переадресування .htaccess вручну або увімкніть переадресування WordPress у налаштуваннях. "
 
-#: class-admin.php:2289
+#: class-admin.php:2383
 msgid "Enable a .htaccess redirect or WordPress redirect in the settings to create a 301 redirect."
 msgstr "Увімкніть переадресування .htaccess або переадресування WordPress у налаштуваннях, щоб створити 301 переадресування. "
 
-#: class-admin.php:1888
+#: class-admin.php:1976
 msgid "You do not have a 301 redirect to https active in the settings. For SEO purposes it is advised to use 301 redirects. You can enable a 301 redirect in the settings."
 msgstr "У вас не активне 301 переадресування до https в налаштуваннях. Для потреб SEO рекомендується використовувати переадресування 301. Ви можете увімкнути їх у налаштуваннях. "
 
-#: class-admin.php:3009
+#: class-admin.php:3145
 msgid "In most cases you need to leave this enabled, to prevent mixed content issues on your site."
 msgstr "В більшості випадків краще лишити це ввімкненим, щоб попередити проблеми зі змішаним вмістом на вашому сайті. "
 
-#: class-admin.php:2834
+#: class-admin.php:2947
 msgid "Enable this if you want to use the internal WordPress 301 redirect. Needed on NGINX servers, or if the .htaccess redirect cannot be used."
 msgstr "Увімкніть це, якщо ви бажаєте використовувати внутрішнє переадресування WordPress 301. Необхідно на NGINX серверах або коли переадресування .htaccess не може бути використане. "
 
-#: class-admin.php:2808
+#: class-admin.php:2915
 msgid "This is a fallback you should only use if other redirection methods do not work."
 msgstr "Цей варіант повинен використовуватися виключно, якщо інші методи переадресування не працюють. "
 
-#: class-admin.php:2784
+#: class-admin.php:2884
 msgid "Enable this option to get debug info in the debug tab."
 msgstr "Увімкніть цю опцію для отримання службової інформації на сторінці налагодження. "
 
-#: class-admin.php:2926
+#: class-admin.php:3049
 msgid "If you want to customize the Really Simple SSL .htaccess, you need to prevent Really Simple SSL from rewriting it. Enabling this option will do that."
 msgstr "Якщо ви бажаєте налаштувати Really Simple SSL .htaccess, вам потрібно запобігти його перезапису Really Simple SSL. Увімкніть цю опцію, щоб зробити це. "
 
-#: class-admin.php:2659
+#: class-admin.php:2753
 msgid "Enable WordPress 301 redirection to SSL"
 msgstr "Увімкнути переадресування WordPress 301 до SSL "
 
-#: class-admin.php:2291
+#: class-admin.php:2385
 msgid ".htaccess is not writable. Set 301 WordPress redirect, or set the .htaccess manually if you want to redirect in .htaccess."
 msgstr ".htaccess недоступний для запису. Встановіть переадресування 301 WordPress або встановіть .htaccess вручну, якщо бажаєте переадресування в .htaccess. "
 
-#: class-admin.php:2285
+#: class-admin.php:2379
 msgid "WordPress redirect"
 msgstr "Переадресування WordPress "
 
-#: class-admin.php:2277
+#: class-admin.php:2371
 msgid "301 redirect to https set: "
 msgstr "301 переадресування в https налаштовано: "
 
-#: class-admin.php:2279
+#: class-admin.php:2373
 msgid ".htaccess redirect"
 msgstr "Переадресування .htaccess"
 
-#: class-admin.php:2587
+#: class-admin.php:2681
 msgid "HTTP Strict Transport Security was enabled"
 msgstr "Безпеку HTTP Strict Transport увімкнено"
 
@@ -360,11 +364,11 @@ msgstr "перезавантажити через https. "
 msgid "No SSL was detected. If you do have an SSL certificate, try to reload this page over https by clicking this link:"
 msgstr "SSL не виявлено. Якщо у вас є SSL сертифікат, спробуйте перезавантажити цю сторінку через https натиснувши на це посилання: "
 
-#: class-admin.php:1925 class-multisite.php:762
+#: class-admin.php:2013 class-multisite.php:762
 msgid "More info."
 msgstr "Детальніше."
 
-#: class-admin.php:2694
+#: class-admin.php:2788
 msgid "Settings to optimize your SSL configuration"
 msgstr "Налаштування для оптимізації вашої SSL конфігурації "
 
@@ -372,7 +376,7 @@ msgstr "Налаштування для оптимізації вашої SSL к
 msgid "You can check your certificate on"
 msgstr "Ви можете перевірити ваш сертифікат на "
 
-#: class-admin.php:1889
+#: class-admin.php:1977
 msgid "View settings page"
 msgstr "Перегляд сторінки налаштувань"
 
@@ -380,15 +384,15 @@ msgstr "Перегляд сторінки налаштувань"
 msgid "You can also let the automatic scan of the pro version handle this for you, and get premium support and increased security with HSTS included."
 msgstr "Ви також можете дозволити автоматичному скануванню pro версії зайнятись цим для вас та отримати преміум підтримку та посилену безпеку з HSTS. "
 
-#: class-admin.php:3045
+#: class-admin.php:3181
 msgid "Premium Support"
 msgstr "Преміум підтримка"
 
-#: class-admin.php:3035
+#: class-admin.php:3171
 msgid "Docs"
 msgstr "Документація"
 
-#: class-admin.php:2634
+#: class-admin.php:2728
 msgid "Still having issues with mixed content? Check out Premium, which includes an extensive scan and premium support. "
 msgstr "Все ще маєте проблеми зі змішаним вмістом? Спробуйте Преміум, до котрого включено посилене сканування та преміум підтримка. "
 
@@ -400,43 +404,43 @@ msgstr "Спробуйте Really Simple SSL Premium "
 msgid "Go ahead, activate SSL!"
 msgstr "Вперед, активуйте SSL! "
 
-#: class-admin.php:2630
+#: class-admin.php:2724
 msgid "If you want to be sure you're ready to migrate to SSL, get Premium, which includes an extensive scan and premium support."
 msgstr "Якщо ви бажаєте бути абсолютно певним, що ви готові до міграції до SSL, отримайте Преміум, до котрого включено посилене сканування та преміум підтримка. "
 
-#: class-admin.php:2246
+#: class-admin.php:2340
 msgid "Instructions"
 msgstr "Інструкції"
 
-#: class-admin.php:2244
+#: class-admin.php:2338
 msgid "The mixed content fixer is active, but was not detected on the frontpage. Please follow these steps to check if the mixed content fixer is working."
 msgstr "Функція виправлення змішаного вмісту активна, але не була виявлена на титульній сторінці. Будь ласка, дотримуйтесь цих кроків щоб переконатись, що функція виправлення змішаного вмісту працює. "
 
-#: class-admin.php:1921 class-multisite.php:752
+#: class-admin.php:2009 class-multisite.php:752
 msgid "SSL activated!"
 msgstr "SSL активовано!"
 
-#: class-admin.php:2225
+#: class-admin.php:2313
 msgid "SSL is not enabled yet"
 msgstr "SSL ще не увімкнено"
 
-#: class-admin.php:2223
+#: class-admin.php:2311
 msgid "SSL is enabled on your site."
 msgstr "SSL увімкнено на вашому сайті. "
 
-#: class-admin.php:1816
+#: class-admin.php:1863
 msgid "Because your site is behind a loadbalancer and is_ssl() returns false, you should add the following line of code to your wp-config.php."
 msgstr "Оскільки ваш сайт позаду розподілювача навантаження і is_ssl() повертає false, вам потрібно додати наступні строки кода до вашого wp-config.php. "
 
-#: class-admin.php:1815
+#: class-admin.php:1862
 msgid "Your wp-config.php has to be edited, but is not writable."
 msgstr "Схоже ваш wp-config.php було змінено, але він недоступний для запису. "
 
-#: class-admin.php:1812 class-admin.php:1840
+#: class-admin.php:1859 class-admin.php:1887
 msgid "Set your wp-config.php to writable and reload this page."
 msgstr "Дозвольте запис вашого wp-config.php та перезавантажте цю сторінку. "
 
-#: class-admin.php:1810
+#: class-admin.php:1857
 msgid "A definition of a siteurl or homeurl was detected in your wp-config.php, but the file is not writable."
 msgstr "Визначення siteurl або homeurl було виявлено у вашому wp-config.php, але файл недоступний для запису. "
 
@@ -470,7 +474,7 @@ msgstr "Активувати SSL на всю мережу "
 msgid "%s is a singleton class and you cannot create a second instance."
 msgstr "%s це одиночний класс і ви не можете створити другий запис. "
 
-#: class-admin.php:1806
+#: class-admin.php:1853
 msgid "System detection encountered issues"
 msgstr "Під час діагностики системи виявлено проблеми"
 
@@ -482,35 +486,35 @@ msgstr "Оберіть бажані налаштування"
 msgid "Images, stylesheets or scripts from a domain without an SSL certificate: remove them or move to your own server."
 msgstr "Зображення, таблиці стилів або скрипти з домену без SSL сертифікату: видаліть їх або перенесіть на ваш особистий сервер. "
 
-#: class-admin.php:1839
+#: class-admin.php:1886
 msgid "Because your server does not pass a variable with which WordPress can detect SSL, WordPress may create redirect loops on SSL."
 msgstr "Оскільки ваш сервер не пропускає змінну, за допомогою якої WordPress виявляє SSL, WordPress може створити петлі переадресування на SSL."
 
-#: class-admin.php:1833
+#: class-admin.php:1880
 msgid "Or set your wp-config.php to writable and reload this page."
 msgstr "Або дозвольте запис для wp-config.php та перезавантажте цю сторінку. "
 
-#: class-admin.php:2927
+#: class-admin.php:3050
 msgid ".htaccess is currently not writable."
 msgstr ".htaccess зараз недоступний для запису. "
 
-#: class-admin.php:2242
+#: class-admin.php:2331
 msgid "Mixed content fixer was successfully detected on the front-end"
 msgstr "Функція виправлення змішаного вмісту була успішно виявлена у front-end "
 
-#: class-admin.php:2157
+#: class-admin.php:2245
 msgid "On <a href='https://really-simple-ssl.com'>really-simple-ssl.com</a> you can find a lot of articles and documentation about installing this plugin, and installing SSL in general."
 msgstr "На <a href='https://really-simple-ssl.com'>really-simple-ssl.com</a> ви можете знайти багато статей та документації про встановлення цього плагіну, а також встановлення SSL в цілому. "
 
-#: class-admin.php:2156
+#: class-admin.php:2244
 msgid "Documentation"
 msgstr "Документацію до плагіну"
 
-#: class-admin.php:2666
+#: class-admin.php:2760
 msgid "Enable Javascript redirection to SSL"
 msgstr "Увімкнути переадресування Javascript до SSL "
 
-#: class-admin.php:2258
+#: class-admin.php:2352
 msgid "Failed activating SSL"
 msgstr "Не вдалось активувати SSL "
 
@@ -526,72 +530,68 @@ msgstr "Really Simple SSL"
 msgid "Lightweight plugin without any setup to make your site SSL proof"
 msgstr "Легкий плагін без додаткових налаштувань, щоб зробити ваш сайт SSL-захищеним"
 
-#: class-admin.php:2360
+#: class-admin.php:2454
 msgid "To view results here, enable the debug option in the settings tab."
 msgstr "Для перегляду результатів тут, увімкніть опцію налагодження у вкладці налаштувань. "
 
-#: class-admin.php:2338
+#: class-admin.php:2432
 msgid "Send me a copy of these lines if you have any issues. The log will be erased when debug is set to false"
 msgstr "Надішліть мені копію цих строк, якщо у вас виникають проблеми. Лог буде стерто, якщо налагодження установлене в false "
 
-#: class-admin.php:2655
-msgid "Auto replace mixed content"
-msgstr "Автоматично замінювати змішаний вміст"
-
-#: class-admin.php:2337
+#: class-admin.php:2431
 msgid "Log for debugging purposes"
 msgstr "Лог, призначений для налагодження"
 
-#: class-admin.php:2672
+#: class-admin.php:2766
 msgid "Stop editing the .htaccess file"
 msgstr "Припинити редагування файлу .htaccess "
 
-#: class-admin.php:2324
+#: class-admin.php:2418
 msgid "Save"
 msgstr "Зберегти"
 
-#: class-admin.php:2262
+#: class-admin.php:2356
 msgid "An SSL certificate was detected on your site. "
 msgstr "SSL сертифікат виявлено на вашому сайті."
 
-#: class-admin.php:2260
+#: class-admin.php:2354
 msgid "No SSL detected."
 msgstr "Жодного SSL не виявлено."
 
-#: class-admin.php:2175 class-admin.php:2669
+#: class-admin.php:2263 class-admin.php:2763
 msgid "Debug"
 msgstr "Налагодження"
 
-#: class-admin.php:2174 class-admin.php:2654 class-admin.php:3032
+#: class-admin.php:2262 class-admin.php:2748 class-admin.php:3168
 #: class-multisite.php:150 class-multisite.php:956
 msgid "Settings"
 msgstr "Налаштування"
 
-#: class-admin.php:2173
+#: class-admin.php:2261
 msgid "Configuration"
 msgstr "Конфігурація "
 
-#: class-admin.php:2215
+#: class-admin.php:2303
 msgid "Detected setup"
 msgstr "Виявлене налаштування"
 
-#: class-admin.php:2131
+#: class-admin.php:2219
 msgid "SSL"
 msgstr "SSL"
 
-#: class-admin.php:2130
+#: class-admin.php:2218
 msgid "SSL settings"
 msgstr "Налаштування SSL"
 
-#: class-admin.php:1904 class-multisite.php:722
+#: class-admin.php:1992 class-multisite.php:722
 msgid "Check again"
 msgstr "Перевірити ще раз"
 
-#: class-admin.php:1940
+#: class-admin.php:2028
 msgid "The force http after leaving checkout in WooCommerce will create a redirect loop."
 msgstr "Примусовий http після покидання перевірки в WooCommerce створить петлю переадресування. "
 
-#: class-admin.php:1938
+#: class-admin.php:2026
 msgid "Really Simple SSL has a conflict with another plugin."
 msgstr "Really Simple SSL конфликтує з іншим плагіном. "
 
@@ -603,15 +603,15 @@ msgstr "Активуйте на всю мережу, щоб виправити �
 msgid "Because the $_SERVER[\"HTTPS\"] variable is not set, your website may experience redirect loops."
 msgstr "Оскільки змінну $_SERVER[\"HTTPS\"] не встановлено, ваш веб-сайт може зіткнутися з петлями переадресувань. "
 
-#: class-admin.php:1902 class-multisite.php:720
+#: class-admin.php:1990 class-multisite.php:720
 msgid "The 'force-deactivate.php' file has to be renamed to .txt. Otherwise your ssl can be deactived by anyone on the internet."
 msgstr "Файл 'force-deactivate.php' повинен бути перейменований у .txt. Інакше ваш ssl може бути викнений ким завгодно в мережі інтернет. "
 
-#: class-admin.php:1899 class-multisite.php:717
+#: class-admin.php:1987 class-multisite.php:717
 msgid "Major security issue!"
 msgstr "Серйозна проблема безпеки! "
 
-#: class-admin.php:1942
+#: class-admin.php:2030
 msgid "Show me this setting"
 msgstr "Покажіть мені це налаштування"
 

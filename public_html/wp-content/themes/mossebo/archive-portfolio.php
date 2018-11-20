@@ -39,18 +39,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-
-                <div class="">
-                    <img src="<?php echo THEME_DIR; ?>/assets/images/tmp/project-single.png" alt="">
-                </div>
-                <div class="pt-40 pb-40">
-                    <img src="<?php echo THEME_DIR; ?>/assets/images/tmp/project-single.png" alt="">
-                </div>
-                <div class="">
-                    <img src="<?php echo THEME_DIR; ?>/assets/images/tmp/project-single.png" alt="">
-                </div>
-
-
+                <?php get_sidebar('right'); ?>
             </div>
         </div>
     </div>

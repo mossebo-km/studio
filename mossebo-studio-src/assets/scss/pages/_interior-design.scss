@@ -1,5 +1,14 @@
 .interior-design {
     &-features {
+        .col-md-4 {
+            @include media-breakpoint-up(md) {
+                padding-top: 0;
+            }
+            padding-top: 24px;
+            &:first-child {
+                padding-top: 0;
+            }
+        }
         &__image {
             //background-size: cover;
             background-repeat: no-repeat;
@@ -10,8 +19,10 @@
         &__title {
             margin-left: 16px;
             flex: 1;
-            padding-right: 45px;
             font-weight: 500;
+            @include media-breakpoint-up(lg) {
+                padding-right: 45px;
+            }
         }
         .block-ui {
             padding: 16px;
@@ -20,50 +31,47 @@
             justify-content: center;
         }
     }
-    &-portfolio {
-        .title-h2 {
-            margin-bottom: 0;
-        }
-    }
     &-stats {
         .block-ui {
             margin: 16px 0;
-            padding: 16px;
-            height: 260px;
+            padding-left: 16px;
+            padding-right: 130px;
+            height: 262px;
             box-sizing: border-box;
-            font-size: 20px;
+            font-size: 18px / 24px;
             display: flex;
-            align-items: center;
+            flex-wrap: wrap;
+            align-content: center;
+            box-sizing: border-box;
+            background-repeat: no-repeat;
+            justify-content: flex-start;
+            background-position: top right;
+            @include media-breakpoint-up(sm) {
+                padding-left: 40px;
+            }
+            @include media-breakpoint-up(sm) {
+                padding-left: 40px;
+            }
             strong {
+                display: block;
+                width: 100%;
                 font-size: 40px;
                 font-weight: 500;
-                padding: 0 16px;
+                margin-bottom: 8px;
             }
         }
         .stat {
             &-1 {
-                justify-content: flex-end;
-                background-position: center left;
-                background-repeat: no-repeat;
-                background-image: url(/wp-content/themes/mossebo/assets/images/interior-design/stat-1.png);
+                background-image: url(/wp-content/themes/mossebo/assets/images/interior-design/mob-stat-1.png);
             }
             &-2 {
-                justify-content: flex-end;
-                background-position: top left;
-                background-repeat: no-repeat;
-                background-image: url(/wp-content/themes/mossebo/assets/images/interior-design/stat-2.png);
+                background-image: url(/wp-content/themes/mossebo/assets/images/interior-design/mob-stat-2.png);
             }
             &-3 {
-                background-position: top right;
-                background-repeat: no-repeat;
-                background-image: url(/wp-content/themes/mossebo/assets/images/interior-design/stat-3.png);
+                background-image: url(/wp-content/themes/mossebo/assets/images/interior-design/mob-stat-3.png);
             }
             &-4 {
-                padding-top: 300px;
-                background-position: center top;
-                background-repeat: no-repeat;
-                background-image: url(/wp-content/themes/mossebo/assets/images/interior-design/stat-4.png);
-                height: 552px;
+                background-image: url(/wp-content/themes/mossebo/assets/images/interior-design/mob-stat-4.png);
             }
         }
     }
@@ -71,52 +79,18 @@
         .title-h2 {
             margin-bottom: 0;
         }
-        &--flexcolumn {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
+        .col-md-6 {
+            margin-bottom: 16px;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
-        &__small {
-            display: block;
-            position: relative;
-            text-decoration: none;
-            color: $color-ui;
-            font-size: 18px / 24px;
-            &--image {
-                width: 100%;
-                position: relative;
-                background-color: $color-text-secondary;
-                background-size: cover;
-                background-position: center center;
-                border-radius: $radius;
-                &:before {
-                    content: '';
-                    display: block;
-                    padding-top: 39.25%;
-                    background: rgba(0,0,0,0.35);
-                    border-radius: $radius;
-                    transition: 0.3s;
-                }
-            }
-            &--text {
-                position: absolute;
-                opacity: 1;
-                width: 100%;
-                bottom: 0;
-                padding: 16px;
-                //height: 80px;
-                box-sizing: border-box;
-                font-weight: 500;
-                transition: 0.3s;
-            }
-            &:hover {
-                .interior-design-blog__small--image:before {
-                    background: transparent;
-                }
-                .interior-design-blog__small--text {
-                    opacity: 0;
-                }
+    }
+
+    &-form-bottom {
+        .col-md-7 {
+            @include media-breakpoint-down(sm) {
+                display: none;
             }
         }
     }

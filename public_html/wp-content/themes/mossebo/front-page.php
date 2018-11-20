@@ -6,7 +6,7 @@
     <div class="landing-header__layout">
         <div class="container">
             <div class="row align-items-stretch">
-                <div class="col-md-7">
+                <div class="col-lg-7">
                     <div class="title-h1 landing-header__title">
                         Дизайн интерьера<br>
                         в Cанкт-Петербурге
@@ -15,24 +15,25 @@
                         Создаем дизайн квартир и коммерческих помещений
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <form-standart class="form-standart"
-                                   form-action="<?php echo admin_url('admin-ajax.php'); ?>"
-                                   form-hidden-ajax-nonce="<?php echo wp_create_nonce( 'DESIGN_INTERIOR_nonce' ); ?>"
-                                   form-hidden-name-action="DESIGN_INTERIOR"
-                                   form-hidden-page-url="<?= currentUrl() ?>"
-                                   form-title="Получите бесплатную консультацию:"
-                                   form-input-name="<?php _e('Ваше имя', 'mossebo') ?>"
-                                   form-input-phone="<?php _e('Ваш телефон', 'mossebo') ?>"
-                                   form-input-email="<?php _e('Ваш E-mail', 'mossebo') ?>"
-                                   :form-email="false"
-                                   form-button-text="Отправить заявку"
-                                   :privacy-policy="true"
-                                   privacy-policy-text="<?php _e('Согласен на обработку персональных данных и принимаю', 'mossebo') ?>"
-                                   privacy-policy-link="/privacy-policy"
-                                   privacy-policy-link-text="политику конфиденциальности"
+                <div class="col-lg-5">
+                    <form-calc class="form-calc"
+                               form-action="<?php echo admin_url('admin-ajax.php'); ?>"
+                               form-hidden-ajax-nonce="<?php echo wp_create_nonce( 'DESIGN_INTERIOR_FORM_nonce' ); ?>"
+                               form-hidden-name-action="DESIGN_INTERIOR_FORM"
+                               form-hidden-page-url="<?= currentUrl() ?>"
+
+                               form-title="Рассчитайте стоимость дизайна и ремонта вашей квартиры прямо сейчас"
+                               form-input-area="площадь помещения, м²"
+                               form-input-phone="<?php _e('Ваш телефон', 'mossebo') ?>"
+                               form-button-text="Узнать стоимость"
+
+                               :privacy-policy="true"
+                               privacy-policy-text="<?php _e('Согласен на обработку персональных данных и принимаю', 'mossebo') ?>"
+                               privacy-policy-link="/privacy-policy"
+                               privacy-policy-link-text="политику конфиденциальности"
                     >
-                    </form-standart>
+
+                    </form-calc>
                 </div>
             </div>
         </div>
@@ -40,10 +41,14 @@
 </div>
 
 
-<div class="interior-design-features pt-32 pb-64">
+<div class="interior-design-features pt-32 pb-48">
     <div class="container">
-        <div class="row">
-            <div class="col-4">
+        <mobile-slider
+            js-class="js-slider-why-we"
+            breakpoint="md"
+            class="row justify-content-center"
+        >
+            <div class="col-md-4">
                 <div class="block-ui">
                     <div class="interior-design-features__image"
                          style="background-image: url(<?= THEME_DIR ?>/assets/images/interior-design/features_1.png);"
@@ -53,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <div class="block-ui">
                     <div class="interior-design-features__image"
                          style="background-image: url(<?= THEME_DIR ?>/assets/images/interior-design/features_2.png);"
@@ -63,7 +68,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <div class="block-ui">
                     <div class="interior-design-features__image"
                          style="background-image: url(<?= THEME_DIR ?>/assets/images/interior-design/features_3.png);"
@@ -73,7 +78,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </mobile-slider>
     </div>
 </div>
 
@@ -83,8 +88,8 @@
         <div class="title-h2">
             <?php _e('Портфолио', 'mossebo') ?>
         </div>
-        <div class="title-sub mb-32">
-            <?php _e('Наши проекты в 32 стилях интерьера', 'mossebo') ?>
+        <div class="h-sub mb-32">
+            <?php _e('Лучшие проекты компании в 32 стилях интерьера', 'mossebo') ?>
         </div>
 
         <?php get_template_part( 'interior-design/portfolio-all' ) ?>
@@ -109,34 +114,32 @@
 
 <div class="interior-design-stats mt-64">
     <div class="container">
-        <div class="title-h2 mb-0">
+        <div class="title-h2">
             <?php _e('Международная сеть студий дизайна интерьера', 'mossebo') ?>
         </div>
-        <div class="title-sub mb-32">
+        <div class="h-sub mb-32">
             <?php _e('Mossebo – сама крупная сеть студий дизайна интерьера', 'mossebo') ?>
         </div>
 
         <div class="row">
-            <div class="col-8">
+            <div class="col-md-6">
                 <div class="block-ui stat-1">
-                    <strong>932</strong> реализованных проекта
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="block-ui stat-2">
-                            <strong>40</strong> студий
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="block-ui stat-3">
-                            в <strong>7</strong> странах
-                        </div>
-                    </div>
+                    <strong>7</strong> стран со студиями Mossebo
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-6">
+                <div class="block-ui stat-2">
+                    <strong>40</strong> студий дизайна интерьера
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="block-ui stat-3">
+                    <strong>932</strong> реализованных проекта
+                </div>
+            </div>
+            <div class="col-md-6">
                 <div class="block-ui stat-4">
-                    <strong>13264</strong> визуализаций
+                    <strong>13264</strong> визуализиации
                 </div>
             </div>
         </div>
@@ -147,10 +150,10 @@
 <!-- Сми о нас -->
 <div class="mt-64">
     <div class="container">
-        <div class="title-h2 mb-0">
+        <div class="title-h2">
             <?php _e('О нас говорят', 'mossebo') ?>
         </div>
-        <div class="title-sub mb-32">
+        <div class="h-sub mb-32">
             <?php _e('СМИ и блогеры о Mossebo', 'mossebo') ?>
         </div>
     </div>
@@ -164,10 +167,10 @@
 <div class="mt-64">
     <div class="interior-design-blog">
         <div class="container">
-            <div class="title-h2 mb-0">
+            <div class="title-h2">
                 <?php _e('Блог', 'mossebo') ?>
             </div>
-            <div class="title-sub mb-32">
+            <div class="h-sub mb-32">
                 <?php _e('Авторские статьи от дизайнеров Mossebo', 'mossebo') ?>
             </div>
         </div>
@@ -194,6 +197,13 @@
 <!-- Блог последние 4 статьи конец -->
 
 
+<!-- Банер моссэбо маркет -->
+<div class="mt-64">
+    <?php get_template_part( 'includes/banners/mossebo-market' ) ?>
+</div>
+<!-- Банер моссэбо маркет конец -->
+
+
 <!-- Инстаграм -->
 <div class="mt-64">
     <?php get_template_part( 'includes/instagram-last-8' ) ?>
@@ -201,14 +211,20 @@
 <!-- Инстаграм конец -->
 
 
+<!-- Банер получить каталог -->
+<div class="mt-64">
+    <?php get_template_part( 'includes/banners/take-catalog' ) ?>
+</div>
+<!-- Банер получить каталог конец -->
+
 
 <!-- Медиа проекты -->
 <div class="mt-32">
     <div class="container">
-        <div class="title-h2 mb-0">
+        <div class="title-h2">
             <?php _e('Медиа-проекты Mossebo', 'mossebo') ?>
         </div>
-        <div class="title-sub mb-32">
+        <div class="h-sub mb-32">
             <?php _e('Еще больше о Mossebo и проектах найдешь тут ', 'mossebo') ?>
         </div>
     </div>
