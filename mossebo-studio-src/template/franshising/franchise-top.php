@@ -1,27 +1,29 @@
 <?php
+$mossebo_studios_photo = get_field('mossebo-studios-photo');
+
 if (! function_exists('getFranchiseTopImages')) {
-    function getFranchiseTopImages()
+    function getFranchiseTopImages($gallery)
     {
         return [
             [
-                "preview" => THEME_DIR . "/assets/images/interior/bulbasaur__preview.jpg",
-                "src" => THEME_DIR . "/assets/images/interior/bulbasaur.jpg",
-                "itemClass" => 'col-lg-6'
+                "preview"   => $gallery[0]['sizes']['thumbnail'],
+                "src"       => $gallery[0]['url'],
+                "itemClass" => 'col-xl-6'
             ],
             [
-                "preview" => THEME_DIR . "/assets/images/interior/charmander__preview.jpg",
-                "src" => THEME_DIR . "/assets/images/interior/charmander.jpg",
-                "itemClass" => 'col-lg-6'
+                "preview"   => $gallery[1]['sizes']['thumbnail'],
+                "src"       => $gallery[1]['url'],
+                "itemClass" => 'col-lg-4 col-xl-6'
             ],
             [
-                "preview" => THEME_DIR . "/assets/images/interior/pikachu__preview.jpg",
-                "src" => THEME_DIR . "/assets/images/interior/pikachu.jpg",
-                "itemClass" => 'd-md-none d-lg-block col-lg-6'
+                "preview"   => $gallery[2]['sizes']['thumbnail'],
+                "src"       => $gallery[2]['url'],
+                "itemClass" => 'd-md-none d-lg-block col-lg-4 col-xl-6'
             ],
             [
-                "preview" => THEME_DIR . "/assets/images/interior/squirtle__preview.jpg",
-                "src" => THEME_DIR . "/assets/images/interior/squirtle.jpg",
-                "itemClass" => 'd-md-none d-lg-block col-lg-6'
+                "preview"   => $gallery[3]['sizes']['thumbnail'],
+                "src"       => $gallery[3]['url'],
+                "itemClass" => 'd-md-none d-lg-block col-lg-4 col-xl-6'
             ]
         ];
     }
@@ -79,7 +81,7 @@ if (! function_exists('getFranchiseTopImages')) {
                         breakpoint="md"
                         class="row"
                     >
-                        <?php foreach (getFranchiseTopImages() as $image): ?>
+                        <?php foreach (getFranchiseTopImages($mossebo_studios_photo) as $image): ?>
 
                             <div class="franchise-top__image-item <?= $image['itemClass'] ?>">
                                 <a

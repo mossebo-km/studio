@@ -15,13 +15,52 @@
     <header class="header">
         <div class="container">
             <div class="header-flex">
-                <a href="javascript:void(0);" class="header--nav-icon burger">
-                    <div class="burger__icon">
-                        <span class="burger__icon-item"></span>
-                        <span class="burger__icon-item"></span>
-                        <span class="burger__icon-item"></span>
+                <div class="burger__layout">
+                    <a href="javascript:void(0);" class="header--nav-icon burger js-ht">
+                        <div class="burger__icon">
+                            <span class="burger__icon-item"></span>
+                            <span class="burger__icon-item"></span>
+                            <span class="burger__icon-item"></span>
+                        </div>
+                    </a>
+
+                    <div class="ht-container burger--ht-container container">
+                        <div class="ht-inner">
+                            <ul>
+                                <li>
+                                    <a href="/portfolio/">Портфолио</a>
+                                </li>
+                                <li>
+                                    <a href="/blog/">Блог</a>
+                                </li>
+                                <li>
+                                    <a href="/franchise/">Франчайзинг</a>
+                                </li>
+                                <li>
+                                    <a href="/contacts/">Контакты</a>
+                                </li>
+                            </ul>
+                            <div class="burger--ht__phone">
+                                +7 (495) 000-00-00
+                                <small>пн-пт с 10:00-19:00</small>
+                            </div>
+
+                            <div class="burger--ht__phone">
+                                8 (800) 707-83-47
+                                <small><?php _e('служба контроля качества', 'mossebo') ?></small>
+                            </div>
+
+                            <a href="javascript:void(0);" class="header--nav-icon location">
+                                <svg class="symbol-icon symbol-location">
+                                    <use xlink:href="<?= THEME_DIR ?>/assets/images/icons.svg#symbol-location"></use>
+                                </svg>
+                                <span class="location__text">
+                                Санкт-Петербург
+                            </span>
+                            </a>
+                        </div>
                     </div>
-                </a>
+                </div>
 
                 <a href="/" class="logo logo--header">
                     <svg class="symbol-logo symbol-logo--header">

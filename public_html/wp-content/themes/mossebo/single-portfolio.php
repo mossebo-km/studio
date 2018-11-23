@@ -43,9 +43,9 @@
                             </div>
                         </div>
 
-                        <div class="single-project__params pl-40 pr-40 pb-40">
+                        <div class="single-project__params">
                             <div class="row">
-                                <div class="col-6 col-md-4">
+                                <div class="col-12 col-md-4">
                                     <svg class="symbol-icon">
                                         <use
                                             xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-location"></use>
@@ -58,7 +58,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-6 col-md-4">
+                                <div class="col-12 col-md-4">
                                     <svg class="symbol-icon">
                                         <use
                                             xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-flat_rooms"></use>
@@ -70,7 +70,7 @@
                                         <?php the_field('flat_rooms'); ?>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-4">
+                                <div class="col-12 col-md-4">
                                     <svg class="symbol-icon">
                                         <use
                                             xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-flat_area"></use>
@@ -84,7 +84,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-6 col-md-4">
+                                <div class="col-12 col-md-4">
                                     <svg class="symbol-icon">
                                         <use
                                             xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-flat_type"></use>
@@ -96,7 +96,7 @@
                                         <?php the_field('flat_type'); ?>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-4">
+                                <div class="col-12 col-md-4">
                                     <svg class="symbol-icon">
                                         <use
                                             xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-flat_height"></use>
@@ -109,7 +109,7 @@
                                         <?php _e('м', 'mossebo') ?>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-4">
+                                <div class="col-12 col-md-4">
                                     <svg class="symbol-icon">
                                         <use
                                             xlink:href="<?php echo THEME_DIR; ?>/assets/images/icons.svg#symbol-flat_style"></use>

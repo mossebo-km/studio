@@ -1,38 +1,15 @@
 <?php
-    function getFriends() {
-        return [
-            [
-                'image' => THEME_DIR. "/assets/images/interior/squirtle__preview.jpg",
-                'name' => 'Вячеслав Малафеев',
-                'text' => 'Российский футболист, владелец агентства недвижимости "М16"',
-            ],
-            [
-                'image' => THEME_DIR. "/assets/images/interior/pikachu__preview.jpg",
-                'name' => 'Руслан Татунашвили',
-                'text' => 'Основатель крупнейшего сервиса коллтрекинга Callbackhunter',
-            ],
-            [
-                'image' => THEME_DIR. "/assets/images/interior/charmander__preview.jpg",
-                'name' => 'Дмитрий Портнягин',
-                'text' => 'Топ 1 бизнес-блогер в Youtube, создатель канала Трансформатор, основатель экспортно-импортной компании TRANSITplus',
-            ],
-            [
-                'image' => THEME_DIR. "/assets/images/interior/bulbasaur__preview.jpg",
-                'name' => 'Евгений Гаврилин',
-                'text' => 'Сооснователь boomstarter.ru, MediaToday, и YouTube канала Жизнь Би',
-            ],
-            [
-                'image' => THEME_DIR. "/assets/images/interior/squirtle__preview.jpg",
-                'name' => 'Ольга Блудовская',
-                'text' => 'Президент компании "Subway Россия"',
-            ],
-            [
-                'image' => THEME_DIR. "/assets/images/interior/pikachu__preview.jpg",
-                'name' => 'Сергей Полонский',
-                'text' => 'Миллиардер с собственным стилем создания и развития бизнеса',
-            ],
+$mossebo_frends = [];
+if( have_rows('mossebo-friends') ):
+    while ( have_rows('mossebo-friends') ) : the_row();
+        $mossebo_frends[] = [
+            'image' => get_sub_field('photo'),
+            'name' => get_sub_field('name'),
+            'text' => get_sub_field('text')
         ];
-    }
+    endwhile;
+else:
+endif;
 ?>
 
 <div class="friends-list">
@@ -47,7 +24,7 @@
                 breakpoint="md"
                 class="row justify-content-center"
             >
-                <?php foreach (getFriends() as $friend) : ?>
+                <?php foreach ($mossebo_frends as $friend) : ?>
                     <div class="friends-list__item col-sm-6 col-lg-4">
                         <div class="friend-card block-ui">
                             <div
